@@ -1,0 +1,44 @@
+name: Hexo Deploy
+
+# 只监听 source 分支的改动
+on:
+    push:
+        branches:
+            - source
+
+# 自定义环境变量
+env:
+    POST_ASSET_IMAGE_CDN: true
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out Git repository
+              uses: actions/checkout@v2
+
+            # 这里用的是 Node.js 14.x
+            - name: Set up Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: '12'
+
+            - name: Install dependencies
+              run: npm install
+
+            # 从之前设置的 secret 获取部署私钥
+            - name: Set up environment
+              env:
+                  DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+              run: |
+                  sudo timedatectl set-timezone "Asia/Shanghai"
+                  mkdir -p ~/.ssh
+                  echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+                  chmod 600 ~/.ssh/id_rsa
+                  ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+            # 生成并部署
+            - name: Deploy
+              run: |
+                  npm run build
