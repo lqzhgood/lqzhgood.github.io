@@ -1,0 +1,587 @@
+/*Page4*/
+
+#onePic_2 {
+    background-color: #121015;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#onePic_2 .cont {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#onePic_2 .cont .mbl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../4.jpg) center center no-repeat;
+    background-size: cover !important;
+    z-index: -1;
+    -webkit-filter: blur(30px);
+}
+
+#onePic_2 .cont .img {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    background: url(../1.JPG) no-repeat center center;
+}
+
+#onePic_2 .cont .img.sm {
+    background-size: cover !important;
+}
+
+#onePic_2 .cont .img.bg {
+    background-size: contain !important;
+}
+
+
+/*
+#onePic_2 .cont img {
+    max-height: 100%;
+    max-width: 100%;
+}
+*/
+
+#onePic_2 .cont .txt {
+    position: absolute;
+    background: url(../img/bgc1.png) bottom repeat-x;
+    bottom: 0px;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#onePic_2 .cont .txt .txt_wrap {
+    position: absolute;
+    bottom: 70px;
+    padding: 0 50px 0 90px;
+    width: 100%;
+}
+
+#onePic_2 .cont .txt h2 {
+    position: relative;
+    top: 10%;
+    vertical-align: bottom;
+    text-align: left;
+    font-size: 80px;
+    /*    font-family: '华文中宋', "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;*/
+    padding-bottom: 20px;
+    text-shadow: 0 0 10px #000;
+}
+
+#onePic_2 .cont .txt p {
+    position: relative;
+    top: 15%;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 30px;
+    font-family: Helvetica, Tahoma, Arial,'youyuan', "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+    line-height: 1.5;
+    text-shadow: 0 0 10px #000;
+}
+
+#onePic_2 .textEwmFirstRight {
+    float: right;
+    width: 1px;
+}
+
+#onePic_2 .textEwmFiller {
+    height: 10px;
+    float: right;
+    clear: right;
+    width: 210px;
+}
+
+#onePic_2 .textEwmSecondRight {
+    float: right;
+    clear: right;
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 40px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+
+#onePic_2 .textEwmclear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+}
+/*Page-5*/
+
+#twoPic_2 {
+    background-color: #121015;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#twoPic_2 .cont {
+    width: 49%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#twoPic_2 .cont .mbl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../2.jpg) center center no-repeat;
+    background-size: cover !important;
+    z-index: -1;
+    -webkit-filter: blur(20px);
+}
+
+#twoPic_2 .cont .img {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+#twoPic_2 .cont .img img {
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 0 0px 5px #2B2B2B;
+    border-radius: 15px;
+}
+
+
+/*
+
+玻璃
+#twoPic_2 .cont .txt {
+    position: absolute;
+    background-color: rgba(43, 43, 43, 0.2);
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    box-shadow: 0 -3px 3px #2B2B2B;
+    
+}
+
+#twoPic_2 .cont .txt h2 {
+    font-size: 50px;
+}
+#twoPic_2 .cont .txt p {
+    font-size: 30px;
+    font-family: Helvetica, Tahoma, Arial,'youyuan',"Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+}
+*/
+
+#twoPic_2 .cont .txt {
+    position: absolute;
+    /*    background: url(../img/bgc1.png) bottom repeat-x;*/
+    bottom: 0px;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#twoPic_2 .cont .txt .txt_wrap {
+    position: absolute;
+    bottom: 70px;
+    padding: 0 50px 0 90px;
+    width: 100%;
+}
+
+#twoPic_2 .cont .txt h2 {
+    position: relative;
+    top: 10%;
+    padding-bottom: 20px;
+    vertical-align: bottom;
+    text-align: left;
+    font-size: 60px;
+    /*    font-family: '华文中宋', "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;*/
+    text-shadow: 0 0 10px #000;
+}
+
+#twoPic_2 .cont .txt p {
+    position: relative;
+    top: 15%;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 23px;
+    font-family: Helvetica, Tahoma, Arial,'youyuan', "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+    text-shadow: 0 0 10px #000;
+    line-height: 1.5;
+}
+
+
+#twoPic_2 .textEwmFirstRight {
+    float: right;
+    width: 1px;
+}
+
+#twoPic_2 .textEwmFiller {
+    height: 10px;
+    float: right;
+    clear: right;
+    width: 210px;
+}
+
+#twoPic_2 .textEwmSecondRight {
+    float: right;
+    clear: right;
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+
+#twoPic_2 .textEwmclear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+}
+
+
+
+
+#ewmWithText_2 {}
+
+#ewmWithText_2 .ewm_pic {
+    /*    background: #121015 url(../img/ewm.png) center center no-repeat;*/
+    background: #121015 center center no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#ewmWithText_2 .ewmWithTextPic {
+    border: 20px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+
+#ewmWithText_2 .ewm_wrap {
+    width: 100%;
+    height: 100%;
+    background: url(../img/ewm_wrap.png) center center no-repeat;
+    z-index: 0;
+    position: absolute;
+    -webkit-animation-name: fadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-direction: alternate;
+}
+
+#ewmWithText_2 p {
+    width: 50%;
+    margin: 930px auto 0;
+    font-size: 50px;
+}
+
+
+#twoPicOneText_2 {
+    background-color: #121015;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#twoPicOneText_2 .cont {
+    width: 49%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#twoPicOneText_2 .cont .mbl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../mod/twoPicOneText/2.jpg) center center no-repeat;
+    background-size: cover !important;
+    z-index: -1;
+    -webkit-filter: blur(20px);
+}
+
+#twoPicOneText_2 .cont .img {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+#twoPicOneText_2 .cont .img img {
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 0 0px 5px #2B2B2B;
+    border-radius: 15px;
+}
+
+#twoPicOneText_2 .txt {
+    position: absolute;
+    background: url(../img/bgc1.png) bottom repeat-x;
+    bottom: 0px;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+#twoPicOneText_2 .txt .txt_wrap {
+    position: absolute;
+    bottom: 70px;
+    padding: 0 0 0 90px;
+    width: 100%;
+}
+
+#twoPicOneText_2 .txt h2 {
+    position: relative;
+    top: 10%;
+    vertical-align: bottom;
+    text-align: left;
+    font-size: 80px;
+    /*    font-family: '华文中宋', "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;*/
+    padding-bottom: 20px;
+    text-shadow: 0 0 10px #000;
+}
+
+#twoPicOneText_2 .txt p {
+    position: relative;
+    top: 15%;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 30px;
+    /*    font-family: "appw3",Tahoma, Arial, 'youyuan', "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;*/
+    line-height: 1.5;
+    text-shadow: 0 0 10px #000;
+}
+
+
+#twoPicOneText_2 .textEwmFirstRight {
+    float: right;
+    width: 1px;
+}
+
+#twoPicOneText_2 .textEwmFiller {
+    height: 10px;
+    float: right;
+    clear: right;
+    width: 210px;
+}
+
+#twoPicOneText_2 .textEwmSecondRight {
+    float: right;
+    clear: right;
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 100px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+
+#twoPicOneText_2 .textEwmclear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+}
+
+
+
+
+/*Page26*/
+#luckList_2 .luckBj {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../test.jpg) center center no-repeat;
+    background-size: cover;
+/*    opacity: 0.1;*/
+}
+#luckList_2 .listWrap {
+    margin-top: 120px;
+/*    background-color: rgba(255,255,255,0.2);*/
+    height: 87%;
+    position: relative;
+    color: #000;
+}
+
+#luckList_2 .listWrap .bj{
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#luckList_2 .left{
+    width: 68%;
+    float: left;
+    margin-left: 1%;
+    padding: 20px;
+    overflow: hidden;
+}
+#luckList_2 .left ul {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#luckList_2 .left li{
+    padding-bottom: 20px;
+    font-size: 2.2em;
+    list-style: none;
+}
+#luckList_2 .left li span {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#luckList_2 .left li .luck{
+    width: 100px;
+}
+#luckList_2 .left li .name{
+    width: 130px;
+}
+#luckList_2 .left li .phone{
+    width: 200px;
+}
+#luckList_2 .right{
+    padding: 20px;
+    width: 29%;
+    float: right;
+    margin-right: 1%;    
+}
+
+#luckList_2 .right .rTop{
+    position: relative;
+    overflow: hidden;
+}
+#luckList_2 .right .rTop img{
+    width: 100%;
+}
+#luckList_2 .right .title {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+#luckList_2 .right .cont {
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent:2em;
+    overflow: hidden;
+    line-height: 2em;
+}
+#luckList_2 .right .rBtm {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    zoom: 0.5;
+    text-align: right;
+}
+#luckList_2 .right .rBtm p {
+    font-weight: bold;
+}
+#luckList_2 .right .rBtm canvas{
+    border: 10px solid #fff;
+}

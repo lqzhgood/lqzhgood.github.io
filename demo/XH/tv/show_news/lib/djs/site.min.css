@@ -1,0 +1,509 @@
+/*! shape-shifter 2013-08-14 */
+
+
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/*
+
+#daoJishi article,
+#daoJishi aside,
+#daoJishi details,
+#daoJishi figcaption,
+#daoJishi figure,
+#daoJishi footer,
+#daoJishi header,
+#daoJishi hgroup,
+#daoJishi nav,
+#daoJishi section,
+#daoJishi summary {
+    display: block
+}
+
+#daoJishi audio,
+#daoJishi canvas,
+#daoJishi video {
+    display: inline-block
+}
+
+#daoJishi audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+#daoJishi [hidden] {
+    display: none
+}
+
+#daoJishi html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+#daoJishi body {
+    margin: 0
+}
+
+#daoJishi a:focus {
+    outline: thin dotted
+}
+
+#daoJishi a:active,
+#daoJishi a:hover {
+    outline: 0
+}
+
+#daoJishi h1 {
+    font-size: 2em
+}
+
+#daoJishi abbr[title] {
+    border-bottom: 1px dotted
+}
+
+#daoJishi b,
+#daoJishi strong {
+    font-weight: 700
+}
+
+#daoJishi dfn {
+    font-style: italic
+}
+
+#daoJishi mark {
+    background: #ff0;
+    color: #000
+}
+
+#daoJishi code,
+#daoJishi kbd,
+#daoJishi pre,
+#daoJishi samp {
+    font-family: monospace, serif;
+    font-size: 1em
+}
+
+#daoJishi pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+#daoJishi q {
+    quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+#daoJishi small {
+    font-size: 80%
+}
+
+#daoJishi sub,
+#daoJishi sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+#daoJishi sup {
+    top: -.5em
+}
+
+#daoJishi sub {
+    bottom: -.25em
+}
+
+#daoJishi img {
+    border: 0
+}
+
+#daoJishi svg:not(:root) {
+    overflow: hidden
+}
+
+#daoJishi figure {
+    margin: 0
+}
+
+#daoJishi fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+#daoJishi legend {
+    border: 0;
+    padding: 0
+}
+
+#daoJishi button,
+#daoJishi input,
+#daoJishi select,
+#daoJishi textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0
+}
+
+#daoJishi button,
+#daoJishi input {
+    line-height: normal
+}
+
+#daoJishi button,
+#daoJishi html input[type=button],
+#daoJishi input[type=reset],
+#daoJishi input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+#daoJishi button[disabled],
+#daoJishi input[disabled] {
+    cursor: default
+}
+
+#daoJishi input[type=checkbox],
+#daoJishi input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+#daoJishi input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+#daoJishi input[type=search]::-webkit-search-cancel-button,
+#daoJishi input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+#daoJishi button::-moz-focus-inner,
+#daoJishi input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+#daoJishi textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+#daoJishi table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+*/
+
+
+#daoJishi .mode_Bj {
+    background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+    z-index: -1;
+}
+
+
+#daoJishi body {
+/*    font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    background: #79a8ae;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5em
+}
+
+#daoJishi h1 {
+    color: #111;
+    margin: 0 0 12px;
+    font-size: 24px;
+    line-height: 1.5em
+}
+
+#daoJishi p {
+    margin: 0 0 10x
+}
+
+#daoJishi a {
+    color: #888;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc
+}
+
+#daoJishi a:hover {
+    border-bottom-color: #888
+}
+
+#daoJishi body,
+#daoJishi .overlay {
+    -webkit-perspective: 1000;
+    -webkit-perspective-origin-y: 25%
+}
+
+#daoJishi.body--ready {
+    background: -webkit-linear-gradient(top, #cbebdb 0, #3794c0 120%);
+    background: linear-gradient(top, #cbebdb 0, #3794c0 120%)
+}
+
+#daoJishi.body--ready .overlay {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.694, .0482, .335, 1), opacity .7s cubic-bezier(0.694, .0482, .335, 1);
+    -webkit-transition: opacity .7s cubic-bezier(0.694, .0482, .335, 1), -webkit-transform .7s cubic-bezier(0.694, .0482, .335, 1);
+    transition: opacity .7s cubic-bezier(0.694, .0482, .335, 1), -webkit-transform .7s cubic-bezier(0.694, .0482, .335, 1);
+    transition: transform .7s cubic-bezier(0.694, .0482, .335, 1), opacity .7s cubic-bezier(0.694, .0482, .335, 1);
+    transition: transform .7s cubic-bezier(0.694, .0482, .335, 1), opacity .7s cubic-bezier(0.694, .0482, .335, 1), -webkit-transform .7s cubic-bezier(0.694, .0482, .335, 1)
+}
+
+#daoJishi.body--ready .ui,
+#daoJishi.body--ready .help {
+    display: block
+}
+
+#daoJishi .ui {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    width: 300px;
+    margin-left: -150px
+}
+
+#daoJishi .ui-input {
+    width: 100%;
+    height: 50px;
+    background: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    border-bottom: 2px solid #fff
+}
+
+#daoJishi .ui-input:focus {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #fff
+}
+
+#daoJishi .ui-return {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 3px 2px 0;
+    font-size: 10px;
+    line-height: 10px;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+#daoJishi .ui--enter .ui-return {
+    display: block
+}
+
+#daoJishi .ui--wide {
+    width: 76%;
+    margin-left: 12%;
+    left: 0
+}
+
+#daoJishi .ui--wide .ui-return {
+    right: -20px
+}
+
+#daoJishi .help {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #fff;
+    color: #79a8ae;
+    opacity: .9;
+    -webkit-transition: opacity .1s cubic-bezier(0.694, .0482, .335, 1);
+    transition: opacity .1s cubic-bezier(0.694, .0482, .335, 1)
+}
+
+#daoJishi .help:hover {
+    opacity: 1
+}
+
+#daoJishi .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: 490px;
+    margin: -260px 0 0 -275px;
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg)
+}
+
+#daoJishi .overlay--visible {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    transform: rotateY(0)
+}
+
+#daoJishi .ui-share,
+#daoJishi .ui-details {
+    opacity: .9;
+    background: #fff;
+    z-index: 2
+}
+
+#daoJishi .ui-details-content,
+#daoJishi .ui-share-content {
+    padding: 100px 50px
+}
+
+#daoJishi .commands {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: pointer
+}
+
+#daoJishi .commands-item {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    background: #fff;
+    margin-top: 1px;
+    color: #333;
+    opacity: .9;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.694, .0482, .335, 1), opacity .1s cubic-bezier(0.694, .0482, .335, 1);
+    -webkit-transition: opacity .1s cubic-bezier(0.694, .0482, .335, 1), -webkit-transform .1s cubic-bezier(0.694, .0482, .335, 1);
+    transition: opacity .1s cubic-bezier(0.694, .0482, .335, 1), -webkit-transform .1s cubic-bezier(0.694, .0482, .335, 1);
+    transition: transform .1s cubic-bezier(0.694, .0482, .335, 1), opacity .1s cubic-bezier(0.694, .0482, .335, 1);
+    transition: transform .1s cubic-bezier(0.694, .0482, .335, 1), opacity .1s cubic-bezier(0.694, .0482, .335, 1), -webkit-transform .1s cubic-bezier(0.694, .0482, .335, 1)
+}
+
+#daoJishi .commands-item--gap {
+    margin-top: 9px
+}
+
+#daoJishi .commands-item:hover {
+    opacity: 1
+}
+
+#daoJishi .commands-item:hover .commands-item-action {
+    background: #333
+}
+
+#daoJishi .commands-item a {
+    display: inline-block
+}
+
+#daoJishi .commands-item-mode {
+    display: inline-block;
+    margin-left: 3px;
+    font-style: italic;
+    color: #ccc
+}
+
+#daoJishi .commands-item-title {
+    display: inline-block;
+    width: 150px
+}
+
+#daoJishi .commands-item-info {
+    display: inline-block;
+    width: 300px;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #aaa
+}
+
+#daoJishi .commands-item-action {
+    display: inline-block;
+    float: right;
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 10px;
+    color: #fff;
+    background: #90c9d1;
+    padding: 5px 10px 4px;
+    border-radius: 3px
+}
+
+#daoJishi .commands-item:first-child {
+    margin-top: 0
+}
+
+#daoJishi .twitter-share {
+    position: absolute;
+    top: 4px;
+    right: 20px
+}
+
+#daoJishi .tabs-labels {
+    margin-bottom: 9px
+}
+
+#daoJishi .tabs-label {
+    display: inline-block;
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 2px;
+    -webkit-transition: opacity .1s cubic-bezier(0.694, .0482, .335, 1);
+    transition: opacity .1s cubic-bezier(0.694, .0482, .335, 1)
+}
+
+#daoJishi .tabs-label:hover {
+    opacity: .9
+}
+
+#daoJishi .tabs-label--active {
+    opacity: .9
+}
+
+#daoJishi .tabs-panel {
+    display: none
+}
+
+#daoJishi .tabs-panel--active {
+    display: block
+}
+
+#daoJishi .tab-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+#daoJishi .touch .ui-input {
+    display: none
+}
+
+@media screen and (max-height:600px) {
+    #daoJishi .ui-input {
+        color: #111;
+        border-color: #111
+    }
+    #daoJishi .ui-input:focus {
+        border-color: #111
+    }
+}

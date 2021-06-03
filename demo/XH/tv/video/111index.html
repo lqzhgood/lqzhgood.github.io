@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            height:
+        }
+        
+        #danmu {
+            width: 100% !important;
+            height: 100% !important;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+        #my-player {
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+<!--    <video src="http://192.168.3.242:8887/tv/show_news/你也可以跟貝克漢一樣潮.mp4" preload="metadata" autoplay controls id="wrap"> </video>-->
+    <div id="danmu" class='container'></div>
+    <script src="./jquery-2.1.4.min.js"></script>
+    <script src="./jquery.danmu.js"></script>
+    <script>
+        var ccc = {
+            text: "这是滚动弹幕1"
+            , color: "white"
+            , size: 1
+            , position: 0
+            , time: Math.round(Math.random() * 120)
+        }
+        var dmarr = [];
+        var n = 100;
+
+        function gaga() {
+            var time = Math.round(Math.random() * 120);
+            var test = {
+                text: time
+                , size: 1
+                , position: 0
+                , time :time
+            };
+            dmarr.push(test);
+            $("#danmu").danmu("addDanmu", test);
+            $('#danmu').danmu('danmuStart');
+        }
+        
+//        while(n--){
+//            gaga();
+//        }
+        console.log(dmarr.length);
+        
+        
+        
+        
+        
+        
+        
+        var ccc = [ {
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            },{
+                text: 1
+                , size: 1
+                , position: 0
+                , time :10
+            }]
+        
+        
+        
+        
+        
+        
+        $("#danmu").danmu({
+            height: 800, //弹幕区高度
+            width: 800, //弹幕区宽度
+            zindex: 100, //弹幕区域z-index属性
+            sumTime: 65535, //弹幕流的总时间
+            danmuLoop: true, //是否循环播放弹幕
+            defaultFontColor: "#FFFFFF", //弹幕的默认颜色
+            fontSizeSmall: 16, //小弹幕的字号大小
+            FontSizeBig: 24, //大弹幕的字号大小
+            opacity: "0.9", //默认弹幕透明度
+            topBottonDanmuTime: 6000, // 顶部底部弹幕持续时间（毫秒）
+            SubtitleProtection: true, //是否字幕保护
+            positionOptimize: false, //是否位置优化，位置优化是指像AB站那样弹幕主要漂浮于区域上半部分
+            maxCountInScreen: 200, //屏幕上的最大的显示弹幕数目,弹幕数量过多时,优先加载最新的。
+            maxCountPerSec: 200 //每分秒钟最多的弹幕数目,弹幕数量过多时,优先加载最新的。
+        });
+        $('#danmu').danmu('danmuStart');
+        $("#danmu").danmu("addDanmu", ccc);  
+//        setInterval(function () {
+//            console.log("gagagag");
+//            var cc = dmarr;
+//            $("#danmu").danmu("addDanmu", ccc);            
+//        }, 5000)
+    </script>
+</body>
+
+</html>

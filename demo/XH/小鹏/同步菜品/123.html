@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>小恒水饺</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background: url("http://www.xiaohengshuijiao.com/xh/index/assets/logo_big.png") rgb(16,16,16) center center no-repeat;
+        }
+        #ewm {
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            right: 20px;
+            text-align: right;
+            color: rgb(16,16,16);
+        }
+        #ewm img{
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ewm">
+        <p>日了狗，被你发现了……</p>
+        <br>
+        <img src="http://www.xiaohengshuijiao.com/xh/index/img/ewm_wx.png" alt="">
+    </div>
+    <script>
+        document.addEventListener('keypress',function(e){
+            if (e.keyCode == 123){
+                return false;
+            }
+        })
+       
+        console.log("咿呀咿呀哟");    
+    </script>
+</body>
+</html>

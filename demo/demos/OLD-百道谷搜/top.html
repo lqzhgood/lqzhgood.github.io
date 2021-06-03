@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="txt" type="text">
+        <button id="tijiao">subit</button>
+    </div>
+
+    <script>
+        var sub = document.getElementById("tijiao");
+        sub.onclick = sx;
+        document.getElementById("txt").onkeydown = function () {
+            if (event.keyCode == "13") {
+                sx();
+            }
+        }
+
+        function sx() {
+            var inputtxt = document.getElementById("txt").value;
+            var bdurl = "http://fanyi.baidu.com/#zh/en/" + inputtxt;
+            var ydurl = "http://fanyi.youdao.com/translate?i=" + inputtxt;
+
+            window.top.baidu.location.href = bdurl;
+            window.top.youdao.location.href = ydurl;
+            //            var ggurl = "http://translate.google.cn/m/translate#auto/cn/" + inputtxt;
+            //            window.top.google.location.href = ggurl;
+             window.top.jiaodian();
+        }
+    </script>
+</body>
+
+</html>

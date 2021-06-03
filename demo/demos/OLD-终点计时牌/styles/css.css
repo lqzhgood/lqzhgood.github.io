@@ -1,0 +1,61 @@
+body{
+    background-color: #000;
+    color: white;
+}
+
+#allDIV {
+    width: 600px;
+    margin: 8px auto;
+}
+#main {
+    color: #111;
+    width: 600px;
+    margin: 8px auto;
+    background: #181818;
+    padding: 15px 20px;
+    border: 1px solid #222;
+}
+
+#main > ul li  {
+    list-style: none;
+    float: left;
+}
+
+#main ul a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none!important;
+    margin: 1px 1px 1px 0px;
+    color: #fff;
+    background: #444;
+}
+
+#main ul a:hover {
+    color: #FFF;
+    background: #111;
+}
+
+#main ul a.selected {
+    margin-bottom: 0px;
+    color: #000;
+    background: white;
+    border-bottom: 1px solid white;
+    cursor: default;
+}
+
+#main div {
+    padding: 10px 10px 8px 10px;
+    clear: left;
+    background: white;
+    height:300px;
+}
+
+#main div a{
+    color:#000;
+    font-weight: bold;
+}
+
+
+button {
+    color: #000;
+}

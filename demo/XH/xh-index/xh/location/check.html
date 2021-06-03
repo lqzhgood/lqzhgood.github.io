@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ck"></div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $.getJSON("./test.js",function(data){
+            for(var i = 0; i<data.length; i++){
+                var key ="";
+                var n = 0;
+                for (key in data[i]) {
+                    if (data[i].hasOwnProperty(key)) {
+                        n++;
+                    }
+                }
+                if (n != 11){
+                    var _dom = $("<p>").html(data[i].Name+ " "+n);
+                    $("#ck").append(_dom);
+                }
+            }
+        })
+    </script>
+</body>
+</html>

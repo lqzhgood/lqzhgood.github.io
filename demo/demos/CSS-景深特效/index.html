@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-景深特效</title>
+    <style>
+        * {
+            font-family: "Microsoft YaHei";
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            transition-timing-function: linear;
+            -webkit-transition-timing-function: linear;
+        }
+        
+        .banner {
+            /*        产生景深*/
+            perspective: 800px;
+        }
+/*        背景图*/
+        .bg {
+/*           启用父元素定位 距离父元素上部100px 居中*/
+            position: relative;
+            width: 600px;
+            height: 300px;
+            margin: 100px auto;
+            background: url("http://static.smartisanos.cn/index/img/store/home/banner-3d-item-1-box-1_61bdc2f4f9.png") center no-repeat;
+            background-size: 100% 100%;
+            border-radius: 10px;
+/*            转化为3D图形 设置旋转基点为图片中心 默认不旋转*/
+            transform-style: preserve-3d;
+            -webkit-transform-origin: 50% 50%;
+            -webkit-transform: rotateY(0deg) rotateX(0deg);
+        }
+/*        商品图（突出显示部分）*/
+        .img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+/*            元素向上移动8px 突出手机上部*/
+            bottom: 8px;
+            left: 0;
+            background: url("http://static.smartisanos.cn/index/img/store/home/banner-3d-item-1-box-3_8fa7866d59.png") center no-repeat;
+            background-size: 95% 100%;
+        }
+/*        文字*/
+        .text {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            font-size: 30px;
+            color: #fff;
+            text-align: right;
+            font-weight: lighter;
+        }
+        
+        .copyright {
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+            font-size: 10px;
+            color: #fff;
+            text-align: right;
+            font-weight: lighter;
+        }
+/*    重点  将 前(商品图片)、中( 文字)、后(背景图片-灰色价格) 三层分离 视距20px；*/
+        .a {
+            -webkit-transform: translateZ(40px);
+        }
+        
+        .b {
+            -webkit-transform: translateZ(20px);
+        }
+        
+        .c {
+            -webkit-transform: translateZ(0px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="bg">
+            <span class="img a"></span>
+            <span class="text b">以傲慢与偏执<br/>回敬傲慢与偏见</span>
+            <span class="copyright c">code by qingjin.me | picture from t.tt</span>
+        </div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+//            鼠标进入后  计算鼠标在banner中的位置 除系数50 旋转banner
+            $(".bg").mouseenter(function () {               
+                var thisPX = $(this).offset().left;
+                var thisPY = $(this).offset().top;
+                var boxWidth = $(this).outerWidth();
+                var boxHeight = $(this).outerHeight();
+                $(this).addClass("threeD");
+                $(".threeD").mousemove(function (event) {
+                    var mouseX = event.pageX - thisPX;
+                    var mouseY = event.pageY - thisPY;
+                    var X;
+                    var Y;
+                    if (mouseX > boxWidth / 2) {
+                        X = mouseX - boxWidth / 2;
+                    } else {
+                        X = mouseX - boxWidth / 2;
+                    }
+                    if (mouseY > boxHeight / 2) {
+                        Y = boxHeight / 2 - mouseY;
+                    } else {
+                        Y = boxHeight / 2 - mouseY;
+                    }
+                    $(".threeD").css({
+                        "-webkit-transform": "rotateY(" + X / 50 + "deg) " + "rotateX("  + Y / 50 + "deg)"
+                    });
+
+                    // console.log(X + "," + Y);
+                });
+            });
+            $(".bg").mouseleave(function () {
+                $(this).removeClass("threeD");
+                $(this).css({
+                    "-webkit-transform": "rotateY(0deg) rotateX(0deg)"
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+<!--
+
+
+CSS景深特效-锤子官网看到的-
+
+利用 CSS 的 3 个图层的景深不一致，旋转得到。-->

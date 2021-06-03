@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9999 Race Finishers</title>
+    <link href="styles/css.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="allDIV">
+        <header>
+            <h2>9999 Race Finishers!</h2>
+        </header>
+        <div id="main">
+            <ul class="idTabs">
+                <li><a href="#male">Male Finishers</a></li>
+                <li><a href="#female">Female Finishers</a></li>
+                <li><a href="#all">All Finishers</a></li>
+                <li><a href="#new">Add New Finisher</a></li>
+            </ul>
+            <div id="male">
+                <h4>Male Finishers</h4>
+                <ul id="finishers_m"></ul>
+            </div>
+            <div id="female">
+                <h4>Female Finishers</h4>
+                <ul id="finishers_f"></ul>
+            </div>
+            <div id="all">
+                <h4>ALL Finishers</h4>
+                <ul id="finishers_all"></ul>
+            </div>
+            <div id="new">
+                <h4>Add New Finisher</h4>
+                <form  method="post" id="addRunner" name="addRunner">
+<!--                   action="service.php"-->
+                    <label for="txtFirstName"> First Name:</label>
+                    <input type="text" name="txtFirstName" id="txtFirstName" />
+                    <br> Last Name:
+                    <input type="text" name="txtLastName" id="txtFirstName" />
+                    <br>
+                    <label for="ddlGender">Gender:
+                    </label>
+                    <select name="ddlGender" id="ddlGender">
+                        <option value="">---Please Select---</option>
+                        <option value="f">Female</option>
+                        <option value="m">Male</option>
+                    </select>
+                    <br>
+                    <input type="text" name="txtMinutes" id="txtMinutes" size="10" maxlength="2">(Minutes)
+                    <input type="text" name="txtSeconds" id="txtSeconds" size="10" maxlength="2">(Seconds)
+                    <br>
+                    <br>
+                    <button name="btnSave" id="btnSave" type="submit">Add Runner</button>
+                    <input type="text" name="action" value="addRunner" id="action" style="display:none">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <h4>Congratulations to all our finishers!</h4>
+            <button id="btnStart">Start</button>
+            <button id="btnStop">Stop</button>
+            <br>
+            <br>
+            <span id="freq"></span>
+            <br> Last Updated:
+            <div id="updatedTime"></div>
+
+
+        </footer>
+        <script src="scripts/jquery-1.6.2.min.js"></script>
+        <script src="scripts/my_scripts.js"></script>
+        <script src="scripts/jquery.idTabs.min.js"></script>
+        <script>
+            $(":input").val("123");
+            $("#ddlGender").attr("value","f");
+        </script>
+    </div>
+</body>
+
+</html>
+
+<!--
+实时的终点计时牌-XML/本地存储/PHP+SQL三种方式实现 PHP是个大坑-
+
+食用方法
+先从XML读取数据写入 然后再从本地数据中读取
+点击本地数据项可从本地数据（库）中删除
+
+
+XML读取和本地读取两种方式
+尝试PHP+SQL的存储与读取
+-->

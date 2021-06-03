@@ -1,0 +1,281 @@
+#siderleft {
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    width: 188px;
+    border: 1px solid #D5D5D5;
+    background-color: #F1F1F1;
+}
+
+#siderleft dl h4 {
+    padding: 8px 0;
+    border-bottom: 1px solid #CBCBCB;
+    text-align: center;
+    font-size: 14px;
+}
+
+#siderleft dt {
+    margin: 6px 20px 3px 20px;
+    text-align: left;
+}
+
+#siderleft dt h5 {
+    font-size: 12px;
+}
+
+#siderleft dd {
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #D5D5D5;
+    text-indent: 1em;
+    font-size: 12px;
+}
+
+#siderleft dd a {
+    display: block;
+    margin: 3px -5px 3px 22px;
+    width: 100px;
+    height: 20px;
+    color: #545454;
+    text-decoration: none;
+    white-space: pre-wrap;
+    line-height: 20px;
+}
+
+#siderleft dd a:hover {
+    color: #4491FB;
+    text-decoration: underline;
+}
+
+
+/*侧边栏底部图片*/
+
+#siderleft #siderbottom {
+    padding: 15px;
+    background: #FCFCFC;
+}
+
+#siderbottom .siderleftimg {
+    display: table-cell;
+    width: 50px;
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#siderleft .siderlefttxt {
+    display: table-cell;
+    padding-left: 10px;
+    width: 100px;
+    height: 80px;
+    vertical-align: middle;
+}
+
+#siderbottom p {
+    font-size: 12px;
+}
+
+#sxright {
+    position: relative;
+    top: 10px;
+    left: 195px;
+    width: 810px;
+}
+
+#sxright a {
+    text-decoration: none;
+}
+
+#sxright a:hover {
+    text-decoration: underline;
+}
+
+
+/*TOP*/
+
+#sxrighttop>div {
+    padding: 7px 0;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+#sxrighttop dt,
+#sxrighttop dd {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sxrighttop a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #1D79D7;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 24px;
+        padding: 0 5px;
+}
+#sxrighttop dt a {
+    margin-right: 40px;
+    width: 70px;
+    text-align: right;
+}
+
+#sxrighttop dt a {
+    color: #989898;
+}
+
+#sxrighttop dd {
+    margin-right: 25px;
+}
+
+#sxrighttop .itemleft a {
+    width: 30px;
+    text-align: center;
+}
+
+#sxrighttop .itemmain {
+    width: 500px;
+}
+
+#sxrighttop .itemright {
+    width: 50px;
+}
+
+#sxrighttop #pp .itemmain a {
+    width: 120px;
+}
+
+#sxrighttop #sj dd a {
+   margin-right: 50px;
+}
+
+#sxrighttop .sxrightaslec {
+    background-color: #1D79D7;
+    color: white;
+}
+
+/*top*/
+#sxXiangXi #sxXiangXiTop {
+    padding: 0 100px 0 10px;
+    height: 30px;
+    border: 1px solid #D7D7D7;
+    background-color: #F3F3F3;
+    line-height: 30px;
+}
+
+#sxXiangXi #sxXiangXiTop {
+    font-size: 12px;
+}
+
+#sxXiangXi #sxXiangXiTop * {
+    display: inline-block;
+}
+
+#sxXiangXi #sxXiangXiTop input {
+    vertical-align: middle;
+}
+
+#sxsumnum {
+    padding-left: 10px;
+    color: #989898;
+    font-size: 10px;
+}
+
+#sxsumnum span {
+    color: red;
+}
+
+#sxXiangXimain {
+    font-size: 12px;
+}
+
+#sxXiangXimain>div {
+    padding: 0px 10px 0 60px;
+    width: 200px;
+}
+
+#sxXiangXimain .sximg {
+    display: table-cell;
+    width: 240px;
+    height: 260px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#sxXiangXimain p {
+    line-height: 18px;
+}
+
+#sxXiangXimain .sxjg {
+    color: red;
+    font-size: 14px;
+}
+
+#sxXiangXimain .sxpl {
+    display: inline-block;
+    margin: 10px 0;
+    color: #1D7AD9;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#sxXiangXimain .sxpl span {
+    color: #666666;
+}
+
+#sxXiangXimain .jrgwc {
+    display: block;
+    width: 91px;
+    height: 25px;
+    background: url(../img/ico/jrgwc.jpg) no-repeat;
+    cursor: pointer;
+}
+
+#sxXiangXiBm {
+    margin-left: 60px;
+}
+
+#sxXiangXiBm li {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 5px 12px;
+    border: 1px solid #DBDBDB;
+    list-style: none;
+    font-size: 12px;
+}
+
+#sxXiangXiBm li:hover {
+    background-color: #2265BA;
+}
+
+#sxXiangXiBm li:hover a {
+    color: white;
+}
+
+#sxXiangXiBm .seletli {
+    background-color: #2265BA;
+}
+
+#sxXiangXiBm .seletli a {
+    color: white;
+}
+
+#sxXiangXiBm a {
+    color: #333333;
+}
+
+#sxXiangXiBm span {
+    font-size: 12px;
+}
+
+#sxXiangXiBm input {
+    width: 35px;
+    height: 20px;
+    text-align: center;
+}
+
+#sxXiangXiBm button {
+    width: 50px;
+    height: 25px;
+    outline: none;
+    border: 1px solid #C7C7C7;
+    background-color: #E6E6E6;
+}

@@ -1,0 +1,547 @@
+/*fix*/
+
+body {
+        background-color: #EEEEEE;
+}
+/*fixover*/
+#navtop {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+#navtop a {
+    color: black;
+    text-decoration: none;
+}
+
+#navtop a:first-child {
+    font-weight: bold;
+}
+#navtop a:hover {
+    text-decoration: underline;
+}
+#navtop span {
+    padding: 0 3px;
+}
+
+#sptop {
+    border: 1px solid #CACACA;
+    background-color: white;
+}
+
+#sptop #spimg {
+    text-align: center;
+    display: inline-block;
+}
+
+#sptop #spimg #spimgl {
+    width: 310px;
+    height: 340px;
+    display: inline-block;
+}
+#sptop #spimg #spimgs {
+    width: 266px;
+    height: 54px;
+    margin: 0 auto;
+}
+#sptop #spimg #spimgs div {
+    width: 54px;
+    display: inline-block;
+    border: 1px solid #CACACA;
+     cursor: pointer;
+}
+#sptop #spimg #spimgs .spimgdivsele {
+    border: 1px solid #317DE5;
+}
+#sptop #spimg #spimgs img {
+    max-height: 50px;
+}
+
+#sptop #spxx {
+    display: inline-block;
+    width: 660px;
+    padding: 0 10px 20px;
+    vertical-align: top;
+    font-size: 12px;
+    border-left: 1px solid #CACACA;
+}
+
+#sptop #spxx h2 {
+    font-size: 16px;
+    margin-top: 27px;
+    margin-left: 25px;
+}
+
+#sptop #spxx dt {
+    margin-left: 25px;
+    margin-top: 17px;
+    display: inline-block;
+    width: 60px;
+}
+
+#sptop #spxx dd {
+    display: inline-block;
+}
+
+#sptop #spxx #spxxjg {
+    font-size: 22px;
+    color: red;
+    display: inline-block;
+}
+
+#sptop #spxx #spxxjg:first-letter {
+    font-size: 12px;
+}
+
+#sptop #spxx select {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#sptop #spxx #spxxwrap {
+    background-color: #F0F0F0;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+#sptop #spxx #spxxwrap *::selection{
+    background-color: white;
+}
+
+#sptop #spxx #spxxwrap span {
+    border: 1px solid #CACACA;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    display: inline-block;
+}
+
+#sptop #spxx #spxxwrap span:hover {
+    border: 1px solid #317DE5;
+}
+
+#sptop #spxx #spxxwrap .spxxselespan {
+    border: 1px solid #317DE5;
+}
+
+#sptop #spxx #spxxys span {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#sptop #spxx #spxxgg span {
+    height: 23px;
+    line-height: 23px;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+#sptop #spxx #spxxsl input {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+#sptop #spxx #spxxsl span {
+    width: 14px;
+    cursor: pointer;
+}
+
+#sptop #spxx #spxxsl p {
+    padding-left: 5px;
+    display: inline-block;
+}
+
+#sptop #spxx #spxxsl p b {
+    color: #FA7600;
+}
+
+#sptop #spxx #spxxxz {
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#sptop #spxx #spxxxz span {
+    color: #0478C8;
+}
+
+#sptop #spxx #spxxbtn {
+    height: 90px;
+        margin: 15px 0;
+}
+
+#sptop #spxx #spxxbtn>div {
+    display: inline-block;
+    width: 300px;
+    height: 86px;
+    text-align: center;
+    border-right: 1px solid #F0F0F0;
+    line-height: 85px;
+
+}
+
+#sptop #spxx #spxxbtn buttom {
+    width: 184px;
+    height: 48px;
+    display: block;
+    background-color: #F98700;
+    line-height: 48px;
+    font-size: 22px;
+    margin: auto;
+    color: white;
+    margin-top: 19px;
+}
+#sptop #spxx #spxxbtn buttom a {
+    color: white;
+    text-decoration: none;
+}
+#sptop #spxx #spxxbtn>div:last-child{
+    border: 0;
+}
+#spmainslide {
+     display: inline-block;
+}
+.spmainleft {
+    background-color: white;
+    width: 200px;
+     font-size: 12px;
+text-align: justify;
+    line-height: 20px;
+    border: 1px solid #CACACA;
+    border-top:3px solid #1D85CD;
+    margin-top: 20px;
+   
+}
+.spmainleft h4 {
+    font-size: 14px;
+    display: block;
+height: 43px;
+    line-height: 43px;
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #CACACA;
+    text-indent: 1em;
+}
+.spmainleft .spxxcbl {
+    height: 220px;
+    width: 150px;
+    margin: 0 auto;
+    
+}
+
+.spmainleft .spxxcbl .spxxcblpic {
+    height: 150px;
+    width: 150px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.spmainleft .spxxcbl p:last-child {
+   color: red;
+}
+#spmainright {
+    display: inline-block;
+    vertical-align: top;
+    width: 766px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+#spmainright #spmainnav  {
+    border: 1px solid #CACACA;
+    background-color: #ECECEC;
+}
+#spmainright #spmainnav div {
+    display: inline-block;
+    cursor: pointer;
+    width: 378px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+
+}
+#spmainright #spmainnav .spmainnavsele {
+    background-color: #0478C8;
+    color: white;
+}
+#spmainright #spmainnav div i {
+    
+}
+
+#spmainright #spmainrightspjs {
+    border: 1px solid #CACACA;
+        background-color: white;
+}
+#spmainright #spmainrightspjs img {
+    margin: 30px auto 50px;
+    display: block;
+    
+}
+#spmainright #spmainrightspjs dt, #spmainright #spmainrightspjs dd {
+    margin: 25px;
+    font-size: 14px;
+   line-height: 25px;
+}
+#spmainright  #spmainrightspjs dt{
+     border-bottom: 2px solid #D5D5D5;
+     padding-bottom: 10px;          
+}
+    
+#spmainright  #spmainrightspjs dt h5 {
+    font-size: 16px;
+    color: #2456A5;
+    display: inline;
+    border-bottom: 2px solid #2456A5;
+    padding-bottom: 12px;
+    padding-right: 10px;
+}
+/*商品评价*/
+#spmainright #spmainrightsppj{
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid #D5D5D5;
+    padding-bottom: 50px;
+}
+#spmainrightsppj h5{
+        padding-left: 10px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+#spmainright #spmainrightsppj #spmainrightsppjtop {
+   height: 40px;
+    padding-bottom: 60px;
+        padding-left: 10px;
+    position: relative;
+}
+#spmainrightsppjtop i {
+    background: url(../img/ico/fenshu.png);
+    display: block;
+    width: 27px;
+height: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: -7px;
+    right: 200px;
+    font-style: normal;
+    color: white;
+}
+#spmainrightsppjtop>div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+#spmainrightsppjtop>div:first-child {
+    width: 110px;
+}
+#spmainrightsppjtop .sppjleft span {
+    font-size: 18px;
+}
+#spmainrightsppjtop .sppjleft span:first-child {
+    font-size: 50px;
+    color: #FF8F00;
+}
+#spmainrightsppjtop .sppjright span {
+    display: inline-block;
+    padding: 0 30px;
+    background-color: #BCBCBC;
+    margin: -5px;
+    font-size: 12px;
+    color: white;
+}
+#spmainrightsppjtop .sppjright p {
+    font-size: 12px;
+    text-align: left;
+    display: block;
+    padding-top: 10px;
+}
+#spmainrightsppjnav {
+    background-color: #F0F0F0;
+    height: 30px;
+    line-height: 30px;
+}
+
+#spmainrightsppjnav span {
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+}
+#spmainrightsppjnav span:hover { 
+     border-bottom: 3px solid #317DE5;
+}
+
+#spmainrightsppjnav .sppjnavselespan {
+    border-bottom: 3px solid #317DE5;
+}
+#spmainrightsppjnav button {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-top:5px;
+    margin-right:10px;
+}
+#spmainrightsppjmain dt {
+    width: 120px;
+    height: 140px;
+     text-align: center;
+    font-size: 12px;
+    margin-right: 20px;
+    display: inline-block;
+}
+#spmainrightsppjmain dt div {
+    height: 90px;
+    width: 120px;
+    display: table-cell;
+    vertical-align: middle;
+   
+}
+#spmainrightsppjmain dd {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    font-size: 12px;
+    width: 590px;
+}
+#spmainrightsppjmain dd b {
+    color: black;
+}
+#spmainrightsppjmain dd p {
+    margin-top: 20px;
+}
+#spmainrightsppjmain dd p:last-child {
+    margin-top: 10px;
+}#spmainrightsppjmain dd a {
+    color: #085B9A;
+    text-decoration: none;
+    margin-right: 5px;
+}
+#spmainrightsppjlist {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.list * {
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+}
+.list li:hover {
+     background-color: #E7E7E7;
+}
+.list li:hover a {
+    color: red;
+}
+.list li {
+    list-style: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    
+}
+.list a {
+    color: black;
+    text-decoration: none;
+}
+.list input,.list button {
+    width: 30px;
+    height: 25px;
+}
+
+.list .spmainlistsele a{ 
+    color: red;
+}
+
+.list .spmainlistsele {
+    background-color: #E7E7E7;
+}
+
+#spmainrightspzx {
+    background-color: white;
+    margin-top: 15px;
+    font-size: 12px;
+    position: relative;
+    padding-bottom: 50px;
+}
+#spmainrightspzxtop {
+    border-bottom: 1px solid #0687B9;
+}
+
+#spmainrightspzxtop h5 {
+    display: inline-block;
+    font-size: 14px;
+    color: #076DBA;
+    padding: 10px;
+    border: 1px solid #0687B9;
+    border-bottom: 0;
+}
+#spmainrightspzxtop a {
+    color: #085B9A;
+    margin-top: 13px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+#spmainrightspzxtop span {
+    display: inline-block;
+    width: 115px;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 40px;
+}
+
+#spmainrightspzx>p {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #F1F1F1;
+    line-height: 20px;
+}
+
+#spmainrightspzx dt {
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    margin-left: 20px;
+    text-align: center;
+}
+#spmainrightspzx dt div {
+    display: table-cell;
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+}
+#spmainrightspzx dd {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    width: 580px;
+}
+#spmainrightspzx dd h5 {
+    color: black;
+}
+#spmainrightspzx dd h5 span {
+    font-weight: normal;
+    color: #AAAAAA;
+}
+#spmainrightspzx dd>p {
+    margin: 10px 0 10px 5px;
+}
+
+#spmainrightspzx dd div {
+    width: 500px;
+    background-color: #EFEFEF;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+}
+#sppjym {
+    margin-right: 20px;
+}

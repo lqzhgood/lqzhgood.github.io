@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百道谷翻译</title>
+    <!--
+    <script>
+        setTimeout(function () {
+            var url = "http://translate.google.cn/m/translate";
+            var request = new XMLHttpRequest();
+            request.open("GET", url);
+            request.timeout = 500;
+            request.ontimeout = function () {
+                document.getElementById("main").setAttribute("cols", "*,400");
+            }
+            request.send(null);
+        }, 500)
+    </script>
+-->
+    <script>
+        window.onload = function () {
+            setTimeout(jiaodian, 3000);
+
+            function jiaodian() {
+                document.getElementsByTagName('frame')[0].contentWindow.document.getElementById('txt').focus();
+                console.log(123);
+            }
+
+        }
+    </script>
+</head>
+
+<frameset rows="40,*" frameborder="1" border="1px" bordercolor="#EEE">
+    <frame src="top.html" name="top" id="top">
+        <!--        <frameset cols="35%,*,36%" frameborder="1" id="main">-->
+        <frameset cols="*,400" frameborder="1" id="main">
+            <frame src="http://fanyi.baidu.com/#zh/en/test" scrolling="no" id="baidu" name="baidu" />
+            <frame src="http://fanyi.youdao.com/translate?i=test" scrolling="no" id="youdao" name="youdao" />
+            <!--            <frame src="http://translate.google.cn/m/translate#auto/cn/test" scrolling="no" name="google" />-->
+        </frameset>
+</frameset>
+<script>
+    alert("123");
+    function jiaodian() {
+        document.getElementsByTagName('frame')[0].contentWindow.document.getElementById('txt').focus();
+        console.log(123);
+    }
+</script>
+
+</html>
+
+<!--
+百度-有道--谷歌（中国）搜索，利用XML判断google是否可以访问，超时1s关闭谷歌子窗口
+百度自适应宽度，如果可以直接访问百度翻译web端就好了……
+不知道怎么基于HTML/JS改UA，没什么好办法~
+有道是POST方式 用百度接口的GET解决
+
+UPDATE2
+Google的 'X-Frame-Options' 设置为 'DENY'. 也就是不允许所有的FRAME
+搜了下 突破DENY 竟然属于黑产一部分 用于钓鱼……
+我应该是搞不定了  放弃Google
+-->

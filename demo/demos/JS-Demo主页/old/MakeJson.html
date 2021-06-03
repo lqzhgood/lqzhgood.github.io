@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var txtObj;
+        var urlDemo = "demos/";
+        var s = "";
+        $.ajax({
+            url: "demos/list.xml"
+            , async: true
+            , cache: true
+            , dataType: "xml"
+            , success: function (xml) {
+                $(xml).find("url").each(function () {
+                    var text = $(this).text();
+                    var z=[];
+                    var readme = function (text) {
+                        txtObj = "";
+                        $.ajax({
+                            url: urlDemo + text + "/readme.md"
+                            , cache: true
+                            , dataType: "text"
+                            , async: false
+                            , success: function (txt) {
+                                txtObj = {
+                                    info: txt.substring(0, txt.indexOf("-"))
+                                    , guest: txt.substring(txt.indexOf("-") + 1, txt.indexOf("-", txt.indexOf("-") + 1))
+                                };
+                            }
+                        });
+                    }(text);
+                    z.push("'"+txtObj.info+"'");
+                    z.push("'"+txtObj.guest+"'");
+                    s = s + "<br> '" + $(this).text() + "' : " + "[" + z + "],";
+                });
+                s = "var DemoUrl = {" + s.substring(0,s.length-1) + "<br>}";
+                $("div").html(s);
+            }
+        });
+    </script>
+</body>
+
+</html>

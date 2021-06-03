@@ -1,0 +1,459 @@
+* {
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+}
+
+
+/*fix-IE*/
+
+
+/*
+.p100 {
+        -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+*/
+
+.home #ewm_wx {
+    background: url(../img/ewm_wx_lx.png) no-repeat;
+    width: 300px;
+    height: 344px;
+    position: fixed;
+    right: 5%;
+    z-index: 9999;
+    top: -301px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.home #ewm_wx #wx_text {
+    position: absolute;
+    bottom: 15px;
+    right: 47px;
+}
+
+.home #ewm_wx.plus {
+    top: 0px;
+}
+
+.paragraph .txt {
+    text-align: justify;
+}
+
+.contact .txt h2 {
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.contact .subtext {
+    font-size: 20px !important;
+    color: white;
+}
+
+.contact .eng {
+    font-size: 18px !important;
+}
+
+#Jdt_Dom {
+    width: 60vw;
+    margin: 40px auto 0;
+    position: relative;
+    overflow: hidden;
+    /*    border: 1px solid blue;*/
+    border-radius: 20px;
+    border: 5px solid #eee;
+}
+
+
+/*
+
+#myFocus {
+    background-color: #101010;
+    width: 100%;
+    height: 100%;
+}
+
+#myFocus img {
+    width: 100%;
+    height: 100%;
+}
+*/
+
+#Jdt_Dom>div {}
+
+#Jdt_Dom #jdt_lf {
+    position: absolute;
+    padding-top: 30%;
+    cursor: pointer;
+    left: 10px;
+    top: 0;
+    z-index: 10;
+}
+
+#Jdt_Dom #jdt_rt {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 30%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#Jdt_Dom #jdt_img {
+    /*    border: 1px solid red;*/
+}
+
+#Jdt_Dom #jdt_img ul {
+    position: relative;
+}
+
+#Jdt_Dom #jdt_img li {
+    display: inline-block;
+}
+
+#Jdt_Dom #jdt_img li img {}
+
+
+/*
+
+.chef1, .chef2 {
+	display: none;
+}
+.zp_info {
+    width: 100%;
+    height: 100%;    
+    border: 1px solid red;
+    text-align: center;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.zp_info_job {
+    padding: 20px;
+    text-align: left;
+}*/
+
+
+.chefim .zpSlogenTitle {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 20px;
+}
+
+.chefim .zpSlogenText {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.chef1 .name {
+	margin-right: 20px;
+}
+.chef2 .name {
+    margin-left: 40px;
+}
+
+.fg {
+    width: 100%;
+    height: 100%;
+    background: url(../assets/net.png);
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#map {
+    width: 100%;
+    height: 40%;
+    color: black;
+    text-align: left;
+}
+
+#storesWrap {
+    height: 60%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#sto_lf {
+    position: absolute;
+    top: 65%;
+    left: 10px;
+    cursor: pointer;
+    height: 40px !important;
+    z-index: 999;
+}
+#sto_lf div {
+    overflow: hidden;
+    background: url(../img/sprite.png) -0px -0px no-repeat;
+    height: 45px;
+    width: 32px;
+}
+
+#sto_rt {
+    position: absolute;
+    right: 0;
+    top: 65%;
+    cursor: pointer;
+    height: 40px !important;
+    z-index: 999;
+}
+
+#sto_rt div {
+    height: 45px;
+    width: 50px;
+    overflow: hidden;
+    background: url(../img/sprite.png) -82px -0px no-repeat;
+}
+
+#storesWrap>div {
+    height: 100%;
+    float: left;
+}
+
+#storesWrap #stoAll {
+    width: 100%;
+    height: 90%;
+    padding: 10px 2% 50px;
+    overflow: hidden;
+}
+
+#storesWrap #stoAll .sto {
+    text-align: left;
+    width: 300px;
+    float: left;
+    margin: 18px;
+    min-height: 130px;
+}
+
+#storesWrap #stoAll .sto h3 {
+    padding-bottom: 10px;
+}
+
+#storesWrap #stoAll .sto h3.wyy:after {
+    content: "即将开业";
+    font-size: 12px;
+    padding-left: 10px;
+    color: #D9D593;
+}
+
+#storesWrap #stoAll .sto p {
+    padding: 2px 0;
+    font-size: 0.9em;
+}
+
+#storesWrap #stoAll .sto .sto_row {
+    display: table-row;
+}
+
+#storesWrap #stoAll .sto .sto_row>div {
+    display: table-cell;
+    word-break: break-all;
+}
+
+#storesWrap #stoAll .sto .sto_ad {
+    height: 40px;
+}
+
+#storesWrap #stoAll .sto .sto_ad,
+#storesWrap #stoAll .sto .sto_ph {
+    width: 60px;
+}
+
+#storesWrap #stoAll .sto .sto_ad_cont,
+#storesWrap #stoAll .sto .sto_ph_cont {
+    padding: 5px 0;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.woff') format('woff');
+}
+
+.icon-instagram:before {
+    font-family: 'icomoon';
+    content: "\ea9a";
+}
+
+.icon-facebook:before {
+    font-family: 'icomoon';
+    content: "\e96c";
+    font-size: 0.7em;
+}
+
+.paragraph .txt a {
+    color: #fff;
+}
+
+
+
+@media screen and (min-width: 1750px) and (max-width: 2000px) and (min-height: 600px) and (max-height: 950px){
+    .title {
+        padding-top: 20px;
+    }
+    .about .subtext {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 736px) {
+    #map {
+        display: block;
+    }
+    #sto_txt_more {
+        display: none;
+    }
+    #st_more {
+        display: none;
+    }
+    #storesWrap #mb_st {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .about .paragraph .title {
+        padding-top: 15px;
+    }
+    .about .paragraph .subtext {
+        padding: 10px 0;
+    }
+    .about .paragraph center {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .about .paragraph .txt {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .events .paragraph .subtext {
+        padding: 10px 0;
+    }
+    .events .paragraph .txt,
+    .team .paragraph .txt {
+        padding: 10px 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #storesWrap {
+        width: 100%;
+    }
+    #storesWrap #stoAll {
+        width: 4400px;
+    }
+    #storesWrap #stoAll .sto {
+        width: 350px;
+    }
+    .gil-info b {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 736px) and (max-width: 1000px) {
+    .about .paragraph {
+        padding: 20px;
+    }
+    #storesWrap #stoAll {
+        width: 2100px;
+    }
+    #storesWrap #stoAll .sto {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #storesWrap {
+        height: 90%;
+    }
+    #map {
+        display: none;
+    }
+    #sto_txt_more {
+        padding: 40px;
+        line-height: 20px;
+    }
+    #sto_txt_more h4 {
+        padding-top: 10%;
+        padding-bottom: 30px;
+    }
+    #sto_txt_more p {
+        text-align: left;
+        text-indent: 2em;
+        line-height: 2em;
+    }
+    #sto_lf,
+    #sto_rt {
+        display: none!important;
+    }
+    #storesWrap {
+        display: none;
+    }
+    #storesWrap #mb_st {
+        display: block;
+        height: 10%;
+        line-height: 10%;
+    }
+    #st_more {
+        color: white;
+        font-size: 20px;
+    }
+    .home #ewm_wx {
+        /*        right: 0;*/
+    }
+    .sofo {
+        display: none!important;
+    }
+    .paragraph .txt {
+        /*
+        font-size: 12px!important;
+        line-height: 20px!important;
+*/
+    }
+    .about .info {
+        min-height: 800px!important;
+        height: auto!important;
+    }
+    .events {
+        min-height: 630px!important;
+        height: auto!important;
+    }
+    #Jdt_Dom {
+        width: 90%;
+        height: 60vw;
+    }
+    .contact .ewmBtm img {
+        width: 150px!important;
+    }
+    
+}
+
+
+
+
+
+
+
+/*mobile*/
+@media (max-width: 600px) {
+    .events {
+        background: url("../assets/gifs/GIF8s.jpg") no-repeat center center !important;
+    }
+    .contact {
+        background: url("../assets/gifs/GIF1s.jpg") no-repeat center top !important;
+    }
+    .team {
+        background: url("../assets/gifs/GIF23s.jpg") no-repeat right bottom !important;
+
+    }
+    .home {
+        background: url("../assets/gifs/GIF25s.jpg") no-repeat center top !important;
+
+    }
+}

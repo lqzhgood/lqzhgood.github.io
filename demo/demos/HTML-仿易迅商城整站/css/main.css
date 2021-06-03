@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+body {
+    font-family: "微软雅黑";
+    color: #666666;
+}
+.fl {
+    float: left;
+}
+.fr {
+   float: right;
+}
+
+.hide {
+    display: none;
+}
+
+
+.clickMeA {
+    border: 1px solid pink;
+    box-shadow: 0 0 3px pink;
+}
+
+#paycar {
+    cursor: pointer;
+}

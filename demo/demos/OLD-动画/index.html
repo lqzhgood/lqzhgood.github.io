@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="top">
+        <img src="images/Monster_Mashup.png" alt="" id="text_top">
+        <button id="btnRandom">Random</button>
+        <button id="btnReset">Reset</button>
+        <p>Make your own monster face by clicking on the picture.</p>
+    </header>
+    <div id="container">
+        <img src="images/lightning-01.jpg" alt="" class="lightning" id="lightning1">
+        <img src="images/lightning-02.jpg" alt="" class="lightning" id="lightning2">
+        <img src="images/lightning-03.jpg" alt="" class="lightning" id="lightning3">
+    </div>
+    <div id="frame">
+        <div id="pic_box">
+            <div id="head" class="face">
+                <img src="images/headsstrip.jpg" alt="">
+            </div>
+            <div id="eyes" class="face">
+                <img src="images/eyesstrip.jpg" alt="">
+            </div>
+            <div id="nose" class="face">
+                <img src="images/nosesstrip.jpg" alt="">
+            </div>
+            <div id="mouth" class="face">
+                <img src="images/mouthsstrip.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!--    jq1.62版本 第一个闪电只会闪1次-->
+    <!--  JS和JQ实现     -->
+    <script src="js/main-jq.js"></script> //jquery
+<!--        <script src="js/main-js.js"></script> //原生javascript-->
+
+</body>
+
+</html>
+<!--
+
+JS/JQ分别实现窗格动画-自己写的JS性能不及JQ，JQ1.62闪电只会闪一下原因未知-
+
+
+JQ1.62闪电只会闪一下原因未知
+-->

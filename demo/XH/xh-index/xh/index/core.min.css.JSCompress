@@ -1,0 +1,17 @@
+﻿<jscompress public="http://www.jscompress.cn/" command="import-combineset">
+<combinefile path="core.min.css">
+    <css_fixedrelativeurl value="1" />
+    <auto value="0" />
+    <sourcefile path=".\css\style.css" />
+    <sourcefile path=".\css\eng.css" />
+    <sourcefile path=".\css\fontello.css" />
+    <sourcefile path=".\css\animation.css" />
+    <sourcefile path=".\css\lightbox.css" />
+    <sourcefile path="..\lib\themes\default\default.css" />
+    <sourcefile path="..\lib\themes\light\light.css" />
+    <sourcefile path="..\lib\themes\dark\dark.css" />
+    <sourcefile path="..\lib\themes\bar\bar.css" />
+    <sourcefile path="..\lib\nivo-slider.css" />
+    <sourcefile path=".\css\myfix.css" />
+</combinefile>
+</jscompress>

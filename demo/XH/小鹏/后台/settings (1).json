@@ -1,0 +1,637 @@
+{
+    "Id": "b2fb0441-3016-43ec-8c8f-92ec081f965b"
+    , "BrandName": "小恒水饺"
+    , "StationName": "日坛"
+    , "StartupMode": "o2o"
+    , "Provider": [{
+        "AutoOrderConfirmEnabled": "True"
+        }, {
+        "AutoOrderFetchEnabled": "True"
+        }, {
+        "AutoPrintAmount": "1"
+        }, {
+        "AutoPrintEnabled": "True"
+        }, {
+        "KitchenPrinterEnabled": "True"
+        }, {
+        "KitchenPrinterName": "GP-58130 Series"
+        }, {
+        "NewOrderSoundNotifyEnabled": "False"
+        }, {
+        "PrinterEnabled": "True"
+        }, {
+        "PrinterName": "GP-58130 Series"
+        }]
+    , "ApiBaseUrl": "http://139.129.49.203/cs2/"
+    , "Stations": [
+        {
+            "Id": "b2fb0441-3016-43ec-8c8f-92ec081f965b"
+            , "Name": "日坛"
+            , "BrandId": "9c08ae2a-8fb6-498b-8c3e-4830e7b38f1c"
+            , "BrandName": "小恒水饺"
+            , "TelephoneNumber": "400-991-8881"
+            , "Address": null
+            , "ReceiptTitle": "ReceiptTitle"
+            , "ReceiptSubTitle": "ReceiptSubTitle"
+            , "ReceiptExtra": "ReceiptExtra"
+            , "ReceiptActivity": "ReceiptActivity"
+            , "IsConsumerForDispatcher": true
+            , "ReportEmailAddress": null
+            , "ReportMobileNumber": null
+            , "DishNameSort": "小份豆角猪肉,小份芹菜猪肉,小份韭菜鸡蛋,小份萝卜猪肉,小份青椒萝卜,小份牛肉圆葱,小份韭菜猪肉,小份茴香猪肉,小份胡萝卜鸡蛋,小份白菜猪肉,小份蘑菇猪肉,小份香菇猪肉,小份香菇鸡蛋,小份素三鲜,小份什锦水饺,小份鲜虾猪肉,小份荠菜猪肉,豆角猪肉,芹菜猪肉,韭菜鸡蛋,萝卜猪肉,青椒萝卜,牛肉圆葱,韭菜猪肉,茴香猪肉,胡萝卜鸡蛋,白菜猪肉,蘑菇猪肉,香菇猪肉,香菇鸡蛋,素三鲜,什锦水饺,鲜虾猪肉,荠菜猪肉,速冻豆角猪肉,速冻芹菜猪肉,速冻韭菜鸡蛋,速冻萝卜猪肉,速冻青椒萝卜,速冻牛肉圆葱,速冻韭菜猪肉,速冻茴香猪肉,速冻胡萝卜鸡蛋,速冻白菜猪肉,速冻蘑菇猪肉,速冻香菇猪肉,速冻香菇鸡蛋,速冻素三鲜,速冻什锦水饺,速冻鲜虾猪肉,速冻荠菜猪肉,姜汁松花蛋,姜汁藕片,养生什锦菜,老醋木耳,凉拌海带丝,爽口黄瓜条,美颜皮冻,养颜皮冻,黄瓜海蜇丝,红油鸡胗,开胃青笋,美味泡菜,凉拌豇豆角,腊八蒜,巧手大拌菜,爽口萝卜,蒜泥茄子,香芹豆干,养颜木耳,芝麻土豆丝,重庆口水鸡,泡椒藕带,青瓜桃仁,手撕鸡腿,酱香猪手,五香牛腱,2L可口可乐,崂山白花蛇草水,可口可乐,雪碧,芬达,加多宝,脉动,怡宝,酸梅汤,北冰洋,蜂蜜柚子茶,诱惑蓝莓汁,激情草莓汁,冰糖雪梨汁,风情奇异果,香草味苏打水,苏打水,农夫山泉天然矿泉水,六个核桃（热饮）,崂山白花蛇草水＋嘻鱿记,农夫山泉天然矿泉水＋嘻鱿记,2L可口可乐＋嘻鱿记,可口可乐＋嘻鱿记,雪碧＋嘻鱿记,六个核桃（热饮）＋嘻鱿记,特制瓶装辣椒酱,小米椒圈,醋,蒜,辣椒油,酱油,辣椒酱,腊八蒜,手机扣环"
+            , "DishCleanKeywords": ""
+            , "DishKeywords": [
+                {
+                    "Keywords": "小份,鲜虾猪肉"
+                    , "DishName": "小份鲜虾猪肉"
+        }
+                , {
+                    "Keywords": "16,鲜虾猪肉"
+                    , "DishName": "小份鲜虾猪肉"
+        }
+                , {
+                    "Keywords": "大份,鲜虾猪肉"
+                    , "DishName": "鲜虾猪肉"
+        }
+                , {
+                    "Keywords": "24,鲜虾猪肉"
+                    , "DishName": "鲜虾猪肉"
+        }
+                , {
+                    "Keywords": "速冻,鲜虾猪肉"
+                    , "DishName": "速冻鲜虾猪肉"
+        }
+                , {
+                    "Keywords": "小份,豆角猪肉"
+                    , "DishName": "小份豆角猪肉"
+        }
+                , {
+                    "Keywords": "16,豆角猪肉"
+                    , "DishName": "小份豆角猪肉"
+        }
+                , {
+                    "Keywords": "大份,豆角猪肉"
+                    , "DishName": "豆角猪肉"
+        }
+                , {
+                    "Keywords": "24,豆角猪肉"
+                    , "DishName": "豆角猪肉"
+        }
+                , {
+                    "Keywords": "速冻,豆角猪肉"
+                    , "DishName": "速冻豆角猪肉"
+        }
+                , {
+                    "Keywords": "小份,芹菜猪肉"
+                    , "DishName": "小份芹菜猪肉"
+        }
+                , {
+                    "Keywords": "16,芹菜猪肉"
+                    , "DishName": "小份芹菜猪肉"
+        }
+                , {
+                    "Keywords": "大份,芹菜猪肉"
+                    , "DishName": "芹菜猪肉"
+        }
+                , {
+                    "Keywords": "24,芹菜猪肉"
+                    , "DishName": "芹菜猪肉"
+        }
+                , {
+                    "Keywords": "速冻,芹菜猪肉"
+                    , "DishName": "速冻芹菜猪肉"
+        }
+                , {
+                    "Keywords": "小份,韭菜鸡蛋"
+                    , "DishName": "小份韭菜鸡蛋"
+        }
+                , {
+                    "Keywords": "16,韭菜鸡蛋"
+                    , "DishName": "小份韭菜鸡蛋"
+        }
+                , {
+                    "Keywords": "大份,韭菜鸡蛋"
+                    , "DishName": "韭菜鸡蛋"
+        }
+                , {
+                    "Keywords": "24,韭菜鸡蛋"
+                    , "DishName": "韭菜鸡蛋"
+        }
+                , {
+                    "Keywords": "速冻,韭菜鸡蛋"
+                    , "DishName": "速冻韭菜鸡蛋"
+        }
+                , {
+                    "Keywords": "小份,牛肉圆葱"
+                    , "DishName": "小份牛肉圆葱"
+        }
+                , {
+                    "Keywords": "16,牛肉圆葱"
+                    , "DishName": "小份牛肉圆葱"
+        }
+                , {
+                    "Keywords": "大份,牛肉圆葱"
+                    , "DishName": "牛肉圆葱"
+        }
+                , {
+                    "Keywords": "24,牛肉圆葱"
+                    , "DishName": "牛肉圆葱"
+        }
+                , {
+                    "Keywords": "速冻,牛肉圆葱"
+                    , "DishName": "速冻牛肉圆葱"
+        }
+                , {
+                    "Keywords": "小份,韭菜猪肉"
+                    , "DishName": "小份韭菜猪肉"
+        }
+                , {
+                    "Keywords": "16,韭菜猪肉"
+                    , "DishName": "小份韭菜猪肉"
+        }
+                , {
+                    "Keywords": "大份,韭菜猪肉"
+                    , "DishName": "韭菜猪肉"
+        }
+                , {
+                    "Keywords": "24,韭菜猪肉"
+                    , "DishName": "韭菜猪肉"
+        }
+                , {
+                    "Keywords": "速冻,韭菜猪肉"
+                    , "DishName": "速冻韭菜猪肉"
+        }
+                , {
+                    "Keywords": "小份,茴香猪肉"
+                    , "DishName": "小份茴香猪肉"
+        }
+                , {
+                    "Keywords": "16,茴香猪肉"
+                    , "DishName": "小份茴香猪肉"
+        }
+                , {
+                    "Keywords": "大份,茴香猪肉"
+                    , "DishName": "茴香猪肉"
+        }
+                , {
+                    "Keywords": "24,茴香猪肉"
+                    , "DishName": "茴香猪肉"
+        }
+                , {
+                    "Keywords": "速冻,茴香猪肉"
+                    , "DishName": "速冻茴香猪肉"
+        }
+                , {
+                    "Keywords": "小份,蘑菇猪肉"
+                    , "DishName": "小份蘑菇猪肉"
+        }
+                , {
+                    "Keywords": "16,蘑菇猪肉"
+                    , "DishName": "小份蘑菇猪肉"
+        }
+                , {
+                    "Keywords": "大份,蘑菇猪肉"
+                    , "DishName": "蘑菇猪肉"
+        }
+                , {
+                    "Keywords": "24,蘑菇猪肉"
+                    , "DishName": "蘑菇猪肉"
+        }
+                , {
+                    "Keywords": "速冻,蘑菇猪肉"
+                    , "DishName": "速冻蘑菇猪肉"
+        }
+                , {
+                    "Keywords": "小份,素三鲜"
+                    , "DishName": "小份素三鲜"
+        }
+                , {
+                    "Keywords": "16,素三鲜"
+                    , "DishName": "小份素三鲜"
+        }
+                , {
+                    "Keywords": "大份,素三鲜"
+                    , "DishName": "素三鲜"
+        }
+                , {
+                    "Keywords": "24,素三鲜"
+                    , "DishName": "素三鲜"
+        }
+                , {
+                    "Keywords": "速冻,素三鲜"
+                    , "DishName": "速冻素三鲜"
+        }
+                , {
+                    "Keywords": "小份,荠菜猪肉"
+                    , "DishName": "小份荠菜猪肉"
+        }
+                , {
+                    "Keywords": "16,荠菜猪肉"
+                    , "DishName": "小份荠菜猪肉"
+        }
+                , {
+                    "Keywords": "大份,荠菜猪肉"
+                    , "DishName": "荠菜猪肉"
+        }
+                , {
+                    "Keywords": "24,荠菜猪肉"
+                    , "DishName": "荠菜猪肉"
+        }
+                , {
+                    "Keywords": "速冻,荠菜猪肉"
+                    , "DishName": "速冻荠菜猪肉"
+        }
+                , {
+                    "Keywords": "小份,白菜猪肉"
+                    , "DishName": "小份白菜猪肉"
+        }
+                , {
+                    "Keywords": "16,白菜猪肉"
+                    , "DishName": "小份白菜猪肉"
+        }
+                , {
+                    "Keywords": "大份,白菜猪肉"
+                    , "DishName": "白菜猪肉"
+        }
+                , {
+                    "Keywords": "24,白菜猪肉"
+                    , "DishName": "白菜猪肉"
+        }
+                , {
+                    "Keywords": "速冻,白菜猪肉"
+                    , "DishName": "速冻白菜猪肉"
+        }
+                , {
+                    "Keywords": "小份,胡萝卜鸡蛋"
+                    , "DishName": "小份胡萝卜鸡蛋"
+        }
+                , {
+                    "Keywords": "16,胡萝卜鸡蛋"
+                    , "DishName": "小份胡萝卜鸡蛋"
+        }
+                , {
+                    "Keywords": "大份,胡萝卜鸡蛋"
+                    , "DishName": "胡萝卜鸡蛋"
+        }
+                , {
+                    "Keywords": "24,胡萝卜鸡蛋"
+                    , "DishName": "胡萝卜鸡蛋"
+        }
+                , {
+                    "Keywords": "速冻,胡萝卜鸡蛋"
+                    , "DishName": "速冻胡萝卜鸡蛋"
+        }
+      ]
+            , "KitchenDishNames": "小份豆角猪肉,小份芹菜猪肉,小份韭菜鸡蛋,小份萝卜猪肉,小份青椒萝卜,小份牛肉圆葱,小份韭菜猪肉,小份茴香猪肉,小份胡萝卜鸡蛋,小份白菜猪肉,小份蘑菇猪肉,小份香菇猪肉,小份香菇鸡蛋,小份素三鲜,小份什锦水饺,小份鲜虾猪肉,小份荠菜猪肉,豆角猪肉,芹菜猪肉,韭菜鸡蛋,萝卜猪肉,青椒萝卜,牛肉圆葱,韭菜猪肉,茴香猪肉,胡萝卜鸡蛋,白菜猪肉,蘑菇猪肉,香菇猪肉,香菇鸡蛋,素三鲜,什锦水饺,鲜虾猪肉,荠菜猪肉,速冻豆角猪肉,速冻芹菜猪肉,速冻韭菜鸡蛋,速冻萝卜猪肉,速冻青椒萝卜,速冻牛肉圆葱,速冻韭菜猪肉,速冻茴香猪肉,速冻胡萝卜鸡蛋,速冻白菜猪肉,速冻蘑菇猪肉,速冻香菇猪肉,速冻香菇鸡蛋,速冻素三鲜,速冻什锦水饺,速冻鲜虾猪肉,速冻荠菜猪肉"
+            , "DineInDishes": [
+                {
+                    "Name": "小份鲜虾猪肉"
+                    , "Price": 38.0
+        }
+                , {
+                    "Name": "小份豆角猪肉"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "小份芹菜猪肉"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "小份牛肉圆葱"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "小份韭菜猪肉"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "小份茴香猪肉"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "小份蘑菇猪肉"
+                    , "Price": 24.0
+        }
+                , {
+                    "Name": "小份素三鲜"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "小份韭菜鸡蛋"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "小份荠菜猪肉"
+                    , "Price": 24.0
+        }
+                , {
+                    "Name": "小份胡萝卜鸡蛋"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "小份白菜猪肉"
+                    , "Price": 22.0
+        }
+                , {
+                    "Name": "鲜虾猪肉"
+                    , "Price": 58.0
+        }
+                , {
+                    "Name": "豆角猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "芹菜猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "牛肉圆葱"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "韭菜猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "茴香猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "蘑菇猪肉"
+                    , "Price": 29.0
+        }
+                , {
+                    "Name": "荠菜猪肉"
+                    , "Price": 29.0
+        }
+                , {
+                    "Name": "素三鲜"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "韭菜鸡蛋"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "胡萝卜鸡蛋"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "白菜猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻鲜虾猪肉"
+                    , "Price": 58.0
+        }
+                , {
+                    "Name": "速冻豆角猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻芹菜猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻牛肉圆葱"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻韭菜猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻茴香猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻蘑菇猪肉"
+                    , "Price": 29.0
+        }
+                , {
+                    "Name": "速冻荠菜猪肉"
+                    , "Price": 29.0
+        }
+                , {
+                    "Name": "速冻素三鲜"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻韭菜鸡蛋"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻胡萝卜鸡蛋"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "速冻白菜猪肉"
+                    , "Price": 28.0
+        }
+                , {
+                    "Name": "爽口萝卜"
+                    , "Price": 12.0
+        }
+                , {
+                    "Name": "养颜木耳"
+                    , "Price": 12.0
+        }
+                , {
+                    "Name": "蒜泥茄子"
+                    , "Price": 16.0
+        }
+                , {
+                    "Name": "香芹豆干"
+                    , "Price": 12.0
+        }
+                , {
+                    "Name": "芝麻土豆丝"
+                    , "Price": 10.0
+        }
+                , {
+                    "Name": "重庆口水鸡"
+                    , "Price": 19.0
+        }
+                , {
+                    "Name": "泡椒藕带"
+                    , "Price": 16.0
+        }
+                , {
+                    "Name": "手撕鸡腿"
+                    , "Price": 19.0
+        }
+                , {
+                    "Name": "酱香猪手"
+                    , "Price": 30.0
+        }
+                , {
+                    "Name": "五香牛腱"
+                    , "Price": 30.0
+        }
+                , {
+                    "Name": "可口可乐"
+                    , "Price": 5.0
+        }
+                , {
+                    "Name": "雪碧"
+                    , "Price": 5.0
+        }
+                , {
+                    "Name": "怡宝矿泉水"
+                    , "Price": 5.0
+        }
+                , {
+                    "Name": "农夫山泉天然矿泉水"
+                    , "Price": 5.0
+        }
+                , {
+                    "Name": "2L可口可乐"
+                    , "Price": 12.0
+        }
+                , {
+                    "Name": "崂山白花蛇草水"
+                    , "Price": 9.0
+        }
+                , {
+                    "Name": "六个核桃（热饮）"
+                    , "Price": 5.0
+        }
+                , {
+                    "Name": "小米椒圈"
+                    , "Price": 0.0
+        }
+                , {
+                    "Name": "醋"
+                    , "Price": 0.0
+        }
+                , {
+                    "Name": "蒜泥"
+                    , "Price": 0.0
+        }
+                , {
+                    "Name": "辣椒油"
+                    , "Price": 0.0
+        }
+                , {
+                    "Name": "特制瓶装辣椒酱"
+                    , "Price": 15.0
+        }
+                , {
+                    "Name": "腊八蒜"
+                    , "Price": 19.0
+        }
+                , {
+                    "Name": "手机扣环"
+                    , "Price": 12.0
+        }
+      ]
+            , "Users": [
+                {
+                    "OverrideStationName": "日坛"
+                    , "Platform": "M"
+                    , "UserName": "xhsj39"
+                    , "EncryptedPassword": "L+wzGzdZLAMaFwi4lh/A885NUkWboLyS7HEmtN3gZPqFE7gC55edmboQYYMS2GdsNRzlopIRATLFkDTtsfJUAr3fa1C4rEE2EpgeNi7Tz2lqKT8gWYIc0lEyBvOOTqY2"
+                    , "Cookies": null
+                    , "Enabled": true
+        }
+                , {
+                    "OverrideStationName": "日坛"
+                    , "Platform": "E"
+                    , "UserName": "39c7adac7"
+                    , "EncryptedPassword": "L+wzGzdZLAMaFwi4lh/A885NUkWboLyS7HEmtN3gZPqFE7gC55edmboQYYMS2GdsNRzlopIRATLFkDTtsfJUAr3fa1C4rEE2EpgeNi7Tz2lqKT8gWYIc0lEyBvOOTqY2"
+                    , "Cookies": null
+                    , "Enabled": true
+        }
+                , {
+                    "OverrideStationName": "日坛"
+                    , "Platform": "B"
+                    , "UserName": "xhsj666"
+                    , "EncryptedPassword": "L+wzGzdZLAMaFwi4lh/A885NUkWboLyS7HEmtN3gZPqFE7gC55edmboQYYMS2GdsNRzlopIRATLFkDTtsfJUAr3fa1C4rEE2EpgeNi7Tz2lqKT8gWYIc0lEyBvOOTqY2"
+                    , "Cookies": null
+                    , "Enabled": true
+        }
+      ]
+            , "Packages": [
+                {
+                    "Name": "冬日热饮套餐（小）"
+                    , "IncludedDishes": [
+                        {
+                            "Name": "小份豆角猪肉"
+                            , "Amount": 1
+                        }
+                        , {
+                            "Name": "六个核桃（热饮）"
+                            , "Amount": 1
+                        }
+                    ]
+                }
+                , {
+                    "Name": "冬日热饮套餐（大）"
+                    , "IncludedDishes": [
+                        {
+                            "Name": "豆角猪肉"
+                            , "Amount": 1
+                }
+                        , {
+                            "Name": "手撕鸡腿"
+                            , "Amount": 1
+                }
+                        , {
+                            "Name": "六个核桃（热饮）"
+                            , "Amount": 1
+                }
+          ]
+        }
+      ]
+            , "Provider": [
+                {
+                    "NewOrderEmailNotifyEnabled": "True"
+                }, {
+                    "NewOrderSmsNotifyEnabled": "False"
+                }, {
+                    "NewRefundEmailNotifyEnabled": "False"
+                }, {
+                    "NewRefundPrintNotifyEnabled": "True"
+                }, {
+                    "NewRefundSmsNotifyEnabled": "False"
+                }
+            ]
+            , "DispatcherMatchAddressKeywords": null
+            , "DispatcherMatchMobiles": null
+            , "DispatcherMatchPolygonLocations": [
+                {
+                    "Latitude": 39.941032
+                    , "Longitude": 116.433992
+        }
+                , {
+                    "Latitude": 39.94136
+                    , "Longitude": 116.461712
+        }
+                , {
+                    "Latitude": 39.933744
+                    , "Longitude": 116.461888
+        }
+                , {
+                    "Latitude": 39.923446
+                    , "Longitude": 116.461524
+        }
+                , {
+                    "Latitude": 39.908656
+                    , "Longitude": 116.462092
+        }
+                , {
+                    "Latitude": 39.908721
+                    , "Longitude": 116.435389
+        }
+                , {
+                    "Latitude": 39.92434
+                    , "Longitude": 116.434584
+        }
+                , {
+                    "Latitude": 39.933824
+                    , "Longitude": 116.434056
+        }
+      ]
+    }
+  ]
+}

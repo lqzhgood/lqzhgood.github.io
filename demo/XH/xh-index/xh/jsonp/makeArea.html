@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+var bak = [{
+    "Latitude": 40.043608
+    , "Longitude": 116.432520
+}, {
+    "Latitude": 40.031940
+    , "Longitude": 116.459640
+}, {
+    "Latitude": 40.026668
+    , "Longitude": 116.459344
+}, {
+    "Latitude": 40.025804
+    , "Longitude": 116.459920
+}, {
+    "Latitude": 40.016628
+    , "Longitude": 116.455480
+}, {
+    "Latitude": 40.021952
+    , "Longitude": 116.437368
+}, {
+    "Latitude": 40.022740
+    , "Longitude": 116.408960
+}, {
+    "Latitude": 40.040680
+    , "Longitude": 116.412136
+}, {
+    "Latitude": 40.041420
+    , "Longitude": 116.421040
+}, {
+    "Latitude": 40.041592
+    , "Longitude": 116.427656
+}, {
+    "Latitude": 40.040584
+    , "Longitude": 116.430416
+}]
+
+
+var cc = [{
+    "x": 40043608
+    , "y": 116432520
+    }, {
+    "x": 40031940
+    , "y": 116459640
+    }, {
+    "x": 40026668
+    , "y": 116459344
+    }, {
+    "x": 40025804
+    , "y": 116459920
+    }, {
+    "x": 40016628
+    , "y": 116455480
+    }, {
+    "x": 40021952
+    , "y": 116437368
+    }, {
+    "x": 40022740
+    , "y": 116408960
+    }, {
+    "x": 40040680
+    , "y": 116412136
+    }, {
+    "x": 40046085
+    , "y": 116413573
+    }, {
+    "x": 40049214
+    , "y": 116419073
+    }]
+var newDz = [];
+
+for (var i =0; i<cc.length;i++){
+    var day = {Latitude:0,Longitude:0}
+    day.Latitude = cc[i].x/1000000;
+    day.Longitude = cc[i].y/1000000;
+    newDz.push(day);
+}
+        
+console.log( JSON.stringify(newDz));
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+.bg {
+    border: 1px solid #CACACA;
+    font-size: 12px;
+    color: black;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bg dt, .bg dd{
+    display: inline-block;
+}
+
+.bg h5 {
+    font-size: 16px;
+    font-weight: normal;
+    text-indent: 1em;
+    background-color: #F0F0F0;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.bg dt {
+    margin: 15px 0 15px 45px;
+    width: 80px;
+    height: 10px;
+    line-height: 10px;
+}
+.bg dt:before {
+    content: "*";
+    color: red;
+}
+.bg input, .bg select {
+    padding: 5px;
+}
+
+.bg button {
+    margin: 10px 0 0px 45px ;
+    background-color: #408EF8;
+    padding: 2px 20px;
+    line-height: 25px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+
+#zffs div dd .pimg{
+   background: url(../img/ico/wx.jpg) left no-repeat;
+    text-indent: 3em;
+    line-height: 25px;
+}
+
+#fpxx>input {
+    margin: 10px 5px 10px 30px;
+}
+
+#shqd h5 span {
+    font-size: 12px;
+    margin-right: 40px;
+    color: #3376FD;
+}
+
+
+#shqd div * {
+    display: inline-block;
+}
+
+#shqd div span {
+    width: 135px;
+    border: 0;
+}
+
+#shqd div .shqd1 {
+    width: 92px;
+    margin-left: 30px;
+}
+
+#shqd div .shqd2 {
+    width: 300px;
+}
+#shqd div .shqdsl {
+    padding-left: 5px;
+}
+
+#shqd div .shqdxj{
+    color: red;
+}
+#shqd #shqdtop {
+    padding-bottom: 5px;
+}
+#shqd #shqdmain {
+    border-top : 1px solid #E4E4E4;
+    border-bottom : 1px solid #E4E4E4;
+    height: 100px;
+    line-height: 25px;
+}
+#shqd #shqdmain>div:last-child {
+    margin-top: 40px;
+}
+#shqd #shqdmain img {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+#shqd #shqdbt {
+    margin: 5px 0 5px 20px;
+}
+#shqd #shqdbt p {
+    display: block;
+}
+#shqd #shqdbt p:first-child {
+    color: #3376FD;
+    display: inline-block;
+}
+
+
+#shqd #shqdbt #spwh {
+    color:#EC0000;
+    margin: 30px 0 ;
+    text-indent: 2em;
+    background: url(../img/ico/gt.jpg) no-repeat;
+    
+}
+
+#shqd #shqdbt  div p {
+    padding-left: 90px;
+    width: 400px;
+    line-height: 25px;
+}
+#shqd #shqdbt  div p span {
+    color: #D50000;
+    font-weight: bold;
+}
+
+#ddjs div{
+    padding-right: 25px;
+    text-align: right;
+}
+
+#ddjs div p {
+    font-size: 16px;
+    margin-top: 40px;
+}
+#ddjs div p span {
+    font-size: 30px;
+    padding-left: 10px;
+    color: #E30007;
+}
+#ddjs div button {
+    background-color: #E30007;
+    font-size: 25px;
+    padding: 7px 30px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

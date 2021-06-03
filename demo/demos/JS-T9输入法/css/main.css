@@ -1,0 +1,206 @@
+#info {
+    font-size: 10px;
+}
+.noneli {
+    /*    display: none!important;*/
+    opacity: 0.1;
+}
+
+.pybold:first-letter {
+    font-size: 18px;
+    font-weight: bold;
+    color: orangered;
+}
+
+#inputNum:before {
+    content: "Num:";
+    font-weight: bold;
+}
+
+#input {
+    text-align: center;
+    float: left;
+    width: 500px;
+    /*    height: 300px;*/
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 1060;
+    border: 1px solid #ccc;
+}
+
+#input ul li {
+    display: table-row;
+}
+
+#input ul li:first-child {
+    font-weight: bold;
+}
+
+#input ul li div {
+    display: table-cell;
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+#input ul li div span {
+    display: inline-block;
+    margin: 5px;
+}
+
+#t9-modal {
+    float: left;
+    width: 230px;
+    /*    height: 285px;*/
+    height: 300px;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 1060;
+    border: 1px solid #ccc;
+}
+
+#t9-modal .modal-header {
+    padding: 10px 0px;
+}
+
+#t9-modal .modal-body {
+    padding: 0px;
+}
+
+#t9-modal .item-list {
+    color: #00A3AA;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#t9_keyboard {
+    padding: 0px;
+    color: #c5c5c5;
+    font-family: Arial;
+    box-sizing: border-box !important;
+}
+
+#t9_keyboard ul.item-list,
+#t9_keyboard ul.keys {
+    display: table;
+    list-style: none;
+    margin: 0px;
+    box-sizing: border-box !important;
+}
+
+#t9_keyboard ul.keys {
+    padding: 15px;
+}
+
+#t9-modal ul.item-list {
+    width: 100%;
+    padding: 0px 10px;
+    height: 30px;
+    background-color: #CCCCCC;
+}
+
+#t9-modal ul.item-list >li {
+    display: inline-block;
+    width: 40px;
+    padding: 0px 1px;
+    font-size: 14px;
+    line-height: 30px;
+    box-sizing: border-box !important;
+}
+
+#t9_keyboard ul.keys > li {
+    line-height: 14px;
+}
+
+#t9_keyboard .key {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 1px;
+    margin: 5px;
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    float: left;
+}
+
+#t9_keyboard .key.large {
+    width: 90px;
+}
+
+#t9_keyboard .key.large > span {
+    width: 90px;
+}
+
+#t9_keyboard .key > span {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #a9a9a9;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    font-size: 12px;
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    text-align: center;
+    padding-top: 2px;
+    color: #7c7c7c;
+    -webkit-box-shadow: 0px 3px 0px -2px rgba(255, 255, 255, 1), 0px 2px 0px 0px rgba(169, 169, 169, 1);
+    -moz-box-shadow: 0px 3px 0px -2px rgba(255, 255, 255, 1), 0px 2px 0px 0px rgba(169, 169, 169, 1);
+    box-shadow: 0px 3px 0px -2px rgba(255, 255, 255, 1), 0px 2px 0px 0px rgba(169, 169, 169, 1);
+    cursor: pointer;
+}
+
+#t9_keyboard .key > span:hover {
+    cursor: pointer;
+}
+
+#t9_keyboard .key > span:active {
+    margin-top: 2px;
+    background-color: #75b4fb;
+    border: 1px solid #5a88c5;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#t9_keyboard .key > span > per {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+    bottom: 2px;
+}
+
+#t9_keyboard .key > span > per.num {
+    top: 2px;
+}
+
+.key-delete {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/delete-key.png);
+}
+
+.key-pageup {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/pageup-key.png);
+}
+
+.key-pagedown {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/pagedown-key.png);
+}
+
+input[type="text"].inputting,
+input[type="password"].inputting {
+    background-color: #FCFFD8;
+}

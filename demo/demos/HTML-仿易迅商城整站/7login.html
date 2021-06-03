@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div id="head">
+        <div id="top">
+            <div id="headcont">
+                <div id="topleft" class="fl">收藏网站</div>
+                <div id="topright" class="fr">欢迎光临咿呀咿呀哟！<a class="clickMeA" href="7login.html#loginBtn">[登录]</a><a class="clickMeA" href="7login.html#logoutBtn">[免费注册]</a></div>
+            </div>
+        </div>
+        <div id="search">
+            <div id="searchcont">
+                <div id="logo" class="fl">
+                    <a href="index.html"><img src="./img/logo.png" alt=""></a>
+                </div>             
+            </div>
+        </div>
+    </div>
+    <div id="main">
+     <div id="logopanl">
+         <span class="logsele" id="loginBtn">登录</span>
+         <span id="logoutBtn">注册</span>
+          <div id="login" class="log">
+             <div class="logcont">
+                 <form action="#" id="loginform">
+                  <p>用户名</p>
+                  <input type="text" class="name" name="username">
+                  <p>密码</p>
+                  <input type="password" name="password">
+                  
+                  <div class="inputPanl">
+                      <input type="checkbox" id="checkbox1"><label for="checkbox1">自动登录</label>
+                      <input type="checkbox" id="checkbox2"><label for="checkbox2">安全控件登录</label>
+                      <a href="#" class="fr">忘记密码?</a>
+                  </div>
+                  <button>登录</button>
+                  <p>使用基友账号登录：</p>
+                  <ul>
+                      <li><a href="#">QQ</a></li>
+                      <li><a href="#">网易</a></li>
+                      <li><a href="#">人人</a></li>
+                      <li><a href="#">奇虎360</a></li>
+                      <li><a href="#">开心</a></li>
+                      <li><a href="#">豆瓣</a></li>
+                      <li><a href="#">搜狐</a></li>
+                      <li><a href="#">更多</a></li>
+                  </ul>
+                  </form>
+              </div>
+          </div>
+          <div id="logout"  class="log">
+              <div class="logcont">
+                 <form action="#" id="logoutform">
+                  <bt>
+                      <span>账户名</span>
+                  </bt>
+                  <dd>
+                      <input type="text"  class="name" name="username">
+                  </dd>
+                  <bt>
+                      <span>设置密码</span>
+                  </bt>
+                  <dd>
+                      <input type="password" name="zcpassword" id="zcpassword">
+                  </dd>
+                  <bt>
+                      <span>确认密码</span>
+                  </bt>
+                  <dd>
+                      <input type="password" name="repassword">
+                  </dd>
+                  <bt>
+                      <span>邮箱</span>
+                  </bt>
+                  <dd>
+                      <input type="text" name="email">
+                  </dd> 
+                  <div class="inputPanl">
+                      <input type="checkbox" id="checkbox1" name="checknow"><label for="checkbox1">我已阅读并同意</label><a href="#">《用户注册协议》</a>
+                     
+                  </div>
+                   <button>注册</button>  
+                  </form>               
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="foot">
+        <ul>
+            <li>简介</li>
+            <li>公告</li>
+            <li>招纳贤士</li>
+            <li>联系我们</li>
+            <li>客服热线：400-123-1234</li>
+        </ul>
+        <p>Copyright © 2000 - 2999 XX版权所有 京ICP备0000000号 京ICP证0000-0000号 某市公安局XX分局备案编号：123456789123</p>
+        <div>
+            <img src="./img/copyright.png" alt="">
+            <img src="./img/copyright.png" alt="">
+            <img src="./img/copyright.png" alt="">
+            <img src="./img/copyright.png" alt="">
+        </div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+       <script src="js/Validation/jquery.validate.min.js"></script>
+        <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

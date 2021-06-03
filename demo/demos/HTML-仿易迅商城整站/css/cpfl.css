@@ -1,0 +1,90 @@
+/*fix*/
+
+
+#siderleft {
+    z-index: 0;
+    position: absolute;
+    top:0px;
+    width: 188px;
+    background-color: #F1F1F1;
+    border: 1px solid #D5D5D5;
+}
+#siderleft dl h4 {
+    font-size: 14px;
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid #CBCBCB;
+}
+#siderleft dt {
+    text-align: left;
+    margin: 6px 20px 3px 20px;
+    font-size: 12px;
+}
+#siderleft dd {
+    font-size: 12px;
+    border-bottom:  1px dotted #D5D5D5;
+    padding-bottom: 8px;
+}
+#siderleft dd a {
+    display: inline-block;
+    color: #545454;
+    text-decoration: none;
+    width: 60px;
+    margin: 3px -5px 3px 22px;
+    white-space:pre-wrap;
+}
+#siderleft dd a:hover {
+    text-decoration: underline;
+    color: #4491FB;
+}
+
+.flitem {
+    margin-left: 195px;
+    margin-top: 15px;
+}
+.flitem h4 {
+    padding-bottom: 10px;
+    text-indent: 1em;
+}
+.flitem>div {
+    border-top: 2px solid #CACACA;
+    padding:0 25px;
+    width: 150px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+.flitem .itemBoxSeled{
+    border-top: 2px solid #096CB9;
+}
+.flitem .flItemImg {
+    display: table-cell;
+    height: 200px;
+    width: 150px;
+    vertical-align: middle;
+}
+.flitem>div p {
+    font-size: 12px;
+    text-align: justify;
+}
+.flitem>div .jg {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #D2109C;
+}
+.flitem>div p {
+    vertical-align: middle;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+}
+.flitem>div p i {
+    background: url(../img/ico/itemstar.jpg)  no-repeat;
+    display: inline-block;
+    width: 77px;
+    height: 12px;
+    line-height: 16px;
+}
+.flitem>div .pl {
+    margin-bottom: 40px;
+}

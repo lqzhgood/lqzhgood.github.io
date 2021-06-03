@@ -1,0 +1,354 @@
+@font-face {
+    font-family : "Titillium";
+    src : url(../font/titillium-light-webfont.woff);
+}
+
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    overflow-x : hidden;
+    width : 100%;
+    background-color : #3f3f3f;
+    font-size : 100%;
+    font-family : "Microsoft YaHei", " 微软雅黑 ", Arial, sans-serif;
+}
+
+a {
+    color : #f1eee8;
+    text-decoration : none;
+}
+
+h4 {
+    display : none;
+}
+
+#tabs {
+    position : relative;
+    margin : 40px auto 50px;
+    max-width : 550px;
+    width : 95%;
+    -webkit-box-shadow : #282828 0 0 40px;
+       -moz-box-shadow : #282828 0 0 40px;
+            box-shadow : #282828 0 0 40px;
+}
+
+.idTabs li {
+    cursor : pointer;
+}
+
+.idTabs span {
+    position : absolute;
+    right : 0;
+    width : 40px;
+    height : 40px;
+    color : white;
+    font-size : 30px;
+    line-height : 40px;
+    transition : transform 1s;
+}
+
+.idTabs span:hover {
+    transform : rotate(1440deg);
+}
+
+#shuoming {
+    position : absolute;
+    right : 0;
+    z-index : 99;
+    display : none;
+    padding : 3px;
+    background-color : rgb(63, 63, 63);
+    box-shadow : #282828 1px 1px 1px;
+    color : white;
+    text-align : right;
+    font-size : 8px;
+}
+
+.idTabs li {
+    position : relative;
+    display : inline-block;
+    margin : 0 -10px;
+    width : 80px;
+    height : 0;
+    border-right : 15px solid transparent;
+    border-left : 15px solid transparent;
+    text-align : center;
+    font-family : "AvenirNextCondensed-DemiBold", "Lucida Grande", "Corbel", "Trebuchet Ms", sans-serif;
+    line-height : 30px;
+}
+
+.idTabs li a {
+    color : white;
+}
+
+.idTabs li:nth-child(1) {
+    z-index : 4;
+    margin-left : 0;
+    border-bottom : 30px solid RGB(255, 66, 93);
+}
+
+.idTabs li:nth-child(2) {
+    z-index : 3;
+    border-bottom : 30px solid RGB(92, 167, 186);
+}
+
+.idTabs li:nth-child(3) {
+    z-index : 2;
+    border-bottom : 30px solid RGB(133, 211, 250);
+}
+
+.idTabs li:nth-child(4) {
+    z-index : 1;
+    border-bottom : 30px solid RGB(127, 233, 222);
+}
+
+#strip {
+    display : block;
+    margin : 0 auto;
+    width : 100%;
+    height : 4px!important;
+    background : pink;
+}
+
+#strip2 {
+    position : absolute;
+    top : 30px;
+    z-index : -1;
+    display : block;
+    width : 100%;
+    height : 4px!important;
+    background-color : #f1eee8;
+}
+
+
+.demo {
+    display : none;
+}
+
+.demo > ul {
+    padding-top : 10px;
+    padding-bottom : 20px;
+    max-width : 550px;
+    width : 100%;
+    /*                border-top: 4px solid #F1EEE8;*/
+    background-color : #f1eee8;
+}
+#All {
+    display : block;
+}
+
+.info {
+    position : relative;
+    display : flex;
+    margin : 10px auto;
+    max-width : 450px;
+    box-shadow : #292929 0 0 3px;
+    list-style : none;
+}
+
+.info div {
+    /*display : table-cell;*/
+    padding : 15px 5px;
+    /*height : 50px;*/
+}
+
+
+.info .infoLeft:hover a {
+    text-shadow : 0 0 6px #282828;
+}
+.info .infoLeft {
+    display : flex;
+    flex : 1 0 33%;
+    width : 33%;
+    border-right : 1px solid rgb(70, 185, 163);
+    background-color : #3eb69f;
+    text-align : center;
+    font-size : 1.1em;
+
+    align-items : center;
+    justify-content : center;
+}
+
+.info .infoRight {
+    flex : 1 1 66%;
+    padding-left : 10px;
+    width : 66%;
+    border-left : 1px solid rgb(78, 189, 168);
+    background-color : #5dc3b0;
+}
+
+.info .infoRight .demoInfo {
+    color : #6b6b6b;
+    font-size : 95%;
+}
+
+.info .infoRight .demoGuest {
+    margin-top : 5px;
+    color : #d4d4d4;
+    font-size : 80%;
+    font-family : "Titillium", "Microsoft YaHei", " 微软雅黑 ", Arial, sans-serif;
+}
+.info .infoRight .demoGuest:hover a {
+    text-shadow : 0 0 6px #272727;
+    font-style : normal;
+}
+
+.info .corner {
+    padding : 0;
+    width : 0;
+    height : 0;
+}
+
+.info .corner p {
+    position : absolute;
+    top : 5px;
+    right : -1px;
+    margin-top : 0;
+    margin-right : -20px;
+    padding : 3px 12px;
+    background : #e3e3e3;
+    background : -moz-linear-gradient(top, #e3e3e3, #c8c8c8);
+    background : -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), to(#c8c8c8));
+    -webkit-box-shadow : 1px 1px 3px #292929;
+       -moz-box-shadow : 1px 1px 3px #292929;
+            box-shadow : 1px 1px 3px #292929;
+    text-align : center;
+    font-size : 10px;
+}
+
+.info .corner .arrow {
+    position : absolute;
+    top : 104%;
+    right : 0;
+    width : 0;
+    height : 0;
+    border-top : 10px solid #c8c8c8;
+    border-right : 20px solid transparent;
+    line-height : 0;
+}
+
+.info .corner a {
+    color : #454545;
+    text-decoration : none;
+    font-family : "微软雅黑";
+}
+
+.info .corner a:hover {
+    color : rgb(43, 125, 113);
+    text-decoration : none;
+}
+
+
+
+
+/*loading*/
+
+#loading {
+    position : fixed;
+    top : 0;
+    z-index : 998;
+    width : 100%;
+    height : 100%;
+    background-color : #3f3f3f;
+    opacity : 1;
+}
+
+#wrap {
+    display : none;
+    opacity : 0;
+}
+.spinner {
+    position : fixed;
+    top : 40%;
+    left : 50%;
+    z-index : 999;
+    margin-left : -30px;
+    width : 60px;
+    height : 60px;
+    text-align : center;
+    font-size : 10px;
+}
+
+.spinner > div {
+    display : inline-block;
+    width : 6px;
+    height : 100%;
+    background-color : #3eb69f;
+    -webkit-animation : stretchdelay 1.2s infinite ease-in-out;
+            animation : stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay : -1.1s;
+            animation-delay : -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay : -1.0s;
+            animation-delay : -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay : -0.9s;
+            animation-delay : -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay : -0.8s;
+            animation-delay : -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0% , 40% , 100% {
+        -webkit-transform : scaleY(0.4);
+    }
+    20% {
+        -webkit-transform : scaleY(1.0);
+    }
+}
+
+@keyframes stretchdelay {
+    0% , 40% , 100% {
+        -webkit-transform : scaleY(0.4);
+                transform : scaleY(0.4);
+    }
+    20% {
+        -webkit-transform : scaleY(1.0);
+                transform : scaleY(1.0);
+    }
+}
+
+
+/*mobile*/
+
+@media only screen  and (max-width: 321px) {
+    #tabs {
+        margin-top : 20px;
+    }
+    #wrap {
+        zoom : 0.6;
+    }
+}
+
+@media only screen  and (min-width: 321px)  and (max-width: 375px) {
+    #tabs {
+        margin-top : 20px;
+    }
+    #wrap {
+        zoom : 0.7;
+    }
+}
+
+
+
+@media only screen  and (min-width: 375px) and (max-width: 414px) {
+    #tabs {
+        margin-top : 20px;
+    }
+    #wrap {
+        zoom : 0.73;
+    }
+}

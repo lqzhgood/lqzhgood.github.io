@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>a test document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .hight {
+            background: red;
+        }
+        
+        div,
+        p,
+        span,
+        b {
+            display: block;
+            margin: 20px;
+            background: #aaa;
+            border: 3px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="parent123()">parent</button>
+    <button onclick="parents123()">parents</button>
+    <button onclick="closest123()">closest</button>
+    <button onclick="clean123()">clean ALL</button>
+    <div id="div1"> div1
+        <div> div2
+            <p id="p1"> p1
+                <span id="span1" style="display:block"> span1
+               <b id="b1" style="display:block">My parents</b>               
+                <b>sister</b>
+            </span>
+                <span id="span2" style="display:block"> span2
+                <b id="b2" style="display:block">test</b>
+            </span>
+
+            </p>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.6.2.min.js"></script>
+    <script>
+        function parent123() {
+            $("b#b1").parent().addClass("hight");
+        }
+
+        function parents123() {
+            $("b#b1").parents("div").addClass("hight");
+        }
+
+        function closest123() {
+            $("b#b1").closest("div").addClass("hight");
+            //closest必须加参数
+        }
+
+        function clean123() {
+            $("*").removeClass("hight");
+        }
+        //        $("b#b1").siblings().addClass("hight");
+    </script>
+</body>
+
+</html>
+
+
+<!--怎么选爸爸比较parent parents closet之间的区别--->

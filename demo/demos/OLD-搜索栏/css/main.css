@@ -1,0 +1,133 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        body {
+            font-size: 12px;
+            background-color: #282828;
+        }
+        
+        #img {
+            background-image: url(../img/river.jpg);
+            width: 1066px;
+            height: 600px;
+            margin: 50px auto 0;
+            box-shadow: 0 0 15px black;
+        }
+        
+        #wrap {
+            position: relative;
+            width: 600px;
+            top: 20%;
+            left: 20%;
+        }
+        
+        img {
+            position: absolute;
+            left: -120px;
+            top: -5px;
+        }
+        
+        #panel a {
+            color: #fff;
+            text-decoration: none;
+            float: right;
+            font-size: 10px;
+            line-height: 21px;
+            margin: 0 8px 0 8px;
+        }
+        
+        #panel button {
+            background-color: rgb( 255, 66, 0);
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            width: 80px;
+            height: 42px;
+            float: right;
+            color: #fff;
+        }
+        
+        #panel #search-txt {
+            height: 36px;
+            padding: 3px 0 3px 64px;
+            background: rgb(255, 66, 0);
+            overflow: hidden;
+            color: red;
+            position: relative;
+        }
+        
+        #panel #search-txt input {
+            display: block;
+            background-color: #fff;
+            height: 36px;
+            width: 100%;
+            border: 0;
+            outline: 0;
+            padding-left: 12px;
+        }
+        
+        #panel #search-txt i {
+            position: absolute;
+            color: black;
+            line-height: 36px;
+            left: 66px;
+        }
+        
+        #list {
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            z-index: 2;
+            height: 36px;
+            border-right: 1px solid #ccc;
+        }
+        
+        #list ul li {
+            display: block;
+            width: 60px;
+            height: 36px;
+            line-height: 36px;
+            background-color: #fff;
+            text-align: center;
+            color: #6c6c6c;
+            cursor: pointer;
+        }
+        
+        #list ul li:hover {
+            background-color: rgb(245, 245, 245);
+        }
+        
+        #list ul li:last-child {
+            display: none;
+        }
+        
+        #suggest ul {
+            position: absolute;
+            left: 64px;
+            top: 39px;
+            z-index: 2;
+            border: 1px solid #eee;
+            display: none;
+        }
+        
+        #suggest li {
+            display: block;
+            height: 36px;
+            line-height: 36px;
+            background-color: #fff;
+            width: 401px;
+            padding-left: 12px;
+            cursor: pointer;
+        }
+        
+        #suggest li:hover {
+            background-color: #eee;
+            text-decoration: underline;
+        }

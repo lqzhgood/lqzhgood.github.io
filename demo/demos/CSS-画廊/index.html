@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>画廊</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body  onselectstart="return false" >
+    <div id="logo">
+      <p>
+          <span id="around"></span>
+      </p>
+       <h1>
+        Say Hi!   
+       </h1>        
+    </div>
+    <div id="wrap">
+<!--
+        <div class="photo" id="photo_{{id}}">
+            <div class="photoWrap">
+               <div class="page zm">
+                   <div class="img"><img src="./img/{{photo}}" alt=""></div>
+                    <p class="name">{{name}}</p>
+               </div>
+               <div class="page fm">
+                   <p class="cont">                       
+                   {{cont}}}
+                   </p>
+               </div>                
+            </div>
+        </div>
+-->
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!--
+散列/环形画廊-虽然不喜欢拼接DOM，总觉得不太优雅，但是不得不承认性能提升是肉眼可见的。-20160628-
+
+
+呼呼~ 大部分都写在 main.js 里面了， .md就偷个懒吧……
+主要就是性能优化吧，动画多用CSS 套类，DOM多用 拼接，比JS来处理插入看得见的快。-->

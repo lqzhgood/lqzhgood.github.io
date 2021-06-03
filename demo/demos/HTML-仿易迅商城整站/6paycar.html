@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>购物车结算</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/paycar.css">
+</head>
+
+<body>
+    <div id="head">
+        <div id="top">
+            <div id="headcont">
+                <div id="topleft" class="fl">收藏网站</div>
+                <div id="topright" class="fr">欢迎光临咿呀咿呀哟！<a href="#">[登录]</a><a href="#">[免费注册]</a></div>
+            </div>
+        </div>
+        <div id="search">
+            <div id="searchcont">
+                <div id="logo" class="fl">
+                    <a href="index.html"><img src="./img/logo.png" alt=""></a>
+                </div>
+                <img src="./img/paying.png" alt="" class="fr">
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="pcshxx" class="bg">
+            <h5>收货信息</h5>
+            <div>
+                <dt>                
+                    <span>选择地区:</span>
+                </dt>
+                <dd>
+                    <select name="" id="">
+                        <option value="#">北京市</option>
+                        <option value="#">广州市</option>
+                        <option value="#">上海市</option>
+                    </select>
+                </dd>
+            </div>
+            <div> <dt>               
+                <span>详细地址:</span>
+            </dt>
+                <dd>
+                    <input type="text" value="最多输入26个字母" style="width:390px">
+                </dd>
+            </div>
+            <div> <dt>               
+                <span>收 货 人:</span>
+            </dt>
+                <dd>
+                    <input type="text" value="最多10个汉字"  style="width:110px">
+                </dd>
+            </div>
+            <div> <dt>               
+                <span>手　　机:</span>
+            </dt>
+                <dd>
+                    <input type="text" value="如12312341234"  style="width:110px">
+                    <span>或固定电话：</span>
+                    <input type="text" value="区号" style="width:65px">-
+                    <input type="text" value="电话号码"  style="width:100px">-
+                    <input type="text" value="分机号（可选)" style="width:100px">
+                </dd>
+            </div>
+            <button>确认收货地址</button>
+        </div>
+         <div id="zffs" class="bg">
+             <h5>支付方式</h5>
+             <div>
+             <dt>
+                <input type="radio" id="wxpay" name="pay"> <label for="wxpay">微信支付</label>
+             </dt>
+             <dd>
+                 <p class="pimg">用微信扫一扫就能支付！</p>
+             </dd></div>
+              <div><dt>
+                <input type="radio" id="hdpay" name="pay"> <label for="hdpay">货到付款</label>
+             </dt>
+             <dd>
+                 <p>用微信扫一扫就能支付！</p>
+             </dd></div>
+        </div>
+        <div id="fpxx" class="bg">
+             <h5>发票信息</h5>
+             <input type="checkbox" id="xyfp"><label for="xyfp">需要发票</label>
+             <div>
+             <dt>
+                <span>发票类型</span>
+             </dt>
+             <dd>
+                <select name="" id="">
+                 <option value="">正规发票</option>
+                 <option value="">不正规发票</option>
+                 </select>
+             </dd></div>
+              <div><dt>
+                <span>发票抬头</span>
+             </dt>
+             <dd>
+                 <select name="" id="">
+                     <option value="">个人</option>
+                     <option value="">公司</option>
+                 </select>
+                 <input type="text" style="width:140px">
+             </dd></div>
+        </div>
+         <div id="shqd" class="bg">
+             <h5>送货清单<span class="fr">返回购物车修改</span></h5>
+             <div id="shqdtop">
+                 <span class="shqd1">商品名称</span>
+                 <span class="shqd2"></span>
+                 <span>单价</span>
+                 <span>反现</span>
+                 <span>数量</span>
+                 <span>小计</span>
+             </div>
+             <div id="shqdmain">
+                 <img src="./img/shqd1.jpg" alt="" class="fl">
+                 <div>
+                 <span class="shqd2">海信 咿呀咿呀哟 三门冰箱 好长的文字啊</span>
+                 <span>￥1459.00</span>
+                 <span>￥0.00</span>
+                 <span class="shqdsl">1</span>
+                 <span class="shqdxj">￥1459.00</span>
+                 </div>
+                 <div>
+                 <span class="shqd2">[赠品] 保鲜盒 抽纸 七七八八赠品</span>
+                 <span></span>
+                 <span></span>
+                 <span class="shqdsl">1</span>
+                 <span></span>
+                 </div>
+             </div>
+            <div id="shqdbt">
+                <p>若您对包裹有特殊要求，请在此留言</p>
+                <input type="text">
+                <p id="spwh">抱歉，以下商品暂时无法购买，已帮您自动在本次结算中剔除并扣减对应金额。您可先购买其他商品 :&#41;</p>
+                <div>
+                    <img src="./img/sqqdwh.jpg" alt="" class="fl">
+                    <p>清风 欧元系列 清香</p>
+                    <p>数量: 1件</p>
+                    <p>￥4.90 <span>(无货)</span></p>
+                </div>
+            </div>
+        </div>
+         <div id="ddjs" class="bg">
+             <h5>订单结算</h5>
+             <div>
+                 <p>总计 <span> ￥1459.00</span></p>
+                 <button>提交订单</button>
+             </div>
+        </div>
+
+    </div>
+
+    <div id="foot">
+        <ul>
+            <li>简介</li>
+            <li>公告</li>
+            <li>招纳贤士</li>
+            <li>联系我们</li>
+            <li>客服热线：400-123-1234</li>
+        </ul>
+        <p>Copyright © 2000 - 2999 XX版权所有 京ICP备0000000号 京ICP证0000-0000号 某市公安局XX分局备案编号：123456789123</p>
+        <div>
+            <img src="./img/copyright.png" alt="">
+            <img src="./img/copyright.png" alt="">
+            <img src="./img/copyright.png" alt="">
+            <img src="./img/copyright.png" alt="">
+        </div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    <script src="js/paycar.js"></script>
+</body>
+
+</html>

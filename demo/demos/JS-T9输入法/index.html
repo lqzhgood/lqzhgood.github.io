@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>T9</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <p id="info">* "English" is only use for translate</p>
+    <div id="wrap">
+        <div id="input">
+            <ul>
+                <li style="opacity:1!important;">
+                    <div>English</div>
+                    <div>Chinese</div>
+                    <div>PinYin</div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal hide" id="t9-modal">
+            <div class="modal-header" style="cursor: move;"></div>
+            <div class="modal-body">
+                <div id="t9_keyboard">
+                    <ul class="item-list">
+                       <p id="inputNum"></p>
+<!--
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+-->
+                    </ul>
+                    <ul class="keys">
+                        <li>
+                            <div class="key" code="1"><span><per class="num"> 1</per>                                               <per class="character">;</per></span></div>
+                            <div class="key" code="2"><span><per class="num"> 2</per>                                               <per class="character">ABC</per></span></div>
+                            <div class="key" code="3"><span><per class="num"> 3</per>                                               <per class="character">DEF</per></span></div>
+                            <div class="key del" code="100"><span class="key-delete"></span></div>
+                        </li>
+                        <li>
+                            <div class="key" code="4"><span><per class="num"> 4</per>                                               <per class="character">HGI</per></span></div>
+                            <div class="key" code="5"><span><per class="num"> 5</per>                                               <per class="character">JKL</per></span></div>
+                            <div class="key" code="6"><span><per class="num"> 6</per>                                               <per class="character">MNO</per></span></div>
+                            <div class="key none" code="101"><span class="key-pageup"></span></div>
+                        </li>
+                        <li>
+                            <div class="key" code="7"><span><per class="num"> 7</per>                                               <per class="character">PQRS</per></span></div>
+                            <div class="key" code="8"><span><per class="num"> 8</per>                                               <per class="character">TUV</per></span></div>
+                            <div class="key" code="9"><span><per class="num"> 9</per>                                               <per class="character">WXYZ</per></span></div>
+                            <div class="key none" code="102"><span class="key-pagedown"></span></div>
+                        </li>
+                        <li>
+                            <div class="key none" code="103"><span><per>Num</per></span></div>
+                            <div class="key none" code="0"><span><per class="num"> 0</per>                                               <per class="character">_</per></span></div>
+                            <div class="key large none" code="200"><span><per>Enter</per></span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--    <script src="js/jquery-2.2.3.min.js"></script>-->
+<!--    <script src="js/pinyin_short_t9_mini.js"></script>-->
+   <script src="lib/T9_pinyin_short.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+
+<!--
+
+T9输入法-给AppSwap作者回信写的DEMO-
+
+
+/lib
+
+lib.html 完整输出简拼库
+inputT9.js 上页的函数
+
+T9_pinyin_tbl.js 是全拼及 T9库
+T9_pinyin_short.js 是简拼库
+-->

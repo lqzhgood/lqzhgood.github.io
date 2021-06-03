@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>发送通知</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }    
+        
+    </style>
+</head>
+<body>
+   <form action="" enctype="multipart/form-data">
+        
+        <input accept="image/*" type="file"/>
+        
+
+        
+        <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+        
+        <br>
+        <label for=""></label>
+        <label for="pic_title">请输入标题</label><input type="text" id="pic_title">
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="Submit">
+   </form>
+   
+   <div id="proccess"></div>
+压缩前：<div id="rrr1"></div>
+<br>
+<input type="file" multiple id="filesss" >
+<br> 压缩后：<div id="rrr2"></div>
+<br>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script>
+           $('#filesss').mobileUpload({
+    url: '',
+    beforeUpload: function () {
+      console.log('beforeUpload')
+    },
+    uploadStart: function (file) {
+      console.log('uploadStart')
+      console.log('原文件大小：' + file.length);
+    },
+    uploadProgress: function (v) {console.log('进度' + v)},
+    uploadError: function () {console.log('uploadError')},
+    showThumbnail: function (file) {
+ 
+      $('#rrr1').append('<img src="' + file + '">');
+    },
+    afterUpload: function (file, data) {
+      console.log('压缩后大小：' + file.length);
+      $('#rrr2').append('<img src="' + file + '">');
+    }
+  });
+   </script>
+</body>
+</html>

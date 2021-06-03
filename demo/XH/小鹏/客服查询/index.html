@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>客服版</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./lib/table/bootstrap-table.css">
+    <link rel="stylesheet" href="./css/main.css"> </head>
+
+<body>
+    <div id="wrap">
+        <span id="cloCont"> X　　 </span>
+        <p> 总计 <b> 单量：</b><span id="sumNum"></span> | <b> 退单：</b><span id="sumRefund"></span> | <b> 营业额：</b><span id="sumCont"></span>            </p>
+        <table border="1" bordercolor="#ccc">
+            <thead>
+                <tr>
+                    <th>店铺</th>
+                    <th>单量</th>
+                    <th>退单量</th>
+                    <th>营业额</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>载入中</td>
+                    <td>……</td>
+                    <td></td>
+                </tr>
+                <!--
+            <tr>
+                <td>{{name}}</td>
+                <td>{{cont}}</td>
+            </tr>
+-->
+            </tbody>
+        </table>
+    </div>
+    <div class="page-header">
+        <span class="input input--minoru" style="position:relative;">
+            <input class="input__field input__field--minoru" type="text" id="mainSearch">
+            <label class="input__label input__label--minoru" for="mainSearch">
+            <span class="input__label-content input__label-content--minoru" id="sumAll" >Say Hi</span> <span class="input__label-content input__label-content--minoru"
+            id="scTime"></span> <span class="input__label-content input__label-content--minoru" id="upTime">  </span> </label>
+
+        <div class="dropdown searchInfo">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" style="display:none">下拉菜单<span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+                <li class="ts" role="presentation" data-val="@fp"><a role="menuitem" tabindex="-1" href="#">@fp  <span class="pull-right exp">　　　| <b>发票</b> 查询</span></a></li>
+                <li class="ts" role="presentation" data-val="@ls "><a role="menuitem" tabindex="-1" href="#">@ls ***  <span class="pull-right exp">　　　| <b>历史</b> 查询***</span></a></li>
+                <li class="ts" role="presentation" data-val="@td"><a role="menuitem" tabindex="-1" href="#">@td <span class="pull-right exp">　　　| <b>退单</b></span></a></li>
+                <li class="ts" role="presentation" data-val="@tj"><a role="menuitem" tabindex="-1" href="#">@tj <span class="pull-right exp">　　　| <b>统计</b></span></a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation" data-val="@tj"><a role="menuitem" tabindex="-1" href="#"> <kbd>F2</kbd>  <span class="pull-right exp">　　　| 清空输入框</span></a></li>
+            </ul>
+        </div>
+
+
+
+        </span>
+
+
+
+
+
+
+        <botton class="btn btn-info disabled" id="btn_his">历史</botton>
+        <botton class="btn btn-info pull-right" id="btn_fp">发票</botton>
+        <botton class="btn btn-info pull-right" id="btn_tj">统计</botton>
+        <botton class="btn btn-info pull-right" id="btn_qb">当日</botton>
+        <botton class="btn btn-info pull-right" id="btn_td"><span class="badge red" style="color:green" id="badgeTd">0</span>退单</botton>
+    </div>
+    <div id="hisWrap" class="hisShow">
+        <h2>历史订单</h2>
+        <table id="his"></table>
+    </div>
+    <hr class="hisShow">
+    <div id="foodWrap">
+        <h2 class="hisShow">当日订单</h2>
+        <table id="food"></table>
+    </div>
+    <div id="fun" style="display:none"> <a href="#shark">shaaark</a> <a href="#loading">loading</a> <a href="#plane">plane</a> <a href="#squiggle">squiggle</a>        <a href="#bounce">bounce</a> <a href="#O">:O</a> <a href="#flip">flip</a> <a href="#bubblesort">bubblesort</a>
+        <a
+            href="#wave">wave</a> <a href="#wave2">wave2</a><a href="#pewpew">pewpew</a><small>(up/down/space, pretty buggy)</small> </div>
+    <script src="./lib/jquery.min.2.1.4.js"></script>
+    <script src="./lib/jquery.highlight.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/table/bootstrap-table.js"></script>
+    <script src="./lib/table/locale/bootstrap-table-zh-CN.js"></script>
+    <script src="./lib/iMissYou.min.js"></script>
+    <script src="./lib/iNotify/iNotify.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $.iMissYou({
+                title: "回来干活！"
+                , favicon: {
+                    enabled: false
+                    , src: 'iMissYouFavicon.ico'
+                }
+            });
+
+        });
+    </script>
+    <script src="./js/main.js"></script>
+
+    <!--
+    <script src="./js/Mousetrap.js"></script>
+    <script src="./js/fun.js"></script>
+-->
+
+</body>
+
+</html>

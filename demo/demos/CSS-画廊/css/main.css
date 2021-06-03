@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../icomoon.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #555;
+    font-size: 14px;
+    font-family: 'Avenir Next', 'Lantinghei SC', '微软雅黑';
+
+    -webkit-font-smoothing: antialiased;
+}
+
+#logo p {
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    background-color: #777777;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+    font-size: 15px;
+    font-family: 'icomoon';
+
+}
+#logo span {
+    padding-right: 10px;
+    cursor: pointer;
+}
+#logo #around:after {
+    content: '\e983';
+}
+#logo #ring:after {
+    content: '\e989';
+}
+#logo span:hover {
+    color: black;
+}
+
+
+#logo h1 {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    padding-right: 10px;
+    background-color: black;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#wrap {
+    position: absolute;
+    top: 15%;
+    bottom: 10%;
+    overflow: hidden;
+    margin: 0 1%;
+    width: 98%;
+    background-color: rgb(51, 51, 51);
+
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -160px 0 0 -130px;
+    width: 260px;
+    height: 320px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.photo .photoWrap {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+    -webkit-transform-origin: 0% 50% 0px;
+    -ms-transform-origin: 0% 50% 0px;
+    transform-origin: 0% 50% 0px;
+
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.photo .page {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.photo .zm {
+    text-align: center;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.photo .zm .img {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    line-height: 250px;
+}
+
+.photo .zm .img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.photo .zm .name {
+    font-size: 16px;
+    line-height: 50px;
+    ;
+}
+
+.photo .fm {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.photo .fm .cont {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+#wrap .photoCenter {
+    top: 50%;
+    left: 50%;
+    z-index: 998;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#wrap .photoCenter .photoWrap {
+    box-shadow: 0px 0px 20px #000;
+    -webkit-transform: translate(0px, 0px) rotateY(0deg);
+    transform: translate(0px, 0px) rotateY(0deg);
+}
+
+#wrap .photofm .photoWrap {
+    -webkit-transform: translate(260px, 0px) rotateY(180deg);
+    transform: translate(260px, 0px) rotateY(180deg);
+}
+
+
+#wrap .photoXz {
+/*
+    -webkit-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    transform: rotate(80deg);
+*/
+    
+    -webkit-transform-origin: 50% 100% 0px;
+    -ms-transform-origin: 50% 100% 0px;
+    transform-origin: 50% 100% 0px;
+    
+/*
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+*/
+}
+
+
+#nav {
+    position: absolute;
+    bottom: 5%;
+    z-index: 999;
+    margin: 0 10%;
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#nav span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #aaa;
+    box-shadow: 1px 1px 2px #000;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+#nav span:after {
+    display: inline-block;
+    color: #fff;
+    content: '\e966';
+    text-align: center;
+    font-size: 80%;
+    font-family: 'icomoon';
+    line-height: 30px;
+    opacity: 0;
+}
+
+#nav .sp_Sel {
+    background-color: #777;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+#nav .sp_Sel:after {
+    opacity: 1;
+}
+
+#nav .sp_Sel_Bak {
+    background-color: #555;
+    box-shadow: -1px 1px 2px #000;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#wrap {
+    -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.3)));
+}

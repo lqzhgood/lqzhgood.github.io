@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="left l1">
+            <ul id="chat">
+            </ul>
+        </div>
+        <div  class="right l1">
+            <ul id="people">
+            </ul>
+        </div>
+        <div id="name" class="left l2">
+            <label for="nameInput">留言者姓名</label>
+            <input type="text" id="nameInput">
+        </div>
+        <div id="ly" class="right l2"><span>留言板</span></div>
+        <div id="send" class="left l3">
+            <textarea name="" id="txtInput" cols="30" rows="10"></textarea>
+        </div>
+        <div id="btn" class="right l3">
+            <button id="btnsend">发送</button>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/main.js" charset="UTF-8"></script>
+</body>
+
+</html>
+
+
+<!--
+从两列布局到本地存储的留言板
+挖的坑太多，走一步算一步，中间没有预期到最后的情况
+导致add函数本应最小模块化变成巨无霸……
+中间 data的格式都重写好多遍 最后写成两个数组比较方便
+虽然最后勉强写完了 但是应该是没有继续的可扩展性了。
+写的太乱了  我都不想看了……
+
+SO 要有计划 才下手！
+-->

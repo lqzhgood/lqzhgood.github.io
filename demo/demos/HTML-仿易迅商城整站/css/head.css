@@ -1,0 +1,325 @@
+#top {
+    height: 32px;
+    background-color: #F5F5F5;
+    line-height: 32px;
+}
+
+#headcont {
+    margin: 0 auto;
+    width: 1000px;
+    font-size: 12px;
+}
+
+#topleft {
+    padding-left: 20px;
+    background: url(../img/ico/star.png) no-repeat center left;
+    text-align: left;
+    font-weight: 400;
+}
+
+#topright {
+    padding-right: 20px;
+}
+
+#topright a {
+    margin: 3px;
+    color: #666666;
+}
+
+#topright a:hover {
+    color: red;
+}
+
+#search {
+    height: 85px;
+    background-color: #1C79D7;
+}
+
+#searchcont {
+    margin: 0 auto;
+    width: 1000px;
+}
+#searchinput {
+    position: relative;
+}
+#searchinput ul {
+    position: absolute;
+    top:57px;
+    left: 185px;
+    z-index: 50;
+    display: none;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+#searchinput ul li {
+    padding: 5px 10px;
+    width: 358px;
+    list-style: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+#searchinput ul .searchseleli {
+    background-color: #F1F1F1;
+    text-decoration: underline;
+}
+#searchinput ul li:hover {
+    background-color: #F1F1F1;
+    text-decoration: underline;
+}
+#logo {
+    padding-top: 13px;
+    padding-left: 40px;
+}
+
+#inputext {
+    margin-top: 22px;
+    margin-left: 185px;
+    padding: 0 10px;
+    width: 360px;
+    height: 35px;
+    border: 0;
+}
+
+#inputbtn {
+    margin-top: 22px;
+    width: 70px;
+    height: 35px;
+    border: 0;
+    background-color: #FD8B00;
+    color: white;
+    cursor: pointer;
+}
+
+#paycar {
+    margin-top: 22px;
+    height: 35px;
+    background-color: #FD8600;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 35px;
+}
+
+#paycarlogo {
+    display: inline-block;
+    margin-left: 10px;
+    width: 75px;
+    border-right: 1px solid #E07900;
+    background: url(../img/paycar.png) no-repeat center left;
+    text-indent: 30px;
+}
+
+#payCarNum {
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 20px;
+    width: 25px;
+    border-left: 1px solid #FD9B01;
+    background: url(../img/ico/sjx.png) no-repeat right;
+    text-align: right;
+}
+
+#menu {
+    color: #ffffff;
+}
+
+#menu #nav {
+    margin: 0 auto;
+    width: 1000px;
+    height: 35px;
+    background-color: #1368BE;
+}
+
+#menu #menuleft {
+    padding-left: 40px;
+    width: 150px;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+#menu #menuleft a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu #menuleft i {
+    display: inline-block;
+    margin-left: 11px;
+    width: 11px;
+    height: 7px;
+    background: url(../img/ico/sj.png) center;
+}
+
+#menu #menutag li {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    width: 100px;
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    line-height: 35px;
+    cursor: pointer;
+}
+#menu #menutag li:hover {
+    background-color: 4491FB;
+}
+
+.navsele {
+    background-color: #4491FB;
+}
+
+#main {
+    position:relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#main #menulist {
+    position: absolute;
+    z-index: 10;
+    width: 190px;
+    background: #4492FB;
+    color: white;
+    font-size: 12px;
+}
+
+#main #menulist a {
+    color: white;
+    text-decoration: none;
+}
+
+#main #menulist a:hover {
+    text-decoration: underline;
+}
+
+#main #menulist span:hover {
+    border: 0;
+    background-color: #4492FB;
+}
+
+#main #menulist dl {
+    position: relative;
+    padding: 13px;
+    border: 1px solid #3486F0;
+    font-size: 14px;
+}
+
+#main #menulist span {
+    margin-left: 16px;
+    padding: 0 2px;
+    border: 1px solid #0F69BE;
+    border-radius: 10px;
+    background-color: #0F69BE;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+#main #menulist dt {
+    background: url(../img/ico/menulist-sjx.png) center right no-repeat;
+}
+
+#main #menulist dt>a:first-child {
+    font-weight: bold;
+}
+
+#main #menulist dd {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#main #menulist dd a {
+    color: #C0D7F6;
+}
+
+.menusale {
+    background-color: white;
+}
+
+#main #menulist .menusale a {
+    color: black;
+}
+
+#main #menulist .menusale span a {
+    color: white;
+}
+
+#main #menulist .menusale i {
+    display: none;
+}
+#menuright {
+    position: absolute;
+    top: 0;
+    left: 190px;
+    z-index: 11;
+    background-color: white;
+}
+#main #menuRightWrap {
+    padding: 0 20px;
+}
+
+#main #menuright {
+    width: 570px;
+    border: 1px solid #DBDBDB;
+}
+
+#main #menuright a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#main #menuright a:hover {
+    text-decoration: underline;
+}
+
+#main #menuright dl {
+    padding: 17px 20px 17px 0;
+    border-bottom: 1px solid #E3E3E3;
+    line-height: 24px;
+}
+
+#main #menuright dt a {
+    color: #4b88da;
+    font-weight: bold;
+}
+
+#main #menuright dd {
+    margin-top: -25px;
+    margin-left: 68px;
+    padding-right: 10px;
+}
+
+#main #menuright button {
+    display: inline-block;
+    margin: 17px 10px 17px 0;
+    padding: 5px 10px 5px 5px;
+    outline: 0;
+    border: 0;
+    background-color: #2784E4;
+    color: white;
+}
+
+#main #menuright button i {
+    display: inline-block;
+    margin-left: 7px;
+    width: 5px;
+    height: 8px;
+    background: url(../img/ico/menurightjt.png) center no-repeat;
+}
+
+
+/*banner*/
+
+#main #banner {
+    margin-left: 190px;
+    width: 810px;
+    height: 335px;
+}
+
+/*banner*/
+
+#main #banner {
+    margin-left: 190px;
+    width: 810px;
+    height: 335px;
+}

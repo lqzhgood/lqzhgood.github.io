@@ -1,0 +1,457 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    background-color : #3f3f3f;
+    font-size : 100%;
+    font-family : "Open Sans","Titillium", "Microsoft YaHei", " 微软雅黑 ", Arial, sans-serif;
+}
+
+
+
+#wrap {
+    position : relative;
+    overflow : hidden;
+    margin : 20px auto 20px;
+    padding-bottom : 50px;
+    width : 990px;
+    height : 100%;
+    background-color : #f1eee8;
+    box-shadow : #282828 0 0 40px;
+}
+
+#left {
+    float : left;
+    margin-bottom : -500em;
+    padding : 49px;
+    padding-bottom : 500em;
+    width : 260px;
+    background-color : #5dc3b0;
+    text-align : center;
+}
+
+#right {
+    float : left;
+    margin-bottom : -500em;
+    padding : 50px 50px 50px 30px;
+    padding-bottom : 500em;
+    width : 550px;
+    color : #282828;
+}
+
+#info p {
+    color : #1d7d71;
+    font-size : 12px;
+}
+
+#info #job {
+    font-weight : bold;
+    font-size : 1.2em;
+}
+
+#can {
+    margin-left : 15px;
+    color : #f1eee8;
+    font-weight : bold;
+    /*居中*/
+}
+
+#can .row {
+    display : table-row;
+}
+
+#can .row > div {
+    display : table-cell;
+    padding : 5px;
+    vertical-align : middle;
+}
+
+.rowright {
+    position : relative;
+}
+
+#set50 {
+    position : absolute;
+    left : 50%;
+    z-index : 3;
+    margin-top : -4px;
+    height : 141px;
+    border : 1px dashed white;
+    opacity : 0.5;
+}
+
+#can .long {
+    width : 120px;
+    height : 10px;
+    border-radius : 15px;
+    background-color : #3eb69f;
+    text-align : left;
+}
+
+#can .long span {
+    display : inline-block;
+    height : 10px;
+    border-top-left-radius : 15px;
+    border-bottom-left-radius : 15px;
+    background-color : #f1eee8;
+}
+
+#readme:hover #hidd {
+    display : block;
+}
+
+#readme #hidd {
+    display : none;
+}
+
+#readme p {
+    font-size : 0.7em;
+}
+
+#readme #readmeinfo {
+    margin-top : 10px;
+    padding-left : 10px;
+    text-align : left;
+}
+
+#readme #ques {
+    display : inline-block;
+    width : 15px;
+    height : 15px;
+    border : 1px solid;
+    border-radius : 50%;
+    text-align : center;
+    font-size : 0.7em;
+}
+
+#readme #know {
+    text-align : center;
+}
+
+#readme #know span {
+    display : inline-block;
+    width : 20%;
+    font-size : 0.7em;
+}
+
+#mail {
+    position : absolute;
+    bottom : 50px;
+    color : #f1eee8;
+    text-align : left;
+    text-decoration : underline;
+}
+
+#mail a {
+    display : block;
+    padding-left : 40px;
+    height : 30px;
+    line-height : 30px;
+}
+
+a:visited {
+    color : #f1eee8;
+}
+
+a:link {
+    color : #f1eee8;
+}
+
+.icon-phone-1 {
+    margin-right : 18px;
+}
+#aphone {
+    margin-bottom : 2px;
+}
+#aphone .icon-phone-1 {
+    padding : 1px;
+    border-radius : 50%;
+    background-color : #fff;
+    color : #38bca6;
+}
+#aphone:hover .icon-phone-1 {
+    background-color : #38bca6;
+    color : #fff;
+}
+
+#amail {
+    background : url(../img/mail1.png) no-repeat left center;
+}
+
+#amail:hover {
+    background-image : url(../img/mail2.png);
+}
+
+#agithub {
+    background : url(../img/GitHub1.png) no-repeat left center;
+}
+
+#agithub:hover {
+    background-image : url(../img/GitHub2.png);
+}
+
+#ahome {
+    background : url(../img/home1.png) no-repeat left center;
+}
+
+#ahome:hover {
+    background-image : url(../img/home2.png);
+}
+
+#ahome:hover::after {
+    content : "　可能要翻墙";
+    text-decoration : none;
+    /*           color: #6B6B6B;*/
+    font-weight : bold;
+    font-size : 12px;
+}
+
+#agithub:hover::after {
+    content : "　应该要翻墙";
+    text-decoration : none;
+    /*           color: #6B6B6B;*/
+    font-weight : bold;
+    font-size : 12px;
+}
+
+#amail:hover::after {
+    content : "　立即领养";
+    text-decoration : none;
+    /*           color: #6B6B6B;*/
+    font-weight : bold;
+    font-size : 12px;
+}
+#right {
+    position: relative;
+}
+
+#right .pdf {
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+#right .pdf a:link ,#right .pdf a:visited {
+   color: #327D71;
+}
+
+#right p {
+    margin : 10px 0 0 0;
+    font-size : 14px;
+}
+
+#right #more {
+    display : block;
+    margin-top : -10px;
+    margin-left : 230px;
+    width : 200px;
+    color : rgb(29, 125, 113);
+    text-decoration : none;
+}
+
+#right #more:hover {
+    text-decoration : underline;
+}
+
+#right #demos h2 {
+    margin-top : 0;
+}
+#right #demos h3 a {
+    color : #5dc3b0;
+    text-decoration : none;
+}
+
+#right .demo {
+    position : relative;
+    margin-left : 15px;
+}
+
+#right .demo .exp {
+    border-left : 2px solid #3eb69f;
+}
+
+#right .demo .exp > li {
+    position : relative;
+    top : -5px;
+    margin : 0 0 20px 20px;
+    list-style : none;
+}
+
+
+#right .demo .exp .ewm {
+    display: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    background-color: #fff;
+    z-index: 20;
+}
+
+#right .demo .wx:hover .ewm{
+    display: inline-block;
+}
+
+#right .demo .exp .ewm img {
+    width: 100%;
+    height: 100%;
+}
+#right .demo .exp .circle {
+    position : absolute;
+    top : 5px;
+    left : -28px;
+    float : left;
+    width : 14px;
+    height : 14px;
+    border-radius : 50%;
+    background : #3eb69f;
+}
+#right .demo .exp p {
+    margin-top : 5px;
+}
+#right .demo .exp a:link {
+    color : #282828;
+}
+#right .demo .exp a:visited {
+    color : #282828;
+}
+#right .keyWord {
+    position : absolute;
+    top : 0;
+    right : 0;
+    height : 27px;
+    background : url("data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QMvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjUtYzAyMSA3OS4xNTU3NzIsIDIwMTQvMDEvMTMtMTk6NDQ6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGMThCNjY4RTJCQTQxMUU2QjhCMzlGNjk2QjJBODNBQSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGMThCNjY4RjJCQTQxMUU2QjhCMzlGNjk2QjJBODNBQSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkYxOEI2NjhDMkJBNDExRTZCOEIzOUY2OTZCMkE4M0FBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkYxOEI2NjhEMkJBNDExRTZCOEIzOUY2OTZCMkE4M0FBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgABQABAwERAAIRAQMRAf/EAEsAAQAAAAAAAAAAAAAAAAAAAAkBAQEAAAAAAAAAAAAAAAAAAAcJEAEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwA9ikkO/9k=") repeat-x 0 10.5px;
+}
+
+#right .keyWord span {
+    display : inline-block;
+    padding : 5px;
+    background-color : #5dc3b0;
+    color : #f1eee8;
+    font-weight : bold;
+    font-size : 12px;
+}
+
+
+#right h2 {
+    margin : 50px 0 15px 0;
+    padding-bottom : 5px;
+    border-bottom : 1px solid #3eb69f;
+    color : #6b6b6b;
+    font-weight : 400;
+    font-size : 24px;
+}
+
+#right h2 .icon {
+    color : #3eb69f;
+}
+
+#right h3 {
+    position : relative;
+    margin : 15px 0 10px 20px;
+    color : #5dc3b0;
+    font-size : 20px;
+    line-height : 1.5em;
+}
+
+#right h3 .time {
+    position : absolute;
+    right : 0;
+}
+
+#right h4 {
+    padding-bottom : 2px;
+    color : #282828;
+    font-weight : 600;
+    font-size : 16px;
+}
+
+#right h3 > p {
+    display : inline-block;
+    padding : 0 20px;
+    color : rgb(40,40,40);
+    font-weight : normal;
+}
+#right #study .title {
+    display : inline-block;
+    font-size : 12px;
+    line-height : 12px;
+}
+
+#right #study p {
+    line-height : 24px;
+}
+
+#right #myself p {
+    margin : 0;
+    text-indent : 2em;
+    line-height : 24px;
+}
+
+#right #myself a {
+    border-bottom : 1px dashed #000;
+    color : rgb(28, 28, 28);
+    text-decoration : none;
+    font-style : italic;
+}
+
+
+
+
+@charset "UTF-8";@font-face {
+    font-weight : 400;
+    font-style : normal;
+    font-family : fontello;
+    src : url(./fonts/fontello.eot?32003456);
+    src : url(./fonts/fontello.eot?32003456#iefix) format("embedded-opentype"),url(./fonts/fontello.woff?32003456) format("woff"),url(./fonts/fontello.ttf?32003456) format("truetype"),url(./fonts/fontello.svg?32003456#fontello) format("svg");
+}
+
+[class*=" icon-"]:before , [class^=icon-]:before {
+    display : inline-block;
+    margin-right : 0.2em;
+    margin-left : 0.2em;
+    width : 1em;
+    text-align : center;
+    text-decoration : inherit;
+    text-transform : none;
+    font-weight : 400;
+    font-style : normal;
+    font-variant : normal;
+    font-family : fontello;
+    line-height : 1em;
+
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+    speak : none;
+}
+
+.icon-wechat:before {
+    content : "\e800";
+}
+
+.icon-qq:before {
+    content : "\e801";
+}
+
+.icon-bookmark:before {
+    content : "\e802";
+}
+
+.icon-heart:before {
+    content : "\e803";
+}
+
+.icon-mail-alt:before {
+    content : "\e804";
+}
+
+.icon-link:before {
+    content : "\e805";
+}
+
+.icon-phone-1:before {
+    content : "\e806";
+}

@@ -1,0 +1,105 @@
+#logopanl {
+    margin: 20px auto;
+    width: 400px;
+    height: 600px;
+}
+
+#logopanl>span {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-color: #E5E5E5;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#logopanl>span:first-child {
+    margin-left: 20px;
+}
+
+#logopanl .logsele {
+    background-color: #408EF8;
+    color: white;
+}
+
+#logopanl .log {
+    width: 400px;
+    border: 1px solid #E5E5E5;
+    border-top: 2px solid #408EF8;
+    font-size: 14px;
+}
+
+#logopanl .log .logcont {
+    margin: 40px auto 0;
+    width: 250px;
+}
+
+#logopanl .error {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: deeppink;
+    font-size: 10px;
+}
+#logopanl #checknow-error {
+    margin-bottom: 0;
+    padding: 0 5px;
+}
+
+#logopanl .log input[type="text"],
+#logopanl .log input[type="password"] {
+    margin-bottom: 10px;
+    padding: 5px 20px 5px 5px;
+    width: 225px;
+    height: 20px;
+    border: 1px solid #E5E5E5;
+    background: url(../img/ico/logpass.jpg) no-repeat center right;
+    line-height: 20px;
+}
+
+#logopanl .log .logcont .name {
+    background: url(../img/ico/logname.jpg) no-repeat center right;
+}
+
+#logopanl .log .inputPanl * {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 19px;
+}
+
+#logopanl .log a {
+    color: #656565;
+    text-decoration: none;
+}
+
+#logopanl .log button {
+    margin: 20px auto;
+    width: 250px;
+    height: 35px;
+    border: 1px solid #BBCFE4;
+    background-color: #408EF8;
+    color: white;
+    cursor: pointer;
+}
+
+#logopanl .log ul {
+    padding-bottom: 25px;
+    width: 300px;
+}
+
+#logopanl .log li {
+    display: inline-block;
+    padding-right: 3px;
+    border-right: 1px solid #E5E5E5;
+    font-size: 10px;
+}
+
+#logopanl .log bt span:before {
+    padding-right: 5px;
+    color: red;
+    content: "*";
+}
+
+#logout {
+    display: none;
+}

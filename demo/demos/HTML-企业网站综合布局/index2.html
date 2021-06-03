@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>静态企业网站2</title>
+    <link rel="stylesheet" href="css/main2.css">
+</head>
+
+<body>
+   <button onclick="location.href='./index.html'">网页1</button>
+    <div id="wrap">
+        <div id="title">
+            <img src="http://img.mukewang.com/53edadad0001efe202000070.jpg" alt="">
+            <ul>
+                <li class="select">首页</li>
+                <li>产品信息</li>
+                <li>解决方案</li>
+                <li>产品价格</li>
+                <li>帮助中心</li>
+                <li>关于我们</li>
+            </ul>
+        </div>
+        <div id="nav">
+            <div id="pic-box">
+                <div class="loading"><img src="./img/loading.gif" alt=""></div>
+                <div class="pic">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./img/pic0.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/pic1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/pic2.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="scroll">
+          <span>滚动新闻</span>
+           <marquee behavior="scroll" contenteditable="true"  scrollamount="13" onmouseover="this.stop();" onmouseout="this.start();"> 
+            <ul>
+                <li>我是滚动新闻001</li>
+                <li>我是滚动新闻002</li>
+                <li>我是滚动新闻003</li>
+                <li>我是滚动新闻004</li>
+                <li>我是滚动新闻005</li>
+            </ul>
+            </marquee>
+        </div>
+        <div id="tabs">
+            <div class="tab">
+                <img src="http://img.mukewang.com/53edad54000119fb03300130.jpg" alt="">
+                <p>玩转BootStrap</p>
+            </div>
+            <div class="tab">
+                <img src="http://img.mukewang.com/53edad690001260a03300130.jpg" alt="">
+                <p>企业网站案例</p>
+            </div>
+            <div class="tab">
+                <img src="http://img.mukewang.com/53edad7a0001cde803300130.jpg" alt="">
+                <p>JavaScript基础</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div id="main">
+            <div id="news">
+                <p class="title">新闻中心</p>
+                <div>
+                    <span>8月<br>20日</span>
+                    <h5>学习计划之123456</h5>
+                    <p>咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟</p>
+                </div>
+                <div>
+                    <span>8月<br>20日</span>
+                    <h5>学习计划之123456</h5>
+                    <p>咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟</p>
+                </div>
+                <div>
+                    <span>8月<br>20日</span>
+                    <h5>学习计划之123456</h5>
+                    <p>咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟咿呀咿呀哟</p>
+                </div>
+
+            </div>
+
+            <div id="activity">
+                <p class="title">热门活动</p>
+                <img src="http://img.mukewang.com/53edacdd0001b8e804820302.jpg" alt="">
+                <ul>
+                    <li>咿呀咿呀哟</li>
+                    <li>咿呀咿呀哟</li>
+                    <li>咿呀咿呀哟</li>
+                    <li>咿呀咿呀哟</li>
+                </ul>
+            </div>
+            <div id="contact">
+                <p class="title">联系我们</p>
+                <blockquote>
+                    招募：
+                    <br> QQ：123456587
+                    <br> email：123@qq.com
+                    <br>
+                    <br> 网站合作
+                    <br> 咿呀咿呀哟
+                    <br> 123
+                    <br> 123
+                    <br> 123
+                    <br> 123
+                    <br>
+                </blockquote>
+            </div>
+            <br class="clearfix">
+        </div>
+    </div>
+
+    <div id="copyright">
+        <p>版权123@564565备案号啊咿呀咿呀哟</p>
+    </div>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/myfocus-2.0.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#title li").click(function () {
+                $("#title li").removeClass("select");
+                $(this).addClass("select");
+            });
+            myFocus.set({
+                id: 'pic-box', //焦点图盒子ID
+                pattern: 'mF_fancy', //风格应用的名称
+                time: 3, //切换时间间隔(秒)
+                trigger: 'click', //触发切换模式:'click'(点击)/'mouseover'(悬停)
+                width: 1000, //设置图片区域宽度(像素)
+                height: 310, //设置图片区域高度(像素)
+                txtHeight: 'default' //文字层高度设置(像素),'default'为默认高度，0为隐藏
+            });
+        })
+    </script>
+</body>
+
+</html>

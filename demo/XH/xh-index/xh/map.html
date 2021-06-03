@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+   <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        #map {
+            width: 100%;
+            height: 100vh;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=TKUBZ-D24AF-GJ4JY-JDVM2-IBYKK-KEBCU"></script>
+    <script>
+   var jsUrl = "./jsonp/sto_info.js";
+var locUrl = "./jsonp/sto_range.js"; 
+        
+        
+    $.getJSON(jsUrl,function(data){
+        getStMap(data);
+    });    
+        
+        
+    function getStMap(data) {
+    //添加地图
+    document.getElementById("map").innerHTML = "";
+    var myMap = new qq.maps.Map(document.getElementById("map"), {
+        center: new qq.maps.LatLng(39.90594, 116.455698), //39.90594, 116.455698地图初始化以建外东区为中心
+        //        center: new qq.maps.LatLng(39.843340, 116.495419),
+        zoom: 11
+    });
+    //定位图标
+    var infoWin = new qq.maps.InfoWindow({
+        map: myMap
+    });
+    var latlngs = [];
+    for (var i = 0; i < data.length; i++) {
+        (function (n) {
+            var _st_latlng = new qq.maps.LatLng(data[n].Latitude, data[n].Longitude);
+            var marker = new qq.maps.Marker({
+                position: _st_latlng
+                , map: myMap
+            });
+            if (data[n].TakeoutUrl != "") {
+                var _tkUrl = "<div style='text-align:center;white-space:nowrap;margin-left:0;'>" + data[n].Name + "<br><a target='_blank' href='" + data[n].TakeoutUrl + "'><img src='./location/img/ico_wm.png' height='40px'></a></div>";
+            }
+            else {
+                var _tkUrl = "<div style='text-align:center;white-space:nowrap;margin-left:0;'>" + data[n].Name + "</div>";
+            }
+            qq.maps.event.addListener(marker, 'click', function () {
+                infoWin.open();
+                infoWin.setContent(_tkUrl);
+                infoWin.setPosition(_st_latlng);
+            });
+        })(i);
+    }
+    //范围图层
+    $.getJSON(locUrl, function (LocData) {
+        for (var stoLoc in LocData) {
+            if (LocData.hasOwnProperty(stoLoc)) {
+                var path1 = [];
+                for (var i = 0; i < LocData[stoLoc].length; i++) {
+                    var _path_lalg = LocData[stoLoc][i].split(",");
+                    var _path_la = _path_lalg[0];
+                    var _path_lg = _path_lalg[1];
+                    var _path_map = new qq.maps.LatLng(_path_la, _path_lg);
+                    path1.push(_path_map);
+                }
+                var polygon = new qq.maps.Polygon({
+                    map: myMap
+                    , path: path1
+                    , strokeColor: new qq.maps.Color("##D45370", 0.5)
+                    , fillColor: qq.maps.Color.fromHex("#D45370", 0.5)
+                });
+            }
+        }
+    });
+}
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+
+<body>
+    <video id="mv" src="" controls="controls" height="200"></video>
+    <fieldset id="state">
+       <div>
+        <legend>状态</legend>
+        <mvState></mvState>
+        <p class="stateUp"></p>
+        <hr>
+        <p class="errUp"></p>
+        <p class="succUp"></p>
+        </div>
+    </fieldset>
+    <fieldset id="err">
+        <legend>错误</legend>
+        <fieldset id="errFile">
+            <legend>错误的文件</legend>
+        </fieldset>
+        <fieldset id="errMv">
+            <legend>错误的视频</legend>
+        </fieldset>
+    </fieldset>
+    <fieldset id="succMv">
+        <legend>正确</legend>
+    </fieldset>
+    <hr>
+    <hr>
+    <list></list>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var url = window.location.href + "mv/";        
+        var postUrl = "http://139.129.236.139/web/api/demo12312312313";
+        var mvList = [];
+        var mvNameList = [];
+        var listLength = 0;
+        
+        var succUpNum=0;
+        var errUpNum=0;
+
+        $.ajax({
+            url: url +"?"+ new Date().getTime()
+            , type: 'get'
+            , data: ""
+            , timeout: 300
+            , async: false
+            , success: function (data) {
+                var mv = {};
+                $("list").html(data)
+                $("list a").each(function (index, ele) {
+                    var _txt = $(ele).text();
+                    if (_txt.match(".mp4$") != null) {
+                        var _name = _txt.split(".mp4")[0];
+                        if (stripscript(_name)) {
+                            mvNameList.push(_txt);                            
+                            var mvSrc = url + mvNameList[listLength];                        
+                            $("#succMv").append("<p>" + _txt + "</p>");
+                            $("mvState").html("正在载入......");
+                        }
+                        else {
+                            $("#errMv").append("<p style='color:#fff;background:red;'>" + _txt + "</p>");
+                        }
+                    }
+                    else {
+                        if (_txt == "ecstatic" || _txt == "../") {}
+                        else {
+                            $("#errFile").append("<p style='color:#fff;background:red;'>" + _txt + "</p>");
+                        }
+                    }
+                })
+            }
+            , error: function () {
+                $("#state>.stateUp").append("<p style='color:red;'>Web服务器错误</p>");
+            }
+        });
+        
+        $("#mv")[0].onloadedmetadata = function () {
+            var vLength = Math.ceil($("#mv")[0].duration);
+            var mv = {};            
+            mv.name = mvNameList[listLength];
+            mv.time = vLength;
+            mvList.push(mv);
+            listLength++;
+            if (listLength < mvNameList.length) {
+                var mvSrc = url + mvNameList[listLength];
+                $("#mv").attr("src", mvSrc);
+                $("mvState").html("正在载入......" + mvNameList[listLength]);
+            }
+            else {
+//                $("#state>.stateUp").append("<p style='color:green;'>解析成功 " + mvList.length + " </p>");
+                $("mvState").html("");
+                console.log("载入");
+                postAjax();
+            }
+        }
+
+         $("#mv").attr("src",  url + mvNameList[listLength]);
+        
+        function postAjax() {
+            for (var j = 0; j < mvList.length; j++) {
+                (function(n){
+                    postMv(mvList[n]);
+                })(j)
+            }
+            $("#state>.stateUp").append("<p style='color:red;'>发送失败 " + errUpNum + " </p>");
+            $("#state>.stateUp").append("<p style='color:green;'>发送成功 " + succUpNum + " </p>");
+        }
+
+        function postMv(data) {
+            var mvDate = {
+                id: "movie" + data.name
+                , data: {
+                    movies:[
+                        {
+                            name:data.name
+                        }
+                    ]
+                }
+                , type: "movies"
+                , next: data.time
+            }
+
+            mvDate = JSON.stringify(mvDate);
+            $.ajax({
+                url: postUrl
+                , type: 'post'
+                , contentType: "application/json"
+                , data: mvDate
+                , timeout: 3000
+                , async: false
+                , success: function (data) {
+                    $("#state .succUp").append("<p style='color:green;'>发送成功 " + data.name + " </p>");
+                    succUpNum++;
+                }
+                , error:function(){
+                    $("#state .errUp").append("<p style='color:red;'>发送失败 " + data.name + " </p>");
+                    errUpNum++;
+                }
+            });
+        }
+
+        function stripscript(s) {
+            var pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）—|{}【】‘；：”“'。，、？]")
+            var rs = "";
+            for (var i = 0; i < s.length; i++) {
+                rs = rs + s.substr(i, 1).replace(pattern, '');
+            }
+            if (s == rs) {
+                rs = true;
+            }
+            else {
+                console.log(rs);
+                rs = false;
+            }
+            return rs;
+        }
+    </script>
+</body>
+
+</html>

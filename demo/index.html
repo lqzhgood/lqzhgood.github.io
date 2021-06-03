@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="demos/JS-Demo主页/css/css.css">
+    <meta name='viewport' content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div id="tabs">
+            <ul class="idTabs">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Vue</a></li>
+                <li><a href="#">HTML/CSS</a></li>
+                <li><a href="#">JS/JQ</a></li>
+                <li><a href="#">Old</a></li>
+                <span>*</span>
+            </ul>
+            <div id="shuoming">仅基于PC.Chrome.50测试通过<br>Sum: <span></span></div>
+            <span id="strip"></span>
+            <span id="strip2"></span>
+            <div id="All" class="demo">
+                <h4>ALL</h4>
+                <ul id="allDemo"></ul>
+            </div>
+            <div id="Vue" class="demo">
+                <h4>Vue</h4>
+                <ul id="vueDemo"></ul>
+            </div>
+            <div id="HTMLCSS" class="demo">
+                <h4>HTML/CSS</h4>
+                <ul id="htmlDemo"></ul>
+            </div>
+            <div id="JS" class="demo">
+                <h4>JS/JQ</h4>
+                <ul id="jsDemo"></ul>
+            </div>
+            <div id="OTHER" class="demo">
+                <h4>OTHER</h4>
+                <ul id="otherDemo"></ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="demos/JS-Demo主页/js/jquery-2.2.3.min.js"></script>
+    <script src="demos/list.json"></script>
+    <script src="demos/JS-Demo主页/js/main-js-all.js"></script>
+</body>
+
+</html>
+
+
+<!--
+Demos集合目录-ajax异步生成Demos目录，颜色不搭 空间很浪费-
+
+update-20160617
+readme全部写入JSON格式，减少HTTP请求时间
+Chrome 3G速度模式下 加载快了一倍。
+
+一堆坑 ALL all 浪费了至少1小时。。。
+空间浪费很严重，如果做成两列，翻页的书本样式是不是会好一些。-->

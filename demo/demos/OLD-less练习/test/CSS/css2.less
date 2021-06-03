@@ -1,0 +1,108 @@
+@import "ku.less";
+.reset();
+@fz: 12px;
+.fr() {
+    float: right;
+    display: inline-block;
+}
+
+.fl() {
+    float: left;
+    display: inline-block;
+}
+
+.tudou_main {
+    width: 616px;
+    margin: 50px auto;
+}
+
+.title {
+    .clearfix();
+    border-top: 1px solid #D0D0D0;
+    height: 61px;
+    line-height: 61px;
+    h3 {
+        width: 106px;
+        border-top: 2px solid #F97374;
+        .fl();
+        margin-top: -1px;
+        height: 60px;
+    }
+    &_nav {
+        .fr();
+        li {
+            .fl();
+        }
+        span {
+            margin: 0 10px;
+        }
+        a {
+            color: #575757;
+            font-size: @fz;
+            &:hover {
+                color: pink;
+            }
+        }
+    }
+}
+
+.content {
+    .clearfix();
+    margin-right: -32px;
+}
+
+.item {
+    height: 164px;
+    width: 130px;
+    margin-right: 32px;
+    .clearfix();
+    font-size: @fz;
+    .fl();
+    &_img {
+        width: 130px;
+        height: 78px;
+        display: block;
+        position: relative;
+        span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 18px;
+            text-indent: 9px;
+            color: white;
+        }
+        .gq {
+            background: url(../img/gq.png);
+        }
+        .cq {
+            background: url(../img/cq.png);
+        }
+    }
+    &_list {
+        line-height: 22px;
+        a {
+            color: #666;
+            &:hover {
+                color: pink;
+            }
+        }
+        .userName,.play,.mess{
+            padding-left: 17px;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+        .userName {
+            background-image: url(../img/01.jpg);
+            padding-top: 1px;
+        }
+        .play {
+            background-image: url(../img/02.jpg);
+            margin-right: 4px;
+        }
+        .mess {
+            background-image: url(../img/03.jpg);
+        }
+    }
+}

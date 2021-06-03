@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css"> </head>
+
+<body>
+    <button id="n">N</button>
+    <br>
+    <button id="q">Q</button>
+    <button id="h">H</button>
+    <div class="pt-page pt-page-8" id="text2">
+        <div class="mode_Bj"></div>
+        <div class="mode_Qj"></div>
+        <div class="title">
+            <p>小恒欢迎您啊</p>
+        </div>
+        <div class="subtitle">
+            <p>今天天气真好，天气真的好啊。</p>
+        </div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var All = [["#E6E2AF", "#A7A37E", "#EFECCA", "#046380", "#002F2F"], ["#468966", "#FFF0A5", "#FFB03B", "#B64926", "#8E2800"],["#FCFFF5","#D1DBBD","#91AA9D","#3E606F","#193441"]];
+        var ftclArr = [];
+        var bgclArr = [];
+        var alN = 0;
+        var ftN = 0;
+        var bgN = 0;
+        $("#n").click(function () {
+            ftclArr = All[alN];
+            bgclArr = All[alN];
+            alN++;
+        })
+        $("#q").click(function () {
+            if (ftN == ftclArr.length) {
+                ftN = 0;
+            }
+            var ftcl = ftclArr[ftN];
+            $("#text2").css({
+                color: ftcl
+            })
+            ftN++;
+        });
+        $("#h").click(function () {
+            if (bgN == bgclArr.length) {
+                bgN = 0;
+            }
+            var bgcl = bgclArr[bgN];
+            $("body").css({
+                background: bgcl
+            })
+            bgN++;
+        });
+    </script>
+</body>
+
+</html>
