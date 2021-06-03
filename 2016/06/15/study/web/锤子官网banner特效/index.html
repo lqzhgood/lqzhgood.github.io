@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.png?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="看到锤子广告，点错进了锤子官网，首页有个特效炒鸡有意思啊！可是能力不够，百思不得其解……开始以为是纯JQUERY，到网上搜了下发现用CSS就可以实现了，是利用CSS的3个图层的景深不一致，旋转得到的。(。・ `ω´ ・)  先贴 DEMO">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="锤子官网banner特效">
+<meta property="og:url" content="http://lqzh.me/2016/06/15/study/web/锤子官网banner特效/index.html">
+<meta property="og:site_name" content="你好，旅行者">
+<meta property="og:description" content="看到锤子广告，点错进了锤子官网，首页有个特效炒鸡有意思啊！可是能力不够，百思不得其解……开始以为是纯JQUERY，到网上搜了下发现用CSS就可以实现了，是利用CSS的3个图层的景深不一致，旋转得到的。(。・ `ω´ ・)  先贴 DEMO">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2021-06-03T08:22:27.059Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="锤子官网banner特效">
+<meta name="twitter:description" content="看到锤子广告，点错进了锤子官网，首页有个特效炒鸡有意思啊！可是能力不够，百思不得其解……开始以为是纯JQUERY，到网上搜了下发现用CSS就可以实现了，是利用CSS的3个图层的景深不一致，旋转得到的。(。・ `ω´ ・)  先贴 DEMO">
+
+
+
+
+
+
+  <link rel="canonical" href="http://lqzh.me/2016/06/15/study/web/锤子官网banner特效/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>锤子官网banner特效 | 你好，旅行者</title>
+  
+
+
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77374526-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-77374526-1');
+  </script>
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">你好，旅行者</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">愿大地母亲忽悠着你</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-guestbook">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-comments"></i> <br>留言</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2016/06/15/study/web/锤子官网banner特效/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lqzh">
+      <meta itemprop="description" content="咿呀咿呀哟的博客">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="你好，旅行者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">锤子官网banner特效
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016/06/15 15:05:06" itemprop="dateCreated datePublished" datetime="2016-06-15T15:05:06+08:00">2016/06/15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021/06/03 16:22:27" itemprop="dateModified" datetime="2021-06-03T16:22:27+08:00">2021/06/03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/study/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/06/15/study/web/锤子官网banner特效/#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/06/15/study/web/锤子官网banner特效/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>看到锤子广告，点错进了锤子官网，首页有个特效炒鸡有意思啊！可是能力不够，百思不得其解……开始以为是纯JQUERY，到网上搜了下发现用CSS就可以实现了，是利用CSS的3个图层的景深不一致，旋转得到的。(。・ `ω´ ・) </p>
+<p>先贴 <a href="/demo/demos/CSS-景深特效/">DEMO</a></p>
+<a id="more"></a>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><h5 id="DOM部分"><a href="#DOM部分" class="headerlink" title="DOM部分"></a>DOM部分</h5><figure class="highlight vbscript-html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"banner"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bg"</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"img a"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"text b"</span>&gt;</span>以傲慢与偏执<span class="tag">&lt;<span class="name">br</span>/&gt;</span>回敬傲慢与偏见<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"copyright c"</span>&gt;</span>code by qingjin.me | picture from t.tt<span class="tag">&lt;/<span class="name">span</span>&gt;</span>      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h5 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    font-family: &quot;Microsoft YaHei&quot;;</span><br><span class="line">    transition: all .3s;</span><br><span class="line">    -webkit-transition: all .3s;</span><br><span class="line">    transition-timing-function: linear;</span><br><span class="line">    -webkit-transition-timing-function: linear;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.banner &#123;</span><br><span class="line"> /* 产生景深*/</span><br><span class="line">    perspective: 800px;</span><br><span class="line">&#125;</span><br><span class="line">/*背景图*/</span><br><span class="line">.bg &#123;</span><br><span class="line">/* 启用父元素定位 距离父元素上部100px 居中*/</span><br><span class="line">    position: relative;</span><br><span class="line">    width: 600px;</span><br><span class="line">    height: 300px;</span><br><span class="line">    margin: 100px auto;</span><br><span class="line">    background: url(&quot;http://static.smartisanos.cn/index/img/store/home/banner-3d-item-1-box-1_61bdc2f4f9.png&quot;) center no-repeat;</span><br><span class="line">    background-size: 100% 100%;</span><br><span class="line">    border-radius: 10px;</span><br><span class="line">    /*            转化为3D图形 设置旋转基点为图片中心 默认不旋转*/</span><br><span class="line">    transform-style: preserve-3d;</span><br><span class="line">    -webkit-transform-origin: 50% 50%;</span><br><span class="line">    -webkit-transform: rotateY(0deg) rotateX(0deg);</span><br><span class="line">&#125;</span><br><span class="line">/* 商品图（突出显示部分）*/</span><br><span class="line">.img &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 100%;</span><br><span class="line">    /*            元素向上移动8px 突出手机上部*/</span><br><span class="line">    bottom: 8px;</span><br><span class="line">    left: 0;</span><br><span class="line">    background: url(&quot;http://static.smartisanos.cn/index/img/store/home/banner-3d-item-1-box-3_8fa7866d59.png&quot;) center no-repeat;</span><br><span class="line">    background-size: 95% 100%;</span><br><span class="line">&#125;</span><br><span class="line">/* 文字*/</span><br><span class="line">.text &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 20%;</span><br><span class="line">    right: 10%;</span><br><span class="line">    font-size: 30px;</span><br><span class="line">    color: #fff;</span><br><span class="line">    text-align: right;</span><br><span class="line">    font-weight: lighter;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.copyright &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    bottom: 10%;</span><br><span class="line">    right: 10%;</span><br><span class="line">    font-size: 10px;</span><br><span class="line">    color: #fff;</span><br><span class="line">    text-align: right;</span><br><span class="line">    font-weight: lighter;</span><br><span class="line">&#125;</span><br><span class="line">/*    重点  将 前(商品图片)、中( 文字)、后(背景图片-灰色价格) 三层分离 视距20px；*/</span><br><span class="line">.a &#123;</span><br><span class="line">    -webkit-transform: translateZ(40px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.b &#123;</span><br><span class="line">    -webkit-transform: translateZ(20px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.c &#123;</span><br><span class="line">    -webkit-transform: translateZ(0px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="Js"><a href="#Js" class="headerlink" title="Js"></a>Js</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">       <span class="comment">//鼠标进入后  计算鼠标在banner中的位置 除系数50 旋转banner</span></span><br><span class="line">       $(<span class="string">".bg"</span>).mouseenter(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;               </span><br><span class="line">           <span class="keyword">var</span> thisPX = $(<span class="keyword">this</span>).offset().left;</span><br><span class="line">           <span class="keyword">var</span> thisPY = $(<span class="keyword">this</span>).offset().top;</span><br><span class="line">           <span class="keyword">var</span> boxWidth = $(<span class="keyword">this</span>).outerWidth();</span><br><span class="line">           <span class="keyword">var</span> boxHeight = $(<span class="keyword">this</span>).outerHeight();</span><br><span class="line">           $(<span class="keyword">this</span>).addClass(<span class="string">"threeD"</span>);</span><br><span class="line">           $(<span class="string">".threeD"</span>).mousemove(<span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line">               <span class="keyword">var</span> mouseX = event.pageX - thisPX;</span><br><span class="line">               <span class="keyword">var</span> mouseY = event.pageY - thisPY;</span><br><span class="line">               <span class="keyword">var</span> X;</span><br><span class="line">               <span class="keyword">var</span> Y;</span><br><span class="line">               <span class="keyword">if</span> (mouseX &gt; boxWidth / <span class="number">2</span>) &#123;</span><br><span class="line">                   X = mouseX - boxWidth / <span class="number">2</span>;</span><br><span class="line">               &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                   X = mouseX - boxWidth / <span class="number">2</span>;</span><br><span class="line">               &#125;</span><br><span class="line">               <span class="keyword">if</span> (mouseY &gt; boxHeight / <span class="number">2</span>) &#123;</span><br><span class="line">                   Y = boxHeight / <span class="number">2</span> - mouseY;</span><br><span class="line">               &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                   Y = boxHeight / <span class="number">2</span> - mouseY;</span><br><span class="line">               &#125;</span><br><span class="line">               $(<span class="string">".threeD"</span>).css(&#123;</span><br><span class="line">                   <span class="string">"-webkit-transform"</span>: <span class="string">"rotateY("</span> + X / <span class="number">50</span> + <span class="string">"deg) "</span> + <span class="string">"rotateX("</span>  + Y / <span class="number">50</span> + <span class="string">"deg)"</span></span><br><span class="line">               &#125;);</span><br><span class="line"></span><br><span class="line">               <span class="comment">// console.log(X + "," + Y);</span></span><br><span class="line">           &#125;);</span><br><span class="line">       &#125;);</span><br><span class="line">       $(<span class="string">".bg"</span>).mouseleave(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">           $(<span class="keyword">this</span>).removeClass(<span class="string">"threeD"</span>);</span><br><span class="line">           $(<span class="keyword">this</span>).css(&#123;</span><br><span class="line">               <span class="string">"-webkit-transform"</span>: <span class="string">"rotateY(0deg) rotateX(0deg)"</span></span><br><span class="line">           &#125;);</span><br><span class="line">       &#125;);</span><br><span class="line">   &#125;);</span><br></pre></td></tr></table></figure>
+<p>原帖：<a href="http://qingjin.me/?p=655" target="_blank" rel="noopener">锤子官网 banner 图 3D 效果实现方法</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag"># css</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/07/study/web/收工了-Brackets/" rel="next" title="收工了-Brackets">
+                <i class="fa fa-chevron-left"></i> 收工了-Brackets
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/06/16/study/web/蛋疼的HTTP劫持/" rel="prev" title="蛋疼的HTTP劫持">
+                蛋疼的HTTP劫持 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="lqzh">
+            
+              <p class="site-author-name" itemprop="name">lqzh</p>
+              <p class="site-description motion-element" itemprop="description">咿呀咿呀哟的博客</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/lqzhgood" title="GitHub &rarr; https://github.com/lqzhgood" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:liuqinzhi@live.cn" title="E-Mail &rarr; mailto:liuqinzhi@live.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#代码"><span class="nav-number">1.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#DOM部分"><span class="nav-number">1.1.</span> <span class="nav-text">DOM部分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#CSS部分"><span class="nav-number">1.2.</span> <span class="nav-text">CSS部分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Js"><span class="nav-number">1.3.</span> <span class="nav-text">Js</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大地母亲忽悠着你啊</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://lqzh.disqus.com/count.js" async></script>
+  
+
+  
+    <script>
+      var disqus_config = function () {
+        this.page.url = "http://lqzh.me/2016/06/15/study/web/锤子官网banner特效/";
+        this.page.identifier = "2016/06/15/study/web/锤子官网banner特效/";
+        this.page.title = '锤子官网banner特效';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lqzh.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        $(function () {
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          if (offsetTop <= 0) {
+            // load directly when there's no a scrollbar
+            loadComments();
+          } else {
+            $(window).on('scroll.disqus_scroll', function () {
+              // offsetTop may changes because of manually resizing browser window or lazy loading images.
+              var offsetTop = $('#comments').offset().top - $(window).height();
+              var scrollTop = $(window).scrollTop();
+
+              // pre-load comments a bit? (margin or anything else)
+              if (offsetTop - scrollTop < 60) {
+                $(window).off('.disqus_scroll');
+                loadComments();
+              }
+            });
+          }
+        });
+      
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="/js/src/js.cookie.js?v=6.7.0"></script>
+  <script src="/js/src/scroll-cookie.js?v=6.7.0"></script>
+
+
+  
+
+  
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
+  <script>
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
+
+  
+
+  
+
+</body>
+</html>

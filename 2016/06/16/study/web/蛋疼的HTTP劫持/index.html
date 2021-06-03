@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.png?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="呼呼～终于做完了。易迅这 Demo 7页搞完也真是不容易，每天都是 DIV-DIV 真是够了。HTML 结构和 CSS 反正是折腾完了，补了显眼部分的动效。后端部分偷懒没模拟,做的很粗糙，细节部分慢慢补吧。  HTML-仿易迅商城整站">
+<meta name="keywords" content="Say Hi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="蛋疼的HTTP劫持">
+<meta property="og:url" content="http://lqzh.me/2016/06/16/study/web/蛋疼的HTTP劫持/index.html">
+<meta property="og:site_name" content="你好，旅行者">
+<meta property="og:description" content="呼呼～终于做完了。易迅这 Demo 7页搞完也真是不容易，每天都是 DIV-DIV 真是够了。HTML 结构和 CSS 反正是折腾完了，补了显眼部分的动效。后端部分偷懒没模拟,做的很粗糙，细节部分慢慢补吧。  HTML-仿易迅商城整站">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://lqzh.me/2016/06/16/study/web/蛋疼的HTTP劫持/jc1.jpg">
+<meta property="og:image" content="http://lqzh.me/2016/06/16/study/web/蛋疼的HTTP劫持/jc2.jpg">
+<meta property="og:updated_time" content="2021-06-03T08:22:27.055Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="蛋疼的HTTP劫持">
+<meta name="twitter:description" content="呼呼～终于做完了。易迅这 Demo 7页搞完也真是不容易，每天都是 DIV-DIV 真是够了。HTML 结构和 CSS 反正是折腾完了，补了显眼部分的动效。后端部分偷懒没模拟,做的很粗糙，细节部分慢慢补吧。  HTML-仿易迅商城整站">
+<meta name="twitter:image" content="http://lqzh.me/2016/06/16/study/web/蛋疼的HTTP劫持/jc1.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="http://lqzh.me/2016/06/16/study/web/蛋疼的HTTP劫持/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>蛋疼的HTTP劫持 | 你好，旅行者</title>
+  
+
+
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77374526-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-77374526-1');
+  </script>
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">你好，旅行者</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">愿大地母亲忽悠着你</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-guestbook">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-comments"></i> <br>留言</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2016/06/16/study/web/蛋疼的HTTP劫持/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lqzh">
+      <meta itemprop="description" content="咿呀咿呀哟的博客">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="你好，旅行者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">蛋疼的HTTP劫持
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016/06/16 20:20:52" itemprop="dateCreated datePublished" datetime="2016-06-16T20:20:52+08:00">2016/06/16</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021/06/03 16:22:27" itemprop="dateModified" datetime="2021-06-03T16:22:27+08:00">2021/06/03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/study/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/06/16/study/web/蛋疼的HTTP劫持/#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/06/16/study/web/蛋疼的HTTP劫持/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>呼呼～终于做完了。易迅这 Demo 7页搞完也真是不容易，每天都是 DIV-DIV 真是够了。HTML 结构和 CSS 反正是折腾完了，补了显眼部分的动效。后端部分偷懒没模拟,做的很粗糙，细节部分慢慢补吧。</p>
+<p> <a href="/demo/demos/HTML-仿易迅商城整站/">HTML-仿易迅商城整站</a></p>
+<a id="more"></a>
+<p>做完感觉 CSS 还是太乱，除了显眼的头尾、及个别窗体，重用部分还是不够。主要是写结构的时候没全局的感觉，不能一眼看完效果图就知道哪哪哪可重用，然后为后面 Class 埋伏笔。我现在对 CSS 的感觉就像小学生写字，一笔一画往下写，虽然能写完但不漂亮，是不是该找个 CSS 框架。短期来看还是站巨人肩头长得高。    SCSS 好像不错。</p>
+<p>还要喷下铁通，尼玛我本地写代码都有广告……我只引用了百度的 JQUERY 库而已。例如我写个空白 HTML ,仅引入百度 Jquery 。</p>
+<figure class="highlight vbscript-html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="meta">&lt;!DOCTYPE html&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml">     <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>后然……</p>
+<p><img src="./jc1.jpg" alt="Jquer劫持"></p>
+<p><img src="./jc2.jpg" alt="Jquer劫持"></p>
+<p>可以明显看到 Jquery 被HTTP劫持 302 跳转到移动服务器，然后一大波 JS ，DOM 中 IFRAME 引入了广告。</p>
+<p>其中有个 JS 拆开很有意思：</p>
+<blockquote>
+<p><a href="http://g.gclick.cn/static/dice-pc.js" target="_blank" rel="noopener">http://g.gclick.cn/static/dice-pc.js</a></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">! <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, a = <span class="string">"dice-pc"</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">window</span>._GRD &amp;&amp; <span class="built_in">window</span>._GRD.triggerStats &amp;&amp; <span class="built_in">window</span>._GRD.triggerStats(a), !<span class="built_in">Math</span>.DICE) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">Math</span>.DICE = !<span class="number">0</span>, b = <span class="regexp">/baidu.com|taobao.com|qq.com|360.cn|sogou.com|www.apple.com|cntv.cn|1360.com|hao123.com|12306.cn|icbc.com.cn|duba.com|10086.cn|google.com.hk|google.com|bing.com|chinaz.com|duba.net|gdltax.gov.cn|alibaba.com|qihoo.com|xiaomi.com|google.cn|bjjtgl.gov.cn|moe.edu.cn|moe.gov.cn|www.mof.gov.cn|www.mohurd.gov.cn|cq.gov.cn|www.sipo.gov.cn|www.sda.gov.cn|jl.gov.cn|www.sdpc.gov.cn|www.saic.gov.cn|www.beijing.gov.cn|www.customs.gov.cn|hainan.gov.cn|jiangxi.gov.cn|www.fmprc.gov.cn|www.mohrss.gov.cn|www.aqsiq.gov.cn|bjjtgl.gov.cn|www.cbrc.gov.cn|mofcom.gov.cn|www.szaic.gov.cn|www.mod.gov.cn|www.sc.gov.cn|www.csrc.gov.cn|www.forestry.gov.cn|e21.cn|www.nmg.gov.cn|www.fujian.gov.cn|www.shanxigov.cn|www.shaanxi.gov.cn|ccn.mofcom.gov.cn|taiwan.net.tw|www.jiangsu.gov.cn|www.gd.gov.cn|www.gansu.gov.cn|www.hunan.gov.cn|www.qh.gov.cn|jxedu.gov.cn|www.hlj.gov.cn|www.hebei.gov.cn|www.gzgov.gov.cn|www.chengdu.gov.cn|bjrbj.gov.cn|www.nx.gov.cn|yw.gov.cn|haaic.gov.cn|gxeea.cn|sbj.saic.gov.cn|cnnic.cn|jxhld.gov.cn|court.gov.cn|www.chinagrain.gov.cn|cas.cn|changzhi.gov.cn|ly.gov.cn|huzhou.gov.cn|www.shandong.gov.cn|www.changsha.gov.cn|www.fuzhou.gov.cn|www.wenzhou.gov.cn|www.mlnews.gov.cn|www.xm.gov.cn|foshan.gov.cn|www.mas.gov.cn|ahxf.gov.cn|npc.gov.cn|hongze.gov.cn|linfen.gov.cn|www.changde.gov.cn|yn.gov.cn|qyxy.baic.gov.cn|xf.gov.cn|www.xiangxiang.gov.cn|hebwst.gov.cn|dg.gov.cn|www.zhenjiang.gov.cn|smesd.gov.cn|l.gov.cn|www.bjchy.gov.cn|maoming.gov.cn|linyi.gov.cn|moc.gov.cn|gwytb.gov.cn|www.huangshan.gov.cn|ccgp.gov.cn|mps.gov.cn|www.pingliang.gov.cn|henan.gov.cn|www.taizhou.gov.com/</span>, c = <span class="string">"01b1f6566fbc77663f16"</span>, d = <span class="string">"2d724824dd45d5c89b25"</span>, e = <span class="number">0</span>, f = <span class="function"><span class="keyword">function</span> (<span class="params">a</span>) </span>&#123;</span><br><span class="line">                <span class="built_in">window</span>.DICELOGS = <span class="built_in">window</span>.DICELOGS || [], <span class="built_in">window</span>.DICELOGS.push(a)</span><br><span class="line">            &#125;, location.hostname.match(b)) <span class="keyword">return</span> f(<span class="string">"* Good boy."</span>);</span><br><span class="line">        g = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            e &gt; <span class="number">1</span> || (e++, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="keyword">var</span> a;</span><br><span class="line">                <span class="keyword">return</span> <span class="built_in">document</span>.body ? (a = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>), a.type = <span class="string">"text/javascript"</span>, a.text = <span class="string">'_guanggao_pub= "'</span> + c + <span class="string">'";'</span>, a.text += <span class="string">'_guanggao_slot= "'</span> + d + <span class="string">'";'</span>, <span class="built_in">document</span>.body.insertBefore(a, <span class="built_in">document</span>.body.children.item(<span class="number">0</span>)), a = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>), a.src = <span class="string">"http://ssp.thescenseproject.com/js/01b1f6566fbc77663f16"</span>, a.type = <span class="string">"text/javascript"</span>, <span class="built_in">document</span>.body.insertBefore(a, <span class="built_in">document</span>.body.children.item(<span class="number">0</span>)), <span class="keyword">void</span> <span class="number">0</span>) : setTimeout(<span class="built_in">arguments</span>.callee, <span class="number">50</span>)</span><br><span class="line">            &#125;())</span><br><span class="line">        &#125;, h = <span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">Math</span>.random() * (<span class="built_in">Math</span>.max(a, b) - <span class="built_in">Math</span>.min(a, b)) + <span class="built_in">Math</span>.min(a, b)</span><br><span class="line">        &#125;, i = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> h(<span class="number">1</span>, <span class="number">50</span>)</span><br><span class="line">        &#125;, j = <span class="function"><span class="keyword">function</span> (<span class="params">a</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> b = <span class="number">0</span></span><br><span class="line">                , c = <span class="number">0</span></span><br><span class="line">                , d = <span class="number">.0125</span> * a + <span class="number">.375</span>;</span><br><span class="line">            <span class="keyword">return</span> a &gt; <span class="number">10</span> &amp;&amp; <span class="built_in">Math</span>.random() &lt; d ? (c = h(<span class="number">2</span>, <span class="number">10</span>), b = c * h(<span class="number">1</span>, <span class="number">5</span> / c)) : b = a, b</span><br><span class="line">        &#125;, k = <span class="regexp">/http:\/\/ssp\.thescenseproject\.com\/clk2\.html\?q\=[0-9a-zA-Z]+/g</span>, l = !<span class="number">1</span>, m = <span class="number">0</span>, n = <span class="function"><span class="keyword">function</span> (<span class="params">b</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> d, e, g, c = <span class="number">.02</span>;</span><br><span class="line">            <span class="keyword">return</span> f(<span class="string">"* Click rate: &lt;"</span> + c + <span class="string">"&gt;."</span>), <span class="built_in">Math</span>.random() &gt; c ? f(<span class="string">"* Click ignore."</span>) : (d = <span class="built_in">document</span>.createElement(<span class="string">"iframe"</span>), e = <span class="number">1e3</span> * j(i()), g = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="built_in">document</span>.body.appendChild(d), <span class="built_in">window</span>._GRD &amp;&amp; <span class="built_in">window</span>._GRD.triggerEventStats &amp;&amp; <span class="built_in">window</span>._GRD.triggerEventStats(a, <span class="string">"click"</span>)</span><br><span class="line">            &#125;, d.style.display = <span class="string">"none"</span>, d.setAttribute(<span class="string">"src"</span>, b), setTimeout(g, e), f(<span class="string">"* Clicked."</span>), <span class="keyword">void</span> <span class="number">0</span>)</span><br><span class="line">        &#125;, <span class="built_in">document</span>.body._insertBefore = <span class="built_in">document</span>.body.insertBefore, <span class="built_in">document</span>.body.insertBefore = <span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">"DIV"</span> === a.tagName &amp;&amp; <span class="number">0</span> === a.id.indexOf(c + <span class="string">"_"</span> + d) &amp;&amp; (a.style.height = <span class="string">"0px"</span>, a.style.visibility = <span class="string">"hidden"</span>), <span class="built_in">document</span>.body._insertBefore(a, b)</span><br><span class="line">        &#125;, o = <span class="number">0</span>, p = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> b, c, e, h, i, j;</span><br><span class="line">            <span class="keyword">if</span> (!h) &#123;</span><br><span class="line">                <span class="keyword">if</span> (o &gt;= <span class="number">5</span>) <span class="keyword">return</span> o = <span class="number">0</span>, <span class="keyword">void</span> <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span> (<span class="number">0</span> === o &amp;&amp; (f(<span class="string">"* Call origin script."</span>), g()), o++, b = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"iframe"</span>), i = b.length; i--;)</span><br><span class="line">                    <span class="keyword">if</span> (e = b[i].attributes, iframeParent = b[i].parentNode, iframeParent &amp;&amp; iframeParent.id &amp;&amp; iframeParent.id.indexOf(d) &gt; <span class="number">0</span>)</span><br><span class="line">                        <span class="keyword">for</span> (j = e.length; j--;) <span class="string">"data-srcdoc"</span> === e[j].nodeName &amp;&amp; (f(<span class="string">"* Dice click url found."</span>), c = b[i], h = (e[j].value || e[j].nodeValue || e[j].textContent).toString());</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    l = h ? h.match(k) : [], m = l.length</span><br><span class="line">                &#125; <span class="keyword">catch</span> (q) &#123;&#125;</span><br><span class="line">                m &amp;&amp; (clearInterval(p), l = l[<span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random() * m)], n(l), c.parentNode.style.display = <span class="string">"none"</span>, <span class="built_in">window</span>._GRD &amp;&amp; <span class="built_in">window</span>._GRD.triggerEventStats &amp;&amp; <span class="built_in">window</span>._GRD.triggerEventStats(a, <span class="string">"view"</span>))</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="number">500</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;();</span><br></pre></td></tr></table></figure>
+<p>第三行可以很明显看到有113条白名单，刨去85个 GOV 域名的 government 。</p>
+<blockquote>
+<p>/baidu.com | taobao.com | qq.com | 360.cn | sogou.com | <a href="http://www.apple.com" target="_blank" rel="noopener">www.apple.com</a> | cntv.cn | 1360.com | hao123.com | 12306.cn | icbc.com.cn | duba.com | 10086.cn | google.com.hk | google.com | bing.com | chinaz.com | duba.net | alibaba.com | qihoo.com | xiaomi.com | google.cn | moe.edu.cn | </p>
+</blockquote>
+<p>再联合到之前的新闻，果然会哭的孩子有奶吃。</p>
+<blockquote>
+<p><a href="http://www.huxiu.com/article/135293/1.html" target="_blank" rel="noopener">腾讯、小米、360 等 “六国联军” 结盟抵制 “流量劫持”</a></p>
+</blockquote>
+<p>其实当年的铁通还可以，直到去年中期，不知道是不是和移动合并的缘故，开始封UDP、PPTP端口、插广告，微信随便打开链接直接跳转到 “添加营销号” 页。这样劫持你敢信……而且网络也各种NAT，虽然给的是公网 IP，但是本地的电信都不能互访。还要绕海外的 VPS 来访问自家的路由也是醉了。</p>
+<p>打电话举报，尼玛10050的铁通电话被告知与移动合并，又转去10086.（其实我很好奇联通打10086要扣费不?）果然跟客服妹纸扯不清，只让她记录上报。第二天一早还没起床，铁通运维的就来了，满口自信说铁通不可能劫持，一定是我电脑的问题。来了俩，当场演示，虽然他们不懂，但是我把白名单列出，里面有 10086.cn 这总看得懂吧。又一通电话召唤了个”懂技术”的，依然是坑，满口不在乎，看完演示直接走了，边走边说没劫持是不可能的……让拍了照继续上报。</p>
+<p>我也知道这劫持肯定不是本地ISP就能解决的，一是没这么大权限，二是运维的一般也不懂。果然下午铁通机房的打电话来了，当然也是运维的，我说的 HTTP 劫持也不甚了解。只说明了不是他们本地劫持的，只能帮我往上报，至于能不能解决他们也没有办法，希望我能理解。然后让我提交一些图片证明。我本是加他 QQ 然后远程桌面演示的，结果巧的是劫持这时候没有了……我踩那位 “劫持者” 也是高层了，应该有监控后台工单，看到有投诉就默默取消了，反而下面不知道。不过仅仅是百度的劫持没有了，京东百度等返利的还在。但是那些证据就不好抓了，至少没有广告这个这么明显。只得作罢。走后过了会儿，运维的打电话来表示希望我能先结束工单，超期了他要扣钱，不过这个会继续往上面报。想想就同意了，毕竟也不是他们的锅。再后来就是移动以及本地的客服回访了，监督倒是不少，可不能解决问题有什么用呢……</p>
+<p>这 3～4 天来看，百度 CDN 库的劫持倒是没有了，其他还在，想想还是算了，大不了明年换电信了，要不是看在这外网质量高早就不忍了，现在和我 VPS 不管早晚高峰稳定50ms。速度能跑满我多拨的 100M ～相反电信却一直找不到合适的线路，HK + CN2 + 大水管 符合的几乎都是天价，流量都是1R/G。这哪买得起……而且电信晚上那出口带宽，真是堪忧。</p>
+<p>唉，蛋疼的网络……</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/15/study/web/锤子官网banner特效/" rel="next" title="锤子官网banner特效">
+                <i class="fa fa-chevron-left"></i> 锤子官网banner特效
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/06/17/life/最近/" rel="prev" title="最近">
+                最近 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="lqzh">
+            
+              <p class="site-author-name" itemprop="name">lqzh</p>
+              <p class="site-description motion-element" itemprop="description">咿呀咿呀哟的博客</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/lqzhgood" title="GitHub &rarr; https://github.com/lqzhgood" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:liuqinzhi@live.cn" title="E-Mail &rarr; mailto:liuqinzhi@live.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大地母亲忽悠着你啊</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://lqzh.disqus.com/count.js" async></script>
+  
+
+  
+    <script>
+      var disqus_config = function () {
+        this.page.url = "http://lqzh.me/2016/06/16/study/web/蛋疼的HTTP劫持/";
+        this.page.identifier = "2016/06/16/study/web/蛋疼的HTTP劫持/";
+        this.page.title = '蛋疼的HTTP劫持';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lqzh.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        $(function () {
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          if (offsetTop <= 0) {
+            // load directly when there's no a scrollbar
+            loadComments();
+          } else {
+            $(window).on('scroll.disqus_scroll', function () {
+              // offsetTop may changes because of manually resizing browser window or lazy loading images.
+              var offsetTop = $('#comments').offset().top - $(window).height();
+              var scrollTop = $(window).scrollTop();
+
+              // pre-load comments a bit? (margin or anything else)
+              if (offsetTop - scrollTop < 60) {
+                $(window).off('.disqus_scroll');
+                loadComments();
+              }
+            });
+          }
+        });
+      
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="/js/src/js.cookie.js?v=6.7.0"></script>
+  <script src="/js/src/scroll-cookie.js?v=6.7.0"></script>
+
+
+  
+
+  
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
+  <script>
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
+
+  
+
+  
+
+</body>
+</html>
