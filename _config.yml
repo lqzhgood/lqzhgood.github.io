@@ -88,6 +88,7 @@ deploy:
         #    coding: git@git.dev.tencent.com:lqzh/blog.git
         github: git@github.com:lqzhgood/lqzhgood.github.io.git
     branch: master
+    name: lqzhgood
 
 # Generate categories from directory-tree
 # Dependencies: https://github.com/xu-song/hexo-auto-category
