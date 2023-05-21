@@ -1,2 +1,0 @@
-
-copy D:\NetShare\Github\XiaohengWebFront\xh-index\xh\lib\jquery.min.2.1.4.js+D:\NetShare\Github\XiaohengWebFront\xh-index\xh\index\js\lightbox-2.6.min.js+D:\NetShare\Github\XiaohengWebFront\xh-index\xh\index\js\jquery.easing.1.3.js+D:\NetShare\Github\XiaohengWebFront\xh-index\xh\index\js\scrolling.js+D:\NetShare\Github\XiaohengWebFront\xh-index\xh\index\js\main.js  D:\NetShare\Github\XiaohengWebFront\xh-index\xh\index\corebefore.js /b
