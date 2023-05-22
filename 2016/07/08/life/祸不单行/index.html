@@ -1,154 +1,50 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+  <link rel="mask-icon" href="/images/logo.png" color="#222">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lqzh.me","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.16.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=6.7.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="mask-icon" href="/images/logo.png?v=6.7.0" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '6.7.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta name="description" content="这两天真是一堆坑…… 昨天去面试，早上6点多醒来赶车。虽然之前沟通过面试不需要写代码，冥冥中还是觉得有备无患。起来打包 Brackets 的配置文件，特么竟然有 500+MB …… 丢在 OneDrive 设个定时关机就走了。 走的瞬间好像喵到 OneDrive 文件夹结构不对，算了…… 先走。 早上的公交也是少，等了十来分钟才来，还是满的。这时距离开车还有 30+ 分钟，平时过去也就15分钟车程">
-<meta name="keywords" content="onedrive">
+    <meta name="description" content="这两天真是一堆坑……  昨天去面试，早上6点多醒来赶车。虽然之前沟通过面试不需要写代码，冥冥中还是觉得有备无患。起来打包 Brackets 的配置文件，特么竟然有 500+MB …… 丢在 OneDrive 设个定时关机就走了。 走的瞬间好像喵到 OneDrive 文件夹结构不对，算了…… 先走。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="祸不单行">
-<meta property="og:url" content="http://lqzh.me/2016/07/08/life/祸不单行/index.html">
+<meta property="og:url" content="http://lqzh.me/2016/07/08/life/%E7%A5%B8%E4%B8%8D%E5%8D%95%E8%A1%8C/index.html">
 <meta property="og:site_name" content="你好，旅行者">
-<meta property="og:description" content="这两天真是一堆坑…… 昨天去面试，早上6点多醒来赶车。虽然之前沟通过面试不需要写代码，冥冥中还是觉得有备无患。起来打包 Brackets 的配置文件，特么竟然有 500+MB …… 丢在 OneDrive 设个定时关机就走了。 走的瞬间好像喵到 OneDrive 文件夹结构不对，算了…… 先走。 早上的公交也是少，等了十来分钟才来，还是满的。这时距离开车还有 30+ 分钟，平时过去也就15分钟车程">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-06-03T08:22:27.039Z">
+<meta property="og:description" content="这两天真是一堆坑……  昨天去面试，早上6点多醒来赶车。虽然之前沟通过面试不需要写代码，冥冥中还是觉得有备无患。起来打包 Brackets 的配置文件，特么竟然有 500+MB …… 丢在 OneDrive 设个定时关机就走了。 走的瞬间好像喵到 OneDrive 文件夹结构不对，算了…… 先走。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-07-08T15:17:33.000Z">
+<meta property="article:modified_time" content="2023-05-22T10:14:28.717Z">
+<meta property="article:author" content="lqzh">
+<meta property="article:tag" content="onedrive">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="祸不单行">
-<meta name="twitter:description" content="这两天真是一堆坑…… 昨天去面试，早上6点多醒来赶车。虽然之前沟通过面试不需要写代码，冥冥中还是觉得有备无患。起来打包 Brackets 的配置文件，特么竟然有 500+MB …… 丢在 OneDrive 设个定时关机就走了。 走的瞬间好像喵到 OneDrive 文件夹结构不对，算了…… 先走。 早上的公交也是少，等了十来分钟才来，还是满的。这时距离开车还有 30+ 分钟，平时过去也就15分钟车程">
+
+
+<link rel="canonical" href="http://lqzh.me/2016/07/08/life/%E7%A5%B8%E4%B8%8D%E5%8D%95%E8%A1%8C/">
 
 
 
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://lqzh.me/2016/07/08/life/%E7%A5%B8%E4%B8%8D%E5%8D%95%E8%A1%8C/","path":"2016/07/08/life/祸不单行/","title":"祸不单行"}</script>
 
-
-
-  <link rel="canonical" href="http://lqzh.me/2016/07/08/life/祸不单行/">
-
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>祸不单行 | 你好，旅行者</title>
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>祸不单行 | 你好，旅行者</title>
   
 
-
-
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77374526-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-77374526-1');
-  </script>
-
-
-
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1"></script>
 
 
 
@@ -157,340 +53,218 @@
 
 
   <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">你好，旅行者</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-    
-      
-        <p class="site-subtitle">愿大地母亲忽悠着你</p>
-      
-    
-    
   </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">你好，旅行者</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">愿大地母亲忽悠着你</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
 
 
 <nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-guestbook">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-comments"></i> <br>留言</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook" rel="section"><i class="fa fa-comments fa-fw"></i>留言</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
-  
-
-
-
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
 </div>
-    </header>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lqzh"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">lqzh</p>
+  <div class="site-description" itemprop="description">咿呀咿呀哟的博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lqzhgood" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lqzhgood" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:i@lqzh.me" title="E-Mail → mailto:i@lqzh.me" rel="noopener me"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
 
     
+  </aside>
 
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-          <div id="content" class="content">
-            
+    </div>
 
-  <div id="posts" class="posts-expand">
-    
+    <div class="main-inner post posts-expand">
+
 
   
 
-  
+
+<div class="post-block">
   
   
 
-  
-    <div class="reading-progress-bar"></div>
-  
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2016/07/08/life/%E7%A5%B8%E4%B8%8D%E5%8D%95%E8%A1%8C/">
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2016/07/08/life/祸不单行/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lqzh">
-      <meta itemprop="description" content="咿呀咿呀哟的博客">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="lqzh">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="你好，旅行者">
+      <meta itemprop="description" content="咿呀咿呀哟的博客">
     </span>
 
-    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="祸不单行 | 你好，旅行者">
+      <meta itemprop="description" content="">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          祸不单行
+        </h1>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">祸不单行
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              
-            
-          </h1>
-        
+      <time title="创建时间：2016-07-08 23:17:33" itemprop="dateCreated datePublished" datetime="2016-07-08T23:17:33+08:00">2016-07-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-05-22 18:14:28" itemprop="dateModified" datetime="2023-05-22T18:14:28+08:00">2023-05-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">life</span></a>
+        </span>
+    </span>
 
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2016/07/08 23:17:33" itemprop="dateCreated datePublished" datetime="2016-07-08T23:17:33+08:00">2016/07/08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2021/06/03 16:22:27" itemprop="dateModified" datetime="2021-06-03T16:22:27+08:00">2021/06/03</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">life</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/07/08/life/祸不单行/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/08/life/祸不单行/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>这两天真是一堆坑……</p>
+    <div class="post-body" itemprop="articleBody"><p>这两天真是一堆坑……</p>
 <p>昨天去面试，早上6点多醒来赶车。虽然之前沟通过面试不需要写代码，冥冥中还是觉得有备无患。起来打包 Brackets 的配置文件，特么竟然有 500+MB …… 丢在 OneDrive 设个定时关机就走了。 走的瞬间好像喵到 OneDrive 文件夹结构不对，算了…… 先走。</p>
 <p>早上的公交也是少，等了十来分钟才来，还是满的。这时距离开车还有 30+ 分钟，平时过去也就15分钟车程，不急。坑爹的是这车竟然改道了！原来直线的路程现在绕二中一周，硬是墨迹半小时。庆幸检票刚好赶到，想着直接刷身份证上车也算有惊无险，然后就呵呵了。身份证无效！被告知新办的第三代身份证无法在轧机验证，还是要先取票……不管怎样，最后总算上了车，搜索后得知去年 7 月份就已经有案例，铁道部这效率～ 懒得吐槽。</p>
-<a id="more"></a>
-<p>面试没啥说的，被我猜对。上来就让写代码，暗喜还好有 Plan B，网络也还好，有全局的梯子。貌似都在意料之中且可控，结果…… 黑名单里 Amazon 的 S3 都没覆盖。 Brackets 在我走之前都没下完，自己的 VPS 出口线路在深圳好像也绕道了，非直连 HK ，质量不佳。其实下完了也没啥用，还有500+MB的配置文件呢～ 这速度…… 慌了 =.=！ 回答问题也因为沟通不畅，都是特简单基础的问题，硬生生被我越想越复杂，例如只让我写个构造函数，然后执行两次（传参不同）；被我理解为在构造函数的原型添加方法,执行子函数的同时通过原型链调用父函数上创建的方法，写着写着又觉得不对，这样毫无意义啊；又沟通，最后我在回程的公交上才明白问的什么意思……T.T 写的同时，未调教的 WIN8 MSDN，时不时还要处理输入法、键盘布局的添乱。 越来越不可控，脑子开始罢工了，没了平时的思如泉涌，后面都成了垃圾时间，平时十来分钟搞定的难度最后反而还没解完全，脑子一直是空的，不知道在想什么。最后我估计是没戏～教训主要还是沟通不畅吧，也没啥好解释的，我已经努力想在陌生环境中找一份熟悉让自己安心，可网络还是没得 U 盘可靠。</p>
+<span id="more"></span>
+
+<p>面试没啥说的，被我猜对。上来就让写代码，暗喜还好有 Plan B，网络也还好，有全局的梯子。貌似都在意料之中且可控，结果…… 黑名单里 Amazon 的 S3 都没覆盖。 Brackets 在我走之前都没下完，自己的 VPS 出口线路在深圳好像也绕道了，非直连 HK ，质量不佳。其实下完了也没啥用，还有500+MB的配置文件呢～ 这速度…… 慌了 &#x3D;.&#x3D;！ 回答问题也因为沟通不畅，都是特简单基础的问题，硬生生被我越想越复杂，例如只让我写个构造函数，然后执行两次（传参不同）；被我理解为在构造函数的原型添加方法,执行子函数的同时通过原型链调用父函数上创建的方法，写着写着又觉得不对，这样毫无意义啊；又沟通，最后我在回程的公交上才明白问的什么意思……T.T 写的同时，未调教的 WIN8 MSDN，时不时还要处理输入法、键盘布局的添乱。 越来越不可控，脑子开始罢工了，没了平时的思如泉涌，后面都成了垃圾时间，平时十来分钟搞定的难度最后反而还没解完全，脑子一直是空的，不知道在想什么。最后我估计是没戏～教训主要还是沟通不畅吧，也没啥好解释的，我已经努力想在陌生环境中找一份熟悉让自己安心，可网络还是没得 U 盘可靠。</p>
 <p>回家就更坑了。睡一下午起来打开电脑，就发现 OneDrive 文件夹已被清空。虽然从 OneDrive 官网可以恢复，但是对比后尼玛这是至少 2 个星期之前的版本好嘛。其实之前也发生过一次，但仅是一个文件夹，而且恢复后没造成损失就没在意，这次就坑大发了。况且我的文件备份策略是仅保留 30 天内的修改，不含删除。想想这应该是一个逻辑上的 BUG ； 我每次都是待机，也就是说有可能 OneDrive 卡死情况下我待机了。保留了 OneDrive 的有问题的同步状态，待机这段时间内我在其他电脑修改后，下次启动就混乱了。</p>
 <blockquote>
 <p>假设电脑 A 上有 10 个文件，备份 1-5 的时候 OneDrive 挂了，此时如果我待机， A 上的 OneDrive 会保留 “已同步1-5，6-10未完成”的状态。此时如果云端文件被修改（共享B修改），下次 A 开机后 OneDrive 会继续执行未完的任务而不验证这个任务是否已失效；A 上的 OneDrive 继续同步 6-10 ；可云端已经被修改源文件不存在， OneDrive 直接就把本地文件删了。接着继续同步下一轮，由于本地文件已被删除， OneDrive 则会继续把云端也删除…… 这样云端和本地就都被清空了。<br>而 OneDrive 卡住又是常有的事……（非网络问题）</p>
@@ -499,440 +273,87 @@
 <p>彻底放弃 OneDrive ，将同步内容迁移到 Dropbox ；明天去图书馆试试一般网络下 Dropbox 的可用性，如果不行明天搬 坚果云。</p>
 <p>这次看来单纯的备份工具也不行，只备份没有版本管理，如果文件丢失、损坏的错误情况一样会被“备份”，污染备份文件。目前看来 “Timemachine” 才是王道。 又得买硬盘了 T.T</p>
 
-      
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/onedrive/" rel="tag"># onedrive</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/07/05/life/我说你好好的脱欧干嘛/" rel="next" title="我说你好好的脱欧干嘛">
-                <i class="fa fa-chevron-left"></i> 我说你好好的脱欧干嘛
-              </a>
-            
+          <div class="post-tags">
+              <a href="/tags/onedrive/" rel="tag"># onedrive</a>
           </div>
 
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/09/study/web/面试题-数组去重/" rel="prev" title="面试题-数组去重">
-                面试题-数组去重 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-  </div>
-
-
-          </div>
-          
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
-    </div>
-
-  
-
-
-
-        </div>
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-      <div id="sidebar-dimmer"></div>
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="lqzh">
-            
-              <p class="site-author-name" itemprop="name">lqzh</p>
-              <p class="site-description motion-element" itemprop="description">咿呀咿呀哟的博客</p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">22</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">7</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">18</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/lqzhgood" title="GitHub &rarr; https://github.com/lqzhgood" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="mailto:liuqinzhi@live.cn" title="E-Mail &rarr; mailto:liuqinzhi@live.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                </span>
-              
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2016/07/05/life/%E6%88%91%E8%AF%B4%E4%BD%A0%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%84%B1%E6%AC%A7%E5%B9%B2%E5%98%9B/" rel="prev" title="我说你好好的脱欧干嘛">
+                  <i class="fa fa-chevron-left"></i> 我说你好好的脱欧干嘛
+                </a>
             </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </div>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">大地母亲忽悠着你啊</span>
-
-  
-
-  
+            <div class="post-nav-item">
+                <a href="/2016/07/09/study/web/%E9%9D%A2%E8%AF%95%E9%A2%98-%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/" rel="next" title="面试题-数组去重">
+                  面试题-数组去重 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
 
 
 
 
-        
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
 
 
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-    
-
-    
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lqzh</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
+    </div>
+  </footer>
+
   
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
 
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
 
-
-
-  
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=6.7.0"></script>
-
-  <script src="/js/src/motion.js?v=6.7.0"></script>
-
-
-
-  
-  
-
-  
-  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
-<script src="/js/src/post-details.js?v=6.7.0"></script>
-
-
-
-  
-
-
-  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
-
-
-
-  
-
-  
-    <script id="dsq-count-scr" src="https://lqzh.disqus.com/count.js" async></script>
-  
-
-  
-    <script>
-      var disqus_config = function () {
-        this.page.url = "http://lqzh.me/2016/07/08/life/祸不单行/";
-        this.page.identifier = "2016/07/08/life/祸不单行/";
-        this.page.title = '祸不单行';
-        };
-      function loadComments () {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://lqzh.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      }
-      
-        $(function () {
-          var offsetTop = $('#comments').offset().top - $(window).height();
-          if (offsetTop <= 0) {
-            // load directly when there's no a scrollbar
-            loadComments();
-          } else {
-            $(window).on('scroll.disqus_scroll', function () {
-              // offsetTop may changes because of manually resizing browser window or lazy loading images.
-              var offsetTop = $('#comments').offset().top - $(window).height();
-              var scrollTop = $(window).scrollTop();
-
-              // pre-load comments a bit? (margin or anything else)
-              if (offsetTop - scrollTop < 60) {
-                $(window).off('.disqus_scroll');
-                loadComments();
-              }
-            });
-          }
-        });
-      
-    </script>
-  
-
-
-
-
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -944,46 +365,6 @@
 
 
 
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <script src="/js/src/js.cookie.js?v=6.7.0"></script>
-  <script src="/js/src/scroll-cookie.js?v=6.7.0"></script>
-
-
-  
-
-  
-  
-  
-    
-  
-  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
-  <script>
-  
-    bookmark.scrollToMark('auto', "#更多");
-  
-  </script>
-
-
-  
-
-  
 
 </body>
 </html>

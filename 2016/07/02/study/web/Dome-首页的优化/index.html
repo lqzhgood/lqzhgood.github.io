@@ -1,154 +1,50 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+  <link rel="mask-icon" href="/images/logo.png" color="#222">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lqzh.me","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.16.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=6.7.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="mask-icon" href="/images/logo.png?v=6.7.0" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '6.7.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta name="description" content="由于整站是放在 Github 上的静态页，那么没有后端的支持，页面的更新就是个麻烦事了。例如 Demo 的首页。如果纯静态，做完 Demo 然后还要去 Demo 首页写 DOM ，问题是如果写错还要回来更新…… 我这么懒，这费力不讨好的事我可不做。为了改进这个缺陷，陆陆续续有了这 3 个版本的更新。">
-<meta name="keywords" content="js">
+    <meta name="description" content="由于整站是放在 Github 上的静态页，那么没有后端的支持，页面的更新就是个麻烦事了。例如 Demo 的首页。如果纯静态，做完 Demo 然后还要去 Demo 首页写 DOM ，问题是如果写错还要回来更新…… 我这么懒，这费力不讨好的事我可不做。为了改进这个缺陷，陆陆续续有了这 3 个版本的更新。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dome 首页的优化">
-<meta property="og:url" content="http://lqzh.me/2016/07/02/study/web/Dome-首页的优化/index.html">
+<meta property="og:url" content="http://lqzh.me/2016/07/02/study/web/Dome-%E9%A6%96%E9%A1%B5%E7%9A%84%E4%BC%98%E5%8C%96/index.html">
 <meta property="og:site_name" content="你好，旅行者">
 <meta property="og:description" content="由于整站是放在 Github 上的静态页，那么没有后端的支持，页面的更新就是个麻烦事了。例如 Demo 的首页。如果纯静态，做完 Demo 然后还要去 Demo 首页写 DOM ，问题是如果写错还要回来更新…… 我这么懒，这费力不讨好的事我可不做。为了改进这个缺陷，陆陆续续有了这 3 个版本的更新。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-06-03T08:22:27.055Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-07-02T14:23:50.000Z">
+<meta property="article:modified_time" content="2023-05-22T10:14:28.733Z">
+<meta property="article:author" content="lqzh">
+<meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dome 首页的优化">
-<meta name="twitter:description" content="由于整站是放在 Github 上的静态页，那么没有后端的支持，页面的更新就是个麻烦事了。例如 Demo 的首页。如果纯静态，做完 Demo 然后还要去 Demo 首页写 DOM ，问题是如果写错还要回来更新…… 我这么懒，这费力不讨好的事我可不做。为了改进这个缺陷，陆陆续续有了这 3 个版本的更新。">
+
+
+<link rel="canonical" href="http://lqzh.me/2016/07/02/study/web/Dome-%E9%A6%96%E9%A1%B5%E7%9A%84%E4%BC%98%E5%8C%96/">
 
 
 
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://lqzh.me/2016/07/02/study/web/Dome-%E9%A6%96%E9%A1%B5%E7%9A%84%E4%BC%98%E5%8C%96/","path":"2016/07/02/study/web/Dome-首页的优化/","title":"Dome 首页的优化"}</script>
 
-
-
-  <link rel="canonical" href="http://lqzh.me/2016/07/02/study/web/Dome-首页的优化/">
-
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>Dome 首页的优化 | 你好，旅行者</title>
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Dome 首页的优化 | 你好，旅行者</title>
   
 
-
-
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77374526-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-77374526-1');
-  </script>
-
-
-
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1"></script>
 
 
 
@@ -157,359 +53,239 @@
 
 
   <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">你好，旅行者</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-    
-      
-        <p class="site-subtitle">愿大地母亲忽悠着你</p>
-      
-    
-    
   </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">你好，旅行者</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">愿大地母亲忽悠着你</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
 
 
 <nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-guestbook">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-comments"></i> <br>留言</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook" rel="section"><i class="fa fa-comments fa-fw"></i>留言</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
-  
-
-
-
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
 </div>
-    </header>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Version-1"><span class="nav-number">1.</span> <span class="nav-text">Version 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Version-2"><span class="nav-number">2.</span> <span class="nav-text">Version 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Version-3"><span class="nav-number">3.</span> <span class="nav-text">Version 3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next"><span class="nav-number">4.</span> <span class="nav-text">next</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%90%E6%A7%BD"><span class="nav-number">5.</span> <span class="nav-text">吐槽</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lqzh"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">lqzh</p>
+  <div class="site-description" itemprop="description">咿呀咿呀哟的博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lqzhgood" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lqzhgood" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:i@lqzh.me" title="E-Mail → mailto:i@lqzh.me" rel="noopener me"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
 
     
+  </aside>
 
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-          <div id="content" class="content">
-            
+    </div>
 
-  <div id="posts" class="posts-expand">
-    
+    <div class="main-inner post posts-expand">
+
 
   
 
-  
+
+<div class="post-block">
   
   
 
-  
-    <div class="reading-progress-bar"></div>
-  
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2016/07/02/study/web/Dome-%E9%A6%96%E9%A1%B5%E7%9A%84%E4%BC%98%E5%8C%96/">
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2016/07/02/study/web/Dome-首页的优化/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lqzh">
-      <meta itemprop="description" content="咿呀咿呀哟的博客">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="lqzh">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="你好，旅行者">
+      <meta itemprop="description" content="咿呀咿呀哟的博客">
     </span>
 
-    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Dome 首页的优化 | 你好，旅行者">
+      <meta itemprop="description" content="">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Dome 首页的优化
+        </h1>
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">Dome 首页的优化
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              
-            
-          </h1>
-        
+      <time title="创建时间：2016-07-02 22:23:50" itemprop="dateCreated datePublished" datetime="2016-07-02T22:23:50+08:00">2016-07-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-05-22 18:14:28" itemprop="dateModified" datetime="2023-05-22T18:14:28+08:00">2023-05-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/study/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a>
+        </span>
+    </span>
 
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2016/07/02 22:23:50" itemprop="dateCreated datePublished" datetime="2016-07-02T22:23:50+08:00">2016/07/02</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2021/06/03 16:22:27" itemprop="dateModified" datetime="2021-06-03T16:22:27+08:00">2021/06/03</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/study/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/07/02/study/web/Dome-首页的优化/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/02/study/web/Dome-首页的优化/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody"><p>由于整站是放在 Github 上的静态页，那么没有后端的支持，页面的更新就是个麻烦事了。例如 Demo 的首页。如果纯静态，做完 Demo 然后还要去 Demo 首页写 DOM ，问题是如果写错还要回来更新…… 我这么懒，这费力不讨好的事我可不做。为了改进这个缺陷，陆陆续续有了这 3 个版本的更新。</p>
+<span id="more"></span>
 
-      
-      
-
-      
-        <p>由于整站是放在 Github 上的静态页，那么没有后端的支持，页面的更新就是个麻烦事了。例如 Demo 的首页。如果纯静态，做完 Demo 然后还要去 Demo 首页写 DOM ，问题是如果写错还要回来更新…… 我这么懒，这费力不讨好的事我可不做。为了改进这个缺陷，陆陆续续有了这 3 个版本的更新。</p>
-<a id="more"></a>
 <h3 id="Version-1"><a href="#Version-1" class="headerlink" title="Version 1"></a>Version 1</h3><p>这个版本主要解决有没有的问题，先把主体框架搞定。最大的麻烦还是配色，考虑到主要入口是简历的 More ，最后要死要活还是和简历的风格搭上了。花了一天时间就在改这几个 8 位的 HEX …… 除了练车，这应该是我做过第二没效率的事了。</p>
-<p>接下来就是处理列表。现学的 JS 肯定不行，Google 一堆大神整天都在防着 Chrome 访问本地文件，靠我这技术现在肯定是没法，很自然的想到用批处理 – BAT，通过间接的创建本地目录的 XML，通过 ajax 调用达到目的。 说起来惭愧，从我开始用 Windows 就一直在用批处理，却一直没掌握循环 =。=～ 又是一阵折腾，把目录的 XML 结构搞定。剩下的就是 ajax 读 XML ，然后嵌套一个同步的 ajax 读每个 Demo 的 readme.md ， 最后处理字符串，插入 DOM。</p>
+<p>接下来就是处理列表。现学的 JS 肯定不行，Google 一堆大神整天都在防着 Chrome 访问本地文件，靠我这技术现在肯定是没法，很自然的想到用批处理 – BAT，通过间接的创建本地目录的 XML，通过 ajax 调用达到目的。 说起来惭愧，从我开始用 Windows 就一直在用批处理，却一直没掌握循环 &#x3D;。&#x3D;～ 又是一阵折腾，把目录的 XML 结构搞定。剩下的就是 ajax 读 XML ，然后嵌套一个同步的 ajax 读每个 Demo 的 readme.md ， 最后处理字符串，插入 DOM。</p>
 <p>第一个版本搞定，我的 Demo 有首页啦！</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off&amp;setlocal enabledelayedexpansion</span><br><span class="line"><span class="built_in">cd</span> demos</span><br><span class="line"><span class="built_in">echo</span> ^&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"GB18030"</span>?^&gt;&gt;list.xml</span><br><span class="line"><span class="built_in">echo</span> ^&lt;urls^&gt;&gt;&gt;list.xml</span><br><span class="line"><span class="keyword">for</span> /f <span class="string">"delims="</span> %%i <span class="keyword">in</span> (<span class="string">'dir /a-d/b /AD'</span>) <span class="keyword">do</span> (</span><br><span class="line"><span class="built_in">set</span> <span class="string">"tt=%%i"</span></span><br><span class="line"><span class="built_in">set</span> tt=!tt:\=/!</span><br><span class="line"><span class="built_in">echo</span> ^&lt;url^&gt;!tt!^&lt;^/url^&gt;&gt;&gt;list.xml)</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ^&lt;^/urls^&gt;&gt;&gt;list.xml</span><br></pre></td></tr></table></figure>
-<hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off&amp;setlocal enabledelayedexpansion</span><br><span class="line"><span class="built_in">cd</span> demos</span><br><span class="line"><span class="built_in">echo</span> ^&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;GB18030&quot;</span>?^&gt;&gt;list.xml</span><br><span class="line"><span class="built_in">echo</span> ^&lt;urls^&gt;&gt;&gt;list.xml</span><br><span class="line"><span class="keyword">for</span> /f <span class="string">&quot;delims=&quot;</span> %%i <span class="keyword">in</span> (<span class="string">&#x27;dir /a-d/b /AD&#x27;</span>) <span class="keyword">do</span> (</span><br><span class="line"><span class="built_in">set</span> <span class="string">&quot;tt=%%i&quot;</span></span><br><span class="line"><span class="built_in">set</span> tt=!tt:\=/!</span><br><span class="line"><span class="built_in">echo</span> ^&lt;url^&gt;!tt!^&lt;^/url^&gt;&gt;&gt;list.xml)</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ^&lt;^/urls^&gt;&gt;&gt;list.xml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr/>
 
 <h3 id="Version-2"><a href="#Version-2" class="headerlink" title="Version 2"></a>Version 2</h3><p>随着 Demo 越来越多，版本 1 暴露的问题就越来越多了。上一版的主体结构：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ajax &#123;</span><br><span class="line">	…………</span><br><span class="line">	success: fn()&#123;</span><br><span class="line">    	ajax&#123;</span><br><span class="line">        	<span class="keyword">async</span>: <span class="literal">false</span>,</span><br><span class="line">       		success: fn()&#123;</span><br><span class="line">        		读取 readme.md</span><br><span class="line">        	&#125;</span><br><span class="line">        &#125;<span class="comment">//ajax 读取readme.md 结束  </span></span><br><span class="line">        …………</span><br><span class="line">        拼接插入DOM</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ajax &#123;</span><br><span class="line">	…………</span><br><span class="line">	<span class="attr">success</span>: <span class="title function_">fn</span>(<span class="params"></span>)&#123;</span><br><span class="line">    	ajax&#123;</span><br><span class="line">        	<span class="attr">async</span>: <span class="literal">false</span>,</span><br><span class="line">       		<span class="attr">success</span>: <span class="title function_">fn</span>(<span class="params"></span>)&#123;</span><br><span class="line">        		读取 readme.<span class="property">md</span></span><br><span class="line">        	&#125;</span><br><span class="line">        &#125;<span class="comment">//ajax 读取readme.md 结束  </span></span><br><span class="line">        …………</span><br><span class="line">        拼接插入<span class="variable constant_">DOM</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
 <p>首先就是页面内容空白，读取 readme.md 导致大量的 HTTP 请求，虽然已经更换到 HK 服务器，但近 20 条的 HTTP 请求直接导致页面空白近 10s ，并且没有任何暗示页面还在加载中，这是致命的。迫使我继续改进本地的 list 。再次使用 BAT 把 readme.md 写入 list 虽然是可行的，试着琢磨下还是觉得太笨，先不说对象那么多的 引号 调试过程中多容易出错，光读 readme.md 然后分段取值就够麻烦的了。想想还是用 JS 实现吧。 读取版本 1 中的 list， 然后再循环读取 readme.md 分段取值后创建对象，输出到窗口中，再人肉写入新的 list, 这样相当于把 readme.md 的 HTTP 那段在本地完成了，不过多了一步人肉 COPY 的过程……</p>
 <p>最后加上 CSS 的 loadding 动画，这次的改进让 Demo 至少能让人看到了。</p>
 <p>chrome 3G 模式载入时间缩小到 7s 左右。</p>
-<hr>
+<hr/>
 
 <h3 id="Version-3"><a href="#Version-3" class="headerlink" title="Version 3"></a>Version 3</h3><p>果然我是没耐性的，重复无意义的劳动做了几次就不爽了，人肉 COPY 这事闹心～ 而且现在我知道了 nodeJs 。学的 JavaScrip 终于能用在本地了。T.T 起初一切都很顺利，除了学习 改造 npm 和 fs API 的时间，几乎是一口气就写完了。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="comment">//var lineReader = require('E:/nodejs/glob/npm/node_modules/line-reader');</span></span><br><span class="line"><span class="keyword">var</span> lineReader = <span class="built_in">require</span>(<span class="string">'line-reader'</span>);</span><br><span class="line"><span class="keyword">var</span> dir = <span class="string">"./demos/"</span>;</span><br><span class="line"><span class="keyword">var</span> list = &#123;&#125;;</span><br><span class="line">fs.readdir(dir, <span class="function"><span class="keyword">function</span> (<span class="params">err, files</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 构建 list 主体分类</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = files.length - <span class="number">1</span>; i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (files[i].indexOf(<span class="string">"."</span>) != <span class="number">-1</span>) &#123;</span><br><span class="line">            files.splice(i, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">var</span> _key = files[i].split(<span class="string">"-"</span>)[<span class="number">0</span>];</span><br><span class="line">            <span class="keyword">if</span> (list[_key] == <span class="literal">undefined</span>) &#123;</span><br><span class="line">                list[_key] = [];</span><br><span class="line">            &#125;</span><br><span class="line">            getFile(files[i], list[_key]); <span class="comment">//自己一边玩去吧</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//读取readme详细内容填充list</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getFile</span>(<span class="params">fDir, lsAy</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> file = dir + fDir + <span class="string">"/readme.md"</span>;</span><br><span class="line">        <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">        <span class="keyword">var</span> wArry = <span class="string">""</span></span><br><span class="line">        lineReader.eachLine(file, <span class="function"><span class="keyword">function</span> (<span class="params">line, last</span>) </span>&#123;</span><br><span class="line">            wArry = line.split(<span class="string">"-"</span>);</span><br><span class="line">            obj.name = fDir;</span><br><span class="line">            obj.title = wArry[<span class="number">0</span>];</span><br><span class="line">            obj.cont = wArry[<span class="number">1</span>];</span><br><span class="line">            lsAy.push(obj);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">// stop reading</span></span><br><span class="line">        &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> listAll = <span class="string">"var list = "</span> + <span class="built_in">JSON</span>.stringify(list);</span><br><span class="line">fs.writeFile(dir + <span class="string">"list.js"</span>, listAll, <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'write JSON into TEXT'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"><span class="comment">//var lineReader = require(&#x27;E:/nodejs/glob/npm/node_modules/line-reader&#x27;);</span></span><br><span class="line"><span class="keyword">var</span> lineReader = <span class="built_in">require</span>(<span class="string">&#x27;line-reader&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> dir = <span class="string">&quot;./demos/&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> list = &#123;&#125;;</span><br><span class="line">fs.<span class="title function_">readdir</span>(dir, <span class="keyword">function</span> (<span class="params">err, files</span>) &#123;</span><br><span class="line">    <span class="comment">// 构建 list 主体分类</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = files.<span class="property">length</span> - <span class="number">1</span>; i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="keyword">if</span> (files[i].<span class="title function_">indexOf</span>(<span class="string">&quot;.&quot;</span>) != -<span class="number">1</span>) &#123;</span><br><span class="line">            files.<span class="title function_">splice</span>(i, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">var</span> _key = files[i].<span class="title function_">split</span>(<span class="string">&quot;-&quot;</span>)[<span class="number">0</span>];</span><br><span class="line">            <span class="keyword">if</span> (list[_key] == <span class="literal">undefined</span>) &#123;</span><br><span class="line">                list[_key] = [];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="title function_">getFile</span>(files[i], list[_key]); <span class="comment">//自己一边玩去吧</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//读取readme详细内容填充list</span></span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">getFile</span>(<span class="params">fDir, lsAy</span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> file = dir + fDir + <span class="string">&quot;/readme.md&quot;</span>;</span><br><span class="line">        <span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">        <span class="keyword">var</span> wArry = <span class="string">&quot;&quot;</span></span><br><span class="line">        lineReader.<span class="title function_">eachLine</span>(file, <span class="keyword">function</span> (<span class="params">line, last</span>) &#123;</span><br><span class="line">            wArry = line.<span class="title function_">split</span>(<span class="string">&quot;-&quot;</span>);</span><br><span class="line">            obj.<span class="property">name</span> = fDir;</span><br><span class="line">            obj.<span class="property">title</span> = wArry[<span class="number">0</span>];</span><br><span class="line">            obj.<span class="property">cont</span> = wArry[<span class="number">1</span>];</span><br><span class="line">            lsAy.<span class="title function_">push</span>(obj);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">// stop reading</span></span><br><span class="line">        &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> listAll = <span class="string">&quot;var list = &quot;</span> + <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(list);</span><br><span class="line">fs.<span class="title function_">writeFile</span>(dir + <span class="string">&quot;list.js&quot;</span>, listAll, <span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;write JSON into TEXT&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
 <p>可最后输出死活是空…… 我都开始怀疑人生了。逐步排查后才发现 nodeJs 是异步的！ 特们都是基于 JS 构建的，跑到后端你就变成异步的啦？ 变得这么快，尼玛能认出你不…… 解决这个异步可真是伤脑筋，首先 这么小的东西不想用模块，却又没找到什么好办法。</p>
 <ul>
 <li>循环中写计数器，主代码最后写个 while 死循环等待，不知道为什么行不通。而且这也是治标不治本，耗电。</li>
@@ -517,472 +293,93 @@
 </ul>
 <p>然后就是 Demo 首页的 JS 逻辑，根据之前 画廊 - Demo 的教训，Dom 的操作非常耗时，这次也直接改成字符串模板替换后插入 DOM 。</p>
 <p>Chrome 3G 模式 2s 完全载入，并且主要耗时是 JQuery 和字体的下载，基本彻底解决了载入的性能问题。</p>
-<hr>
+<hr/>
 
 <h3 id="next"><a href="#next" class="headerlink" title="next"></a>next</h3><p>可能下一个版本还要改下主体，虽然现在主体有个样子，不过空间浪费严重，并且没有突出重点，也不够炫。</p>
 <p>目前有个想法是书本，其中 HTML JS 等作为书页的贴纸标签，前面的目录会有黄色小星星标记出重点，每次随机翻到某一详细页，每次都有惊喜。应该还会把时间加进去，大概是按时间倒序。这样比较菜的东西会在后面，不过详细页就比较麻烦，空白太多还没想好怎么补。而且逻辑太多应该学完框架再去做会比较简单吧。</p>
 <h3 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h3><p>简历是发了，今天逛 V 站看见有个娃也是前端求职，内容嘛…… 基本是照着我求职的帖子写的。简历的跳转以及说明还有网址都是～ 最后点进去看简历，连 CSS 的 loading 动画都是…… 我用动画是为了掩盖，你这单页纯静态的加一个 loading……<br>不过也说明我做的东西还是有人认可的，有意思～</p>
 
-      
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/js/" rel="tag"># js</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/06/23/study/js/JS原型链的继承/" rel="next" title="JS原型链的继承">
-                <i class="fa fa-chevron-left"></i> JS原型链的继承
-              </a>
-            
+          <div class="post-tags">
+              <a href="/tags/js/" rel="tag"># js</a>
           </div>
 
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/05/life/我说你好好的脱欧干嘛/" rel="prev" title="我说你好好的脱欧干嘛">
-                我说你好好的脱欧干嘛 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-  </div>
-
-
-          </div>
-          
-
-  
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
-    </div>
-
-  
-
-
-
-        </div>
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-      <div id="sidebar-dimmer"></div>
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="lqzh">
-            
-              <p class="site-author-name" itemprop="name">lqzh</p>
-              <p class="site-description motion-element" itemprop="description">咿呀咿呀哟的博客</p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">22</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">7</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">18</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/lqzhgood" title="GitHub &rarr; https://github.com/lqzhgood" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="mailto:liuqinzhi@live.cn" title="E-Mail &rarr; mailto:liuqinzhi@live.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                </span>
-              
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2016/06/23/study/js/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E7%BB%A7%E6%89%BF/" rel="prev" title="JS原型链的继承">
+                  <i class="fa fa-chevron-left"></i> JS原型链的继承
+                </a>
             </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </div>
-
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Version-1"><span class="nav-number">1.</span> <span class="nav-text">Version 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Version-2"><span class="nav-number">2.</span> <span class="nav-text">Version 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Version-3"><span class="nav-number">3.</span> <span class="nav-text">Version 3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next"><span class="nav-number">4.</span> <span class="nav-text">next</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#吐槽"><span class="nav-number">5.</span> <span class="nav-text">吐槽</span></a></li></ol></div>
-            
-
+            <div class="post-nav-item">
+                <a href="/2016/07/05/life/%E6%88%91%E8%AF%B4%E4%BD%A0%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%84%B1%E6%AC%A7%E5%B9%B2%E5%98%9B/" rel="next" title="我说你好好的脱欧干嘛">
+                  我说你好好的脱欧干嘛 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
           </div>
-        </div>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">大地母亲忽悠着你啊</span>
-
-  
-
-  
+    </footer>
+  </article>
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
 
 
 
 
-        
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
 
 
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-    
-
-    
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lqzh</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
+    </div>
+  </footer>
+
   
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
 
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
 
-
-
-  
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=6.7.0"></script>
-
-  <script src="/js/src/motion.js?v=6.7.0"></script>
-
-
-
-  
-  
-
-  
-  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
-<script src="/js/src/post-details.js?v=6.7.0"></script>
-
-
-
-  
-
-
-  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
-
-
-
-  
-
-  
-    <script id="dsq-count-scr" src="https://lqzh.disqus.com/count.js" async></script>
-  
-
-  
-    <script>
-      var disqus_config = function () {
-        this.page.url = "http://lqzh.me/2016/07/02/study/web/Dome-首页的优化/";
-        this.page.identifier = "2016/07/02/study/web/Dome-首页的优化/";
-        this.page.title = 'Dome 首页的优化';
-        };
-      function loadComments () {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://lqzh.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      }
-      
-        $(function () {
-          var offsetTop = $('#comments').offset().top - $(window).height();
-          if (offsetTop <= 0) {
-            // load directly when there's no a scrollbar
-            loadComments();
-          } else {
-            $(window).on('scroll.disqus_scroll', function () {
-              // offsetTop may changes because of manually resizing browser window or lazy loading images.
-              var offsetTop = $('#comments').offset().top - $(window).height();
-              var scrollTop = $(window).scrollTop();
-
-              // pre-load comments a bit? (margin or anything else)
-              if (offsetTop - scrollTop < 60) {
-                $(window).off('.disqus_scroll');
-                loadComments();
-              }
-            });
-          }
-        });
-      
-    </script>
-  
-
-
-
-
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -994,46 +391,6 @@
 
 
 
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <script src="/js/src/js.cookie.js?v=6.7.0"></script>
-  <script src="/js/src/scroll-cookie.js?v=6.7.0"></script>
-
-
-  
-
-  
-  
-  
-    
-  
-  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
-  <script>
-  
-    bookmark.scrollToMark('auto', "#更多");
-  
-  </script>
-
-
-  
-
-  
 
 </body>
 </html>

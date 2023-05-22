@@ -1,154 +1,52 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
+  <link rel="mask-icon" href="/images/logo.png" color="#222">
 
+<link rel="stylesheet" href="/css/main.css">
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
+<script class="next-config" data-name="main" type="application/json">{"hostname":"lqzh.me","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.16.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=6.7.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png?v=6.7.0">
-
-
-  <link rel="mask-icon" href="/images/logo.png?v=6.7.0" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '6.7.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta name="description" content="最近DNS老是解析错误，感觉 Chinadns 老挂啊。今天刚好休息，写个监控脚本解决下这个问题. 好久没写 shell 脚本，被 JavaScript 的宽松语法惯坏了。一个 if then 结构都琢磨了一小时，最后发现 if 是接 [ ] 而不是 { } …… 真是郁闷">
-<meta name="keywords" content="shell,dns,chinadns">
+    <meta name="description" content="最近DNS老是解析错误，感觉 Chinadns 老挂啊。今天刚好休息，写个监控脚本解决下这个问题.  好久没写 shell 脚本，被 JavaScript 的宽松语法惯坏了。一个 if then 结构都琢磨了一小时，最后发现 if 是接 [ ] 而不是 { } …… 真是郁闷  1 2 3 4 5">
 <meta property="og:type" content="article">
 <meta property="og:title" content="外网监测脚本">
-<meta property="og:url" content="http://lqzh.me/2016/05/31/study/openwrt/外网监测脚本/index.html">
+<meta property="og:url" content="http://lqzh.me/2016/05/31/study/openwrt/%E5%A4%96%E7%BD%91%E7%9B%91%E6%B5%8B%E8%84%9A%E6%9C%AC/index.html">
 <meta property="og:site_name" content="你好，旅行者">
-<meta property="og:description" content="最近DNS老是解析错误，感觉 Chinadns 老挂啊。今天刚好休息，写个监控脚本解决下这个问题. 好久没写 shell 脚本，被 JavaScript 的宽松语法惯坏了。一个 if then 结构都琢磨了一小时，最后发现 if 是接 [ ] 而不是 { } …… 真是郁闷">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-06-03T08:22:27.047Z">
+<meta property="og:description" content="最近DNS老是解析错误，感觉 Chinadns 老挂啊。今天刚好休息，写个监控脚本解决下这个问题.  好久没写 shell 脚本，被 JavaScript 的宽松语法惯坏了。一个 if then 结构都琢磨了一小时，最后发现 if 是接 [ ] 而不是 { } …… 真是郁闷  1 2 3 4 5">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-05-31T05:39:38.000Z">
+<meta property="article:modified_time" content="2023-05-22T10:14:28.725Z">
+<meta property="article:author" content="lqzh">
+<meta property="article:tag" content="shell">
+<meta property="article:tag" content="dns">
+<meta property="article:tag" content="chinadns">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="外网监测脚本">
-<meta name="twitter:description" content="最近DNS老是解析错误，感觉 Chinadns 老挂啊。今天刚好休息，写个监控脚本解决下这个问题. 好久没写 shell 脚本，被 JavaScript 的宽松语法惯坏了。一个 if then 结构都琢磨了一小时，最后发现 if 是接 [ ] 而不是 { } …… 真是郁闷">
+
+
+<link rel="canonical" href="http://lqzh.me/2016/05/31/study/openwrt/%E5%A4%96%E7%BD%91%E7%9B%91%E6%B5%8B%E8%84%9A%E6%9C%AC/">
 
 
 
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://lqzh.me/2016/05/31/study/openwrt/%E5%A4%96%E7%BD%91%E7%9B%91%E6%B5%8B%E8%84%9A%E6%9C%AC/","path":"2016/05/31/study/openwrt/外网监测脚本/","title":"外网监测脚本"}</script>
 
-
-
-  <link rel="canonical" href="http://lqzh.me/2016/05/31/study/openwrt/外网监测脚本/">
-
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>外网监测脚本 | 你好，旅行者</title>
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>外网监测脚本 | 你好，旅行者</title>
   
 
-
-
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77374526-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-77374526-1');
-  </script>
-
-
-
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?b106d71b3fd9ebb859c788403497c8d1"></script>
 
 
 
@@ -157,785 +55,308 @@
 
 
   <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">你好，旅行者</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-    
-      
-        <p class="site-subtitle">愿大地母亲忽悠着你</p>
-      
-    
-    
   </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">你好，旅行者</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">愿大地母亲忽悠着你</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
 
 
 
 <nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-guestbook">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/guestbook" rel="section"><i class="menu-item-icon fa fa-fw fa-comments"></i> <br>留言</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook" rel="section"><i class="fa fa-comments fa-fw"></i>留言</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
-  
-
-
-
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
 </div>
-    </header>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
 
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  
-    <div class="reading-progress-bar"></div>
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2016/05/31/study/openwrt/外网监测脚本/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lqzh">
-      <meta itemprop="description" content="咿呀咿呀哟的博客">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="你好，旅行者">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">外网监测脚本
-
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2016/05/31 13:39:38" itemprop="dateCreated datePublished" datetime="2016-05-31T13:39:38+08:00">2016/05/31</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2021/06/03 16:22:27" itemprop="dateModified" datetime="2021-06-03T16:22:27+08:00">2021/06/03</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/study/openwrt/" itemprop="url" rel="index"><span itemprop="name">openwrt</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/05/31/study/openwrt/外网监测脚本/#comments" itemprop="discussionUrl">
-                
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/05/31/study/openwrt/外网监测脚本/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>最近DNS老是解析错误，感觉 Chinadns 老挂啊。今天刚好休息，写个监控脚本解决下这个问题.</p>
-<p>好久没写 shell 脚本，被 JavaScript 的宽松语法惯坏了。一个 if then 结构都琢磨了一小时，最后发现 if 是接 [ ] 而不是 { } …… 真是郁闷<br><a id="more"></a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#开机多拨延迟100s</span></span><br><span class="line">sleep 100</span><br><span class="line">DATE=`date +%Y-%m-%d-%H:%M:%S`</span><br><span class="line">tries=0</span><br><span class="line"></span><br><span class="line">SS=0</span><br><span class="line">DNS=0</span><br><span class="line"><span class="comment">#固定IP地址 要确定域名对应的IP不会变 这里我写的自己VPS域名对应的IP</span></span><br><span class="line">ip2=<span class="string">"X.X.X.X"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> --- my_watchdog start ---</span><br><span class="line"><span class="keyword">while</span> [[ <span class="variable">$tries</span> -lt 5 ]]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="comment">#ss</span></span><br><span class="line">	wget -4 --spider --quiet --tries=1 --timeout=3 www.google.co.jp</span><br><span class="line">	<span class="keyword">if</span> [ <span class="string">"$?"</span> == <span class="string">"0"</span> ]; <span class="keyword">then</span></span><br><span class="line">		SS=0</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		wget -4 --spider --quiet --tries=1 --timeout=3 www.baidu.com</span><br><span class="line">		<span class="keyword">if</span> [ <span class="string">"$?"</span> == <span class="string">"0"</span> ]; <span class="keyword">then</span></span><br><span class="line">			<span class="built_in">echo</span> <span class="variable">$DATE</span> Problem shadowsocks. SS <span class="variable">$tries</span> &gt;&gt; /root/<span class="built_in">log</span>/ss1.log</span><br><span class="line">			SS=$((SS+1))</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">echo</span>  <span class="variable">$DATE</span> Network Problem. Do nothing. SS <span class="variable">$tries</span> &gt;&gt; /root/<span class="built_in">log</span>/ss1.log</span><br><span class="line">		<span class="keyword">fi</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#dns</span></span><br><span class="line">	ip=$(nslookup chh-hk.noip.me 127.0.0.1 | tail -1 | awk <span class="string">'&#123;print $3&#125;'</span>)</span><br><span class="line">	<span class="keyword">if</span> [ <span class="variable">$ip</span> == <span class="variable">$ip2</span> ]; <span class="keyword">then</span></span><br><span class="line">		DNS=0		</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		DNS=$((DNS+1))</span><br><span class="line">		<span class="built_in">echo</span> <span class="variable">$DATE</span> Problem DNS. DNS <span class="variable">$tries</span> &gt;&gt; /root/<span class="built_in">log</span>/ss1.log</span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#restart</span></span><br><span class="line">	<span class="keyword">if</span> [ <span class="variable">$SS</span> == <span class="string">"0"</span> -a <span class="variable">$DNS</span> == <span class="string">"0"</span> ]; <span class="keyword">then</span></span><br><span class="line">                <span class="built_in">echo</span> --- <span class="built_in">exit</span> ---</span><br><span class="line">                <span class="built_in">exit</span> 0</span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">   tries=$((tries+1))</span><br><span class="line">   sleep 2</span><br><span class="line"></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$DATE</span> restart &gt;&gt; /root/<span class="built_in">log</span>/ss1.log</span><br><span class="line">/etc/init.d/shadowsocks restart</span><br><span class="line">/etc/init.d/dnsmasq restart</span><br><span class="line">/etc/init.d/chinadns restart</span><br></pre></td></tr></table></figure>
-<p>主要判断 SS 和 DNS 是否正常，如果正常则跳出，否则继续判断直到5次，5次不成功重启相关服务。<br>测试几天 以观后效。</p>
-
-      
     </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/shell/" rel="tag"># shell</a>
-          
-            <a href="/tags/dns/" rel="tag"># dns</a>
-          
-            <a href="/tags/chinadns/" rel="tag"># chinadns</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/05/29/study/web/为侧边栏增加自动隐藏/" rel="next" title="为侧边栏增加自动隐藏">
-                <i class="fa fa-chevron-left"></i> 为侧边栏增加自动隐藏
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/06/02/study/other/Re-AppSwap/" rel="prev" title="Re:AppSwap">
-                Re:AppSwap <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
   </div>
 
-
-          </div>
-          
-
+</header>
+        
   
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lqzh"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">lqzh</p>
+  <div class="site-description" itemprop="description">咿呀咿呀哟的博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lqzhgood" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lqzhgood" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:i@lqzh.me" title="E-Mail → mailto:i@lqzh.me" rel="noopener me"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
       </div>
     </div>
 
-  
-
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
     
-      <div id="sidebar-dimmer"></div>
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="lqzh">
-            
-              <p class="site-author-name" itemprop="name">lqzh</p>
-              <p class="site-description motion-element" itemprop="description">咿呀咿呀哟的博客</p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">22</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">7</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">18</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/lqzhgood" title="GitHub &rarr; https://github.com/lqzhgood" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="mailto:liuqinzhi@live.cn" title="E-Mail &rarr; mailto:liuqinzhi@live.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                </span>
-              
-            </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </div>
-
-      
-
-      
-
-    </div>
   </aside>
 
 
-        
-      </div>
-    </main>
+    </div>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">大地母亲忽悠着你啊</span>
+    <div class="main-inner post posts-expand">
+
 
   
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://lqzh.me/2016/05/31/study/openwrt/%E5%A4%96%E7%BD%91%E7%9B%91%E6%B5%8B%E8%84%9A%E6%9C%AC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="lqzh">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="你好，旅行者">
+      <meta itemprop="description" content="咿呀咿呀哟的博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="外网监测脚本 | 你好，旅行者">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          外网监测脚本
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2016-05-31 13:39:38" itemprop="dateCreated datePublished" datetime="2016-05-31T13:39:38+08:00">2016-05-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-05-22 18:14:28" itemprop="dateModified" datetime="2023-05-22T18:14:28+08:00">2023-05-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/study/openwrt/" itemprop="url" rel="index"><span itemprop="name">openwrt</span></a>
+        </span>
+    </span>
 
   
 </div>
 
+        </div>
+      </header>
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>最近DNS老是解析错误，感觉 Chinadns 老挂啊。今天刚好休息，写个监控脚本解决下这个问题.</p>
+<p>好久没写 shell 脚本，被 JavaScript 的宽松语法惯坏了。一个 if then 结构都琢磨了一小时，最后发现 if 是接 [ ] 而不是 { } …… 真是郁闷</p>
+<span id="more"></span>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#开机多拨延迟100s</span></span><br><span class="line"><span class="built_in">sleep</span> 100</span><br><span class="line">DATE=`<span class="built_in">date</span> +%Y-%m-%d-%H:%M:%S`</span><br><span class="line">tries=0</span><br><span class="line"></span><br><span class="line">SS=0</span><br><span class="line">DNS=0</span><br><span class="line"><span class="comment">#固定IP地址 要确定域名对应的IP不会变 这里我写的自己VPS域名对应的IP</span></span><br><span class="line">ip2=<span class="string">&quot;X.X.X.X&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> --- my_watchdog start ---</span><br><span class="line"><span class="keyword">while</span> [[ <span class="variable">$tries</span> -lt 5 ]]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="comment">#ss</span></span><br><span class="line">	wget -4 --spider --quiet --tries=1 --<span class="built_in">timeout</span>=3 www.google.co.jp</span><br><span class="line">	<span class="keyword">if</span> [ <span class="string">&quot;$?&quot;</span> == <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">		SS=0</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		wget -4 --spider --quiet --tries=1 --<span class="built_in">timeout</span>=3 www.baidu.com</span><br><span class="line">		<span class="keyword">if</span> [ <span class="string">&quot;$?&quot;</span> == <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">			<span class="built_in">echo</span> <span class="variable">$DATE</span> Problem shadowsocks. SS <span class="variable">$tries</span> &gt;&gt; /root/log/ss1.<span class="built_in">log</span></span><br><span class="line">			SS=$((SS+<span class="number">1</span>))</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">echo</span>  <span class="variable">$DATE</span> Network Problem. Do nothing. SS <span class="variable">$tries</span> &gt;&gt; /root/log/ss1.<span class="built_in">log</span></span><br><span class="line">		<span class="keyword">fi</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#dns</span></span><br><span class="line">	ip=$(nslookup chh-hk.noip.me 127.0.0.1 | <span class="built_in">tail</span> -1 | awk <span class="string">&#x27;&#123;print $3&#125;&#x27;</span>)</span><br><span class="line">	<span class="keyword">if</span> [ <span class="variable">$ip</span> == <span class="variable">$ip2</span> ]; <span class="keyword">then</span></span><br><span class="line">		DNS=0		</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		DNS=$((DNS+<span class="number">1</span>))</span><br><span class="line">		<span class="built_in">echo</span> <span class="variable">$DATE</span> Problem DNS. DNS <span class="variable">$tries</span> &gt;&gt; /root/log/ss1.<span class="built_in">log</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#restart</span></span><br><span class="line">	<span class="keyword">if</span> [ <span class="variable">$SS</span> == <span class="string">&quot;0&quot;</span> -a <span class="variable">$DNS</span> == <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">                <span class="built_in">echo</span> --- <span class="built_in">exit</span> ---</span><br><span class="line">                <span class="built_in">exit</span> 0</span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">   tries=$((tries+<span class="number">1</span>))</span><br><span class="line">   <span class="built_in">sleep</span> 2</span><br><span class="line"></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$DATE</span> restart &gt;&gt; /root/log/ss1.<span class="built_in">log</span></span><br><span class="line">/etc/init.d/shadowsocks restart</span><br><span class="line">/etc/init.d/dnsmasq restart</span><br><span class="line">/etc/init.d/chinadns restart</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
+<p>主要判断 SS 和 DNS 是否正常，如果正常则跳出，否则继续判断直到5次，5次不成功重启相关服务。<br>测试几天 以观后效。</p>
 
-  <span class="post-meta-divider">|</span>
+    </div>
 
+    
+    
+    
 
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
-
-
-
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/shell/" rel="tag"># shell</a>
+              <a href="/tags/dns/" rel="tag"># dns</a>
+              <a href="/tags/chinadns/" rel="tag"># chinadns</a>
+          </div>
 
         
 
-
-
-
-
-
-
-
-        
-      </div>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2016/05/29/study/web/%E4%B8%BA%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A2%9E%E5%8A%A0%E8%87%AA%E5%8A%A8%E9%9A%90%E8%97%8F/" rel="prev" title="为侧边栏增加自动隐藏">
+                  <i class="fa fa-chevron-left"></i> 为侧边栏增加自动隐藏
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2016/06/02/study/other/Re-AppSwap/" rel="next" title="Re:AppSwap">
+                  Re:AppSwap <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
+  </article>
+</div>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-    
 
-    
 
-    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lqzh</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
+    </div>
+  </footer>
+
   
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
 
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
 
-
-
-  
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=6.7.0"></script>
-
-  <script src="/js/src/motion.js?v=6.7.0"></script>
-
-
-
-  
-  
-
-  
-  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
-<script src="/js/src/post-details.js?v=6.7.0"></script>
-
-
-
-  
-
-
-  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
-
-
-
-  
-
-  
-    <script id="dsq-count-scr" src="https://lqzh.disqus.com/count.js" async></script>
-  
-
-  
-    <script>
-      var disqus_config = function () {
-        this.page.url = "http://lqzh.me/2016/05/31/study/openwrt/外网监测脚本/";
-        this.page.identifier = "2016/05/31/study/openwrt/外网监测脚本/";
-        this.page.title = '外网监测脚本';
-        };
-      function loadComments () {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://lqzh.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      }
-      
-        $(function () {
-          var offsetTop = $('#comments').offset().top - $(window).height();
-          if (offsetTop <= 0) {
-            // load directly when there's no a scrollbar
-            loadComments();
-          } else {
-            $(window).on('scroll.disqus_scroll', function () {
-              // offsetTop may changes because of manually resizing browser window or lazy loading images.
-              var offsetTop = $('#comments').offset().top - $(window).height();
-              var scrollTop = $(window).scrollTop();
-
-              // pre-load comments a bit? (margin or anything else)
-              if (offsetTop - scrollTop < 60) {
-                $(window).off('.disqus_scroll');
-                loadComments();
-              }
-            });
-          }
-        });
-      
-    </script>
-  
-
-
-
-
-
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -947,46 +368,6 @@
 
 
 
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <script src="/js/src/js.cookie.js?v=6.7.0"></script>
-  <script src="/js/src/scroll-cookie.js?v=6.7.0"></script>
-
-
-  
-
-  
-  
-  
-    
-  
-  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
-  <script>
-  
-    bookmark.scrollToMark('auto', "#更多");
-  
-  </script>
-
-
-  
-
-  
 
 </body>
 </html>
