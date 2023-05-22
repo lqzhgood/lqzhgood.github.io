@@ -2516,7 +2516,7 @@ header.header {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #1bff08;
+  background: #4afff6;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2562,4 +2562,13 @@ header.header {
 }
 .header .site-meta .site-title {
   line-height: 36px;
+}
+@media (max-width: 767px) {
+  header.header {
+    padding-top: 0px;
+  }
+  header.header .site-meta {
+    position: relative;
+    top: 20px;
+  }
 }
