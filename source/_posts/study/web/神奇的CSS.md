@@ -1,8 +1,8 @@
 ---
 title: 神奇的CSS
 categories:
-    - study
-    - web
+  - study
+  - web
 tags: css
 date: 2016-05-25 23:38:31
 ---

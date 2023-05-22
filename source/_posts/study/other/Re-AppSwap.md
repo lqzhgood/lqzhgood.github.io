@@ -1,8 +1,8 @@
 ---
-title: "Re:AppSwap"
+title: 'Re:AppSwap'
 categories:
-    - study
-    - other
+  - study
+  - other
 tags: T9
 date: 2016-06-02 21:28:28
 ---

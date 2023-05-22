@@ -1,8 +1,8 @@
 ---
 title: 蛋疼的HTTP劫持
 categories:
-    - study
-    - web
+  - study
+  - web
 date: 2016-06-16 20:20:52
 tags:
 ---

@@ -2,8 +2,8 @@
 title: JS原型链的继承
 tags: js
 categories:
-    - study
-    - js
+  - study
+  - js
 date: 2016-06-23 15:27:24
 ---
 
