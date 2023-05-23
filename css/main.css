@@ -2516,7 +2516,7 @@ header.header {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #4afff6;
+  background: #c386b8;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2570,5 +2570,8 @@ header.header {
   header.header .site-meta {
     position: relative;
     top: 20px;
+  }
+  header.header .site-nav .menu-item a {
+    font-size: 1em;
   }
 }
