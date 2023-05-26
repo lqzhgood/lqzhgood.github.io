@@ -4,7 +4,7 @@ comments: false
 ---
 
    <div id="txZz">
-        <a href="/jl.html">简　历</a>　　　　<a href="/demo/">Demos</a>
+        <a href="#">简　历</a>　　　　<a href="https://github.com/lqzhgood">Github</a>
     </div>
 
 <style>
