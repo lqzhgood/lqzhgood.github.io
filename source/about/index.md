@@ -4,8 +4,9 @@ comments: false
 ---
 
    <div id="txZz">
-        <a href="#">简　历</a>　　　　<a href="https://github.com/lqzhgood">Github</a>
-    </div>
+       <!-- <a href="#">简　历</a>　-->
+        <a href="https://github.com/lqzhgood">Github</a>
+   </div>
 
 <style>
         body {
