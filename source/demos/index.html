@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/vue.min.js"></script>
+    <title>Demo</title>
+    <style scoped>
+        .tips {
+            display: inline-block;
+            margin: 0 auto;
+            border-left: 4px solid rgba(80, 191, 255, .8);
+            padding: 10px 20px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 14px;
+            color: #333;
+            text-shadow: 0 0 3px rgba(0, 0, 0, .1);
+            background: #fff;
+            box-shadow: 0 2px 24px 0 rgba(70, 164, 218, 0.8);
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tips"> 以下仅列出可静态化的部分项目，不代表全部及重要程度 </div>
+
+    <div id="app" class="main">
+        <ul class="box" v-for="c in list" :key="c.company">
+            <li>
+                <div class="company">
+                    <img :src="c.logo" alt="logo" class="logo">
+                    <span class="name">{{c.company}}</span>
+                    <div class="code" title="查看代码仓库" v-if="c.code">
+                        <a :href="c.code" target="_blank">
+                            <img src="./assets/icon/github.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="row" v-for="p in c.project">
+                        <div class="title" @click="open(p.link)">
+
+                            <span class="name">{{p.name}}</span>
+                            <img src="./assets/icon/link.svg" alt="link" class="link">
+
+                        </div>
+                        <div class="desc" v-html="p.desc"></div>
+                        <hr>
+                    </div>
+                    <div class="omit" v-if="c.project.length !==0">
+                        <a :href="c.code" target="_blank">...</a>
+                    </div>
+                    <div class="empty" v-else>忘记留下印记了……</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: () => ({
+                list: [
+                    {
+                        company: '湖南省五建',
+                        logo: './assets/logo-hns5j.png',
+                        code: './work-hns5j/code/index.html',
+                        project: [
+                            {
+                                name: '信息平台3.0',
+                                link: './work-hns5j/d.info.hns5j.com/index.html',
+                                desc: '从0搭建的管理平台，硬编码数据仿真<br/>只静态化了部分页面，有一些页面丢失了'
+                            },
+                            {
+                                name: '反馈平台',
+                                link: './work-hns5j/feedback/index.html',
+                                desc: '问题从反馈到代码交付'
+                            },
+                            {
+                                name: '运维监控',
+                                link: './work-hns5j/Grafana/Grafana.png',
+                                desc: 'Open-Falcon + Grafana 监控'
+                            },
+                            {
+                                name: '桌牌',
+                                link: './work-hns5j/TableCards/index.html',
+                                desc: '方便开会排座位'
+                            },
+                        ]
+                    },
+                    {
+                        company: '株洲广播电视台',
+                        logo: './assets/logo-zzbtv.png',
+                        code: './work-zzbtv/code/index.html',
+                        project: [
+                            {
+                                name: '内部开发系统汇总',
+                                link: './work-zzbtv/code/zzbtv.jpg',
+                                desc: '系统在内网，只有截图了'
+                            },
+                            {
+                                name: '传媒网移动端 / m.zzbtv.com',
+                                link: './work-zzbtv/m.zzbtv.com/index.html',
+                                desc: '* 纯移动端网站，PC请用F12中设备仿真打开<br/>网站已下线，硬编码部分Api，恢复视频板块，列表仅第一项有效。'
+                            },
+                            {
+                                name: '直播录制剪辑系统',
+                                link: './work-zzbtv/Live-recording/index.html',
+                                desc: '系统在内网，只剩截图了，代码详见 Github'
+                            }
+                        ]
+                    },
+                    {
+                        company: '小恒水饺',
+                        logo: './assets/logo-xh.png',
+                        project: []
+                    },
+                    {
+                        company: '上古时代写的一些东西',
+                        logo: './assets/icon/jquery.svg',
+                        code: 'http://lqzh.me/legacy-demo/demo/',
+                        project: [{
+                            name: '汇总',
+                            link: 'http://lqzh.me/legacy-demo/demo/',
+                            desc: 'https://github.com/lqzhgood/legacy-demo'
+                        }],
+                    }
+                ]
+            }),
+            method: {
+                open(link) {
+                    if (!link) return;
+                    window.open(link);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

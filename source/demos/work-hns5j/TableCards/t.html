@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script type="text/javascript" src="//unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+
+
+    <div id="container"></div>
+    <script type="text/javascript">
+        /* initial table */
+        let aoa = [
+            ["This", "is", "a", "Test"],
+            ["வணக்கம்", "สวัสดี", "你好", "가지마"],
+            [1, 2, 3, 4],
+            ["Click", "to", "edit", "cells"]
+        ];
+        let ws = XLSX.utils.aoa_to_sheet(aoa);
+        let html_string = XLSX.utils.sheet_to_html(ws, { id: "data-table", editable: true });
+        document.getElementById("container").innerHTML = html_string;
+    </script>
+    <br />
+    <pre><b>Export it!</b></pre>
+    <table id="xport">
+        <tr>
+            <td>
+                <pre>XLS Excel 97-2004 Binary</pre>
+            </td>
+            <td>
+                <input type="submit" value="Export to XLS!" onclick="doit('biff8', 'test.xls');">
+            </td>
+        </tr>
+
+    </table>
+    <script>
+        let arr = [
+            {
+                "桌牌ID": "桌牌ID",
+                "顶端文字": "顶端文字",
+                "中间文字": "中间文字",
+                "底端文字": "底端文字",
+                "顶端大小": "顶端大小",
+                "中间大小": "中间大小",
+                "底端大小": "底端大小"
+            },
+            {
+                "桌牌ID": 1,
+                "顶端文字": "",
+                "中间文字": "张　三",
+                "底端文字": "",
+                "顶端大小": 100,
+                "中间大小": 250,
+                "底端大小": 100
+            }
+        ];
+
+
+        function doit(type, fileName) {
+            let wb = XLSX.utils.book_new();
+            let ws = XLSX.utils.json_to_sheet(arr, { skipHeader: true });
+            XLSX.utils.book_append_sheet(wb, ws, 'Sheet');
+            return XLSX.writeFile(wb, fileName);
+        }
+    </script>
+
+</body>
+
+</html>

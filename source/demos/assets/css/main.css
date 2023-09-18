@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+    background: url("../img/doodles.png");
+    background-attachment: fixed;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+
+.main {
+    width: 600px;
+    max-width: 90%;
+    margin:  0 auto;
+    padding: 100px 0;
+}
+
+.box {
+    margin-bottom: 60px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.company {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.company .logo{
+    display: inline-block;
+    max-width: 26px;
+    margin-right: 5px;
+}
+
+.company .name {
+    font-size: 26px;
+    line-height: 1em;
+    flex: 1 1 auto
+}
+
+
+.code {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    background: rgb(70, 164, 218);
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #afdcf8;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+.code:hover{
+    box-shadow: 0 2px 24px 0 rgba(70, 164, 218, 0.8);
+    transform: scale(1.2);
+}
+
+.code img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 2px;
+}
+
+
+.project {
+    color: #fff;
+    line-height: 1.4;
+    position: relative;
+    border-radius: 5px;
+    background: #6cbfee;
+
+    margin: 0 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+
+    transition: all 0.3s;
+    box-shadow: 0 2px 24px 0 rgba(70, 164, 218, 0.8);
+}
+
+ /* 三角形 */
+.project:after {
+    border: solid transparent;
+    content: " ";
+    width: 0;
+    height: 0;
+    top: -20px;
+    right: auto;
+    left: 20px;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    border-right-color: transparent;
+    border-bottom-color: #6cbfee;
+}
+
+.project .row hr {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+
+.project .row:last-child hr {
+    display: none;
+}
+
+.project .title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+
+}
+.project .title:hover{
+     background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cpath fill='none' stroke='%23f30' d='M0 3.5c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3'/%3E%3C/svg%3E") repeat-x 0 100%;
+    background-size: 20px auto;
+    animation: waveMove 1s linear infinite
+}
+
+.project .title .name{
+    flex: 1 1 auto;
+}
+
+.project .title .link{
+    max-width: 20px;
+}
+
+
+.project .desc {
+    margin: 5px 0;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+
+@keyframes waveMove {
+    0% {
+        background-position: 0 100%
+    }
+
+    to {
+        background-position: -20px 100%
+    }
+}
