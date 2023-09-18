@@ -1,0 +1,3779 @@
+{
+    "code": 200,
+    "msg": "ok",
+    "result": {
+        "ms": 0,
+        "data": [
+            {
+                "ancestorIds": [],
+                "content": "反馈平台-前端",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9acc50a5b4c30021eeb0ff",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T03:13:30.422Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "用户反馈",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "添加统计",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**统计&nbsp;访问位置**\n\n**统计&nbsp;访问来源**\n\n**统计&nbsp;访问IP**",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9587c41fa167002117feb1",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-15T00:43:40.193Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "去除验证码",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**验证码图片采用第三方平台&nbsp;&nbsp;无法显示**\n\n**彻底去除验证码&nbsp;**\n\n**优化登录错误提示**",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9574f45ffb68001ba16078",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-14T08:34:48.966Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "增加【信息平台CDN】所需域名",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5e7c0870e168a825d4ada24d",
+                "isDone": 1,
+                "note": "cdn.info -> CNAME --> 33.hns5j.com\n\ntestCDN.info -> CNAME --> 33.hns5j.com",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    },
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e952892f0a29200219cfa36",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T03:14:24.574Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "测试环境增加 【标识】",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**测试环境下&nbsp;公司名称&nbsp;改为&nbsp;【测试环境】**",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e950f863c29480021f36a00",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-14T08:32:23.904Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "信息平台侧边栏缩小",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**缩小高度**",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9413ab882ef80021b7f2e9",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-14T08:32:25.357Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "信息平台菜单栏 UI",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**缩小菜单栏体积**",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e940a875f55b100218e6fc9",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-14T08:32:26.789Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "测试环境 菜单栏链接指向测试环境",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "菜单栏 阳光采购 在线培训 指向 测试地址",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e940a46e7b00e00211c3b8f",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-14T08:32:28.211Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "增加【IM门户】所需域名",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5e7c0870e168a825d4ada24d",
+                "isDone": 1,
+                "note": "im -- CNAME --> 33.hns5j.com",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    },
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e91dd342f5e6e002130b56c",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-16T05:47:34.668Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "用户反馈",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "增加【用户反馈】所需域名",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5e7c0870e168a825d4ada24d",
+                "isDone": 1,
+                "note": "fb.im -- CNAME --> 33.hns5j.com\n\napi.fb.im -- CNAME --> 33.hns5j.com",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    },
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e91c33f44e59500213b33e1",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-16T05:47:38.406Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "用户反馈",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "用户任意操作刷新 Session",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "避免填写表格超过半个小时 被退出登录",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e903475ea233a0021958128",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-11T09:41:07.962Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "问题类型",
+                        "value": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "流程点击已送审 一直显示正在处理",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**重现步骤**\n\n账号密码 \n\n颜晓华 hc  \n\n<br>\n\n平台分公司总工已点击送审，为嘛老是显示此处在处理当中。\n\n<br>\n\n![QQ图片20200410093821.png](https://tcs.teambition.net/thumbnail/111s7a6924306881b664f67472e335410ffa/w/800/h/368)  \n\n<br>\n\n<br>\n\n测试结果\n\n1.  <br>\n    \n\n1.  <br>\n    \n\n期望结果\n\n3.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8fcf5ecaa5be0021579c2b",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-10T03:34:59.876Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "二级单位",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "湘北-杨宇翔",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "阳光采购-后台 前端打包",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "重现步骤\n\n3.  \n\n测试结果\n\n1.  <br>\n    \n\n3.  <br>\n    \n\n期望结果\n\n3.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8f288f93f9b800215d8a67",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T08:36:36.812Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "阳光采购",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "阳光采购-前台 前端打包",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "重现步骤\n\n1.   npm run build\n\n测试结果\n\n1.  失败\n    \n\n1.  <br>\n    \n\n期望结果\n\n成功\n\n3.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8f2888aa668f00224eb841",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T08:36:25.545Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "阳光采购",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "重复项目",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**重现步骤**\n\n1\\. 工程管理\n\n2.项目质量管理\n\n3.创优奖项登记\n\n<br>\n\n**测试结果**\n\n1.  ZB20170124-1 两条重复项目\n\n2.创优奖项 的“保存”按钮 ， 保存按钮 在成功执行保存后未作 置灰处理 造成再页面不关闭的情况下可重复提交。\n\n3.\n\n<br>\n\n**期望结果**\n\n1.\n\n2.\n\n3.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e858c58c4dc1100217da9db",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T02:17:38.285Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "工程部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "反馈平台后端",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**缓存&nbsp;TB&nbsp;返回的数据&nbsp;1分钟**",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9d056083b3bb0021984a3c",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T02:13:58.725Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "用户反馈",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "施工现场危险源验收 流程 副部长->安全基础管理",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 0,
+                "note": "**重现步骤**\n\n1.  工程管理\n2.  项目安全管理\n3.  重大危险源验收\n4.  危险源辨识及验收\n5.  新增\n\n**期望结果**\n\n1.  流程中 副部长（王斌） ->安全基础管理（ 杨健玄）",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9d0539c0102000229af46c",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T02:13:13.467Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "工程部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "李四",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "商务经理权限细分到仅查询",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 0,
+                "note": "**重现步骤**\n\n1.  \n\n**测试结果**\n\n1.  <br>\n    \n\n<br>\n\n**期望结果**\n\n1.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9cfd046fe0f40021c35163",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T01:38:12.682Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "成控部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "赵六",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "成控 字典末级搜素",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 0,
+                "note": "**重现步骤**\n\n1.  末级需要搜索  搜索项为 【型号】\n\n**测试结果**\n\n1.  <br>\n    \n\n<br>\n\n**期望结果**\n\n1.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    },
+                    {
+                        "avatarUrl": "./img/2.png",
+                        "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                        "memberId": "5e8e988bb86f210022eed57f",
+                        "name": "tanzhihua",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7bfe06169382c8f1771936"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9cfc38e797090021eba2ee",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cb",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T03:16:20.061Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "开发",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "成控部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "赵六",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "成控 预算新增 树形字典限定",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "**重现步骤**\n\n1.   成控-预算-新增  \n2.  劳务 机械\n3.  两者左侧树形结构\n\n**测试结果**\n\n1.  <br>\n    \n\n<br>\n\n**期望结果**\n\n1\\. 劳务 只显示 【劳务分包】\n\n2\\. 机械 只显示 【机械费】",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9925e83a5d530021d40ed0",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T03:13:47.744Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "成控部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "MQ 控制台 添加账号密码登录",
+                "creatorId": "5c448781c8954c0001d1d829",
+                "dueDate": null,
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "[http://33.hns5j.com:8089/#/](http://33.hns5j.com:8089/#/)  \n\n没有账号密码",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9922559df18a0021892bcd",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T03:13:49.284Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "信息中心",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "张三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "“员工内部异动”表中选不到 分公司成本控制部下的具体岗位。",
+                "creatorId": "5e7c0870e168a825d4ada24d",
+                "dueDate": null,
+                "executorId": null,
+                "isDone": 0,
+                "note": "**“员工内部异动”表中选不到&nbsp;分公司成本控制部下的具体岗位。**\n\n![Screenshot-9.png](https://tcs.teambition.net/thumbnail/111s5fd3715b95c10d57963298008ba42a3e/w/798/h/308)  \n\n**测试结果**\n\n1.  <br>\n    \n\n<br>\n\n**期望结果**\n\n1.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e994c540a0a210021386554",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-17T06:27:32.967Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "二级单位",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "路桥分公司-吴九",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "“变更记录”点击无效，没有弹出变更记录表",
+                "creatorId": "5e7c0870e168a825d4ada24d",
+                "dueDate": null,
+                "executorId": null,
+                "isDone": 0,
+                "note": "“变更记录”现在怎么点不开了？  \n\n![Screenshot-8.png](https://tcs.teambition.net/thumbnail/111saaf359e614f0b04a1e40a294367f055d/w/799/h/430)",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e992037376272002170b9f9",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-17T03:19:19.668Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "二级单位",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "西南湾田项目-杨吱吱",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "附件套红后，该附件应删除“修改痕迹”",
+                "creatorId": "5e7c0870e168a825d4ada24d",
+                "dueDate": null,
+                "executorId": "5e7bfe06169382c8f1771936",
+                "isDone": 0,
+                "note": "**重现步骤**\n\n1.  ![Screenshot-4.png](https://tcs.teambition.net/thumbnail/111sa630333820a4db8366e01825c9f9fec6/w/799/h/476)\n\n**测试结果**\n\n1.  ![Screenshot-5.png](https://tcs.teambition.net/thumbnail/111s3b7f6fa9341ea878508917b84e8cc13e/w/799/h/400)  \n    \n\n<br>\n\n**期望结果**\n\n    套红过的文件，下载打开不能显示修改痕迹，直接显示最终版本。**涉及模块“发文\"/\"公文中心\"**\n\n**![Screenshot-6.png](https://tcs.teambition.net/thumbnail/111s6ba479d9e39ab5ad00569a81e0467ae9/w/800/h/582)&nbsp;**\n\n1.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    },
+                    {
+                        "avatarUrl": "./img/2.png",
+                        "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                        "memberId": "5e8e988bb86f210022eed57f",
+                        "name": "tanzhihua",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7bfe06169382c8f1771936"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9677357d987b00211ee1dd",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-17T05:37:42.001Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "executor": {
+                    "avatarUrl": "./img/2.png",
+                    "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                    "memberId": "5e8e988bb86f210022eed57f",
+                    "name": "tanzhihua",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7bfe06169382c8f1771936"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "总经办",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "刘彬彬",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "李小青岗位要清空",
+                "creatorId": "5e7c0870e168a825d4ada24d",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "1.  **问题需求：**人事关系在劳服公司的李小青，他的岗位怎么会是湘南分公司?现在要办理他进内养，平台走不了，麻烦处理一下。\n2.  **过程分析：**经查证，李小青没有在系统中走过异动流程，因此李小青为系统上线时人员初始化的数据。\n3.  **解决办法：**与帅鸿沟通后结果，我们只需删除李小青的岗位数据通知帅鸿。\n\n<br>\n\nSQL：\n\nselect \\* from hr\\_employee where user\\_code = '李小青'\n\nselect \\* from hr\\_user\\_post where employee\\_id = '2972'\n\ndelete from hr\\_user\\_post where employee\\_id = '2972'\n\n<br>\n\n<br>\n\n![Screenshot-1.png](https://tcs.teambition.net/thumbnail/111s1fe0c7daeff2324083a377d561fd2c95/w/798/h/358)",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    },
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e95281de1ecff00213975e5",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-14T08:40:31.829Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "修改数据",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "二级单位",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "帅鸿",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "系统管理员，用“模板新增组织”功能，创建项目部后，系统需要立马刷出来项目部。（现在系统，必须到第二天，才能看到新增的项目部，很不友好！）",
+                "creatorId": "5e7c0870e168a825d4ada24d",
+                "dueDate": null,
+                "executorId": "5e7bfe06169382c8f1771936",
+                "isDone": 1,
+                "note": "",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    },
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    },
+                    {
+                        "avatarUrl": "./img/2.png",
+                        "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                        "memberId": "5e8e988bb86f210022eed57f",
+                        "name": "tanzhihua",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7bfe06169382c8f1771936"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8da38794fd4f00219a3850",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-15T03:25:01.466Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "executor": {
+                    "avatarUrl": "./img/2.png",
+                    "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                    "memberId": "5e8e988bb86f210022eed57f",
+                    "name": "tanzhihua",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7bfe06169382c8f1771936"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "总工办",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "郑十",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "工程信息化需要修改的地方-20200330",
+                "creatorId": "5e7c0870e168a825d4ada24d",
+                "dueDate": null,
+                "executorId": null,
+                "isDone": 0,
+                "note": "一、工程管理汇总信息\n\n    1、四个主页面上端的数字汇总，每点击一个数字，要打开相应的汇总页面。\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps16.jpg) \n\n    2、每个数字要实现自动增减，如在建项目100个，当完工后1个后，在建项目变成99个。\n\n    3、页面显示数据设置导出功能（导出为EXCEL表）。\n\n    4、筛选后的数据也要能导出。\n\n    5、项目应按项目编号进行排序\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps17.jpg)项目应按编号进行顺序排列，后面所有模块中的项目均按此要求进行排列。\n\n   6、创优项目过程管理一览表中的奖项数字要抓取获奖后的内容，该数字一抓取后就不会进行减少。\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps18.jpg) \n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps19.jpg)显示的项目按取得相应奖项的时间进行排列，以先取得的奖项优先。\n\n    7、项目质量管理\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps20.jpg) \n\n   此排内容只保留在建项目、质量标化年度优良项目，其它的内容与项目综合信息一览表中同。\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps21.jpg) \n\n    8、项目安全管理一览表\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps22.jpg) \n\n   1）施工认可证办理应该统计为办理的数字，即在建项目多少个，未办理施工许可证多少个。\n\n   2）工伤事故：还应增加一项，新增工伤：\\*\\*\\*起。就是有两个数据，一是往年共发生的工伤事故多少起，第二个数据是当年发生工伤事故多少起。\n\n二、安全管理版块\n\n    1、安全日志（施工日志同理）\n\n    1）打开安全日志，进去后只是一个按项目汇总的页面，填写的内容只是以数字进行累计显示，当点击该数字时，才打开该项目填写 的每天的日志记录。\n\n    2）显示样式\n\n| 序号 | 单据状态 | 项目名称 | 责任单位 | 日志记录 | 操作 |\n| --- | --- | --- | --- | --- | --- |\n\n    2、工伤事故\n\n    打开工伤事故，进去后的页面如下：\n\n| 序号 | 单据状态 | 项目名称 | 责任单位 | 工伤事故 | 操作 |\n| --- | --- | --- | --- | --- | --- |\n\n单据状态只要：已录入，已通过，审核中。。。。\n\n    3、起重设备管理版块\n\n    在起重设备综合管理台帐中的设备数字，当设备报拆除后，每拆一台，该数字就减少一次，直至项目将所报的设备全部拆除完，当设备拆除完后，该项数据连同项目名称全部消失。\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps23.jpg) \n\n   4、临时用电管理版块\n\n   1）临时用电管理\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps24.jpg) \n\n单据状态修改：1、去掉已终止；2、辐射所有模块中的状态。\n\n2、临时用电自检\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps25.jpg) \n\n    1、对检查中存在的问题，被打勾的项目，系统自动生成整改项，进行保存，列入安全管理中的安全隐患整改通知单中，实现互相调用（调用的方式由软件开发来设定）。\n\n    2、在安全隐患整改通知单中的检查类别下拉框中出现临时用电整改项，是将临时用电自检表中的问题项拉过来生成隐患单。\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps26.jpg) \n\n3、临时用电管理与临时用电自检右边的操作栏中，放出删除按钮（管理员）\n\n5、文明措施费\n\n文明措施费汇总页面中的综合查询功能无效，不能将各个分公司进行分开显示。\n\n6、在工程部四个总汇总页面中，隐藏湖南天禹公司的项目。\n\n7、每新增一个项目要求用颜色标示出，方便查阅（扩展到每个查询结果页面），颜色消失时间为项目变更成“在建”状态后。\n\n8、隐患整改通知单增加一个流程：\n\n公司对分公司（岗位：生产经理或总工或商务经理）下发整改通知单和回复功能。\n\n表单如下：\n\n质量安全隐患整改通知单\n\n| 工程名称 |   | 受检单位 | 分公司（项目部）：默认为项目部 |\n| --- | --- | --- | --- |\n| 施工单位 |   | 施工负责人 |   |\n| 检查形式 | 日常\\\\专项\\\\季度\\\\综合 | 检查类别 | 质量检查\\\\安全检查\\\\质量、安全检查\\\\临时用电 |\n| 检查部位 |   | 公司级别 | 公司\\\\分公司\\\\项目部 |\n| 形象进度 | 基础\\\\主体\\\\装饰 | 检查日期 |   |\n| 隐患记要： |\n| 整改要求：限项目部在天内按规范标准的要求整改。若未在规定的期限内整改，将按公司《质量安全管理奖惩办法》处罚。  签发单位：                                    签发人： |\n| 整改结果： |\n\n整改单位：                                   整改人：\n\n流程图：\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps27.png)![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps28.png)![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps29.png)\n\n9、停工隐患整改通知单增加一个节后复工申请，流程不变，表单如下：\n\n复工申请表\n\n| 工程名称 |   | 责任单位 |   |\n| --- | --- | --- | --- |\n| 项目类型 |   | 项目地点 |   |\n| 项目经理 |   | 项目技术负责人 |   |\n| 停工类型 | 质量\\\\安全\\\\综合 | 停工整改通知单编号 |   | 下发单位 | 上级管理部门\\\\公司\\\\分公司\\\\节后复工 |\n| 节后复工 | 节后复工申请（点此项后，停工整改通知单编号不需选择即可进行申请操作） |\n| 停工日期 |   | 申请复工日期 |   |\n| 项目停工原因或其它 |   |\n| 申请复工条件 |   |\n| 项目整改结果 |   |\n| 分公司工程科长初审意见 |   |\n| 分公司技术负责人审核意见 |   |\n| 工程管理部审核意见 |   |\n| 生产副总经理审批意见 |   |\n\n![](file:///C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ksohtml1328\\wps30.jpg) \n\n10、取消“开工条件审查”的资料报审限制，可多次申报。",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/5.png",
+                        "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                        "memberId": "5e8e988c4a84520022833933",
+                        "name": "周八",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7af36c6ecec0513bac7a16"
+                    },
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    },
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    },
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    },
+                    {
+                        "avatarUrl": "./img/2.png",
+                        "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                        "memberId": "5e8e988bb86f210022eed57f",
+                        "name": "tanzhihua",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7bfe06169382c8f1771936"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8bda8b13a6f90021266d5c",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T07:13:02.621Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "工程部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "肖一",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "工程概况表单中管理目标的内容空白",
+                "creatorId": "5e7c0870e168a825d4ada24d",
+                "dueDate": null,
+                "executorId": "5e7bfe06169382c8f1771936",
+                "isDone": 1,
+                "note": "工程概况表单中管理目标的内容空白。长沙经营公司南山天池项目反馈，在市场经营板块中“目标责任书”里面是都有值。  \n\n![工程概况中管理目标空白.png](https://tcs.teambition.net/thumbnail/111s4313f6022b53ddd21bf7a117d717cbc1/w/800/h/287)",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/2.png",
+                        "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                        "memberId": "5e8e988bb86f210022eed57f",
+                        "name": "tanzhihua",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7bfe06169382c8f1771936"
+                    },
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8bd76d1e728d0021e75b1c",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T02:21:29.765Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "executor": {
+                    "avatarUrl": "./img/2.png",
+                    "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                    "memberId": "5e8e988bb86f210022eed57f",
+                    "name": "tanzhihua",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7bfe06169382c8f1771936"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "工程部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "员工内部异动流程，已移送到“调入单位hr”环节，但该环节没有显示出审批人。",
+                "creatorId": "5e7c0870e168a825d4ada24d",
+                "dueDate": null,
+                "executorId": null,
+                "isDone": 0,
+                "note": "**错误结果图如下：**\n\n![Screenshot-0.png](https://tcs.teambition.net/thumbnail/111s88cd92d631373fa0e2b1106312fbd683/w/800/h/415)",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/3.png",
+                        "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                        "memberId": "5e8e988b29ca0e0021e5e5b7",
+                        "name": "郑十",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c0870e168a825d4ada24d"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9d07fcc890f300213b1839",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-20T02:25:00.534Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/3.png",
+                    "email": "accounts_5e7c086f832f890020f83191@mail.teambition.com",
+                    "memberId": "5e8e988b29ca0e0021e5e5b7",
+                    "name": "郑十",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c0870e168a825d4ada24d"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "二级单位",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "西北分公司-李二",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "管理制度上传附件 不显示附件文件名",
+                "creatorId": "5e7c107a92856ec975da4afc",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "**重现步骤**\n\n1.  科技管理\n2.  总工办管理制度\n3.  上传 文件\n4.  ![Screenshot-0.png](https://tcs.teambition.net/thumbnail/111sf6d523980ee4a73c44bb2d959ba95c25/w/800/h/508)\n    \n\n**测试结果**\n\n1.  上传后 不显示 文件名。\n    \n\n<br>\n\n**期望结果**\n\n1.上传后 可以显示 文件名。",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/2.png",
+                        "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                        "memberId": "5e8e988bb86f210022eed57f",
+                        "name": "tanzhihua",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7bfe06169382c8f1771936"
+                    },
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e967d193b5b27002159b31f",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-15T03:25:47.428Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "总工办",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "龙三",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "修改数据-修改项目预登记表及新增投标项目数据",
+                "creatorId": "5e7c107a92856ec975da4afc",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "**重现步骤**\n\n1.  ![Screenshot-0.png](https://tcs.teambition.net/thumbnail/111s3ee957b26aec3afeb95cd296869300d6/w/798/h/416)\n\n![Screenshot-1.png](https://tcs.teambition.net/thumbnail/111s645e2e0b0a24f190acdb93ad5b4f29ec/w/799/h/262)\n\n![Screenshot-2.png](https://tcs.teambition.net/thumbnail/111s69979f1ce0a0baa3ed4798a1c3c2754c/w/799/h/360)\n\n**修改结果**\n\n![Screenshot-3.png](https://tcs.teambition.net/thumbnail/111s75189dbaee467e38da0933e2c36b3066/w/800/h/484)\n\n![Screenshot-4.png](https://tcs.teambition.net/thumbnail/111s0ac5dbf851f6234fb1243e44494780cb/w/800/h/478)\n\n![Screenshot-5.png](https://tcs.teambition.net/thumbnail/111s697ed044dd397703ce19329476b60cae/w/800/h/497)\n\n<br>\n\n<br>\n\n<br>\n\nupdate  mc\\_tender\\_project set project\\_cost = '245631700' where bidding\\_code = 'TB20200050'  \n\n  \n\nupdate  mc\\_pre\\_registration set project\\_cost = '245631700' where register\\_code = 'YDJ20200083'",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e9523df0795de0025f9a9da",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-14T02:46:12.568Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "修改数据",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "市场部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "市场部",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "人力资源--员工招聘管理--二维码生成 --（入职二维码）--填写信息保存不完整。",
+                "creatorId": "5e7c107a92856ec975da4afc",
+                "dueDate": null,
+                "executorId": null,
+                "isDone": 1,
+                "note": "重现步骤\n\n1.  人力资源--员工招聘管理--二维码生成 --（入职二维码）--填写信息\n2.  信息未完全保存\n\n测试结果\n\n1.  填写家庭信息 及 社会经历 后 保存 页面报错“信息保存不成功”\n    \n\n1.  pc端 家庭信息 及 社会经历 未保存。\n    \n\n期望结果\n\n1.信息可以正确保存",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    },
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8eb45dc8e93e00213b67ff",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T08:37:09.932Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "人力部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "编辑中标交底表 修改 中标价 为 捌亿元",
+                "creatorId": "5e7c107a92856ec975da4afc",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "update mc\\_bidding\\_associate set project\\_cost = 800000000.00  WHERE id = '322'    \n\n该项目 id 为 322",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8d709905d6b00022474d50",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T02:21:01.000Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "市场部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "市场部 领导",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "安全文明措施管理 - 安全文明措施费 - 安全文明措施费申请",
+                "creatorId": "5e7c107a92856ec975da4afc",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "添加多条 “使用计划及台账”附件时 报错 ，\n\n<br>\n\n<br>\n\n![Screenshot-0.png](https://tcs.teambition.net/thumbnail/111sfcda67b655e10a6612e64fd0f22c1705/w/799/h/554)\n\n<br>\n\n<br>\n\n建议增加 use-plan 字段长度\n\n![Screenshot-1.png](https://tcs.teambition.net/thumbnail/111sf78a13142999580fae1e2fce23eb864a/w/600/h/547)\n\n<br>\n\n<br>\n\n  \n\n  \n\nalter table em\\_civilized\\_measures\\_cost alter column use\\_plan varchar(500)",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8d3755ae53ef0021eb2384",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T02:21:11.278Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "工程部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "工程部 直营-蔡晓",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "成本控制报表",
+                "creatorId": "5e7c107a92856ec975da4afc",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "passPreview({ name, urlProps }) {\n\n    let reportPreviewUrlPrefix = 'ureport/preview?\\_u='\n\n    let reportSrc = zbConst.contextPath + '/' + reportPreviewUrlPrefix + name\n\n    let props = {}\n\n    props.src = reportSrc\n\n    if (urlProps) {\n\n      Object.keys(urlProps).forEach(function(key) {\n\n        props.src = props.src + '&' + key + '=' + urlProps\\[key\\]\n\n      })\n\n    }\n\n    let title =  name\n\n    $events.$emit('layout.addTab', {\n\n      name,\n\n      title,\n\n      props,\n\n      cname: 'zb-iframe'\n\n    })\n\n  },",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e86bd6e55d98a0021bb488e",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T02:19:19.984Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "成控部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "施工日志中 施工内容字段扩展",
+                "creatorId": "5e7c107a92856ec975da4afc",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "数据库已修改（含测试）前后端限制未添加。\n\nSQL\n\nalter table em\\_construction\\_log alter column construction\\_content varchar(2000)",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e853f2411f35600219d5a42",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T02:19:43.804Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "工程部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "阳光采购平台中，增加“设置查看供方报价条数”功能。及采购方可查看某材料的多少条报价信息取决于后台的数量设置。默认值为5条，亦可以设置为显示全部。",
+                "creatorId": "5e7af36c6ecec0513bac7a16",
+                "dueDate": "2020-04-03T10:00:00.000Z",
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "成控部部长王平于2020年3月30日提出问题",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    },
+                    {
+                        "avatarUrl": "./img/5.png",
+                        "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                        "memberId": "5e8e988c4a84520022833933",
+                        "name": "周八",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7af36c6ecec0513bac7a16"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": "2020-04-01T01:00:00.000Z",
+                "taskId": "5e8535e22844380021d0f91c",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-12T02:18:40.456Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/5.png",
+                    "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                    "memberId": "5e8e988c4a84520022833933",
+                    "name": "周八",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7af36c6ecec0513bac7a16"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "阳光采购",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "成控部",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "王平",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "采购下单页面，1、“预算数量”、“预算总量”字段单位显示错误；2、“预算总量”标签名修改为“预算总价”；3、“剩余采购量”字段，数值计算错误。",
+                "creatorId": "5e7af36c6ecec0513bac7a16",
+                "dueDate": "2020-04-09T10:00:00.000Z",
+                "executorId": "5c448781c8954c0001d1d829",
+                "isDone": 1,
+                "note": "重现步骤\n\n1.  登陆阳光采购平台，账号：王平  密码：117 ，选择“阳光采购测试项目”\n2.  选择商品“商品砼 C30  株洲”\n3.  比价页面选择第一家报价供应商，点击“去下单”按钮，进入采购下单页面\n\n测试结果\n\n1.  “预算数量”单位：元/m3\n    \n2.  “预算总量”单位：元/m3\n    \n3.  剩余采购量：0\n    \n\n期望结果\n\n1.  “预算数量”单位：m3\n    \n2.  “预算总量”单位：元\n    \n3.  剩余采购量：=预算数量-已下单\n    \n4.  “预算总量”字样修改为“预算总价”  \n    \n\n3.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    },
+                    {
+                        "avatarUrl": "./img/5.png",
+                        "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                        "memberId": "5e8e988c4a84520022833933",
+                        "name": "周八",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7af36c6ecec0513bac7a16"
+                    },
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e8e9af81d358b0021478bd9",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-09T14:41:55.452Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/5.png",
+                    "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                    "memberId": "5e8e988c4a84520022833933",
+                    "name": "周八",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7af36c6ecec0513bac7a16"
+                },
+                "executor": {
+                    "avatarUrl": "./img/1.png",
+                    "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                    "memberId": "5e8c1812fa57db00217e77e3",
+                    "name": "张三",
+                    "phone": "",
+                    "role": 2,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5c448781c8954c0001d1d829"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "阳光采购",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "总工办",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "周八",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "平台附件上传失败，且阶段性的重复出现。一旦出现，则是整个平台所有附件上传功能均出错。",
+                "creatorId": "5e7af36c6ecec0513bac7a16",
+                "dueDate": "2020-04-14T10:00:00.000Z",
+                "executorId": "5e7bfe06169382c8f1771936",
+                "isDone": 1,
+                "note": "**重现步骤**\n\n1.  打开平台某新增功能(需支持附件上传操作)\n2.  上传附件\n3.  保存表单\n\n**测试结果**\n\n1.  平台在提示数据保存成功后，再次提示附件上传失败\n    \n2.  再次打开表单，已上传附件没有\n    \n\n**期望结果**  \n\n1.提示附件上传失败原因\n\n2.通过重启服务器解决阶段性附件上传失败”的方案需从技术层面查明原因后解决",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/5.png",
+                        "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                        "memberId": "5e8e988c4a84520022833933",
+                        "name": "周八",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7af36c6ecec0513bac7a16"
+                    },
+                    {
+                        "avatarUrl": "./img/2.png",
+                        "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                        "memberId": "5e8e988bb86f210022eed57f",
+                        "name": "tanzhihua",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7bfe06169382c8f1771936"
+                    },
+                    {
+                        "avatarUrl": "./img/1.png",
+                        "email": "accounts_5c44878050d5d6001761b2c5@mail.teambition.com",
+                        "memberId": "5e8c1812fa57db00217e77e3",
+                        "name": "张三",
+                        "phone": "",
+                        "role": 2,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5c448781c8954c0001d1d829"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e950646d69c0d0021b81a07",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-16T05:35:14.874Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/5.png",
+                    "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                    "memberId": "5e8e988c4a84520022833933",
+                    "name": "周八",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7af36c6ecec0513bac7a16"
+                },
+                "executor": {
+                    "avatarUrl": "./img/2.png",
+                    "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                    "memberId": "5e8e988bb86f210022eed57f",
+                    "name": "tanzhihua",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7bfe06169382c8f1771936"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "缺陷",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "二级单位",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "南山十里天池毛嘉玮",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "图纸会审用印由协同办公用印申请中删除；科技管理板块中新增图纸会审用印功能。",
+                "creatorId": "5e7af36c6ecec0513bac7a16",
+                "dueDate": "2020-04-22T10:00:00.000Z",
+                "executorId": "5e7bfe06169382c8f1771936",
+                "isDone": 0,
+                "note": "**重现步骤**\n\n1.  \n\n**测试结果**\n\n1.  <br>\n    \n\n<br>\n\n**期望结果**\n\n1.",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/5.png",
+                        "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                        "memberId": "5e8e988c4a84520022833933",
+                        "name": "周八",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7af36c6ecec0513bac7a16"
+                    },
+                    {
+                        "avatarUrl": "./img/2.png",
+                        "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                        "memberId": "5e8e988bb86f210022eed57f",
+                        "name": "tanzhihua",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7bfe06169382c8f1771936"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e99062dedb0080021550ca4",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-17T01:28:13.510Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/5.png",
+                    "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                    "memberId": "5e8e988c4a84520022833933",
+                    "name": "周八",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7af36c6ecec0513bac7a16"
+                },
+                "executor": {
+                    "avatarUrl": "./img/2.png",
+                    "email": "accounts_5e7bfe05c2cd1100215c7aaa@mail.teambition.com",
+                    "memberId": "5e8e988bb86f210022eed57f",
+                    "name": "tanzhihua",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7bfe06169382c8f1771936"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "需求",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "总工办",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "柯四",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "“磐龙生态社区依兰邸项目工程施工一标段”项目，已完成股份制协议书审批流程，但股本金收入新增时，系统无法自动获取股东信息。",
+                "creatorId": "5e7af36c6ecec0513bac7a16",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "**重现步骤**\n\n1.  进入财务管理->项目资金收入功能\n2.  新增股本金收入\n3.  选择项目\n4.  新增明细\n\n**测试结果**\n\n1.  无备选记录选择\n\n<br>\n\n**期望结果**\n\n1.自动抓取股份制协议书中股东及应交股本金信息\n\n<br>\n\n<br>\n\n备注 ： \n\npm\\_partner （股东信息表）中没有该 “3437”工程编号的，股东信息。问题属于 信息缺失。",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/5.png",
+                        "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                        "memberId": "5e8e988c4a84520022833933",
+                        "name": "周八",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7af36c6ecec0513bac7a16"
+                    },
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": 0,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e95356acbe58c0022733711",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77ca",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-16T05:39:42.225Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/5.png",
+                    "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                    "memberId": "5e8e988c4a84520022833933",
+                    "name": "周八",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7af36c6ecec0513bac7a16"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "讨论",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "修改数据",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "信息平台",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "二级单位",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": "直属公司-李梦诗",
+                        "cfId": "5e7c853d231cef5ca4078b19",
+                        "description": ""
+                    }
+                }
+            },
+            {
+                "ancestorIds": [],
+                "content": "阳光采购平台供应商改名。“株洲绫端建材有限公司”改为“湖南绫端建材有限公司”",
+                "creatorId": "5e7af36c6ecec0513bac7a16",
+                "dueDate": null,
+                "executorId": "5e7c107a92856ec975da4afc",
+                "isDone": 1,
+                "note": "**重现步骤**\n\n**测试结果**\n\nselect \\* from pu\\_supplier where 1=1 and  supplier\\_name = '株洲绫端建材有限公司'\n\n  \n\nselect \\* from pu\\_supplier where 1=1 and  id = '384'\n\n  \n\nupdate pu\\_supplier set supplier\\_name = '湖南绫端建材有限公司' where id = '384'\n\n<br>\n\n**期望结果**\n\n1.![Screenshot-0.png](https://tcs.teambition.net/thumbnail/111s40d68aa5c682dae3df51cdea505caa68/w/799/h/648)",
+                "orgId": null,
+                "participants": [
+                    {
+                        "avatarUrl": "./img/5.png",
+                        "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                        "memberId": "5e8e988c4a84520022833933",
+                        "name": "周八",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7af36c6ecec0513bac7a16"
+                    },
+                    {
+                        "avatarUrl": "./img/4.png",
+                        "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                        "memberId": "5e8e988c47f8de0021fc2cd2",
+                        "name": "杨光",
+                        "phone": "",
+                        "role": 1,
+                        "updated": "0001-01-01T00:00:00.000Z",
+                        "userId": "5e7c107a92856ec975da4afc"
+                    }
+                ],
+                "priority": -10,
+                "projectId": "5e8c1811fa57db00217e77bf",
+                "startDate": null,
+                "taskId": "5e991e1998431d0021fd5adf",
+                "taskgroupId": "5e8c1811fa57db00217e77c8",
+                "tasklistId": "5e8c1811fa57db00217e77cd",
+                "templateId": "5e8c19f51fadc9528830e281",
+                "updated": "2020-04-17T04:27:52.634Z",
+                "visible": "projectMembers",
+                "creator": {
+                    "avatarUrl": "./img/5.png",
+                    "email": "accounts_5e7af36c10f6b900204a5a01@mail.teambition.com",
+                    "memberId": "5e8e988c4a84520022833933",
+                    "name": "周八",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7af36c6ecec0513bac7a16"
+                },
+                "executor": {
+                    "avatarUrl": "./img/4.png",
+                    "email": "accounts_5e7c107aaa26e30020676ac1@mail.teambition.com",
+                    "memberId": "5e8e988c47f8de0021fc2cd2",
+                    "name": "杨光",
+                    "phone": "",
+                    "role": 1,
+                    "updated": "0001-01-01T00:00:00.000Z",
+                    "userId": "5e7c107a92856ec975da4afc"
+                },
+                "tasklist": "上线",
+                "customfieldsObj": {
+                    "type": {
+                        "key": "type",
+                        "id": "5e8c164bfff31fa619fc832c",
+                        "name": "问题类型",
+                        "value": "修改数据",
+                        "cfId": "5e8c164bfff31fa619fc832c",
+                        "description": ""
+                    },
+                    "platform": {
+                        "key": "platform",
+                        "id": "5e8c15c2d5789beda35b43de",
+                        "name": "所属平台",
+                        "value": "阳光采购",
+                        "cfId": "5e8c15c2d5789beda35b43de",
+                        "description": ""
+                    },
+                    "problemOfDepartment": {
+                        "key": "problemOfDepartment",
+                        "id": "5e7c850e231cef5ca4078af0",
+                        "name": "提出单位",
+                        "value": "二级单位",
+                        "cfId": "5e7c850e231cef5ca4078af0",
+                        "description": ""
+                    },
+                    "problemOfPeople": {
+                        "key": "problemOfPeople",
+                        "id": "5e7c853d231cef5ca4078b19",
+                        "name": "提出人",
+                        "value": ""
+                    }
+                }
+            }
+        ]
+    }
+}
