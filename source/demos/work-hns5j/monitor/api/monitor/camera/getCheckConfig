@@ -1,0 +1,4337 @@
+{
+    "code": 200,
+    "msg": "ok",
+    "result": {
+        "work": true,
+        "nextCheckNum": 75,
+        "currentChecker": 0,
+        "isGetNeedCheckArr": false,
+        "needCheckArr": [
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:29:47.284Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:29:47.284Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fe5",
+                "cameraUuid": "9e3ad4a5ad4d44d087e927d7101c7dbb",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼监控室",
+                "cameraType": 1,
+                "encoderUuid": "96facb12a36f4ba1a098814410ccada9",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052211,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:29:48.390Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:29:48.390Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fe6",
+                "cameraUuid": "2fa453ce73a740509eff563dc7db3106",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼母婴关爱室",
+                "cameraType": 1,
+                "encoderUuid": "aa6c389e7cea45dcb61fbac42d80d2f9",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052941,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:30:02.888Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:30:02.889Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fe7",
+                "cameraUuid": "8227e622bf1f4fb58895eede38af46cd",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼办公次入口",
+                "cameraType": 1,
+                "encoderUuid": "8dcf3943285749efa99d729cca87d130",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052132,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:30:03.993Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:30:03.993Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fe8",
+                "cameraUuid": "a94025693b81444aa116ef952fafe94c",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼信访办公室1",
+                "cameraType": 1,
+                "encoderUuid": "c30b4a96c0354211aca49dda7e802029",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595042668275,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:30:19.393Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:30:19.393Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fe9",
+                "cameraUuid": "593741f4ebbc4af2b0693a5b25901e87",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼信访办公室过道",
+                "cameraType": 1,
+                "encoderUuid": "5325e266eec8430381e643cbde878212",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051439,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:30:20.391Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:30:20.391Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fea",
+                "cameraUuid": "77f59e4888b0418883f995cc44aa9a2a",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "ff76a556264749b3bbbf125f7847913a",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053330,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:30:35.393Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:30:35.393Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930feb",
+                "cameraUuid": "78303a5a703d44bda99195da742de3b9",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼库房过道",
+                "cameraType": 1,
+                "encoderUuid": "53901a5816fe44c596b32cce50cc1ce6",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051531,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:30:36.480Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:30:36.481Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fec",
+                "cameraUuid": "370066cd726646d98002c6318f60e597",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼前室",
+                "cameraType": 1,
+                "encoderUuid": "748fecc96aed463fb14ef2d83aaa38c4",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051579,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:30:51.411Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:30:51.412Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fed",
+                "cameraUuid": "587f5e3feb3a4997aee1ede72dad325a",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼库房过道2",
+                "cameraType": 1,
+                "encoderUuid": "cb0a54b15bda4fd08bee2e84c11ed13d",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053068,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:30:52.394Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:30:52.394Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fee",
+                "cameraUuid": "15b4084ea1a34229a7a20a93f06d42f9",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼信访办公室2",
+                "cameraType": 1,
+                "encoderUuid": "c26882df82ee4b15b43d802ee99ba7ea",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595042668040,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:31:07.412Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:31:07.412Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fef",
+                "cameraUuid": "9f6097bcd8514216909336cdfa36d57a",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼餐厅2",
+                "cameraType": 1,
+                "encoderUuid": "5b162cb2795c43dc928c7fc9d6248e81",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051351,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:31:08.393Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:31:08.393Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff0",
+                "cameraUuid": "a1309c87d8eb40c1bfe13e0df6779f4f",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "e15f5484730a4c63ba5652b1ffc9d7f2",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053359,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:31:23.444Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:31:23.445Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff1",
+                "cameraUuid": "d366e5e6361144a1a908fc4e0cb78cd6",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼小餐厅1",
+                "cameraType": 1,
+                "encoderUuid": "04b4a178011344f087a8516cc12a7b77",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460050994,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:31:24.415Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:31:24.415Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff2",
+                "cameraUuid": "b65a6635832a4f118807f66e61af639e",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼小餐厅3",
+                "cameraType": 1,
+                "encoderUuid": "28f6bc5017bf464183592a7fe097923e",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051555,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:31:39.651Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:31:39.652Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff3",
+                "cameraUuid": "4488a66d873e47c5985b892cd36f6e80",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼楼梯间1",
+                "cameraType": 1,
+                "encoderUuid": "4a72227c12ec4e0f8eb4e4c7db60cf31",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051461,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:31:40.405Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:31:40.406Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff4",
+                "cameraUuid": "0d144ea18440426ca031cdaffc6e105f",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼餐厅4",
+                "cameraType": 1,
+                "encoderUuid": "c72fecfebea64e4f960ab4a18fd7771c",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052906,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:31:55.418Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:31:55.418Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff5",
+                "cameraUuid": "3f555716e3e94d8ba588c7fc189feca0",
+                "cameraChannelNum": 1,
+                "cameraName": "厨房电梯",
+                "cameraType": 1,
+                "encoderUuid": "f9dd57c81d73461fa01d3a0005b514ce",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1589238542037,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:31:56.433Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:31:56.433Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff6",
+                "cameraUuid": "e6adf3be09fd42b98b6f8b6e0fdb4f9f",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼餐厅5",
+                "cameraType": 1,
+                "encoderUuid": "fbcd64e54f7b4893a5ddd42b077db9ee",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053516,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:32:11.416Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:32:11.416Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff7",
+                "cameraUuid": "824a3789aa95421bbd8bc77bdf1d156d",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼餐厅6",
+                "cameraType": 1,
+                "encoderUuid": "0a1274ec4469497095a9ab719f2b673f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051131,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:32:12.411Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:32:12.411Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff8",
+                "cameraUuid": "59843c851b534423b541824c07c6c2d4",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼凤舞潇湘",
+                "cameraType": 1,
+                "encoderUuid": "0c350baf51114de6ad040981144a76df",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051374,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:32:27.530Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:32:27.531Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ff9",
+                "cameraUuid": "99482eb0b9b146c7a23968eb074bb7d9",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼小餐厅2",
+                "cameraType": 1,
+                "encoderUuid": "cc476eb4803d4346be3fbc54a06a51d9",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053132,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:32:29.590Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:32:29.591Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ffa",
+                "cameraUuid": "470b2af5648c4153b1be5da94e7aa9bc",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼楼梯间2",
+                "cameraType": 1,
+                "encoderUuid": "d68c6ace6cce4bb18030ed01cc9dc8d2",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052873,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:32:43.562Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:32:43.563Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ffb",
+                "cameraUuid": "b0999e545d9e43b69f112ff62918d07f",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼餐厅1",
+                "cameraType": 1,
+                "encoderUuid": "f998dc4a44df4717aacd0128ec10d436",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459768657,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:32:45.598Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:32:45.599Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ffc",
+                "cameraUuid": "081c58895b264d299aeb993523a6b534",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼前台",
+                "cameraType": 1,
+                "encoderUuid": "a89bf613dd8b40228debb518ab0e7b9e",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052976,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:32:59.564Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:32:59.564Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ffd",
+                "cameraUuid": "ad103dc079764720aa08a734a122f804",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼餐厅消防楼梯",
+                "cameraType": 0,
+                "encoderUuid": "59dd421dd0144f908bbc21f71ac7ae18",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1563434438908,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:33:01.572Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:33:01.572Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930ffe",
+                "cameraUuid": "e2009ae85e0b493ab4e9e3ed7651e8a2",
+                "cameraChannelNum": 1,
+                "cameraName": "二楼餐厅3",
+                "cameraType": 1,
+                "encoderUuid": "4783ceea870e49eaae2d1c9560b04c0b",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051649,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:33:15.612Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:33:15.613Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c930fff",
+                "cameraUuid": "2e6bd09a3654463f81d35ad5d27eaa14",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼健身房1",
+                "cameraType": 1,
+                "encoderUuid": "62daa30c5a0c4ff39eef8f9423777808",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051417,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:33:17.575Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:33:17.575Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931000",
+                "cameraUuid": "4ecf0fda2372431c9abffb1bd83e0e68",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼书吧房1",
+                "cameraType": 1,
+                "encoderUuid": "07d189a7eff04e34bdfc84c3a3bc970d",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051107,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:33:31.578Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:33:31.579Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931001",
+                "cameraUuid": "ca9f27d3c8304ae791ab5be077dc7afc",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼健身房2",
+                "cameraType": 1,
+                "encoderUuid": "7057ff887b7941759f65fc7c699194e6",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051673,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:19:41.889Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:19:41.890Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931002",
+                "cameraUuid": "c820cecdff084aba809272fea2f2e955",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼书吧房2",
+                "cameraType": 1,
+                "encoderUuid": "9ec965003dc14f108e6b7ddc29c22bec",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052359,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:19:42.845Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:19:42.846Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931003",
+                "cameraUuid": "dbf8c6116311482089841e9101f64d36",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼健身房3",
+                "cameraType": 1,
+                "encoderUuid": "81b09891774b4d9390f95c478e80b480",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051829,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:19:57.848Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:19:57.848Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931004",
+                "cameraUuid": "6e549b6b9f254cd89571893001785112",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼书吧房3",
+                "cameraType": 1,
+                "encoderUuid": "9fa44d11b85e45668e995a84da2e49d3",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052440,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:33:33.567Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:33:33.567Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931005",
+                "cameraUuid": "c8faca74fd9548638c66c851e96f1bc1",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼KTV门口",
+                "cameraType": 1,
+                "encoderUuid": "786ac840305f41daa3d1ce7ad4beb63e",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051784,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:33:47.574Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:33:47.574Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931006",
+                "cameraUuid": "20372be6488d426898053340bcc16a71",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼楼梯口1",
+                "cameraType": 1,
+                "encoderUuid": "bc178d817b99469eaf5d529f8a264dbf",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1576625814860,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:19:58.833Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:19:58.833Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931007",
+                "cameraUuid": "544c0b87656342899c6339d14b933e91",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼楼梯口2",
+                "cameraType": 1,
+                "encoderUuid": "8edceb6899e4400e9e88ce1f79a8ece6",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052041,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:20:13.860Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:20:13.860Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931008",
+                "cameraUuid": "c3112e4399fb49248158084ed9ace48e",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼大厅吧台",
+                "cameraType": 1,
+                "encoderUuid": "01fd258d150048c4aad1edf8ad5ca528",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051175,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:33:49.589Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:33:49.589Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931009",
+                "cameraUuid": "565d9cba9799408f9072346abdd403e2",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼乒乓球室1",
+                "cameraType": 1,
+                "encoderUuid": "3179845fb7954fedba1614404cb4df8b",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051153,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:34:03.584Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:34:03.585Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93100a",
+                "cameraUuid": "65e57db6720f4d9fa447221ab68cb96e",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼乒乓球室2",
+                "cameraType": 1,
+                "encoderUuid": "a0fe8ca204194a1e8328d1018d20e8f3",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459769933,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:20:14.848Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:20:14.849Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93100b",
+                "cameraUuid": "dd3c4976c9c042478ed8f3f5ad6d061d",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼健身房4",
+                "cameraType": 1,
+                "encoderUuid": "bf06addc0c424eb7a4b38f82d1393206",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052386,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:20:29.875Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:20:29.876Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93100c",
+                "cameraUuid": "7649682a5d89409883a50b84ce98ce9f",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼弱电井旁",
+                "cameraType": 1,
+                "encoderUuid": "2c661a3e355448c7b499c2a3e7c22b62",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051226,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:20:30.842Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:20:30.843Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93100d",
+                "cameraUuid": "2e231550cc884f32b9baf2d9de9baf3a",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼健身房吧台",
+                "cameraType": 1,
+                "encoderUuid": "9850d3b7199b4d3a91ba34c6ec0c5657",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052169,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:34:05.602Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:34:05.603Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93100e",
+                "cameraUuid": "d69fc4ea0e784ee88ed7d47cf873ace7",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼文化展厅",
+                "cameraType": 1,
+                "encoderUuid": "1e50ac7edf1f4b9194e9526064446885",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459766739,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:34:19.605Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:34:19.606Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93100f",
+                "cameraUuid": "55b74270e0484ba69b2d0c6112a4f2a2",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼厕所过道",
+                "cameraType": 1,
+                "encoderUuid": "aa17f84ce7464a8885c104075d26a862",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052661,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:34:21.598Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:34:21.598Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931010",
+                "cameraUuid": "ab919bb717e14c3a953a7b8d6bf316c4",
+                "cameraChannelNum": 1,
+                "cameraName": "三楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "ccbf9ca0d45f4682b367cfadf68ee530",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053160,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:34:35.620Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:34:35.620Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931011",
+                "cameraUuid": "73d03ea7c4a14467b51ebc46a126d67e",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼楼梯口1",
+                "cameraType": 1,
+                "encoderUuid": "833fe59efc6145708dae26ca12cad8cc",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051718,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:34:37.606Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:34:37.606Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931012",
+                "cameraUuid": "d420f664ae7040019380f7c8d77f0d89",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "22e3c8a3795c422e89274e8faf74bfeb",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460050970,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:34:51.729Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:34:51.729Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931013",
+                "cameraUuid": "5d97b544babc468a99b99696044d2201",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼多功能厅1",
+                "cameraType": 1,
+                "encoderUuid": "f221a8a727f34bcc9494eaaf535daeb0",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459763224,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:34:53.701Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:34:53.701Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931014",
+                "cameraUuid": "ff97d904571740e2a24545696a5dd219",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼厕所过道",
+                "cameraType": 1,
+                "encoderUuid": "e38ae746425e42c283f155d55cb861af",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053249,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:35:07.796Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:35:07.797Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931015",
+                "cameraUuid": "451c5bb589d34a4f8917793f40f09619",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼大厅",
+                "cameraType": 1,
+                "encoderUuid": "a98b24b113b241f5bba61046bfb811af",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052637,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:35:09.751Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:35:09.751Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931016",
+                "cameraUuid": "5c661e88d22047fa843890322a6b0da3",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼多功能厅过道2",
+                "cameraType": 1,
+                "encoderUuid": "690d614e970547bc838ad9dc7149a2bc",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595924292132,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:20:45.874Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:20:45.875Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931017",
+                "cameraUuid": "8ecb9d3215fb48bdb20f62440cc46d48",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼多功能厅过道3",
+                "cameraType": 1,
+                "encoderUuid": "105701b849cd46d59d315a19deb56e05",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051301,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:20:46.861Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:20:46.861Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931018",
+                "cameraUuid": "254c7f50b2814a729b95b0137437c2e4",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼视频会议室过道",
+                "cameraType": 1,
+                "encoderUuid": "e530a9a9141f47ad8f93a2eb34d021dc",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053099,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:21:01.855Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:21:01.855Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931019",
+                "cameraUuid": "03d80a4b27d8405f8714ea2e1238e790",
+                "cameraChannelNum": 1,
+                "cameraName": "四楼楼梯间2",
+                "cameraType": 1,
+                "encoderUuid": "dc40b116722241b7b2e1a5c6070d1519",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052589,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:21:02.862Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:21:02.862Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93101a",
+                "cameraUuid": "be8371bed6ef4cb1a3d7368154096afd",
+                "cameraChannelNum": 1,
+                "cameraName": "六楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "5e2113385756485ab6cba8ebbd45362f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051482,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:21:17.866Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:21:17.866Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93101b",
+                "cameraUuid": "4492abe72bf14b4d9f6b97b9ad2eed1f",
+                "cameraChannelNum": 1,
+                "cameraName": "七楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "9cd9c9faf14d4416b571b6be6976177b",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052835,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:21:18.903Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:21:18.903Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93101c",
+                "cameraUuid": "d4a5737186744805bf70ff8108703b08",
+                "cameraChannelNum": 1,
+                "cameraName": "五楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "c5f7dbebca45429fae5438bd3e227cef",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052795,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:35:23.786Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:35:23.787Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93101d",
+                "cameraUuid": "d6aa68f8230840d8ae7f0f39f2355983",
+                "cameraChannelNum": 1,
+                "cameraName": "五楼室外2",
+                "cameraType": 0,
+                "encoderUuid": "3006197de23b4643974e00f1fc21a06c",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460050895,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:35:25.777Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:35:25.778Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93101e",
+                "cameraUuid": "324274cb85094dd6802fcfc1a3a16ee5",
+                "cameraChannelNum": 1,
+                "cameraName": "五楼标前室过道",
+                "cameraType": 1,
+                "encoderUuid": "df0a7dbb580c41a4940dc4a9cee7361f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052614,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:35:39.812Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:35:39.813Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93101f",
+                "cameraUuid": "b294b456e79147edaeb331e7d449eab0",
+                "cameraChannelNum": 1,
+                "cameraName": "五楼技术标过道",
+                "cameraType": 1,
+                "encoderUuid": "fbdf9dc9ac7a4bcab36f42dd00a7c00a",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053425,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:35:41.944Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:35:41.945Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931020",
+                "cameraUuid": "3995496bd9ab44ecac35baf22c80986b",
+                "cameraChannelNum": 1,
+                "cameraName": "五楼室外1",
+                "cameraType": 0,
+                "encoderUuid": "2c9b467ddc814183a04cea01db43e339",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460050920,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:35:55.827Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:35:55.827Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931021",
+                "cameraUuid": "a78e6b49a26242a7bc539f4af4c71516",
+                "cameraChannelNum": 1,
+                "cameraName": "八楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "4fd3c38ec6164848bd980b52e442c1b2",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051626,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:21:33.885Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:21:33.886Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931022",
+                "cameraUuid": "0ddc28edcd7e4fedb7730c390cf0d403",
+                "cameraChannelNum": 1,
+                "cameraName": "九楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "27505f05463c4abbb26911f63e46f226",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051252,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:21:34.890Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:21:34.890Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931023",
+                "cameraUuid": "16c6c67921c04ad786df3287e529fb5d",
+                "cameraChannelNum": 1,
+                "cameraName": "十楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "d8c4674dc0bf4a3da73e4f563c748504",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053217,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:21:49.904Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:21:49.904Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931024",
+                "cameraUuid": "a6f49a02d62e4004944aba3e80a479f9",
+                "cameraChannelNum": 1,
+                "cameraName": "十一楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "569938a1c2624df78fa157e978d0b562",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051740,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:21:50.875Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:21:50.876Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931025",
+                "cameraUuid": "b0158e520226497ca2ff528b9a1fc344",
+                "cameraChannelNum": 1,
+                "cameraName": "十三楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "1d72b97de3784658941de67d478f49eb",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051200,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:35:58.024Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:35:58.025Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931026",
+                "cameraUuid": "3ef1666169334dad86c3302df9dd0b3d",
+                "cameraChannelNum": 1,
+                "cameraName": "十二楼电梯厅过道",
+                "cameraType": 1,
+                "encoderUuid": "bfa0496a49df44cd99bd0e79b73530da",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052414,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:22:06.391Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:22:06.391Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931027",
+                "cameraUuid": "a0978d8c80ad4937977edf4298c3227e",
+                "cameraChannelNum": 1,
+                "cameraName": "十四楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "f158c6c04fe2435b8d78889818cc59b3",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052726,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:36:11.820Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:36:11.821Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931028",
+                "cameraUuid": "991c85dd7a1b4208a6776e264d5c59e6",
+                "cameraChannelNum": 1,
+                "cameraName": "十五楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "dd7f5d3c93ef4578b5188cc472852c2f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052749,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:36:13.863Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:36:13.863Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931029",
+                "cameraUuid": "8683d74322e5407dad1ac9c1f0895aa6",
+                "cameraChannelNum": 1,
+                "cameraName": "十六楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "b401b382326b41578720351d9b1ba0c0",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052815,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:36:28.035Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:36:28.035Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93102a",
+                "cameraUuid": "27c32e1385324ba68cf468bf83da0ff3",
+                "cameraChannelNum": 1,
+                "cameraName": "十七楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "63d729bba96f4794a3cf8b61f5df3beb",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051602,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:22:07.363Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:22:07.363Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93102b",
+                "cameraUuid": "1f5ddc06bec740cc947bbd105d9320ba",
+                "cameraChannelNum": 1,
+                "cameraName": "十八楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "2566812b31154faabb81f22e2f714a7c",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051397,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:36:29.927Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:36:29.927Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93102c",
+                "cameraUuid": "3e050c59a1b64eecaa569fb04a669fef",
+                "cameraChannelNum": 1,
+                "cameraName": "十九楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "766f616e2334413fa0a3532d1218cef1",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459810480,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:22:22.390Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:22:22.391Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93102d",
+                "cameraUuid": "bdf25c40546944c8aadc3f3c377c11f6",
+                "cameraChannelNum": 1,
+                "cameraName": "二十楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "f534cc1a43f5428482e1ed0561184f45",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053488,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:22:23.461Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:22:23.462Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93102e",
+                "cameraUuid": "2c99cb1f774342e4b59c6f2181ef060d",
+                "cameraChannelNum": 1,
+                "cameraName": "二十一楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "bb259c63f0474a71b009e15ec3f54426",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052489,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:22:38.374Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:22:38.374Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93102f",
+                "cameraUuid": "53653923bcf0457fa5ebfee8d24be0a4",
+                "cameraChannelNum": 1,
+                "cameraName": "二十二楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "f374b5b08e654f24ac6d3041ddf66300",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053035,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:36:43.950Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:36:43.950Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931030",
+                "cameraUuid": "4d0712b3cfda422a9f06302e5c37e439",
+                "cameraChannelNum": 1,
+                "cameraName": "二十一楼财务室1",
+                "cameraType": 1,
+                "encoderUuid": "f7babf7be64c435bb0907a5ada39df90",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053458,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:22:39.399Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:22:39.400Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931031",
+                "cameraUuid": "cfb1f25039e64f0c87fc4f9a42fba958",
+                "cameraChannelNum": 1,
+                "cameraName": "二十一楼财务室2",
+                "cameraType": 1,
+                "encoderUuid": "b43724f2f2204a2e8e31d22def7625c9",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053393,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:22:54.388Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:22:54.389Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931032",
+                "cameraUuid": "5b35a3b526984e9fa048f350527e1b66",
+                "cameraChannelNum": 1,
+                "cameraName": "二十一楼财务室3",
+                "cameraType": 1,
+                "encoderUuid": "5fef1005a8584eed8fe7fb0f61f669cd",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051694,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:36:45.922Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:36:45.923Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931033",
+                "cameraUuid": "bbe7518e5699474da63c06f3526afb19",
+                "cameraChannelNum": 1,
+                "cameraName": "二十五楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "d0b50935c8fc42b8831663a7214054d7",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052774,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:22:55.398Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:22:55.399Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931034",
+                "cameraUuid": "319c613c79eb4311b6db1c753dd0d8fd",
+                "cameraChannelNum": 1,
+                "cameraName": "二十四楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "e74080bc46884569a7a80339d5d52324",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053302,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:23:10.399Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:23:10.399Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931035",
+                "cameraUuid": "21fdef6723564986bdcc7630c092cc09",
+                "cameraChannelNum": 1,
+                "cameraName": "二十三楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "29366d73475648e095f20b3f59ed5e06",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051059,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:23:11.408Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:23:11.409Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931036",
+                "cameraUuid": "553bce6f45744d3ab6edf5435eadecab",
+                "cameraChannelNum": 1,
+                "cameraName": "二十六楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "c3ef2e5bb3fc4acabb8b33638b4d7d0c",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052516,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:23:26.412Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:23:26.412Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931037",
+                "cameraUuid": "6588c0cda6024d7bb13d36128300e83e",
+                "cameraChannelNum": 1,
+                "cameraName": "6号电梯",
+                "cameraType": 1,
+                "encoderUuid": "8961da1afc284621bc11951d92d15366",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595810677145,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:23:27.405Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:23:27.405Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931038",
+                "cameraUuid": "73b1d248de074c6c868017d0e55e765f",
+                "cameraChannelNum": 1,
+                "cameraName": "5号电梯",
+                "cameraType": 1,
+                "encoderUuid": "ef405b26d1814a73a087f311b45984ae",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1589076327657,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:23:42.448Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:23:42.448Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931039",
+                "cameraUuid": "82cba457a3b64acf8d368ba8750486b9",
+                "cameraChannelNum": 1,
+                "cameraName": "3号电梯",
+                "cameraType": 1,
+                "encoderUuid": "94d55afc82084fa3b18bd4d0019f2293",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1589497193702,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:36:59.913Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:36:59.913Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93103a",
+                "cameraUuid": "593843d4217d424b8cbcf99e257a4200",
+                "cameraChannelNum": 1,
+                "cameraName": "4号电梯",
+                "cameraType": 1,
+                "encoderUuid": "c78fbf3cb5bb49158123f30a9da70d32",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1589272788557,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:37:01.926Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:37:01.926Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93103b",
+                "cameraUuid": "867e10c9b15d4d7987c508f376637dad",
+                "cameraChannelNum": 1,
+                "cameraName": "1号电梯",
+                "cameraType": 1,
+                "encoderUuid": "2d284323dfb946f7b3640e8608464b7f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595858657376,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:37:16.050Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:37:16.051Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93103c",
+                "cameraUuid": "197ec9f28c45491391d730d4853a73e2",
+                "cameraChannelNum": 1,
+                "cameraName": "2号电梯",
+                "cameraType": 1,
+                "encoderUuid": "e8483ce3f15e4c09bbd3fb5b0b059f1e",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595435582223,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:23:43.417Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:23:43.417Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93103d",
+                "cameraUuid": "9d44798584794dbe9bf871874f42876f",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-041",
+                "cameraType": 1,
+                "encoderUuid": "275cab4a358f48ccba07e84d95bd63fa",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051508,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:23:58.442Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:23:58.442Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93103e",
+                "cameraUuid": "48b1e452bb274b048d52f6be19d98b88",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-101",
+                "cameraType": 1,
+                "encoderUuid": "b6789f66f2684f358683bb9c49a5d6be",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052564,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:23:59.441Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:23:59.441Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93103f",
+                "cameraUuid": "af0d4ec871ae4502b4f75d595a8e73a3",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-035",
+                "cameraType": 1,
+                "encoderUuid": "a3daa7eafb344569ad846df05abf6943",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459769653,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:37:18.153Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:37:18.154Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931040",
+                "cameraUuid": "65b5bf7679bf41059ac7baddf5a2fa37",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-034",
+                "cameraType": 1,
+                "encoderUuid": "18de176b3f66446ca690b473b53f29c2",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051019,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:37:32.003Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:37:32.003Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931041",
+                "cameraUuid": "b749f016eb1f412ebde4b933349b2a1c",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-055",
+                "cameraType": 1,
+                "encoderUuid": "7d17c1359361477686413112e8d01fbd",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051930,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:24:14.451Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:24:14.451Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931042",
+                "cameraUuid": "284b12c9e68c4339a530009ecc222b28",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-005",
+                "cameraType": 1,
+                "encoderUuid": "b788927225fb4cd58e552db02c13b91d",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052705,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:24:15.422Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:24:15.423Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931043",
+                "cameraUuid": "2b4fb3e1ae4d4b87af61bc7230a741bf",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-072",
+                "cameraType": 1,
+                "encoderUuid": "805c4ce3ba0446628a1dce0a7ec00a39",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595924005255,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:37:34.016Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:37:34.017Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931044",
+                "cameraUuid": "d544c4df344448818e8d7d51de469805",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-093",
+                "cameraType": 1,
+                "encoderUuid": "3293cbfb3df947e293c4d6fd613977ff",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595042681246,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:37:47.988Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:37:47.988Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931045",
+                "cameraUuid": "bc2926bab0b54ce2a047884dc87c147a",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-060",
+                "cameraType": 1,
+                "encoderUuid": "0efc6af3c45c4c72b0f99ce92cfb754f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051326,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:37:50.071Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:37:50.071Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931046",
+                "cameraUuid": "7ce85470cb644e6789eb815c7bf0aa55",
+                "cameraChannelNum": 1,
+                "cameraName": "负1-023",
+                "cameraType": 1,
+                "encoderUuid": "95e4a904fe09426ab4c7722835aadddd",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595915129717,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:38:04.003Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:38:04.006Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931047",
+                "cameraUuid": "fb60637cc42842e9bd7a5b6c36add98b",
+                "cameraChannelNum": 1,
+                "cameraName": "负1楼楼梯口1",
+                "cameraType": 1,
+                "encoderUuid": "a9b2bb0e36ed48169de3f760d32acda0",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052541,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:38:05.989Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:38:05.989Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931048",
+                "cameraUuid": "bd6dde169e0b42f49c5446e18abd95cf",
+                "cameraChannelNum": 1,
+                "cameraName": "负1电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "caa32b8c23c44be2939de1384ea626f0",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053003,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:38:20.000Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:38:20.000Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931049",
+                "cameraUuid": "b2b2df3472d943e39ae59d96523e9448",
+                "cameraChannelNum": 1,
+                "cameraName": "负1楼楼梯口2",
+                "cameraType": 1,
+                "encoderUuid": "145a9f6eab324fc6b7d3228d3d918a61",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051083,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:38:22.006Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:38:22.006Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93104a",
+                "cameraUuid": "3cb8dc79a3b8403a8bfd362fcc8a0ce2",
+                "cameraChannelNum": 1,
+                "cameraName": "负2楼电梯间过道",
+                "cameraType": 1,
+                "encoderUuid": "f94fa805f6d64e8cbe2e0627e7d79205",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036498545,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:38:35.992Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:38:35.993Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93104b",
+                "cameraUuid": "279c78e175a344018b40f2472ada5b9f",
+                "cameraChannelNum": 1,
+                "cameraName": "负2楼楼梯间口1",
+                "cameraType": 1,
+                "encoderUuid": "173b57bbcdaf4d8e8aa89b744d8f9afd",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036497741,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:38:38.026Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:38:38.026Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93104c",
+                "cameraUuid": "bdea4f284a6540c9aa231f1c5e989e5a",
+                "cameraChannelNum": 1,
+                "cameraName": "负2消防大门对面1",
+                "cameraType": 1,
+                "encoderUuid": "beb2a547a196495b84f0033070ebbc98",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036498167,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:38:51.999Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:38:52.000Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93104d",
+                "cameraUuid": "df7db7bf435f4d7984b34ea96aa21199",
+                "cameraChannelNum": 1,
+                "cameraName": "负2消防大门旁",
+                "cameraType": 1,
+                "encoderUuid": "a16e553c2870414fb2bb58e1059da45f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036498103,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:38:54.001Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:38:54.001Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93104e",
+                "cameraUuid": "14c6ed3e34e24491a904f31ce35c4d0e",
+                "cameraChannelNum": 1,
+                "cameraName": "负2楼楼梯口2",
+                "cameraType": 1,
+                "encoderUuid": "6200eaeacd9246d5a6d88718c6b26f48",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036498022,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:24:30.448Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:24:30.449Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93104f",
+                "cameraUuid": "c7f90712dc734c8888f9a59ba48e9795",
+                "cameraChannelNum": 1,
+                "cameraName": "负2楼电梯间外",
+                "cameraType": 1,
+                "encoderUuid": "19d76cc5dfa143638f89f4dfb99e35d1",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036497781,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:39:08.023Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:39:08.024Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931050",
+                "cameraUuid": "1af2de6192c849f0a6c9539a3109f30e",
+                "cameraChannelNum": 1,
+                "cameraName": "负2  2-016",
+                "cameraType": 1,
+                "encoderUuid": "495bd6394ad64c69bce5355b74d52327",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036497913,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:39:10.027Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:39:10.027Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931051",
+                "cameraUuid": "01f5b33042b04bedb00cb0eb25971fba",
+                "cameraChannelNum": 1,
+                "cameraName": "负2  2-038",
+                "cameraType": 1,
+                "encoderUuid": "9efcb55b8bf54422a87869efdaed185b",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036498199,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:39:24.514Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:39:24.514Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931052",
+                "cameraUuid": "ace8f5f35dd243c794a89ab70a3ca661",
+                "cameraChannelNum": 1,
+                "cameraName": "负2楼风机房旁",
+                "cameraType": 1,
+                "encoderUuid": "f3d5f423295e4bfb90fd304b6c38d322",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036498426,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:39:26.524Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:39:26.525Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931053",
+                "cameraUuid": "45b5de795a1845e1885a7ca27cdfd3bb",
+                "cameraChannelNum": 1,
+                "cameraName": "负2楼弱电井背面",
+                "cameraType": 1,
+                "encoderUuid": "ebc9c40d249348d3b90c667453745df7",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1588036498505,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:24:31.445Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:24:31.445Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931054",
+                "cameraUuid": "1018d79443854963a3abe8a2ba16ff4b",
+                "cameraChannelNum": 1,
+                "cameraName": "五楼室外球机",
+                "cameraType": 2,
+                "encoderUuid": "5815024a3752476b81545d79639b2037",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460050945,
+                "cameraTypeName": "快球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:24:46.438Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:24:46.438Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931055",
+                "cameraUuid": "283e9cea96a84daab596b024268a00ed",
+                "cameraChannelNum": 1,
+                "cameraName": "室外篮球场1",
+                "cameraType": 0,
+                "encoderUuid": "883f8df8f6dd49578d6761270479e428",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460051989,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:39:40.546Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:39:40.546Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931056",
+                "cameraUuid": "2842dde3f52a44228808feb7f8341608",
+                "cameraChannelNum": 1,
+                "cameraName": "室外篮球场2",
+                "cameraType": 0,
+                "encoderUuid": "c156a8d7e62441f6867d5c5687af27d3",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052330,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:39:42.552Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:39:42.552Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931057",
+                "cameraUuid": "9852b6ef2b6b4f8d9a8d18a9a9687706",
+                "cameraChannelNum": 1,
+                "cameraName": "室外主入口",
+                "cameraType": 0,
+                "encoderUuid": "34020000001320000003",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1563434438908,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:39:53.295Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:39:53.295Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931069",
+                "cameraUuid": "0f20a962b23d4c6182cdb5234be8e798",
+                "cameraChannelNum": 1,
+                "cameraName": "负一楼配电房",
+                "cameraType": 1,
+                "encoderUuid": "b013210f90464f13b10ab2b2256a1101",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460052242,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:39:53.297Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:39:53.297Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93106a",
+                "cameraUuid": "15af90c666584ad6b1c2a2566661ddab",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼1楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "78e5cae877c34432b491dece7b36550a",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459453735,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:24:47.435Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:24:47.435Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93106b",
+                "cameraUuid": "6e9e631d84404b19845b45e51bca3d5a",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼2楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "0e3d7c3cb7624ef89527346f7dbd72d5",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459449909,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:25:02.438Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:25:02.438Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93106c",
+                "cameraUuid": "aec722abdf024c949d2aa74dc812cc02",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼3楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "4c0b2a7be6a94556b6cead5bcbc7db74",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450209,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:25:03.441Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:25:03.441Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93106d",
+                "cameraUuid": "83a2bafa67164a0eb211a4bcea218498",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼4楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "b5259b5c62fd4d87a5780c9a8148a23d",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450361,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:13:00.003Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:13:00.003Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93106e",
+                "cameraUuid": "37e26cd77a324edc91ead73a46039a2e",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼5楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "62052a777b24499784b0aa65494d8842",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450280,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:25:18.512Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:25:18.512Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93106f",
+                "cameraUuid": "53aee2757ae1457e9111b7dfd5234b4f",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼6楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "39a00594d8b8460597fc32fcf89da7af",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450166,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:25:19.454Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:25:19.454Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931070",
+                "cameraUuid": "460b1b8d1c5c4285964e01ec46daeea8",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼7楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "995390c058c34d0192d2e971e2e90cad",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459451302,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:25:34.472Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:25:34.473Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931071",
+                "cameraUuid": "0b55f344457b48549a2168d0cc4c8dc0",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼8楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "5a798ce0533340a0aad09ff304ec7047",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450319,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:25:35.478Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:25:35.478Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931072",
+                "cameraUuid": "2f694c1ed00b40e29c670be2ab29a7c7",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼9楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "9819ad2fb65645389e2dc46ace010a77",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459451202,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:25:50.490Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:25:50.490Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931073",
+                "cameraUuid": "e69006951cb74090b0d92a1c2421a640",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼10楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "f07348b6621249dfb6f56e7878343596",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450587,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:13:01.006Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:13:01.006Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931074",
+                "cameraUuid": "0b67bc15338d468db74f10a05d57b261",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼11楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "c7875510dd7c4c5e9bbf1e094a39d325",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459452849,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:25:51.535Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:25:51.535Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931075",
+                "cameraUuid": "a1dae0c945194225a691c53a0ad242e2",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼12楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "dfce671f4efe4efcad748187096eb5c7",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450538,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:26:06.593Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:26:06.594Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931076",
+                "cameraUuid": "83d444e6f29847e192d8a309502cc423",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼13楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "b23aacc9c70e48a584097a9059121b45",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450381,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:26:07.589Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:26:07.590Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931077",
+                "cameraUuid": "63832a9209fd486b929aee13edca85bb",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼14楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "c3188dce1f8449b7a3aceb417e86ed52",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450439,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:26:22.571Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:26:22.572Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931078",
+                "cameraUuid": "26c0cab869cb4bf89f682a5d29272ef0",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼15楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "63428d8ecf644f0e82d57bcd178f9ce0",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450118,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:26:23.570Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:26:23.571Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931079",
+                "cameraUuid": "688a17de37d24c55983bf5d8787a1ac9",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼16楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "d08a022de58046b89d6d4772ca3a13da",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450458,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:26:38.574Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:26:38.574Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93107a",
+                "cameraUuid": "aea6894a869f41d0bd962056b953fbea",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼17楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "4a36620fd5224b3fb13444ba332ccb75",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450038,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:26:39.567Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:26:39.567Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93107b",
+                "cameraUuid": "9d3c6d6913b641ad994e5413d08afc73",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼18楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "b52f459c36754ac999ada4a28d91adc7",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450400,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:13:16.174Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:13:16.174Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93107c",
+                "cameraUuid": "312834ea4a3942e5910cd55deadc36cd",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼19楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "0c4dab958d4542a8ae7fb7d7675ba17f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459455705,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:26:54.608Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:26:54.609Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93107d",
+                "cameraUuid": "a40b4879b76f4134baebd0d17a021702",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼20楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "72ff82c22f4c441bbe125b50b55a9fe1",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450300,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:26:55.591Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:26:55.592Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93107e",
+                "cameraUuid": "a40163bcad4c4c5199f5282fc3e8872c",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼21楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "36a61b3e794045bdabea00ad324165cd",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459449987,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:27:10.598Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:27:10.599Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93107f",
+                "cameraUuid": "10e92375fd7d49e19a25c4ec4003217b",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼22楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "de6bf8067b6745b3acc23502c37d38f8",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450518,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:13:17.180Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:13:17.181Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931080",
+                "cameraUuid": "62c43a21a25746f3af2753b274261343",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼23楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "4be35550ad6d4bf881c4da0a87eda10a",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459451375,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:13:32.148Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:13:32.149Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931081",
+                "cameraUuid": "e14f9d7923cc4debac1d5eaa06d3062f",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼24楼电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "52610234a7c3419287941d46140d8f4f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450085,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:13:33.146Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:13:33.147Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931082",
+                "cameraUuid": "b5be7b25d8c248dd87dacbb7a0414177",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼1号电梯",
+                "cameraType": 1,
+                "encoderUuid": "f5df94a16096458bbec0512505deda7f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459452942,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:13:48.221Z",
+                    "delay": -1,
+                    "code": 502,
+                    "msg": "Proxy Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:13:48.222Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931083",
+                "cameraUuid": "732baf14b4ba47058cc12e3426b277c8",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼2号电梯",
+                "cameraType": 1,
+                "encoderUuid": "2020f212566b439194832b796def7ff1",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450235,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:13:49.196Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:13:49.197Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931084",
+                "cameraUuid": "65037c59ec6d4886a33260c071c5e4e8",
+                "cameraChannelNum": 1,
+                "cameraName": "负一楼（住宅楼）1－124",
+                "cameraType": 1,
+                "encoderUuid": "174bfe1184b340ffae7d500ef6675ee0",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450623,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:27:11.605Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:27:11.606Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931085",
+                "cameraUuid": "dc39b39098bf4e81be6edb24c00feccd",
+                "cameraChannelNum": 1,
+                "cameraName": "负一楼（住宅楼）1－134",
+                "cameraType": 1,
+                "encoderUuid": "3eb6e2e7b376481ca56ae036ae53a703",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459449937,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:27:26.588Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:27:26.588Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931086",
+                "cameraUuid": "e0b3279f05f841c29823dc8f772afce6",
+                "cameraChannelNum": 1,
+                "cameraName": "负一楼（住宅楼）电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "d5500e3849d04ac894009f25cf82549f",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450478,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:14:04.210Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:14:04.211Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931087",
+                "cameraUuid": "a289edf799884eafbff6acced2b73c31",
+                "cameraChannelNum": 1,
+                "cameraName": "主负一楼坡道",
+                "cameraType": 1,
+                "encoderUuid": "29b50314277d40a8b7a4cca8b060a2cf",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450063,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:14:05.218Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:14:05.218Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931088",
+                "cameraUuid": "2f23fd07e1554a86bc86e5e2b4d3daf8",
+                "cameraChannelNum": 1,
+                "cameraName": "主负一楼至负二楼坡道",
+                "cameraType": 1,
+                "encoderUuid": "0000b5682626436f869f673fbd8ad292",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459449962,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:14:20.219Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:14:20.219Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931089",
+                "cameraUuid": "f027e76acd264dd0a309e3379369bf3c",
+                "cameraChannelNum": 1,
+                "cameraName": "负二楼（住宅楼）车道上坡",
+                "cameraType": 1,
+                "encoderUuid": "feda73dca71b43439c404f31da2296b2",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450556,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:14:21.192Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:14:21.192Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93108a",
+                "cameraUuid": "4ec7bf9bd7974726856141395271086d",
+                "cameraChannelNum": 1,
+                "cameraName": "负二楼2－122",
+                "cameraType": 1,
+                "encoderUuid": "f15a33f7588b4ee8a72eebd4523cc41c",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450606,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:14:36.296Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:14:36.296Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93108b",
+                "cameraUuid": "53bad4d60a234ae081cb9e255714dc91",
+                "cameraChannelNum": 1,
+                "cameraName": "负二楼2－148",
+                "cameraType": 1,
+                "encoderUuid": "c51e8a44201d42cbbc76332199c302da",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450419,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:14:37.203Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:14:37.203Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93108c",
+                "cameraUuid": "7d36609494c74a89b22602e4ac69df76",
+                "cameraChannelNum": 1,
+                "cameraName": "负二楼2－128",
+                "cameraType": 1,
+                "encoderUuid": "dd2441c619b84a22af9428ffa573f9b5",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450497,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:14:52.270Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:14:52.270Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93108d",
+                "cameraUuid": "e3de8db2971448a6a99a242d9283bf09",
+                "cameraChannelNum": 1,
+                "cameraName": "负二楼（住宅楼）2－121",
+                "cameraType": 1,
+                "encoderUuid": "8e8da3ab586c4a5f9a8e4bfabec6d488",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450257,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:27:27.585Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:27:27.585Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93108e",
+                "cameraUuid": "a7f724e526964b50b4ac72fe459e91aa",
+                "cameraChannelNum": 1,
+                "cameraName": "负二楼（住宅楼）2－118",
+                "cameraType": 1,
+                "encoderUuid": "88878ee8d2464e9c9c166ffb09f21206",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450341,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:27:42.603Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:27:42.603Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c93108f",
+                "cameraUuid": "6e76eff53bc8424d84d8d4673c47c809",
+                "cameraChannelNum": 1,
+                "cameraName": "负二楼（住宅楼）电梯厅",
+                "cameraType": 1,
+                "encoderUuid": "1588653926ed46b49c76868d27531ba2",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450642,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:27:43.655Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:27:43.656Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931090",
+                "cameraUuid": "2f4f8223a66940719c14a6b8afe83adf",
+                "cameraChannelNum": 1,
+                "cameraName": "住宅楼负二楼消防泵房",
+                "cameraType": 1,
+                "encoderUuid": "7e201555665548d58d9afce0b46c3b6a",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459450013,
+                "cameraTypeName": "半球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:14:53.248Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:14:53.249Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931091",
+                "cameraUuid": "1ab9699f34bd4adbb230d05bcc7a78cb",
+                "cameraChannelNum": 1,
+                "cameraName": "室外办公楼东南角",
+                "cameraType": 0,
+                "encoderUuid": "39b1885c854d48d7a9d7fcf0d3641b34",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053677,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:27:59.099Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:27:59.099Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931092",
+                "cameraUuid": "3356fc05171346d0b4ee41d161bd3df3",
+                "cameraChannelNum": 1,
+                "cameraName": "室外主入口",
+                "cameraType": 0,
+                "encoderUuid": "4480cbf875044eecb71bf06e9c6e7bbe",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460057349,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:28:00.134Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:28:00.134Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931093",
+                "cameraUuid": "512db00696234d38a447f0d365a84769",
+                "cameraChannelNum": 1,
+                "cameraName": "室外住宅楼西南角",
+                "cameraType": 0,
+                "encoderUuid": "e2f727c67e6844c783ad6fa6ae541deb",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587471465407,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:15:08.226Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:15:08.226Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931094",
+                "cameraUuid": "0a687da8a7a84743b4a5f7da60dcbd64",
+                "cameraChannelNum": 1,
+                "cameraName": "室外儿童场",
+                "cameraType": 0,
+                "encoderUuid": "2d949c6b53354abfb44a611ab429abdf",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460057295,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:28:15.147Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:28:15.148Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931095",
+                "cameraUuid": "cf8baf85e8934e6a9ead21bf287bc965",
+                "cameraChannelNum": 1,
+                "cameraName": "室外大门口",
+                "cameraType": 0,
+                "encoderUuid": "e13c90a7abb84bd8aa899b743a557a65",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460057592,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:28:16.148Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:28:16.148Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931096",
+                "cameraUuid": "0630591cb8124e1aa8799780e2ae777e",
+                "cameraChannelNum": 1,
+                "cameraName": "室外次入口",
+                "cameraType": 0,
+                "encoderUuid": "f6afed7d88784ac6b44006735eae8579",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587459757233,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:28:31.149Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:28:31.149Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931135",
+                "cameraUuid": "c271882e99f94076b160ce4acee6a7f8",
+                "cameraChannelNum": 1,
+                "cameraName": "一楼大堂球机",
+                "cameraType": 2,
+                "encoderUuid": "a1928f7f21a04b09ad1938511d48c3b3",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1587460053714,
+                "cameraTypeName": "快球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:28:32.154Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:28:32.155Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931136",
+                "cameraUuid": "ab5ca68891e843719929540c1a0adc80",
+                "cameraChannelNum": 1,
+                "cameraName": "厨房球机1",
+                "cameraType": 2,
+                "encoderUuid": "dcb37b3bb6c74b2898340d9ddc0cc9c2",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595451198781,
+                "cameraTypeName": "快球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:28:47.155Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:28:47.155Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931137",
+                "cameraUuid": "ce2de96095f441069f70cf77a0d16bc3",
+                "cameraChannelNum": 1,
+                "cameraName": "厨房球机3",
+                "cameraType": 2,
+                "encoderUuid": "da28cec8f3454063bc3a8440e180d0f0",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1589572903314,
+                "cameraTypeName": "快球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:28:48.168Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2019-08-06T01:37:16.670Z",
+                    "updatedAt": "2022-10-08T06:28:48.168Z"
+                },
+                "_id": "5d48d9cc2ad9fa1b4c931138",
+                "cameraUuid": "02ba759ed98a4f358686e485ee092e52",
+                "cameraChannelNum": 1,
+                "cameraName": "厨房球机2",
+                "cameraType": 2,
+                "encoderUuid": "c272f685da6449519c8d856b49607fa4",
+                "onLineStatus": 1,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595531293598,
+                "cameraTypeName": "快球"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:29:30.548Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2020-04-08T11:45:01.718Z",
+                    "updatedAt": "2022-10-08T06:29:30.548Z"
+                },
+                "_id": "5e8db93d1f5eaa88e4970709",
+                "cameraUuid": "9752f29e74a64ecbba54675dd3ee4537",
+                "cameraChannelNum": 1,
+                "cameraName": "Slot 01 Camera 03",
+                "cameraType": 0,
+                "encoderUuid": "c48ecd4cbde34635a1a4190f0c5eee19",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1586346230863,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:15:09.214Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2020-04-08T11:45:01.718Z",
+                    "updatedAt": "2022-10-08T06:15:09.215Z"
+                },
+                "_id": "5e8db93d1f5eaa88e497070a",
+                "cameraUuid": "8f66e528939842b1b9270fd8cba92e82",
+                "cameraChannelNum": 1,
+                "cameraName": "Slot 01 Camera 01",
+                "cameraType": 0,
+                "encoderUuid": "651d732ccaf2444fa769a30bbecbb596",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1586346230627,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:15:24.245Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2020-04-08T11:45:01.718Z",
+                    "updatedAt": "2022-10-08T06:15:24.246Z"
+                },
+                "_id": "5e8db93d1f5eaa88e497070b",
+                "cameraUuid": "9a557f8134cd4ac58bbfc44a43590a09",
+                "cameraChannelNum": 2,
+                "cameraName": "Slot 01 Camera 04",
+                "cameraType": 0,
+                "encoderUuid": "c48ecd4cbde34635a1a4190f0c5eee19",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1586346230863,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:15:25.280Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2020-04-08T11:45:01.718Z",
+                    "updatedAt": "2022-10-08T06:15:25.280Z"
+                },
+                "_id": "5e8db93d1f5eaa88e497070c",
+                "cameraUuid": "445ecc1f8b1545aba8009b719efbfeda",
+                "cameraChannelNum": 2,
+                "cameraName": "Slot 01 Camera 02",
+                "cameraType": 0,
+                "encoderUuid": "651d732ccaf2444fa769a30bbecbb596",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1595061895099,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:15:40.245Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2020-04-08T11:45:01.718Z",
+                    "updatedAt": "2022-10-08T06:15:40.246Z"
+                },
+                "_id": "5e8db93d1f5eaa88e497070d",
+                "cameraUuid": "70585c41342b4960b900b675c89bc4b7",
+                "cameraChannelNum": 1,
+                "cameraName": "Slot 02 Camera 03",
+                "cameraType": 0,
+                "encoderUuid": "158897133fe24e4d81eafede8b41ef96",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1586346230216,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:15:41.277Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2020-04-08T11:45:01.718Z",
+                    "updatedAt": "2022-10-08T06:15:41.277Z"
+                },
+                "_id": "5e8db93d1f5eaa88e497070e",
+                "cameraUuid": "b206e22c9e2b4aa5bb6b98beb9219624",
+                "cameraChannelNum": 2,
+                "cameraName": "Slot 02 Camera 04",
+                "cameraType": 0,
+                "encoderUuid": "158897133fe24e4d81eafede8b41ef96",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1586346230216,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:15:56.268Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2020-04-08T11:45:01.718Z",
+                    "updatedAt": "2022-10-08T06:15:56.269Z"
+                },
+                "_id": "5e8db93d1f5eaa88e497070f",
+                "cameraUuid": "c56a78f69a8a4765a8ef50903ef0d85c",
+                "cameraChannelNum": 1,
+                "cameraName": "Slot 02 Camera 01",
+                "cameraType": 0,
+                "encoderUuid": "4fce013f4f1a41b98214aa873ca8ff9b",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1586346230534,
+                "cameraTypeName": "枪机"
+            },
+            {
+                "check": {
+                    "lastTime": "2022-10-08T06:29:30.607Z",
+                    "delay": -1,
+                    "code": 500,
+                    "msg": "Internal Server Error",
+                    "lastOnlineChannel": "1"
+                },
+                "meta": {
+                    "createdAt": "2020-04-08T11:45:01.718Z",
+                    "updatedAt": "2022-10-08T06:29:30.607Z"
+                },
+                "_id": "5e8db93d1f5eaa88e4970710",
+                "cameraUuid": "5e154a380ed0430a90e119f19a6f2d2b",
+                "cameraChannelNum": 2,
+                "cameraName": "Slot 02 Camera 02",
+                "cameraType": 0,
+                "encoderUuid": "4fce013f4f1a41b98214aa873ca8ff9b",
+                "onLineStatus": 0,
+                "regionUuid": "f494245cd29846f7a220eeed0c53de3f",
+                "resAuths": "1,2,4,8,16,32,64,128",
+                "unitUuid": "1048576",
+                "updateTime": 1586408836737,
+                "cameraTypeName": "枪机"
+            }
+        ]
+    }
+}
