@@ -27,7 +27,7 @@
 <meta property="og:description" content="起因 最近在面试，聊到个人项目 Shmily，这个项目是将 QQ、微信、短信等各种数据汇总并时间线展示的一个项目，其中子项目 Shmily-Show 一个难点就是纯前端处理大量的聊天记录（总计1.41G，最大单文件240M）。  面试官基于此引申出一个问题：如果前端单一请求大小有1G,，可以和后端采">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-23T14:05:34.000Z">
-<meta property="article:modified_time" content="2023-09-23T16:30:10.980Z">
+<meta property="article:modified_time" content="2023-09-23T16:33:09.031Z">
 <meta property="article:author" content="lqzh">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
@@ -239,7 +239,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-09-24 00:30:10" itemprop="dateModified" datetime="2023-09-24T00:30:10+08:00">2023-09-24</time>
+      <time title="修改时间：2023-09-24 00:33:09" itemprop="dateModified" datetime="2023-09-24T00:33:09+08:00">2023-09-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -302,7 +302,7 @@
 </li>
 </ul>
 <p>刚刚洗澡时闪念 <code>分块传输</code>：其实可以不用后端配合做特殊处理，使用 <code>HTTP协议</code> 的 <code>Range</code> 特性即可做到。</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/lqzhgood/Shmily-Show">Shmily-Show</a> 开发时使用 <code>Head</code> 方法探测文件是否存在，当时使用 <a target="_blank" rel="noopener" href="https://webd.cf/">webd</a> 作为 <code>webServer</code>。但 <a target="_blank" rel="noopener" href="https://webd.cf/">webd</a> 不支持 <code>Head</code> ，和作者聊透了 <code>Head</code> 的实现， 但最后建议我通过在 <code>headers</code> 中添加 <code>&#123;Range:&#39;bytes=0-0&#39;&#125;</code> 的 <code>Get</code> ， 去模拟 <code>Head</code> 的行为，毕竟 <code>Head</code> 不是每个 <code>webServer</code> 都会实现。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/lqzhgood/Shmily-Show">Shmily-Show</a> 开发时使用 <code>Head</code> 方法探测文件是否存在，当时使用 <a target="_blank" rel="noopener" href="https://webd.cf/">webd</a> 作为 <code>webServer</code>。但 <a target="_blank" rel="noopener" href="https://webd.cf/">webd</a> 不支持 <code>Head</code> ，和作者聊透了 <code>Head</code> 的实现， 但最后还是建议我通过在 <code>headers</code> 中添加 <code>&#123;Range:&#39;bytes=0-0&#39;&#125;</code> 的 <code>Get</code> ， 去模拟 <code>Head</code> 的行为，毕竟 <code>Head</code> 不是每个 <code>webServer</code> 都会实现，但 <code>Range</code> 的 <code>Get</code> 大概率会实现（从而支持 mp4 拖拽播放）。</p>
 <blockquote>
 <p>这里吹一波  <a target="_blank" rel="noopener" href="https://webd.cf/">webd</a>， 是我测过性能最好的 micro WebServer 。</p>
 </blockquote>
