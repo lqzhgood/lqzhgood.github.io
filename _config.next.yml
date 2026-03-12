@@ -94,14 +94,15 @@ open_graph:
 # External url should start with http:// or https://
 menu:
     home: / || fa fa-home
-    tags: /tags/ || fa fa-tags
+    # tags: /tags/ || fa fa-tags
     #categories: /categories/ || fa fa-th
+    知识库: https://lqzhgood.github.io/Study-docs/ || fa fa-book
     archives: /archives/ || fa fa-archive
     #schedule: /schedule/ || fa fa-calendar
     #sitemap: /sitemap.xml || fa fa-sitemap
     #commonweal: /404/ || fa fa-heartbeat
     guestbook: /guestbook || fa fa-comments
-    about: /about/ || fa fa-user
+    about: https://github.com/lqzhgood || fa fa-user
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -208,7 +209,7 @@ footer:
         # If you want to animate the icon, set it to true.
         animated: true
         # Change the color of icon, using Hex Code.
-        color: "#ff0000"
+        color: '#ff0000'
 
     # If not defined, `author` from Hexo `_config.yml` will be used.
     copyright:
@@ -341,8 +342,8 @@ mobile_layout_economy: false
 
 # Browser header panel color.
 theme_color:
-    light: "#222"
-    dark: "#222"
+    light: '#222'
+    dark: '#222'
 
 # Override browsers' default behavior.
 body_scrollbar:
@@ -381,14 +382,14 @@ reading_progress:
     # Available values: top | bottom
     position: top
     reversed: false
-    color: "#37c6c0"
+    color: '#37c6c0'
     height: 3px
 
 # Bookmark Support
 bookmark:
     enable: true
     # Customize the color of the bookmark.
-    color: "#222"
+    color: '#222'
     # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
     # If manual, only save it by clicking the bookmark-icon.
     save: auto
