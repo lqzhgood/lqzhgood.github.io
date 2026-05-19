@@ -48,11 +48,13 @@
                 </div>
                 <div class="project">
                     <div class="row" v-for="p in c.project">
-                        <div class="title" @click="open(p.link)">
-
-                            <span class="name">{{p.name}}</span>
+                        <div class="title">
+                            <span class="name">
+                                <a :href="p.link" target="_blank">
+                                    {{p.name}}
+                                </a>
+                            </span>
                             <img src="./assets/icon/link.svg" alt="link" class="link">
-
                         </div>
                         <div class="desc" v-html="p.desc"></div>
                         <hr>
@@ -140,13 +142,7 @@
                         }],
                     }
                 ]
-            }),
-            method: {
-                open(link) {
-                    if (!link) return;
-                    window.open(link);
-                }
-            }
+            })
         })
     </script>
 </body>
