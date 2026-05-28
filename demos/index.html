@@ -28,6 +28,11 @@
             top: 20px;
             transform: translateX(-50%)
         }
+
+        .company .code {
+            border-radius: 50%;
+            overflow: hidden;
+        }
     </style>
 </head>
 
@@ -42,7 +47,7 @@
                     <span class="name">{{c.company}}</span>
                     <div class="code" title="查看代码仓库" v-if="c.code">
                         <a :href="c.code" target="_blank">
-                            <img src="./assets/icon/github.svg">
+                            <img src="./assets/icon/Screenshot.png">
                         </a>
                     </div>
                 </div>
@@ -75,7 +80,7 @@
                     {
                         company: '蚂蚁集团 - 数字马力',
                         logo: './assets/logo-alipay.webp',
-                        // code: './work-alipay/code/index.html',
+                        code: './work-alipay/code/index.html',
                         project: [
                             {
                                 name: '广告投放平台',
